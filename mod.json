@@ -17,7 +17,7 @@
     "chapter": 5,
 
     // The map that you start in when first starting the project.
-    "map": "room1",
+    "map": "HER_PLACE",
 
     // The party. The first character is the player.
     "party": ["vess"],

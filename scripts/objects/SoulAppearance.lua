@@ -23,7 +23,7 @@ function SoulAppearance:init(x, y)
     self.soul_width = 20
     self.soul_height = 20
 
-    Assets.playSound("AUDIO_APPEARANCE")
+    Assets.playSound("ui_spooky_action")
     self:setColor(1, 0.4, 0.84)
 
     self.spawn_timer = 0
