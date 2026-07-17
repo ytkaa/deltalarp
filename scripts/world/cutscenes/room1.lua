@@ -5,7 +5,8 @@ return {
     ---@param cutscene WorldCutscene
     wall = function(cutscene, event)
         -- Open textbox and wait for completion
-        cutscene:text("* The wall seems cracked.")
+        cutscene:text("* (The wall seems cracked.[wait:5] Maybe it trades on Quado..?)")
+        cutscene:text("* (No...[wait:5] not something like this.)")
 
         -- If we have Susie, play a cutscene
         local susie = cutscene:getCharacter("susie")
@@ -15,6 +16,7 @@ return {
             cutscene:detachFollowers()
 
             -- All text from now is spoken by Susie
+            cutscene:text("* (...[wait:5]you have a feeling Susie is about to do something dumb.)")
             cutscene:setSpeaker(susie)
             cutscene:text("* Hey,[wait:5] think I can break\nthis wall?", "smile")
 

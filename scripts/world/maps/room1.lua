@@ -553,7 +553,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["text"] = "* This is the coolest wall in the room.\n* [wait:30][sound:GPT]Trade on [color:green]Quado[color:reset]!"
+            ["text"] = "* This is the coolest wall in the room.[wait:5]\n* Trade on [sound:GPT][color:green]Quado[color:reset]!"
           }
         },
         {
@@ -570,8 +570,11 @@ return {
           visible = true,
           properties = {
             ["actor"] = "kris",
-            ["text1"] = "* Dude[wait:10] let me back in the party",
-            ["text2"] = "* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e"
+            ["facing"] = "left",
+            ["text1_1"] = "* Dude[wait:10] let me back in the party",
+            ["text1_2"] = "* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e",
+            ["text2_1"] = "* Heh.[sound:farmerlaugh][wait:5] As if you could even envision it.",
+            ["turn"] = true
           }
         }
       }

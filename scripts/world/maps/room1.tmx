@@ -134,15 +134,18 @@ no-good wall slammers.</property>
   </object>
   <object id="44" name="interactable" x="40" y="680" width="160" height="40">
    <properties>
-    <property name="text">* This is the coolest wall in the room.
-* [wait:30][sound:GPT]Trade on [color:green]Quado[color:reset]!</property>
+    <property name="text">* This is the coolest wall in the room.[wait:5]
+* Trade on [sound:GPT][color:green]Quado[color:reset]!</property>
    </properties>
   </object>
   <object id="45" name="npc" x="120" y="840" width="40" height="40">
    <properties>
     <property name="actor" value="kris"/>
-    <property name="text1" value="* Dude[wait:10] let me back in the party"/>
-    <property name="text2" value="* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e"/>
+    <property name="facing" value="left"/>
+    <property name="text1_1" value="* Dude[wait:10] let me back in the party"/>
+    <property name="text1_2" value="* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e"/>
+    <property name="text2_1" value="* Heh.[sound:farmerlaugh][wait:5] As if you could even envision it."/>
+    <property name="turn" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>

@@ -46,8 +46,8 @@ return {
         cutscene:playSound("reverse_crash_6andahalf")
         cutscene:wait(1)
         cutscene:walkTo("vess", "vess_target2", 6)
-        cutscene:wait(1.25)
-        cutscene:wait(cutscene:fadeOut(4.25, { color = COLORS.white, global = true }))
+        cutscene:wait(1)
+        cutscene:wait(cutscene:fadeOut(4.5, { color = COLORS.white, global = true }))
         
         --loadMap doesn't work.
         tunes:stop();
