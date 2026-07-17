@@ -12,7 +12,6 @@ return {
   nextlayerid = 6,
   nextobjectid = 47,
   properties = {
-    ["music"] = "pursuit1",
     ["name"] = "Test Map - Room 1"
   },
   tilesets = {
@@ -450,11 +449,12 @@ return {
           visible = true,
           properties = {
             ["actor"] = "starwalker",
-            ["text1"] = "* These [color:red]larpers[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
-            ["text2"] = "* I'm the original   [color:red]Larp[color:yellow]walker[color:reset]",
-            ["text3"] = "* ...",
-            ["text4"] = "* Have you heard of [color:green]Quado[color:reset]?",
-            ["text5"] = "* I think the wall to the north\nof [color:blue]KRIS[color:reset] has heard of [color:green]Quado[color:reset]..."
+            ["text1_1"] = "* These [color:red]larpers[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
+            ["text1_2"] = "* I'm the original   [color:red]Larp[color:yellow]walker[color:reset]",
+            ["text2_1"] = "* ...",
+            ["text2_2"] = "* Have you heard of [color:green][sound:QUADO]Quado[color:reset]?",
+            ["text2_3"] = "* I think the wall to the north\nof [color:blue]KRIS[color:reset] has heard of [color:green][sound:PREDICTIVE]Quado[color:reset]...",
+            ["text3_1"] = "* [wait:40][sound:quato][color:green]Quado"
           }
         },
         {
@@ -553,7 +553,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["text"] = "* This is the coolest wall in the room.\n* Trade on Quado!"
+            ["text"] = "* This is the coolest wall in the room.\n* [wait:30][sound:GPT]Trade on [color:green]Quado[color:reset]!"
           }
         },
         {

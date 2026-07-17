@@ -4,7 +4,6 @@
   <export target="room1.lua" format="lua"/>
  </editorsettings>
  <properties>
-  <property name="music" value="pursuit1"/>
   <property name="name" value="Test Map - Room 1"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/castle.tsx"/>
@@ -91,13 +90,14 @@
   <object id="19" name="npc" x="480" y="840" width="40" height="40">
    <properties>
     <property name="actor" value="starwalker"/>
-    <property name="text1">* These [color:red]larpers[color:reset] are [color:yellow]Pissing[color:reset] me
+    <property name="text1_1">* These [color:red]larpers[color:reset] are [color:yellow]Pissing[color:reset] me
 off...</property>
-    <property name="text2" value="* I'm the original   [color:red]Larp[color:yellow]walker[color:reset]"/>
-    <property name="text3" value="* ..."/>
-    <property name="text4" value="* Have you heard of [color:green]Quado[color:reset]?"/>
-    <property name="text5">* I think the wall to the north
-of [color:blue]KRIS[color:reset] has heard of [color:green]Quado[color:reset]...</property>
+    <property name="text1_2" value="* I'm the original   [color:red]Larp[color:yellow]walker[color:reset]"/>
+    <property name="text2_1" value="* ..."/>
+    <property name="text2_2" value="* Have you heard of [color:green][sound:QUADO]Quado[color:reset]?"/>
+    <property name="text2_3">* I think the wall to the north
+of [color:blue]KRIS[color:reset] has heard of [color:green][sound:PREDICTIVE]Quado[color:reset]...</property>
+    <property name="text3_1" value="* [wait:40][sound:quato][color:green]Quado"/>
    </properties>
   </object>
   <object id="27" name="savepoint" x="80" y="210" width="40" height="40">
@@ -135,7 +135,7 @@ no-good wall slammers.</property>
   <object id="44" name="interactable" x="40" y="680" width="160" height="40">
    <properties>
     <property name="text">* This is the coolest wall in the room.
-* Trade on Quado!</property>
+* [wait:30][sound:GPT]Trade on [color:green]Quado[color:reset]!</property>
    </properties>
   </object>
   <object id="45" name="npc" x="120" y="840" width="40" height="40">
