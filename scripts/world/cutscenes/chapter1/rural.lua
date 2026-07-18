@@ -9,7 +9,7 @@ return {
             cutscene:wait(cutscene:fadeOut(3))
             cutscene:wait(Game.world:mapTransition("chapter1/rural_mainstreet"))
             cutscene:wait(cutscene:fadeIn(1))
-            cutscene:text("* (All according[sound:bageldefeat] to)[next]")
+            cutscene:text("* (All according[sound:bageldefeat] to[next]")
             cutscene:text("* [wave][style:GONER](All according to plant!)")
             local music = Music()
             music:play("start")
