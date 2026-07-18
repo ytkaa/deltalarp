@@ -51,7 +51,7 @@ return {
         
         --loadMap doesn't work.
         tunes:stop();
-        Game.world:mapTransition("room1")
+        Game.world:mapTransition("chapter1/rural1")
         
         --cutscene:text("[style:GONER][speed:0.25]QUADO[wait:10].[wait:10].[wait:10]. [wait:40]TRADE ON IT.")
         --local dialogueText = DialogueText("[style:GONER][speed:0.25]QUADO[wait:10].[wait:10].[wait:10]. [wait:40]TRADE ON IT.", 160, 120)

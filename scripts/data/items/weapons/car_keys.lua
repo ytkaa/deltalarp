@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "CarKeys"
+    self.name = "KeyBlade"
 
     -- Item type (item, key, weapon, armor)
     self.type = "weapon"
@@ -16,7 +16,7 @@ function item:init()
     -- Shop description
     self.shop = ""
     -- Menu description
-    self.description = "Your car keys. A sharp, jagged edge. 2ATK."
+    self.description = "A key weapon with a sharp, jagged edge." --2ATK.
 
     -- Default shop price (sell price is halved)
     self.price = 2
@@ -48,16 +48,17 @@ function item:init()
 
     -- Character reactions
     self.reactions = {
-        vess = "Feels right."
+        --vess = "Feels right."
+        vess = "But of course."
     }
 end
 
 function item:convertToLightEquip(chara)
-    return "light/petal"
+    return "light/car_keys"
 end
 
-function item:getAttackCritBoxSize(battler)
-    return 2
-end
+--function item:getAttackCritBoxSize(battler)
+--    return 2
+--end
 
 return item

@@ -45,6 +45,8 @@ function item:init()
 
     -- Character reactions (key = party member id)
     self.reactions = {}
+
+    self.lightItem = "light/drivers_license"
 end
 
 function item:onWorldUse()
@@ -61,5 +63,11 @@ function item:onWorldUse()
         Game.stage:removeChild(driverslicense)
     end)
 end
+
+function item:convertToLight(inventory)
+    return "light/drivers_license"
+end
+
+
 
 return item

@@ -78,4 +78,11 @@ function character:init()
     self.gameover_message = nil
 end
 
+function character:onLevelUp(level)
+    self:increaseStat("health", 2)
+    if level % 10 == 0 then
+        self:increaseStat("attack", 1)
+    end
+end
+
 return character
