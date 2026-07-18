@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 15,
+  nextobjectid = 16,
   properties = {
     ["light"] = true
   },
@@ -262,6 +262,20 @@ return {
           shape = "point",
           x = 600,
           y = 760,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 15,
+          name = "to_street",
+          type = "",
+          shape = "point",
+          x = 600,
+          y = 40,
           width = 0,
           height = 0,
           rotation = 0,
