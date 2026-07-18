@@ -40,18 +40,18 @@ function character:init()
     --self:setArmor(2, "amber_card")
 
     self.lw_armor_default = "light/bandage"
-    self.lw_weapon_default = "light/pencil"
+    self.lw_weapon_default = "light/car_keys"
 
     -- Character color (for action box outline and hp bar)
     self.color = {0.33, 0.03, 0.48}
     -- Damage color (for the number when attacking enemies) (defaults to the main color)
-    self.dmg_color = {0.5, 0.75, 1}
+    self.dmg_color = {0.5, 0.18, 0.48}
     -- Attack bar color (for the target bar used in attack mode) (defaults to the main color)
-    self.attack_bar_color = {0, 0.5, 1}
+    self.attack_bar_color = {0.5, 0.18, 0.48}
     -- Attack box color (for the attack area in attack mode) (defaults to darkened main color)
-    self.attack_box_color = {0, 0.25, 1}
+    self.attack_box_color = {0.5, 0.18, 0.48}
     -- X-Action color (for the color of X-Action menu items) (defaults to the main color)
-    self.xact_color = {0.5, 0.75, 1}
+    self.xact_color = {0.5, 0.18, 0.48}
 
     -- Head icon in the equip / power menu
     self.menu_icon = "party/vess/head"

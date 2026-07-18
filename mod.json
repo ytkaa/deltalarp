@@ -4,7 +4,7 @@
     // Displays on the main menu.
     "name": "DELTALARP",
     // Displays underneath the name. Optional.
-    "subtitle": "",
+    "subtitle": "Chapter 1",
 
     // The version of your project.
     "version": "v1.0.0",

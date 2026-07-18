@@ -11,6 +11,8 @@ return {
             cutscene:wait(cutscene:fadeIn(1))
             cutscene:text("* (All according[sound:bageldefeat] to)[next]")
             cutscene:text("* [wave][style:GONER](All according to plant!)")
+            local music = Music()
+            music:play("start")
         else
             cutscene:text("* (Then,[wait:5] the [color:pink][style:GONER]LARPERS' RUNE[color:reset][style:none][wait:5] will\nbe waiting.)")
         end
