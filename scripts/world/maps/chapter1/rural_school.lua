@@ -11,7 +11,9 @@ return {
   tileheight = 40,
   nextlayerid = 4,
   nextobjectid = 3,
-  properties = {},
+  properties = {
+    ["light"] = true
+  },
   tilesets = {
     {
       name = "rural",
