@@ -9,8 +9,8 @@ return {
   height = 128,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 4,
-  nextobjectid = 5,
+  nextlayerid = 5,
+  nextobjectid = 7,
   properties = {
     ["light"] = true
   },
@@ -20,6 +20,12 @@ return {
       firstgid = 1,
       filename = "../../../tilesets/rural.tsx",
       exportfilename = "../../../tilesets/rural.lua"
+    },
+    {
+      name = "test",
+      firstgid = 101,
+      filename = "../../../tilesets/test.tsx",
+      exportfilename = "../../../tilesets/test.lua"
     }
   },
   layers = {
@@ -174,6 +180,36 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 4,
+      name = "collision",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 6,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 3800,
+          width = 160,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 3,
       name = "objects",
       class = "",
@@ -218,6 +254,21 @@ return {
             ["map"] = "chapter1/rural_school",
             ["marker"] = "to_street"
           }
+        },
+        {
+          id = 5,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 3840,
+          width = 160,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          gid = 101,
+          visible = true,
+          properties = {}
         }
       }
     },

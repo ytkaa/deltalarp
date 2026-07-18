@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 16,
+  nextobjectid = 18,
   properties = {
     ["light"] = true
   },
@@ -20,6 +20,12 @@ return {
       firstgid = 1,
       filename = "../../tilesets/rural.tsx",
       exportfilename = "../../tilesets/rural.lua"
+    },
+    {
+      name = "test",
+      firstgid = 101,
+      filename = "../../tilesets/test.tsx",
+      exportfilename = "../../tilesets/test.lua"
     }
   },
   layers = {
