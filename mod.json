@@ -47,12 +47,13 @@
     // in the file `window_icon.png`.
     // When your project is configured as the engine's target project, it's automatically done unless if
     // this option is explicitly set to false; else, it's done if this is set to true.
-    "setWindowTitleAndIcon": null,
+    "setWindowTitleAndIcon": true,
 
     // Config values for the engine and any libraries you may have.
     // These config values can control chapter-specific features as well.
     "config": {
         "kristal": {
+            "tpName": "AP"
             // End of config
         }
     },
