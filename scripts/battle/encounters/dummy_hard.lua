@@ -1,10 +1,10 @@
-local Dummy, super = Class(Encounter)
+local dummy_hard, super = Class(Encounter)
 
-function Dummy:init()
+function dummy_hard:init()
     super.init(self)
 
     -- Text displayed at the bottom of the screen at the start of the encounter
-    self.text = "* The tutorial begins...?"
+    self.text = "* The TRUE battle begins...?"
 
     -- Battle music ("battle" is rude buster)
     self.music = "battle"
@@ -15,9 +15,9 @@ function Dummy:init()
     self:addEnemy("dummy")
 
     --- Uncomment this line to add another!
-    --self:addEnemy("dummy")
-    --self:addEnemy("dummy")
-    --self:addEnemy("dummy")
+    self:addEnemy("dummy")
+    self:addEnemy("dummy")
+    self:addEnemy("dummy")
 end
 
-return Dummy
+return dummy_hard

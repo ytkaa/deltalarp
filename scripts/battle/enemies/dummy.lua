@@ -30,7 +30,12 @@ function Dummy:init()
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
-        "..."
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "Beautiful.\nBeautiful!\nBEAUTIFUL!"
     }
 
     -- Check text (automatically has "ENEMY NAME - " at the start)

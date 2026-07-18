@@ -23,8 +23,23 @@ function actor:init()
 
     self.can_blush = false
 
-    self.animation = {
-        ["walk"] = {"walk", 4/30, true}
+    self.animations = {
+        -- Movement animations
+        --["walk"] = {"walk", 4/30, true},
+
+        -- Battle animations
+        ["battle/idle"] = {"battle/idle", 1/6, true}
+    }
+
+    self.offsets = {
+        -- Movement offsets
+        ["walk/left"] = {0, 0},
+        ["walk/right"] = {0, 0},
+        ["walk/up"] = {0, 0},
+        ["walk/down"] = {0, 0},
+
+        -- Battle offsets
+        ["battle/idle"] = {-5, -1}
     }
 
     self.mirror_sprites = {
