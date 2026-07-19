@@ -5,7 +5,7 @@ return {
   name = "rural_buildings",
   class = "",
   tilewidth = 523,
-  tileheight = 240,
+  tileheight = 259,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 4,
+  tilecount = 13,
   tiles = {
     {
       id = 0,
@@ -48,6 +48,60 @@ return {
       image = "../../../assets/sprites/tilesets/rural/school_front.png",
       width = 204,
       height = 40
+    },
+    {
+      id = 4,
+      image = "../../../assets/sprites/tilesets/rural/corkboard.png",
+      width = 120,
+      height = 80
+    },
+    {
+      id = 5,
+      image = "../../../assets/sprites/tilesets/rural/school_door.png",
+      width = 80,
+      height = 120
+    },
+    {
+      id = 6,
+      image = "../../../assets/sprites/tilesets/rural/2024.png",
+      width = 178,
+      height = 168
+    },
+    {
+      id = 7,
+      image = "../../../assets/sprites/tilesets/rural/flight_gif.png",
+      width = 166,
+      height = 154
+    },
+    {
+      id = 8,
+      image = "../../../assets/sprites/tilesets/rural/glaggle.png",
+      width = 148,
+      height = 259
+    },
+    {
+      id = 9,
+      image = "../../../assets/sprites/tilesets/rural/purple_monster.png",
+      width = 162,
+      height = 214
+    },
+    {
+      id = 10,
+      image = "../../../assets/sprites/tilesets/rural/speed_gif.png",
+      width = 161,
+      height = 190
+    },
+    {
+      id = 11,
+      image = "../../../assets/sprites/tilesets/rural/tsundere.png",
+      width = 225,
+      height = 233
+    },
+    {
+      id = 12,
+      image = "../../../assets/sprites/tilesets/rural/interact.png",
+      width = 120,
+      height = 80
     }
   }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="5" nextobjectid="8">
+ <editorsettings>
+  <export target="rural_classroom.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../tilesets/rural.tsx"/>
+ <tileset firstgid="101" source="../../tilesets/rural_buildings.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,45,35,35,35,35,35,35,35,35,35,35,46,0,0,
+0,0,35,35,35,35,35,35,35,35,35,35,35,35,0,0,
+0,0,36,36,36,36,36,36,36,36,36,36,36,36,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,34,34,34,34,34,34,34,34,34,34,34,34,0,0,
+0,0,61,34,34,34,34,34,34,34,34,34,34,62,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision">
+  <object id="3" x="40" y="120" width="40" height="320"/>
+  <object id="4" x="40" y="440" width="560" height="40"/>
+  <object id="5" x="560" y="120" width="40" height="320"/>
+  <object id="6" x="80" y="120" width="480" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="2" name="objects">
+  <object id="2" gid="106" x="100" y="160" width="80" height="120"/>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="4" name="markers">
+  <object id="7" name="spawn" x="320" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

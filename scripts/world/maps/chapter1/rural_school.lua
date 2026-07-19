@@ -9,8 +9,8 @@ return {
   height = 16,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 5,
-  nextobjectid = 19,
+  nextlayerid = 6,
+  nextobjectid = 24,
   properties = {
     ["light"] = true
   },
@@ -100,7 +100,7 @@ return {
           shape = "rectangle",
           x = 220,
           y = 160,
-          width = 200,
+          width = 60,
           height = 80,
           rotation = 0,
           opacity = 1,
@@ -232,6 +232,20 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 22,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 160,
+          width = 60,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -301,6 +315,41 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 5,
+      name = "objects",
+      class = "",
+      visible = false,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 20,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 270,
+          y = 200,
+          width = 100,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["exit_sound"] = "doorclose",
+            ["map"] = "chapter1/rural_school_inside",
+            ["marker"] = "entry",
+            ["sound"] = "dooropen"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 3,
       name = "markers",
       class = "",
@@ -319,6 +368,34 @@ return {
           shape = "point",
           x = 320,
           y = 600,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 21,
+          name = "school",
+          type = "",
+          shape = "point",
+          x = 320,
+          y = 280,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 23,
+          name = "vess_target_start",
+          type = "",
+          shape = "point",
+          x = 320,
+          y = 250,
           width = 0,
           height = 0,
           rotation = 0,

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 47,
+  nextobjectid = 50,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -575,6 +575,22 @@ return {
             ["text1_2"] = "* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e",
             ["text2_1"] = "* Heh.[sound:farmerlaugh][wait:5] As if you could even envision it.",
             ["turn"] = true
+          }
+        },
+        {
+          id = 49,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 440,
+          y = 160,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "flight"
           }
         }
       }

@@ -6,13 +6,42 @@ return {
         if start == 1 then
             --cutscene:text("* (...)")
             --cutscene:text("* (...[wait:5]we haven't implemented\nthat yet.)")
+            Game:setFlag("start_cutscene_active", true) --prevents premature room transitions
+
             cutscene:wait(cutscene:fadeOut(3))
             cutscene:wait(Game.world:mapTransition("chapter1/rural_mainstreet"))
-            cutscene:wait(cutscene:fadeIn(1))
-            cutscene:text("* (All according[sound:bageldefeat] to[next]")
-            cutscene:text("* [wave][style:GONER](All according to plant!)")
             local music = Music()
             music:play("start")
+            music:setLooping(false)
+            cutscene:wait(cutscene:fadeIn(1))
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41)) --41, top of mainstreet
+            Game:setFlag("start_cutscene_active", false)
+            --cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
+            cutscene:wait(0.5)
+            Game:setFlag("start_cutscene_active", true)
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4)) --school door
+            Game:setFlag("start_cutscene_active", false)
+            cutscene:wait(1)
+            Game:setFlag("start_cutscene_active", true)
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4)) --top of hallway
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start2", 4, "out-quint")) --left side
+            cutscene:walkTo("vess", "vess_target_start3", 5)
+            cutscene:wait(cutscene:fadeOut(4))
+            
+            music:stop()
+            cutscene:wait(3)
+            
+            
+            cutscene:text("* (All according[sound:bageldefeat] to[next]")
+            cutscene:wait(cutscene:text("* [wave][style:GONER](All according to plant!)"))
+            cutscene:wait(cutscene:fadeIn(1))
+            cutscene:text("* [wave](oh, you're stuck...)")
+            cutscene:text("* [wave](oh...)")
+            cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
+            Game:setFlag("start_cutscene_active", false)
+            Assets.playSound("egg")
+
+            
         else
             cutscene:text("* (Then,[wait:5] the [color:pink][style:GONER]LARPERS' RUNE[color:reset][style:none][wait:5] will\nbe waiting.)")
         end

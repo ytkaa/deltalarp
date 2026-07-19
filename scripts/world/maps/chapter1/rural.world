@@ -27,6 +27,13 @@
             "width": 640,
             "x": 280,
             "y": -5920
+        },
+        {
+            "fileName": "rural_school_inside.tmx",
+            "height": 720,
+            "width": 1200,
+            "x": 0,
+            "y": -6680
         }
     ],
     "onlyShowAdjacentMaps": false,

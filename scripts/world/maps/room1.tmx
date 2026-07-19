@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="47">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="50">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -146,6 +146,11 @@ no-good wall slammers.</property>
     <property name="text1_2" value="* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e"/>
     <property name="text2_1" value="* Heh.[sound:farmerlaugh][wait:5] As if you could even envision it."/>
     <property name="turn" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="49" name="npc" x="440" y="160" width="40" height="40">
+   <properties>
+    <property name="actor" value="flight"/>
    </properties>
   </object>
  </objectgroup>
