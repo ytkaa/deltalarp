@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="523" tileheight="259" tilecount="15" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="523" tileheight="259" tilecount="16" columns="0">
  <editorsettings>
   <export target="rural_buildings.lua" format="lua"/>
  </editorsettings>
@@ -48,5 +48,8 @@
  </tile>
  <tile id="14">
   <image source="../../../assets/sprites/tilesets/rural/wheat2.png" width="40" height="60"/>
+ </tile>
+ <tile id="15">
+  <image source="../../../assets/sprites/tilesets/rural/farm_billboard.png" width="200" height="160"/>
  </tile>
 </tileset>

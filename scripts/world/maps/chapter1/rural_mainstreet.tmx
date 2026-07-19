@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="42">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="45">
  <editorsettings>
   <export target="rural_mainstreet/data.lua" format="lua"/>
  </editorsettings>
@@ -200,6 +200,15 @@
    <properties>
     <property name="map" value="chapter1/rural_farm"/>
     <property name="marker" value="entry"/>
+   </properties>
+  </object>
+  <object id="42" gid="117" x="280" y="3680" width="200" height="160"/>
+  <object id="44" name="interactable" x="280" y="3660" width="200" height="20">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1_1" value="* (I miss my horses...)"/>
+    <property name="text1_2" value="* (...[wait:5]is what you imagine a farm girl would say upon witnessing this sign.)"/>
+    <property name="text2_1" value="* (So much wasted potential...)"/>
    </properties>
   </object>
  </objectgroup>

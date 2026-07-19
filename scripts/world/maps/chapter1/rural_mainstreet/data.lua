@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 42,
+  nextobjectid = 45,
   properties = {
     ["light"] = true
   },
@@ -693,6 +693,40 @@ return {
           properties = {
             ["map"] = "chapter1/rural_farm",
             ["marker"] = "entry"
+          }
+        },
+        {
+          id = 42,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 3680,
+          width = 200,
+          height = 160,
+          rotation = 0,
+          opacity = 1,
+          gid = 117,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 44,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 3660,
+          width = 200,
+          height = 20,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1_1"] = "* (I miss my horses...)",
+            ["text1_2"] = "* (...[wait:5]is what you imagine a farm girl would say upon witnessing this sign.)",
+            ["text2_1"] = "* (So much wasted potential...)"
           }
         }
       }
