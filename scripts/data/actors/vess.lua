@@ -28,7 +28,19 @@ function actor:init()
         --["walk"] = {"walk", 4/30, true},
 
         -- Battle animations
-        ["battle/idle"] = {"battle/idle", 1/6, true}
+        ["battle/idle"] = {"battle/idle", 1/6, true},
+
+        ["battle/attack"]       = {"battle/attack", 1/15, false},
+        --["battle/act"]          = {"battle/act", 1/15, false},
+        --["battle/spell"]        = {"battle/act", 1/15, false},
+        --["battle/item"]         = {"battle/item", 1/12, false, next="battle/idle"},
+        --["battle/spare"]        = {"battle/act", 1/15, false, next="battle/idle"},
+
+        ["battle/attack_ready"] = {"battle/attackready", 0.2, true},
+        --["battle/act_ready"]    = {"battle/actready", 0.2, true},
+        --["battle/spell_ready"]  = {"battle/actready", 0.2, true},
+        --["battle/item_ready"]   = {"battle/itemready", 0.2, true},
+        --["battle/defend_ready"] = {"battle/defend", 1/15, false},
     }
 
     self.offsets = {
@@ -39,7 +51,16 @@ function actor:init()
         ["walk/down"] = {0, 0},
 
         -- Battle offsets
-        ["battle/idle"] = {-5, -1}
+        ["battle/idle"] = {-5, -1},
+
+        ["battle/attack"] = {-8, -6},
+        ["battle/attackready"] = {-8, -6},
+        --["battle/act"] = {-6, -6},
+        --["battle/actend"] = {-6, -6},
+        --["battle/actready"] = {-6, -6},
+        --["battle/item"] = {-6, -6},
+        --["battle/itemready"] = {-6, -6},
+        --["battle/defend"] = {-5, -3},
     }
 
     self.mirror_sprites = {

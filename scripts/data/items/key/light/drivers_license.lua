@@ -33,6 +33,7 @@ function item:onWorldUse()
         driverslicense:setPosition(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
         Game.stage:addChild(driverslicense)
         driverslicense.layer = WORLD_LAYERS["ui"] or 100000
+        Assets.playSound("egg")
         cutscene:wait(1/30)
         cutscene:wait(function()
             return Input.pressed("confirm")

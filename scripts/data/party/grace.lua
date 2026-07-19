@@ -9,7 +9,7 @@ function character:init()
     self:setLightActor("grace")
 
     self.level = 1
-    self.title = "Grace\nWith elegance."
+    self.title = "Pink Rose\nElegant, and light!"
 
     self.soul_priority = 1
     self.soul_color = {1, 0.4, 0.84}

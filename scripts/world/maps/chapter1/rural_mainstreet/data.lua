@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 26,
+  nextobjectid = 42,
   properties = {
     ["light"] = true
   },
@@ -196,7 +196,176 @@ return {
       parallaxx = 1,
       parallaxy = 1,
       properties = {},
-      objects = {}
+      objects = {
+        {
+          id = 28,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 5120,
+          width = 520,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 29,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 5120,
+          width = 520,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 31,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 3920,
+          width = 40,
+          height = 1200,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 32,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 3920,
+          width = 40,
+          height = 1200,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 34,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 2640,
+          width = 40,
+          height = 1040,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 35,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 2640,
+          width = 40,
+          height = 1040,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 36,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 1360,
+          width = 40,
+          height = 1040,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 37,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 1360,
+          width = 40,
+          height = 1040,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 38,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 0,
+          width = 40,
+          height = 1120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 39,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 0,
+          width = 40,
+          height = 1120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 40,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = -40,
+          width = 520,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = -40,
+          width = 520,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
     },
     {
       type = "objectgroup",
@@ -489,8 +658,9 @@ return {
             ["text2_1"] = "* Wait,[wait:5] don't.[wait:5] Don't.",
             ["text2_2"] = "* Wait.[wait:5] The LEGEND!",
             ["text3_1"] = "* A trio,[wait:5] a trio,[wait:5] a trio!",
-            ["text4_1"] = "* Wait![wait:20] Au contraire.",
-            ["text5_1"] = "* Au contraire."
+            ["text4_1"] = "* The game,[wait:5] the original...",
+            ["text5_1"] = "* Wait![wait:20] Au contraire.",
+            ["text6_1"] = "* Au contraire."
           }
         },
         {
@@ -507,6 +677,23 @@ return {
           gid = 114,
           visible = true,
           properties = {}
+        },
+        {
+          id = 26,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 3680,
+          width = 40,
+          height = 240,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/rural_farm",
+            ["marker"] = "entry"
+          }
         }
       }
     },
@@ -559,6 +746,20 @@ return {
           shape = "point",
           x = 640,
           y = 20,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 27,
+          name = "to_farm",
+          type = "",
+          shape = "point",
+          x = 40,
+          y = 3800,
           width = 0,
           height = 0,
           rotation = 0,
