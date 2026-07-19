@@ -28,7 +28,7 @@ function actor:init()
         --["walk"] = {"walk", 4/30, true},
 
         -- Battle animations
-        ["battle/idle"] = {"battle/idle", 1/6, true}
+        --["battle/idle"] = {"battle/idle", 1/6, true}
     }
 
     self.offsets = {

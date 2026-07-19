@@ -190,7 +190,7 @@
     <property name="text2_1" value="* Wait,[wait:5] don't.[wait:5] Don't."/>
     <property name="text2_2" value="* Wait.[wait:5] The LEGEND!"/>
     <property name="text3_1" value="* A trio,[wait:5] a trio,[wait:5] a trio!"/>
-    <property name="text4_1" value="* The game,[wait:5] the original..."/>
+    <property name="text4_1" value="* The game,[wait:5] the original...[wait:5] the KEY."/>
     <property name="text5_1" value="* Wait![wait:20] Au contraire."/>
     <property name="text6_1" value="* Au contraire."/>
    </properties>

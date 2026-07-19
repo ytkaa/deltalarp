@@ -658,7 +658,7 @@ return {
             ["text2_1"] = "* Wait,[wait:5] don't.[wait:5] Don't.",
             ["text2_2"] = "* Wait.[wait:5] The LEGEND!",
             ["text3_1"] = "* A trio,[wait:5] a trio,[wait:5] a trio!",
-            ["text4_1"] = "* The game,[wait:5] the original...",
+            ["text4_1"] = "* The game,[wait:5] the original...[wait:5] the KEY.",
             ["text5_1"] = "* Wait![wait:20] Au contraire.",
             ["text6_1"] = "* Au contraire."
           }
