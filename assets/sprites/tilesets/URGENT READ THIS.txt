@@ -1,0 +1,3 @@
+Tiles each should be made at 20x20 before scaling up to 40x40. This is to avoid mixels...
+
+We're larpers, not monsters.
