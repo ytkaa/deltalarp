@@ -14,7 +14,7 @@ return {
             music:play("start")
             music:setLooping(false)
             cutscene:wait(cutscene:fadeIn(1))
-            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4, "inSine")) --41, top of mainstreet
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "inSine")) --41, top of mainstreet
             Game:setFlag("start_cutscene_active", false)
             --cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
             cutscene:wait(0.5)
@@ -35,8 +35,8 @@ return {
             cutscene:text("* (All according[sound:bageldefeat] to[next]")
             cutscene:wait(cutscene:text("* [wave][style:GONER](All according to plant!)"))
             cutscene:wait(cutscene:fadeIn(1))
-            cutscene:text("* [wave](oh, you're stuck...)")
-            cutscene:text("* [wave](oh...)")
+            cutscene:text("* [wave](oh, you're stuck in the wall...)")
+            cutscene:text("* [wave](oh[wait:5].[wait:5].[wait:5].)")
             cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
             Game:setFlag("start_cutscene_active", false)
             Assets.playSound("egg")
