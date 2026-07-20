@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="32" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="17">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="35" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="17">
  <editorsettings>
   <export target="farm2.lua" format="lua"/>
  </editorsettings>
  <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
- <layer id="1" name="Tile Layer 1" width="16" height="32">
+ <layer id="1" name="Tile Layer 1" width="16" height="35">
   <data encoding="csv">
 0,0,0,0,0,0,0,13,21,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,11,4,0,0,0,0,0,0,0,
@@ -38,6 +38,9 @@
 1,2,14,1,12,14,3,4,4,0,0,0,0,0,0,0,
 13,12,12,3,2,3,11,1,4,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
@@ -67,7 +70,7 @@
    </properties>
   </object>
  </objectgroup>
- <layer id="4" name="Tile Layer 2" width="16" height="32">
+ <layer id="4" name="Tile Layer 2" width="16" height="35">
   <data encoding="csv">
 0,0,0,0,0,0,111,0,0,101,0,0,0,0,0,0,
 0,0,0,0,0,0,110,0,0,105,0,0,0,0,0,0,
@@ -100,6 +103,9 @@
 0,0,0,0,0,0,0,0,0,105,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,104,0,0,0,0,0,0,
 103,104,104,101,104,104,102,104,101,105,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
