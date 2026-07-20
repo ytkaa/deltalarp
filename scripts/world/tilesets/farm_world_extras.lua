@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 7,
+  tilecount = 12,
   tiles = {
     {
       id = 0,
@@ -66,6 +66,36 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/haybale2.png",
       width = 319,
       height = 101
+    },
+    {
+      id = 7,
+      image = "../../../assets/sprites/tilesets/farm_world/dark_wheat1_flip.png",
+      width = 60,
+      height = 80
+    },
+    {
+      id = 8,
+      image = "../../../assets/sprites/tilesets/farm_world/dark_wheat2_flip.png",
+      width = 60,
+      height = 80
+    },
+    {
+      id = 9,
+      image = "../../../assets/sprites/tilesets/farm_world/dark_wheat3_flip.png",
+      width = 60,
+      height = 80
+    },
+    {
+      id = 10,
+      image = "../../../assets/sprites/tilesets/farm_world/dark_wheat4_flip.png",
+      width = 60,
+      height = 80
+    },
+    {
+      id = 11,
+      image = "../../../assets/sprites/tilesets/farm_world/dark_wheat5_flip.png",
+      width = 60,
+      height = 80
     }
   }
 }

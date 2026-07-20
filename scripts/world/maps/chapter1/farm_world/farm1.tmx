@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="80" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="15">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="80" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="17">
  <editorsettings>
   <export target="farm1.lua" format="lua"/>
  </editorsettings>
@@ -45,12 +45,10 @@ a sudden change in routine.</property>
   </object>
   <object id="8" gid="226" x="400" y="80" width="120" height="120"/>
   <object id="11" gid="227" x="2520" y="120" width="319" height="101"/>
-  <object id="14" name="script" x="2560" y="200" width="40" height="80">
+  <object id="16" name="transition" x="3200" y="200" width="40" height="80">
    <properties>
-    <property name="cutscene" value="chapter1/farm_world.grace_intro"/>
-    <property name="once" type="bool" value="true"/>
-    <property name="setflag" value="seen_grace_intro"/>
-    <property name="setvalue" type="bool" value="true"/>
+    <property name="map" value="chapter1/farm_world/farm2"/>
+    <property name="marker" value="to_farm1"/>
    </properties>
   </object>
  </objectgroup>
@@ -76,6 +74,9 @@ a sudden change in routine.</property>
  </objectgroup>
  <objectgroup color="#aa00ff" id="3" name="markers">
   <object id="1" name="spawn" x="160" y="260">
+   <point/>
+  </object>
+  <object id="15" name="entry" x="3160" y="240">
    <point/>
   </object>
  </objectgroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="319" tileheight="219" tilecount="7" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="319" tileheight="219" tilecount="12" columns="0">
  <editorsettings>
   <export target="farm_world_extras.lua" format="lua"/>
  </editorsettings>
@@ -24,5 +24,20 @@
  </tile>
  <tile id="6">
   <image source="../../../assets/sprites/tilesets/farm_world/haybale2.png" width="319" height="101"/>
+ </tile>
+ <tile id="7">
+  <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat1_flip.png" width="60" height="80"/>
+ </tile>
+ <tile id="8">
+  <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat2_flip.png" width="60" height="80"/>
+ </tile>
+ <tile id="9">
+  <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat3_flip.png" width="60" height="80"/>
+ </tile>
+ <tile id="10">
+  <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat4_flip.png" width="60" height="80"/>
+ </tile>
+ <tile id="11">
+  <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat5_flip.png" width="60" height="80"/>
  </tile>
 </tileset>

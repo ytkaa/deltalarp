@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 15,
+  nextobjectid = 17,
   properties = {
     ["name"] = "???"
   },
@@ -221,11 +221,11 @@ return {
           properties = {}
         },
         {
-          id = 14,
-          name = "script",
+          id = 16,
+          name = "transition",
           type = "",
           shape = "rectangle",
-          x = 2560,
+          x = 3200,
           y = 200,
           width = 40,
           height = 80,
@@ -233,10 +233,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["cutscene"] = "chapter1/farm_world.grace_intro",
-            ["once"] = true,
-            ["setflag"] = "seen_grace_intro",
-            ["setvalue"] = true
+            ["map"] = "chapter1/farm_world/farm2",
+            ["marker"] = "to_farm1"
           }
         }
       }
@@ -340,6 +338,20 @@ return {
           shape = "point",
           x = 160,
           y = 260,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 15,
+          name = "entry",
+          type = "",
+          shape = "point",
+          x = 3160,
+          y = 240,
           width = 0,
           height = 0,
           rotation = 0,
