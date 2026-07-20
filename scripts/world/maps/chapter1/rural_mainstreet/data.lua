@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 45,
+  nextobjectid = 46,
   properties = {
     ["light"] = true
   },
@@ -727,6 +727,29 @@ return {
             ["text1_1"] = "* (I miss my horses...)",
             ["text1_2"] = "* (...[wait:5]is what you imagine a farm girl would say upon witnessing this sign.)",
             ["text2_1"] = "* (So much wasted potential...)"
+          }
+        },
+        {
+          id = 45,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 520,
+          y = 1360,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "starwalker",
+            ["text1_1"] = "* Man...[wait:5] class today sure was interesting![wait:5] Wasn't it,[wait:5] uh...[wait:5] Whatsyourface?",
+            ["text2_1"] = "* What's that?[wait:5] You were expecting me to say something different?[wait:5] Really?",
+            ["text2_2"] = "* Well,[wait:5] how about THIS ??!?[wait:5]\nYOU tell ME who the hell\nyou are !!!!",
+            ["text2_3"] = "* I mean,[wait:5] for the longest time, \nwe had never even seen someone like you!",
+            ["text2_4"] = "* Until one day,[wait:5] you just sort of appeared,[wait:5] and...",
+            ["text2_5"] = "* Well,[wait:5] I needn't gossip.[wait:5]\nI'm sure you know yourself very well by now.",
+            ["text3_1"] = "* I'm the original[wait:20]    [color:yellow]Starwalker"
           }
         }
       }

@@ -18,7 +18,7 @@ function character:init()
     self.has_spells = false
 
     self.has_xact = false
-    --self.xact_name = "V-Action"
+    --self.xact_name = "G-Action"
 
     self.health = 100
 

@@ -12,7 +12,9 @@ return {
   nextlayerid = 5,
   nextobjectid = 8,
   backgroundcolor = { 0, 0, 0 },
-  properties = {},
+  properties = {
+    ["light"] = true
+  },
   tilesets = {
     {
       name = "rural",

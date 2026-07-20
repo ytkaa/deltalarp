@@ -4,8 +4,8 @@ return {
   tiledversion = "1.12.2",
   name = "rural_buildings",
   class = "",
-  tilewidth = 523,
-  tileheight = 259,
+  tilewidth = 720,
+  tileheight = 400,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 16,
+  tilecount = 20,
   tiles = {
     {
       id = 0,
@@ -120,6 +120,30 @@ return {
       image = "../../../assets/sprites/tilesets/rural/farm_billboard.png",
       width = 200,
       height = 160
+    },
+    {
+      id = 16,
+      image = "../../../assets/sprites/tilesets/rural/wheat3.png",
+      width = 40,
+      height = 60
+    },
+    {
+      id = 17,
+      image = "../../../assets/sprites/tilesets/rural/barn.png",
+      width = 720,
+      height = 400
+    },
+    {
+      id = 18,
+      image = "../../../assets/sprites/tilesets/rural/barn_door_closed.png",
+      width = 188,
+      height = 210
+    },
+    {
+      id = 19,
+      image = "../../../assets/sprites/tilesets/rural/barn_door_open.png",
+      width = 324,
+      height = 210
     }
   }
 }

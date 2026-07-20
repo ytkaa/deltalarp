@@ -7,10 +7,12 @@ function Kipkip:init()
     self.text = "* Kipkip sprouts from the ground!"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "battle"
+    self.music = "petal8"
     -- Enables the purple grid battle background
     self.background = true
 
+    self:addEnemy("kipkip")
+    self:addEnemy("kipkip")
     self:addEnemy("kipkip")
 end
 

@@ -14,18 +14,18 @@ return {
             music:play("start")
             music:setLooping(false)
             cutscene:wait(cutscene:fadeIn(1))
-            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "inSine")) --41, top of mainstreet
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "up")) --41, top of mainstreet
             Game:setFlag("start_cutscene_active", false)
             --cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
             cutscene:wait(0.5)
             Game:setFlag("start_cutscene_active", true)
-            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4)) --school door
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4, "up")) --school door
             Game:setFlag("start_cutscene_active", false)
             cutscene:wait(1)
             Game:setFlag("start_cutscene_active", true)
-            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4)) --top of hallway
-            cutscene:wait(cutscene:walkTo("vess", "vess_target_start2", 4, "out-quint")) --left side
-            cutscene:walkTo("vess", "vess_target_start3", 4.25)
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4, "up")) --top of hallway
+            cutscene:wait(cutscene:walkTo("vess", "vess_target_start2", 4, "right")) --right side
+            cutscene:walkTo("vess", "vess_target_start3", 4.25, "up")
             cutscene:wait(cutscene:fadeOut(4))
             
             music:stop()

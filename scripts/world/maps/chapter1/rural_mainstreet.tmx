@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="45">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="46">
  <editorsettings>
   <export target="rural_mainstreet/data.lua" format="lua"/>
  </editorsettings>
@@ -209,6 +209,22 @@
     <property name="text1_1" value="* (I miss my horses...)"/>
     <property name="text1_2" value="* (...[wait:5]is what you imagine a farm girl would say upon witnessing this sign.)"/>
     <property name="text2_1" value="* (So much wasted potential...)"/>
+   </properties>
+  </object>
+  <object id="45" name="npc" x="520" y="1360" width="40" height="40">
+   <properties>
+    <property name="actor" value="starwalker"/>
+    <property name="text1_1" value="* Man...[wait:5] class today sure was interesting![wait:5] Wasn't it,[wait:5] uh...[wait:5] Whatsyourface?"/>
+    <property name="text2_1" value="* What's that?[wait:5] You were expecting me to say something different?[wait:5] Really?"/>
+    <property name="text2_2">* Well,[wait:5] how about THIS ??!?[wait:5]
+YOU tell ME who the hell
+you are !!!!</property>
+    <property name="text2_3">* I mean,[wait:5] for the longest time, 
+we had never even seen someone like you!</property>
+    <property name="text2_4" value="* Until one day,[wait:5] you just sort of appeared,[wait:5] and..."/>
+    <property name="text2_5">* Well,[wait:5] I needn't gossip.[wait:5]
+I'm sure you know yourself very well by now.</property>
+    <property name="text3_1" value="* I'm the original[wait:20]    [color:yellow]Starwalker"/>
    </properties>
   </object>
  </objectgroup>
