@@ -1,4 +1,20 @@
 {
+    "maps": [
+        {
+            "fileName": "farm1.tmx",
+            "height": 480,
+            "width": 3200,
+            "x": 0,
+            "y": 0
+        },
+        {
+            "fileName": "farm2.tmx",
+            "height": 1400,
+            "width": 640,
+            "x": 3280,
+            "y": -920
+        }
+    ],
     "onlyShowAdjacentMaps": false,
     "type": "world"
 }
