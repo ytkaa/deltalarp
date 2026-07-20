@@ -7,6 +7,7 @@ function kipkipthrow:init()
     self.time = 10
     kipkipThrowSpeed = 0.5
     kipkipBulletSpeed = 4
+    local bullet
 end
 
 function kipkipthrow:onStart()
@@ -22,7 +23,7 @@ function kipkipthrow:onStart()
         local x, y = kipkip:getRelativePos(kipkip.width/2, kipkip.height/2) -- position is the enemy pos
         local kipkipbullet = Utils.pick({"bullets/kipkip/brick", "bullets/kipkip/rake", "bullets/kipkip/watering_can", "bullets/kipkip/flower"}) --grabs random sprite from the following!
         local target_angle = MathUtils.angle(x, y, Game.battle.soul.x, Game.battle.soul.y)
-        local bullet = self:spawnBullet(kipkipbullet, x, y)
+        bullet = self:spawnBullet(kipkipbullet, x, y)
         bullet.rotation = target_angle + math.rad(MathUtils.random(-20, 20))
         bullet.physics.match_rotation = true
         bullet.physics.speed = kipkipBulletSpeed
@@ -30,7 +31,7 @@ function kipkipthrow:onStart()
 end
 
 function kipkipthrow:update()
-    -- code here gets called every frame
+    --bullet.rotation = bullet.rotation + 0.1 Too Difficult to figure out so WHo cares.
 
     super.update(self)
 end
