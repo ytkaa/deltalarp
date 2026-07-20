@@ -233,7 +233,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["cutscene"] = "farm_world.grace_intro",
+            ["cutscene"] = "chapter1/farm_world.grace_intro",
             ["once"] = true,
             ["setflag"] = "seen_grace_intro",
             ["setvalue"] = true

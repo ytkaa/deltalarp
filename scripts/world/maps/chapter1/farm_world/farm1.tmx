@@ -47,7 +47,7 @@ a sudden change in routine.</property>
   <object id="11" gid="227" x="2520" y="120" width="319" height="101"/>
   <object id="14" name="script" x="2560" y="200" width="40" height="80">
    <properties>
-    <property name="cutscene" value="farm_world.grace_intro"/>
+    <property name="cutscene" value="chapter1/farm_world.grace_intro"/>
     <property name="once" type="bool" value="true"/>
     <property name="setflag" value="seen_grace_intro"/>
     <property name="setvalue" type="bool" value="true"/>
