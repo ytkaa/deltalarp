@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 50,
+  nextobjectid = 55,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -20,6 +20,12 @@ return {
       firstgid = 1,
       filename = "../tilesets/castle.tsx",
       exportfilename = "../tilesets/castle.lua"
+    },
+    {
+      name = "rural_buildings",
+      firstgid = 41,
+      filename = "../tilesets/rural_buildings.tsx",
+      exportfilename = "../tilesets/rural_buildings.lua"
     }
   },
   layers = {
@@ -592,6 +598,37 @@ return {
           properties = {
             ["actor"] = "flight"
           }
+        },
+        {
+          id = 53,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 100,
+          width = 120,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 61,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 54,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 80,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "room1.grace_voice_test"
+          }
         }
       }
     },
@@ -629,6 +666,34 @@ return {
           type = "",
           shape = "point",
           x = 760,
+          y = 240,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 50,
+          name = "susie_spawn",
+          type = "",
+          shape = "point",
+          x = 690,
+          y = 240,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 51,
+          name = "susie_walk",
+          type = "",
+          shape = "point",
+          x = 560,
           y = 240,
           width = 0,
           height = 0,

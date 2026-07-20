@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="50">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="55">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -7,6 +7,7 @@
   <property name="name" value="Test Map - Room 1"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/castle.tsx"/>
+ <tileset firstgid="41" source="../tilesets/rural_buildings.tsx"/>
  <layer id="1" name="tiles" width="20" height="24">
   <data encoding="csv">
 0,22,13,23,23,13,23,23,23,13,23,23,13,24,0,0,0,0,0,0,
@@ -153,12 +154,24 @@ no-good wall slammers.</property>
     <property name="actor" value="flight"/>
    </properties>
   </object>
+  <object id="53" gid="61" x="80" y="100" width="120" height="60"/>
+  <object id="54" name="interactable" x="80" y="80" width="120" height="40">
+   <properties>
+    <property name="cutscene" value="room1.grace_voice_test"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="5" name="markers">
   <object id="20" name="spawn" x="300" y="250">
    <point/>
   </object>
   <object id="30" name="entry" x="760" y="240">
+   <point/>
+  </object>
+  <object id="50" name="susie_spawn" x="690" y="240">
+   <point/>
+  </object>
+  <object id="51" name="susie_walk" x="560" y="240">
    <point/>
   </object>
  </objectgroup>
