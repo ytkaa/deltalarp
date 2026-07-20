@@ -47,29 +47,53 @@ function Kipkip:init()
         "Quado!"
     }
     self:registerAct("Spray Water", "Spray with \nwater")
-    self:registerAct("Give Nectar", "Makes \nstronger")
+    self:registerAct("Give Nectar", "Makes \nstronger")    
+    if #Game.party == 2 and Game.party[2].id == "grace" then
+        self:registerActFor("grace","Wave", "Wave at\nKipkip")
+    end
+    self.kipkipBloomed = false
 
     function Kipkip:onAct(battler, name)
         if name == "Give Nectar" then
-            Assets.playSound("nectarslurp") 
-            -- Give the enemy 100% mercy
-            self:addMercy(100)
-            -- Change this enemy's dialogue for 1 turn
-            self.dialogue_override = "Awwhf!!!"
-            self.attack = self.attack + 3 -- increase attack damage because in the pikmin games flower pikmin are stronger than leaf pikmin
-            -- Act text (since it's a list, multiple textboxes)
-            return {
-                "* Kipkip is overjoyed.[wait:5]\n* He has finally bloomed.",
-                "* Kipkip also became stronger! \nAttack increased!"
-            }
-
+            if self.kipkipBloomed == false then
+                self.kipkipBloomed = true
+                Assets.playSound("nectarslurp") 
+                -- Give the enemy 100% mercy
+                self:addMercy(100)
+                -- Change this enemy's dialogue for 1 turn
+                self.dialogue_override = "Awwhf!!!"
+                self.attack = self.attack + 3 -- increase attack damage because in the pikmin games flower pikmin are stronger than leaf pikmin
+                -- Act text (since it's a list, multiple textboxes)
+                return {
+                    "* Kipkip is overjoyed.[wait:5]\n* He has finally bloomed.",
+                    "* Kipkip also became stronger! \nAttack increased!"
+                }
+            elseif self.kipkipBloomed == true then
+                return {
+                    "* Kipkip rejected. It's a work day tomorrow.",
+                }
+            end
         elseif name == "Spray Water" then
             self.kipkipAgitated = true
             return {
                 "* You spritzed\nKipkip with water.", --sprite change
                 "* The enemies became agitated!\nAttack speed increased!"
             }
+        elseif name == "Wave" then
+            self.sprite:setAnimation({"wave", 0.05, true})
+            -- G-Action text
+            return {
+            "* Grace waves.\nKipkip waves back.", --sprite change
+            "* ...you don't feel like this\ncontributed to anything in particular."
+            }   
+        elseif name == "Standard" then --X-Action
+                -- Text for any other character (like Noelle)
+                return "* "..battler.chara:getName().." didn't do anything because\nI wasn't sure what to program here."
         end
+        
+        -- If the act is none of the above, run the base onAct function
+        -- (this handles the Check act)
+        return super.onAct(self, battler, name)
     end
 end
 
