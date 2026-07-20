@@ -2,6 +2,7 @@ return {
     grace_intro = function(cutscene, event)
         cutscene:detachCamera()
         local grace = cutscene:spawnNPC("grace", 320, 200)
+        cutscene:setSpeaker(grace)
         cutscene:look(grace, "up")
         cutscene:look("vess", "up")
         cutscene:wait(1)

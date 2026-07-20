@@ -23,6 +23,8 @@ function actor:init()
 
     self.can_blush = false
 
+    self.voice = "grace"
+
     self.animations = {
         -- Movement animations
         --["walk"] = {"walk", 4/30, true},
