@@ -7,7 +7,7 @@ function dummy_hard:init()
     self.text = "* The TRUE battle begins...?"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "blizzard2"
+    self.music = "rebattle4"
     -- Enables the purple grid battle background
     self.background = true
 
