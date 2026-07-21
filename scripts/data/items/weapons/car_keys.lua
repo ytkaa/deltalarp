@@ -49,7 +49,8 @@ function item:init()
     -- Character reactions
     self.reactions = {
         --vess = "Feels right."
-        vess = "But of course."
+        --vess = "But of course."
+        grace = "Nooo. That's like... your thing."
     }
 end
 

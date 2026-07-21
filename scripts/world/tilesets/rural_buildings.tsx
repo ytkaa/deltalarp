@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="720" tileheight="400" tilecount="21" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="720" tileheight="400" tilecount="23" columns="0">
  <editorsettings>
   <export target="rural_buildings.lua" format="lua"/>
  </editorsettings>
@@ -66,5 +66,11 @@
  </tile>
  <tile id="20">
   <image source="../../../assets/sprites/tilesets/rural/Click_here.png" width="120" height="60"/>
+ </tile>
+ <tile id="21">
+  <image source="../../../assets/sprites/tilesets/rural/desk.png" width="80" height="50"/>
+ </tile>
+ <tile id="22">
+  <image source="../../../assets/sprites/tilesets/rural/whiteboard.png" width="260" height="80"/>
  </tile>
 </tileset>

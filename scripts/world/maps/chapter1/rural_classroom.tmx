@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="5" nextobjectid="8">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="58">
  <editorsettings>
   <export target="rural_classroom.lua" format="lua"/>
  </editorsettings>
@@ -24,17 +24,45 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup color="#0000ff" id="3" name="collision">
+ <objectgroup color="#ff007f" id="2" name="objects">
+  <object id="2" gid="106" x="100" y="160" width="80" height="120"/>
+  <object id="56" gid="123" x="220" y="130" width="260" height="80"/>
+ </objectgroup>
+ <objectgroup id="5" name="objects">
+  <object id="18" gid="122" x="180" y="240" width="80" height="50"/>
+  <object id="19" gid="122" x="310" y="240" width="80" height="50"/>
+  <object id="20" gid="122" x="440" y="240" width="80" height="50"/>
+  <object id="21" gid="122" x="180" y="320" width="80" height="50"/>
+  <object id="22" gid="122" x="310" y="320" width="80" height="50"/>
+  <object id="23" gid="122" x="440" y="320" width="80" height="50"/>
+  <object id="24" gid="122" x="440" y="400" width="80" height="50"/>
+  <object id="25" gid="122" x="310" y="400" width="80" height="50"/>
+  <object id="26" gid="122" x="180" y="400" width="80" height="50"/>
+  <object id="57" name="interactable" x="220" y="130" width="260" height="30">
+   <properties>
+    <property name="text1_1" value="* (Whiteboard.)"/>
+    <property name="text1_2" value="* (There never was much to say about this thing...)"/>
+    <property name="text2_1" value="* (Not much to say about this thing.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="3" name="collision" locked="1">
   <object id="3" x="40" y="120" width="40" height="320"/>
   <object id="4" x="40" y="440" width="560" height="40"/>
   <object id="5" x="560" y="120" width="40" height="320"/>
   <object id="6" x="80" y="120" width="480" height="40"/>
- </objectgroup>
- <objectgroup color="#ff007f" id="2" name="objects">
-  <object id="2" gid="106" x="100" y="160" width="80" height="120"/>
+  <object id="45" x="180" y="190" width="80" height="30"/>
+  <object id="46" x="310" y="190" width="80" height="30"/>
+  <object id="47" x="440" y="190" width="80" height="30"/>
+  <object id="48" x="440" y="270" width="80" height="30"/>
+  <object id="49" x="310" y="270" width="80" height="30"/>
+  <object id="50" x="180" y="270" width="80" height="30"/>
+  <object id="51" x="180" y="350" width="80" height="30"/>
+  <object id="52" x="310" y="350" width="80" height="30"/>
+  <object id="53" x="440" y="350" width="80" height="30"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
-  <object id="7" name="spawn" x="320" y="280">
+  <object id="7" name="spawn" x="130" y="230">
    <point/>
   </object>
  </objectgroup>

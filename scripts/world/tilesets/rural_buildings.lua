@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 21,
+  tilecount = 23,
   tiles = {
     {
       id = 0,
@@ -150,6 +150,18 @@ return {
       image = "../../../assets/sprites/tilesets/rural/Click_here.png",
       width = 120,
       height = 60
+    },
+    {
+      id = 21,
+      image = "../../../assets/sprites/tilesets/rural/desk.png",
+      width = 80,
+      height = 50
+    },
+    {
+      id = 22,
+      image = "../../../assets/sprites/tilesets/rural/whiteboard.png",
+      width = 260,
+      height = 80
     }
   }
 }

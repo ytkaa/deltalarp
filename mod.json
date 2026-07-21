@@ -2,9 +2,9 @@
     // The ID of your project. Should be unique!!
     "id": "deltalarp_true",
     // Displays on the main menu.
-    "name": "DELTALARP",
+    "name": "DELTALARP Chapter 1",
     // Displays underneath the name. Optional.
-    "subtitle": "Chapter 1",
+    "subtitle": "THE START",
 
     // The version of your project.
     "version": "v1.0.0",
