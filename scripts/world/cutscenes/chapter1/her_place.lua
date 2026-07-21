@@ -13,11 +13,15 @@ return {
 
         dialogue("ARE YOU [wait:40]AWAKE.[wait:2].[wait:2]?")
         dialogue("ARE YOU [wait:40]TOGETHER.[wait:2].[wait:2]?")
-        dialogue("COME ON,[wait:5] FRIEND...")
+        dialogue("COME ALONG,[wait:5] FRIEND...")
+        dialogue("WE MISS YOUR[wait:5] ELEGANCE.")
+        dialogue("DON'T WAIT.")
+        dialogue("AND,[wait:5] PLEASE...")
         dialogue("DON'T BE SHY..!")
         dialogue("I WILL MAKE YOU FEEL [wait:20]WHOLE[wait:20] AGAIN.")
         dialogue("BUT,[wait:20] YOU MUST PLAY ALONG...")
         dialogue("PLAY ALONG [wait:20]WITH US!")
+        dialogue("A VERY,[wait:10] VERY[wait:20]\nINTERESTING GAME[wait:2].[wait:2].[wait:2].")
         dialogue("LET'S[wait:2] PLAY...")
 
         depths.music:stop()
@@ -31,6 +35,7 @@ return {
         cutscene:wait(3)
 
         dialogue("[speed:0.15]A GAME[wait:5] OF MAKE-BELIEVE.")
+        --dialogue("[speed:0.20]YOU[wait:10] WILL FIND IT[wait:5] VERY,[wait:5] VERY[wait:10] INTERESTING[wait:2].[wait:2].[wait:2]!")
         dialogue("[speed:0.20]COME FORTH,[wait:5] MY[wait:10] VESSEL!")
 
         local tunes = Music()

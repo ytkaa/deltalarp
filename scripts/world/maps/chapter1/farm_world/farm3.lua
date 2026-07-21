@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 47,
+  nextobjectid = 48,
   properties = {},
   tilesets = {
     {
@@ -560,6 +560,27 @@ return {
             ["text1_1"] = "* Hey,[wait:5] so,[wait:5] I'm a placeholder npc,[wait:5] but I heard that there's something cool in that haybale.",
             ["text2_1"] = "* Not this one.[wait:5] Thought I'd clarify a bit.",
             ["text3_1"] = "* Well,[wait:5] did you find it ??!?"
+          }
+        },
+        {
+          id = 47,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 360,
+          width = 80,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["text1_1"] = "* Y'know,[wait:5] it's illegal around heres to rustle Jimmy's (!)",
+            ["text2_1"] = "* STOP RUSTLING JIMMY'S (!!!)",
+            ["text3_1"] = "* Why are you still rustling Jimmy.",
+            ["text4_1"] = "* (You felt a shift in the quantum fluctuations of the wheat field.)",
+            ["text4_2"] = "* (Things feel...[wait:5] a little emptier now.)",
+            ["text5_1"] = "* (...)"
           }
         }
       }
