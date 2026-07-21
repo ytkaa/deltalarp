@@ -43,15 +43,15 @@ function character:init()
     self.lw_weapon_default = "light/car_keys"
 
     -- Character color (for action box outline and hp bar)
-    self.color = {0.75, 0, 0.33}
+    self.color = {0, 0.2, 1}
     -- Damage color (for the number when attacking enemies) (defaults to the main color)
-    self.dmg_color = {0.75, 0, 0.33}
+    self.dmg_color = {0, 0.2, 1}
     -- Attack bar color (for the target bar used in attack mode) (defaults to the main color)
-    self.attack_bar_color = {0.75, 0, 0.33}
+    self.attack_bar_color = {0, 0.2, 1}
     -- Attack box color (for the attack area in attack mode) (defaults to darkened main color)
-    self.attack_box_color = {0.75, 0, 0.33}
+    self.attack_box_color = {0, 0.2, 1}
     -- X-Action color (for the color of X-Action menu items) (defaults to the main color)
-    self.xact_color = {0.75, 0, 0.33}
+    self.xact_color = {0, 0.2, 1}
 
     -- Head icon in the equip / power menu
     self.menu_icon = "party/vess/head"

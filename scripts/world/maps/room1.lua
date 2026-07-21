@@ -596,7 +596,12 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["actor"] = "flight"
+            ["actor"] = "flight",
+            ["text1_1"] = "* About time someone interacted with me.",
+            ["text1_2"] = "* Don't take my lament the wrong way.[wait:5] I'm grateful![wait:5] It truly means a lot to me.",
+            ["text2_1"] = "* Cherish this world,[wait:5] won't you?",
+            ["text2_2"] = "* Soon,[wait:5] everything left of the original will be painted over anew...",
+            ["text3_1"] = "* Don't you have anything better to do?"
           }
         },
         {

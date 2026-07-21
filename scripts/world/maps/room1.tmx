@@ -152,6 +152,11 @@ no-good wall slammers.</property>
   <object id="49" name="npc" x="440" y="160" width="40" height="40">
    <properties>
     <property name="actor" value="flight"/>
+    <property name="text1_1" value="* About time someone interacted with me."/>
+    <property name="text1_2" value="* Don't take my lament the wrong way.[wait:5] I'm grateful![wait:5] It truly means a lot to me."/>
+    <property name="text2_1" value="* Cherish this world,[wait:5] won't you?"/>
+    <property name="text2_2" value="* Soon,[wait:5] everything left of the original will be painted over anew..."/>
+    <property name="text3_1" value="* Don't you have anything better to do?"/>
    </properties>
   </object>
   <object id="53" gid="61" x="80" y="100" width="120" height="60"/>
