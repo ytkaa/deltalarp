@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="33">
+ <editorsettings>
+  <export target="farm3.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="1" name="Camada de Blocos 1" width="30" height="20">
+  <data encoding="csv">
+15,15,15,15,15,15,15,15,15,15,21,23,23,23,23,23,23,23,12,21,5,5,5,21,21,13,101,103,102,105,
+15,15,15,15,15,15,15,15,15,15,21,23,106,23,23,23,23,23,12,21,5,5,5,21,21,12,13,101,103,12,
+15,15,15,15,15,15,15,15,15,15,21,21,12,21,12,12,23,23,21,21,5,5,5,21,21,21,12,13,12,12,
+15,15,15,15,15,15,15,15,15,15,21,21,21,21,21,12,21,21,21,21,5,5,5,21,21,21,21,21,21,21,
+15,15,15,15,15,15,15,15,15,5,5,21,21,21,21,21,21,21,5,5,5,5,5,5,5,5,5,5,21,21,
+15,15,15,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+15,15,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,15,15,15,15,15,15,15,15,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,15,15,15,15,15,15,15,15,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,15,15,15,15,15,15,15,15,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,15,15,15,15,15,15,15,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,15,15,15,15,15,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,15,15,15,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+0,0,0,0,22,22,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+0,0,0,104,22,22,0,0,0,0,21,21,21,21,5,5,5,5,21,21,21,21,5,5,5,5,5,21,21,21,
+0,0,0,0,22,22,0,0,0,0,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,2,2,
+0,0,0,101,22,12,104,0,0,0,21,21,2,2,2,2,2,21,21,21,21,21,21,21,2,2,2,2,101,105,
+0,0,0,0,1,22,0,0,0,0,21,2,2,104,24,103,2,21,21,21,21,21,21,21,21,101,105,102,103,102
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="5" name="collision">
+  <object id="12" x="240" y="600" width="159" height="200"/>
+  <object id="13" x="520" y="760" width="120.5" height="39.5"/>
+  <object id="14" x="1000.5" y="760.25" width="199" height="39.5"/>
+  <object id="15" x="1120.75" y="719.75" width="79.5" height="39.5"/>
+  <object id="16" x="0.0454545" y="600" width="159.455" height="200"/>
+  <object id="17" x="440.5" y="0.5" width="278.5" height="79"/>
+  <object id="18" x="640.25" y="81" width="78.4375" height="39"/>
+  <object id="19" x="1039.75" y="0.166667" width="159.833" height="40.3333"/>
+  <object id="20" x="1080.1" y="40.8333" width="79.5" height="39"/>
+  <object id="21" x="396.75" y="800.25" width="803.167" height="39.5"/>
+  <object id="22" x="719.75" y="-41.75" width="81.8337" height="39.5"/>
+  <object id="27" x="-40.2502" y="-39.0833" width="39.167" height="39.5"/>
+  <object id="23" x="921.417" y="-40.75" width="279.167" height="39.5"/>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="4" name="markers">
+  <object id="11" name="to_farm2" x="200.833" y="786">
+   <point/>
+  </object>
+  <object id="31" name="to_farm4" x="25" y="342">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Camada de Blocos 2" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,101,0,0,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,102,0,0,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#ff007f" id="3" name="objects_party">
+  <object id="1" gid="106" x="915.417" y="489.167" width="200" height="120"/>
+  <object id="2" name="interactable" x="920" y="440" width="185" height="42">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1_1" value="* (Humanity's greatest creation.)"/>
+    <property name="text1_2" value="* (The haybale.)"/>
+    <property name="text2_1" value="* (The haybale.)"/>
+   </properties>
+  </object>
+  <object id="7" name="transition" x="160.045" y="800.057" width="79.9886" height="40.9432">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm2"/>
+    <property name="marker" value="to_farm3"/>
+   </properties>
+  </object>
+  <object id="24" name="interactable" x="959" y="397.5" width="108.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybale"/>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1_1" value="* (?!)"/>
+    <property name="text1_2" value="* (Sticking out the haybale was a Glowshard.)"/>
+   </properties>
+  </object>
+  <object id="25" name="enemy" x="120" y="120" width="40" height="40">
+   <properties>
+    <property name="actor" value="colonel"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="colonel"/>
+    <property name="enemy" value="colonel"/>
+   </properties>
+  </object>
+  <object id="29" name="transition" x="-40.661" y="1.5284" width="39.9886" height="597.61">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm4"/>
+    <property name="marker" value="to_farm3sideexit"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 17,
+  nextobjectid = 21,
   properties = {},
   tilesets = {
     {
@@ -263,6 +263,23 @@ return {
             ["setflag"] = "seen_grace_intro",
             ["setvalue"] = true
           }
+        },
+        {
+          id = 19,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = -40,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm3",
+            ["marker"] = "to_farm2"
+          }
         }
       }
     },
@@ -398,6 +415,20 @@ return {
           shape = "point",
           x = 320,
           y = -40,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 20,
+          name = "to_farm3",
+          type = "",
+          shape = "point",
+          x = 322.667,
+          y = 34.6667,
           width = 0,
           height = 0,
           rotation = 0,

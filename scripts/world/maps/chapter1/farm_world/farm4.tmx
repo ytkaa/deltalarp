@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="28">
+ <editorsettings>
+  <export target="farm4.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="1" name="Camada de Blocos 1" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,2,21,21,21,15,
+0,0,24,24,24,4,0,0,0,2,21,21,21,21,21,21,21,21,15,15,
+0,0,24,2,13,21,21,4,21,21,21,15,15,15,15,15,15,15,15,15,
+0,24,24,2,13,21,21,21,15,15,15,15,15,15,15,15,15,15,15,15,
+0,24,13,2,21,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+0,24,2,21,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+24,12,13,2,21,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+24,12,12,2,21,15,15,15,15,15,15,15,15,15,15,15,15,15,15,5,
+0,2,21,21,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,
+0,0,21,21,15,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,
+0,0,21,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,
+0,12,21,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,
+0,2,2,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,
+0,0,3,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,
+0,12,3,21,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,
+0,1,21,21,15,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,
+0,14,21,21,21,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+0,0,13,1,21,21,21,21,15,21,21,21,15,15,15,15,15,15,21,21,
+0,0,23,14,1,14,21,21,21,21,1,21,21,21,15,15,15,21,21,23,
+0,0,0,0,0,0,3,3,3,2,0,0,0,1,21,21,21,1,1,23
+</data>
+ </layer>
+ <objectgroup color="#ff007f" id="2" name="objects_party">
+  <object id="1" gid="106" x="480" y="240" width="200" height="120"/>
+  <object id="2" gid="107" x="160" y="640" width="319" height="101"/>
+  <object id="3" gid="106" x="240" y="320" width="120" height="160"/>
+  <object id="4" gid="106" x="402" y="482" width="120" height="160"/>
+  <object id="5" gid="106" x="600" y="680" width="120" height="160"/>
+  <object id="6" name="transition" x="800.634" y="1.695" width="38.8977" height="597.61">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm3"/>
+    <property name="marker" value="to_farm4"/>
+   </properties>
+  </object>
+  <object id="8" name="interactable" x="246.75" y="273" width="108.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybalecandy"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You stuck your hand in and took out some CandyCorn.)"/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="486.75" y="192" width="190.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybalecandy"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You stuck your hand in and took out some CandyCorn.)"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="605.75" y="637" width="108.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybalecandy"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You stuck your hand in and took out some CandyCorn.)"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="407.75" y="432" width="106.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybalecandy"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You stuck your hand in and took out some CandyCorn.)"/>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="162.75" y="598" width="311.5" height="42">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="behindhaybaleheal"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You stuck your hand in and took out some CornMeal.)"/>
+   </properties>
+  </object>
+  <object id="13" name="enemy" x="441.333" y="394.167" width="40" height="40">
+   <properties>
+    <property name="actor" value="colonel"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="colonel"/>
+    <property name="enemy" value="colonel"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="4" name="collision">
+  <object id="15" x="1.2725" y="2" width="36.455" height="797"/>
+  <object id="16" x="41.7725" y="0.5" width="36.455" height="239"/>
+  <object id="17" x="82.7725" y="0.5" width="36.455" height="159"/>
+  <object id="18" x="121.772" y="0.5" width="74.455" height="79"/>
+  <object id="19" x="201.772" y="1.5" width="276.455" height="39"/>
+  <object id="20" x="240.772" y="42.5" width="121.455" height="36"/>
+  <object id="21" x="42.7725" y="681.5" width="36.455" height="118"/>
+  <object id="22" x="82.7725" y="719" width="36.455" height="81"/>
+  <object id="23" x="40.7725" y="359.5" width="36.455" height="81"/>
+  <object id="24" x="41.7725" y="521.5" width="36.455" height="39"/>
+  <object id="25" x="121.773" y="760.5" width="115.455" height="39"/>
+  <object id="26" x="401.273" y="760.5" width="115.455" height="39"/>
+  <object id="27" x="759.773" y="718.5" width="36.455" height="81"/>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="3" name="markers">
+  <object id="14" name="to_farm3sideexit" x="778" y="347">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
