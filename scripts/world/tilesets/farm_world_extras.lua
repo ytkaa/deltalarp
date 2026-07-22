@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 12,
+  tilecount = 13,
   tiles = {
     {
       id = 0,
@@ -96,6 +96,12 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/dark_wheat5_flip.png",
       width = 60,
       height = 80
+    },
+    {
+      id = 12,
+      image = "../../../assets/sprites/tilesets/farm_world/spikery.png",
+      width = 40,
+      height = 40
     }
   }
 }

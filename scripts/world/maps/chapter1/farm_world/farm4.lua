@@ -11,7 +11,10 @@ return {
   tileheight = 40,
   nextlayerid = 6,
   nextobjectid = 35,
-  properties = {},
+  properties = {
+    ["music"] = "field_jarona",
+    ["name"] = "Wheat Field - Hay Room"
+  },
   tilesets = {
     {
       name = "farm_world",
@@ -63,8 +66,8 @@ return {
         0, 1, 21, 21, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 5, 5, 5,
         0, 14, 21, 21, 21, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15,
         0, 0, 13, 1, 21, 21, 21, 21, 15, 21, 21, 21, 15, 15, 15, 15, 15, 15, 21, 21,
-        0, 0, 23, 14, 1, 14, 21, 21, 21, 21, 1, 21, 21, 21, 15, 15, 15, 21, 21, 23,
-        0, 0, 0, 0, 0, 0, 3, 3, 3, 2, 0, 0, 0, 1, 21, 21, 21, 1, 1, 23
+        0, 0, 0, 14, 1, 14, 21, 21, 21, 21, 1, 21, 21, 21, 15, 15, 15, 21, 21, 0,
+        0, 0, 0, 0, 0, 0, 3, 3, 3, 2, 0, 0, 0, 1, 21, 21, 21, 1, 1, 0
       }
     },
     {
@@ -189,7 +192,7 @@ return {
             ["once"] = true,
             ["script"] = "behindhaybalecandy",
             ["solid"] = true,
-            ["text1"] = "* (You stuck your hand in and took out some CandyCorn.)"
+            ["text1"] = "* (You stuck your hand in and took[sound:item] out some CandyCorn.)"
           }
         },
         {
@@ -208,7 +211,7 @@ return {
             ["once"] = true,
             ["script"] = "behindhaybalecandy",
             ["solid"] = true,
-            ["text1"] = "* (You stuck your hand in and took out some CandyCorn.)"
+            ["text1"] = "* (You stuck your hand in and took[sound:item] out some CandyCorn.)"
           }
         },
         {
@@ -227,7 +230,7 @@ return {
             ["once"] = true,
             ["script"] = "behindhaybalecandy",
             ["solid"] = true,
-            ["text1"] = "* (You stuck your hand in and took out some CandyCorn.)"
+            ["text1"] = "* (You stuck your hand in and took[sound:item] out some CandyCorn.)"
           }
         },
         {
@@ -246,7 +249,7 @@ return {
             ["once"] = true,
             ["script"] = "behindhaybalecandy",
             ["solid"] = true,
-            ["text1"] = "* (You stuck your hand in and took out some CandyCorn.)"
+            ["text1"] = "* (You stuck your hand in and took[sound:item] out some CandyCorn.)"
           }
         },
         {
@@ -265,7 +268,7 @@ return {
             ["once"] = true,
             ["script"] = "behindhaybaleheal",
             ["solid"] = true,
-            ["text1"] = "* (You stuck your hand in and took out some CornMeal.)"
+            ["text1"] = "* (You stuck your hand in and took[sound:item] out some CornMeal.)"
           }
         },
         {
@@ -285,7 +288,8 @@ return {
             ["chase"] = true,
             ["chasedist"] = 200,
             ["encounter"] = "colonel",
-            ["enemy"] = "colonel"
+            ["enemy"] = "colonel",
+            ["once"] = true
           }
         }
       }

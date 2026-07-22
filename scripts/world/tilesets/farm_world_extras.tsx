@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="319" tileheight="219" tilecount="12" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="319" tileheight="219" tilecount="13" columns="0">
  <editorsettings>
   <export target="farm_world_extras.lua" format="lua"/>
  </editorsettings>
@@ -39,5 +39,8 @@
  </tile>
  <tile id="11">
   <image source="../../../assets/sprites/tilesets/farm_world/dark_wheat5_flip.png" width="60" height="80"/>
+ </tile>
+ <tile id="12">
+  <image source="../../../assets/sprites/tilesets/farm_world/spikery.png" width="40" height="40"/>
  </tile>
 </tileset>

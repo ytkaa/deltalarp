@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="9">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../../tilesets/GONER.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#ff007f" id="2" name="objects">
+  <object id="2" name="transition" x="280" y="-40" width="80" height="40">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm3"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="3" name="npc" x="430" y="240" width="30" height="30">
+   <properties>
+    <property name="actor" value="GONER_0"/>
+    <property name="text1_1" value="* [speed:0.3]Have you ever..."/>
+    <property name="text1_2" value="*[speed:0.7] ...[wait:5]Never mind.[sound:egg]"/>
+    <property name="text2_1" value="* ..."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="4" name="collision">
+  <object id="4" x="-40" y="0" width="40" height="480"/>
+  <object id="5" x="0" y="480" width="640" height="40"/>
+  <object id="6" x="640" y="0" width="40" height="480"/>
+  <object id="7" x="0" y="-40" width="280" height="40"/>
+  <object id="8" x="360" y="-40" width="320" height="40"/>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="3" name="markers">
+  <object id="1" name="entry" x="320" y="40">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

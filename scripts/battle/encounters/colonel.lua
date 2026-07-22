@@ -7,7 +7,7 @@ function Colonel:init()
     self.text = "* Colonel stands their ground!"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "petal8"
+    self.music = "petal_limiter"
     -- Enables the purple grid battle background
     self.background = true
 

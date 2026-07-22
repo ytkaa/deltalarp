@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 21,
+  nextobjectid = 22,
   properties = {},
   tilesets = {
     {
@@ -429,6 +429,20 @@ return {
           shape = "point",
           x = 322.667,
           y = 34.6667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 21,
+          name = "vess_slide",
+          type = "",
+          shape = "point",
+          x = 320,
+          y = 500,
           width = 0,
           height = 0,
           rotation = 0,

@@ -7,13 +7,17 @@ function Colonel:init()
     self.text = "* The fireteam conducts an ambush!"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "petal8"
+    self.music = "petal_limiter"
     -- Enables the purple grid battle background
     self.background = true
 
     self:addEnemy("colonel")
     self:addEnemy("colonel")
     self:addEnemy("colonel")
+end
+
+function Colonel:onBattleStart()
+    Game:setFlag("fireteam_fought", true)
 end
 
 return Colonel

@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "Driver's License"
+    self.name = "License"
     -- Name displayed when used in battle (optional)
     self.use_name = nil
 

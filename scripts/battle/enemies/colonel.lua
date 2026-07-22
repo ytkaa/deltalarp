@@ -54,11 +54,17 @@ function Colonel:init()
     function Colonel:onAct(battler, name)
         if name == "Lower Guard" then
             if self.guardLowered == false then
-                self.guardLowered = true
+                local enemies = Game.battle.enemies
+                for _, enemy in ipairs(enemies) do
+                    if enemy.name == "Colonel" then
+                        enemy.guardLowered = true
+                        enemy:flash()
+                        enemy.dialogue_override = "...guess you're \nnot with Gardner?"
+                    end
+                end
                 battler.chara:addStatBuff("attack", -99)
-                self.dialogue_override = "...guess you're \nnot with Gardner?"
                 return {
-                    "* You dropped your weapon.\nAttack nullified!",
+                    "* You dropped your weapon.\nAttack nullified! The enemies \nlower their guard.",
                 }
             elseif self.guardLowered == true then
                 return {
