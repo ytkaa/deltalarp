@@ -35,13 +35,16 @@ function actor:init()
     self.can_blush = false
 
     -- Table of talk sprites and their talk speeds (default 0.25)
-    self.talk_sprites = {}
+    self.talk_sprites = {
+        ["talk"] = 0.16
+    }
 
     -- Table of sprite animations
     self.animations = {
         -- Looping animation with 0.25 seconds between each frame
         -- (even though there's only 1 idle frame)
         ["idle"] = { "idle", 0.25, true },
+        ["talk"] = { "talk", 0.16, true }
     }
 
     -- Table of sprite offsets (indexed by sprite name)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="6">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="7">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -27,6 +27,7 @@
  <objectgroup id="4" name="objects">
   <object id="5" gid="3" x="190" y="300" width="260" height="36"/>
  </objectgroup>
+ <objectgroup id="5" name="objects_super"/>
  <objectgroup color="#aa00ff" id="3" name="markers">
   <object id="1" name="spawn" x="-40" y="-80">
    <point/>

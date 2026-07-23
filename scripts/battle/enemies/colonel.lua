@@ -63,6 +63,7 @@ function Colonel:init()
                     end
                 end
                 battler.chara:addStatBuff("attack", -99)
+                Assets.playSound("bell_bounce_short")
                 return {
                     "* You dropped your weapon.\nAttack nullified! The enemies \nlower their guard.",
                 }

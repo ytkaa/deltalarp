@@ -251,9 +251,9 @@ return {
           name = "transition",
           type = "",
           shape = "rectangle",
-          x = 720,
+          x = 680,
           y = 480,
-          width = 120,
+          width = 200,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -280,23 +280,7 @@ return {
             ["text1_1"] = "* This wheat is [color:red]pissing[color:reset] me off",
             ["text1_2"] = "* I'm the original[wait:10]    [color:red]Larpwalker"
           }
-        }
-      }
-    },
-    {
-      type = "objectgroup",
-      draworder = "topdown",
-      id = 7,
-      name = "objects",
-      class = "",
-      visible = true,
-      opacity = 1,
-      offsetx = 0,
-      offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
-      properties = {},
-      objects = {
+        },
         {
           id = 26,
           name = "chest",
@@ -315,6 +299,21 @@ return {
           }
         }
       }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 7,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {}
     },
     {
       type = "objectgroup",
@@ -951,7 +950,7 @@ return {
           shape = "rectangle",
           x = 640,
           y = 480,
-          width = 80,
+          width = 40,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -963,9 +962,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 840,
+          x = 880,
           y = 480,
-          width = 80,
+          width = 40,
           height = 40,
           rotation = 0,
           opacity = 1,
