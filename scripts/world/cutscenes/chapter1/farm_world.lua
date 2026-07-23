@@ -137,7 +137,7 @@ return {
         cutscene:text("* Lieutenant,[wait:5] when you meet that Gardner,[wait:5] don't run away !!")
         cutscene:text("* Stand your ground,[wait:5] and...[wait:5] and give him hell,[wait:5] you hear me !!")
         Game.world.music:resume()
-        if (Game:getFlag("jimmy_rustled")) == true then
+        if (Game:getFlag("jimmy_rustled", false)) == true then
             cutscene:wait(1)
             Game.world.music:pause()
             cutscene:text("* WAIT !!")
