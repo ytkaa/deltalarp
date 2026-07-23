@@ -37,6 +37,7 @@ function kipkipthrow:onStart()
 end
 
 function kipkipthrow:update()
+    --bullet.graphics.spin = math.rad(45 / 4)
     --bullet.rotation = bullet.rotation + 0.1 Too Difficult to figure out so WHo cares.
 
     super.update(self)

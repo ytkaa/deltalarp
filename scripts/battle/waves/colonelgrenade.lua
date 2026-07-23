@@ -5,26 +5,25 @@ function colonelgrenade:init()
 
     -- The duration of our wave, in seconds. (Defaults to `5`)
     self.time = 10
-    kipkipThrowSpeed = 0.5
-    kipkipBulletSpeed = 4
     local bullet
+    local grenade_explosion
 end
 
 function colonelgrenade:onStart()
     -- Get all enemies that selected this wave as their attack
-    local kipkips = self:getAttackers()
+    local enemies = self:getAttackers()
 
     -- Loop through all attackers
-    for _, kipkip in ipairs(kipkips) do
+    for _, colonel in ipairs(enemies) do
         --local kipkip = self:getAttackers()[1] --grab enemy pos
         --local x = SCREEN_WIDTH / 2 
         --local y = SCREEN_HEIGHT / 2 position is the middle of the screen
 
-        self.timer:everyInstant(0.5, function()
-            local start_x, start_y = kipkip:getRelativePos(kipkip.width/2, kipkip.height/2) -- position is the enemy pos
+        self.timer:everyInstant(0.65, function()
+            local start_x, start_y = colonel:getRelativePos(colonel.width/2, colonel.height/2) -- position is the enemy pos
             local target_x = Game.battle.soul.x --soul x
             local target_y = Game.battle.soul.y --soul y
-            local bullet = self:spawnBullet("bullets/kipkip/brick", start_x, start_y)
+            local bullet = self:spawnBullet("bullets/colonel/grenade", start_x, start_y)
             
             bullet.start_x = start_x
             bullet.start_y = start_y
@@ -48,7 +47,6 @@ function colonelgrenade:onStart()
                 local linear_y = b.start_y + (b.target_y - b.start_y) * progress
                 b.y = linear_y - arc_y
 
-                -- Handle rotation to point along the flight path
                 if progress < 1 then
                     -- here its just doing the same calculations but for the next percentage of progress ahead, and then rotates the grenade accordingly
                     local next_progress = math.min(1, progress + 0.01)
@@ -62,9 +60,9 @@ function colonelgrenade:onStart()
 
                 -- when it completes the parabola, explode
                 if progress >= 1 then
-                    b.physics.speed = 4
-                    b.physics.direction = math.pi / 2 -- Fall straight down after landing
-                    b.update = nil -- Restores engine default handling so it falls via physics
+                    b:remove()
+                    local grenade_explosion = self:spawnBullet("grenade_explosion", b.x, b.y) --summons the explosion which is dealt with in its own bullet file
+                    Assets.playSound("bomb")
                 end
             end
         end)

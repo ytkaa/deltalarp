@@ -16,10 +16,10 @@ function item:init()
     -- Shop description
     self.shop = ""
     -- Menu description
-    self.description = "Put some corn on your cob... \nDefends against the Plant&Gambling element." -- Does not actually do this yet
+    self.description = "Put some corn on your cob... \nMinor defence against the Plant element." -- Does not actually do this yet
 
     -- Default shop price (sell price is halved)
-    self.price = 1000
+    self.price = 500
     -- Whether the item can be sold
     self.can_sell = false
 
@@ -38,7 +38,7 @@ function item:init()
         defense = 2
     }
     -- Bonus name and icon (displayed in equip menu)
-    self.bonus_name = "Plant&BetDefend"
+    self.bonus_name = "PlantDefend"
     self.bonus_icon = "ui/menu/icon/armor"
 
     -- Equippable characters (default true for armors, false for weapons)
