@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="31">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="field_jarona"/>
+  <property name="name" value="Wheat Field - &quot;Barracks&quot;"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/farm_world.tsx"/>
+ <tileset firstgid="101" source="../../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="6" name="Tile Layer 3" width="16" height="12">
+  <data encoding="csv">
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+3,11,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
+11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,102,102,101,9,9,8,9,9,8,9,8,102,101,102,105,
+101,104,0,9,7,7,7,7,7,7,7,7,8,101,104,105,
+103,101,101,7,7,7,7,7,7,7,7,7,7,105,0,102,
+101,102,0,19,17,18,18,17,17,18,17,17,20,0,103,103,
+0,104,0,6,6,5,6,6,6,6,5,6,5,0,101,104,
+103,102,12,6,6,5,5,6,6,5,6,6,6,13,3,11,
+16,16,16,16,6,6,5,5,5,5,5,6,15,16,15,16,
+15,16,16,16,16,15,15,15,16,15,16,16,16,16,16,16,
+15,16,15,15,16,15,15,15,15,15,16,16,16,16,16,16,
+11,13,14,1,1,4,13,14,3,2,3,12,1,13,14,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="objects">
+  <object id="15" gid="114" x="160" y="200" width="320" height="80"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="2" name="objects_party">
+  <object id="2" name="transition" x="-40" y="240" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm3"/>
+    <property name="marker" value="to_couch"/>
+   </properties>
+  </object>
+  <object id="12" name="npc" x="240" y="160" width="40" height="40">
+   <properties>
+    <property name="actor" value="colonel"/>
+    <property name="talk" type="bool" value="true"/>
+    <property name="talksprite" value="talk"/>
+    <property name="text1_1" value="* Welcome to the BARRACKS room,[wait:5] soldier!"/>
+    <property name="text1_2" value="* Me and the company are resting up so we can defeat the GARDNER,[wait:5] soldier!"/>
+    <property name="text1_3" value="* We won't let him take our life force,[wait:5] soldier!"/>
+    <property name="text2_1" value="* What?[wait:5] No,[wait:5] we're not just &quot;chilling here on a couch&quot; dude."/>
+    <property name="text2_2" value="* ...[wait:5]soldier."/>
+    <property name="text3_1" value="* ...[wait:5]soldier."/>
+   </properties>
+  </object>
+  <object id="13" name="npc" x="400" y="160" width="40" height="40">
+   <properties>
+    <property name="actor" value="colonel"/>
+    <property name="talk" type="bool" value="true"/>
+    <property name="talksprite" value="talk"/>
+    <property name="text1_1" value="* GARDNER may have harvested many of my fellow Colonels..."/>
+    <property name="text1_2" value="* He MAY be exponentially growing in power at an alarming rate..."/>
+    <property name="text1_3" value="* And he MAY be truly impossible to vanquish..."/>
+    <property name="text1_4" value="* But I still have HOPE,[wait:5] lieutenant !!"/>
+    <property name="text1_5" value="* Hope,[wait:5] that the power of [color:lime]FRIENDSHIP[color:reset] will win the day !!"/>
+    <property name="text1_6" value="* That,[wait:5] and overwhelming firepower."/>
+    <property name="text2_1" value="* Yeah maybe it's just firepower"/>
+   </properties>
+  </object>
+  <object id="22" name="script" x="560" y="240" width="40" height="120">
+   <properties>
+    <property name="cutscene" value="chapter1/farm_world.barracks"/>
+    <property name="flag" value="barracks"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="25" name="savepoint" x="300" y="220" width="40" height="40">
+   <properties>
+    <property name="heals" type="bool" value="true"/>
+    <property name="marker" value="spawn"/>
+    <property name="text1" value="* (Seeing people lounge around and avoid responsibilities...)"/>
+    <property name="text2" value="* (It almost brings a tear to your eye.[wait:5] It also fills you with a certain power...)"/>
+    <property name="text_once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="interactable" x="160" y="120" width="40" height="80">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Green couch in the room.)"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="200" y="160" width="20" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Green couch in the room.)"/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="280" y="160" width="120" height="20">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Green couch in the room.)"/>
+   </properties>
+  </object>
+  <object id="21" name="interactable" x="440" y="120" width="40" height="60">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Green couch in the room.)"/>
+   </properties>
+  </object>
+  <object id="27" name="interactable" x="220" y="160" width="20" height="20">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Green couch in the room.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Tile Layer 2" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+102,103,103,104,101,105,101,102,102,102,102,105,104,104,104,102,
+101,105,101,104,105,103,104,104,101,104,102,101,103,104,103,105,
+101,105,102,101,104,101,103,105,103,104,103,101,103,101,104,104
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="4" name="collision">
+  <object id="4" x="0" y="360" width="640" height="40"/>
+  <object id="5" x="0" y="200" width="120" height="40"/>
+  <object id="6" x="80" y="120" width="40" height="80"/>
+  <object id="7" x="120" y="80" width="400" height="40"/>
+  <object id="8" x="520" y="120" width="40" height="120"/>
+  <object id="9" x="560" y="200" width="80" height="40"/>
+  <object id="29" x="240" y="160" width="40" height="20"/>
+  <object id="30" x="400" y="160" width="40" height="20"/>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="3" name="markers">
+  <object id="3" name="to_farm3" x="40" y="300">
+   <point/>
+  </object>
+  <object id="10" name="grace_spawn" x="540" y="300">
+   <point/>
+  </object>
+  <object id="11" name="grace_leaf" x="690" y="300">
+   <point/>
+  </object>
+  <object id="26" name="spawn" x="240" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="8" name="controllers">
+  <object id="28" name="toggle" x="690" y="180">
+   <properties>
+    <property name="flag" value="barracks"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target" type="object" value="22"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

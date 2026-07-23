@@ -35,7 +35,9 @@ function actor:init()
     self.can_blush = false
 
     -- Table of talk sprites and their talk speeds (default 0.25)
-    self.talk_sprites = {}
+    self.talk_sprites = {
+        ["talk"] = 0.16
+    }
 
     -- Table of sprite animations
     self.animations = {
@@ -46,6 +48,7 @@ function actor:init()
         ["idlegrenade"] = { "idlegrenade", 0.25, true },
         ["idlerifle"] = { "idlerifle", 0.25, true },
         ["idledisarmed"] = { "idledisarmed", 0.25, true },
+        ["talk"] = { "talk", 0.16, true }
     }
 
     -- Table of sprite offsets (indexed by sprite name)

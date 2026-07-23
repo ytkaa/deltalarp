@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="9">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="11">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -30,10 +30,26 @@
   <object id="3" name="npc" x="430" y="240" width="30" height="30">
    <properties>
     <property name="actor" value="GONER_0"/>
+    <property name="setflag" value="GONER_0"/>
     <property name="text1_1" value="* [speed:0.3]Have you ever..."/>
     <property name="text1_2" value="*[speed:0.7] ...[wait:5]Never mind.[sound:egg]"/>
     <property name="text2_1" value="* ..."/>
    </properties>
+  </object>
+  <object id="9" name="script" x="360" y="120" width="120" height="240">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="GONER_0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="5" name="controllers">
+  <object id="10" name="toggle" x="520" y="120">
+   <properties>
+    <property name="flag" value="GONER_0"/>
+    <property name="target1" type="object" value="9"/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
  <objectgroup color="#0000ff" id="4" name="collision">

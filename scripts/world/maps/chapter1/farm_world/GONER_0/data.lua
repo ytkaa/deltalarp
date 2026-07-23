@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 5,
-  nextobjectid = 9,
+  nextlayerid = 6,
+  nextobjectid = 11,
   properties = {},
   tilesets = {
     {
@@ -98,9 +98,60 @@ return {
           visible = true,
           properties = {
             ["actor"] = "GONER_0",
+            ["setflag"] = "GONER_0",
             ["text1_1"] = "* [speed:0.3]Have you ever...",
             ["text1_2"] = "*[speed:0.7] ...[wait:5]Never mind.[sound:egg]",
             ["text2_1"] = "* ..."
+          }
+        },
+        {
+          id = 9,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 120,
+          width = 120,
+          height = 240,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["script"] = "GONER_0"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 5,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 10,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 520,
+          y = 120,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "GONER_0",
+            ["target1"] = { id = 9 }
           }
         }
       }

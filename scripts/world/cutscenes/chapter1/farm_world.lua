@@ -72,4 +72,86 @@ return {
         Game:setFlag("cornplate_puzzle", true)
         Game.world.music:resume()
     end;
+
+    jimmy_rustling = function(cutscene, event)
+        if Game:getFlag("jimmy_rustled", false) == true then
+            cutscene:wait(cutscene:text("* (...)"))
+            Game.world:stopCutscene()
+        end
+        if event.interact_count == 1 then
+            cutscene:wait(cutscene:text("* Y'know,[wait:5] it's illegal around heres to rustle Jimmy's (!)"))
+        elseif event.interact_count == 2 then
+            cutscene:wait(cutscene:text("* STOP RUSTLING JIMMY'S (!!!)"))
+        elseif event.interact_count == 3 then
+            cutscene:wait(cutscene:text("* Why are you still rustling Jimmy."))
+        elseif event.interact_count == 4 then
+            Game:setFlag("jimmy_rustled", true)
+            cutscene:wait(cutscene:text("* (You felt a shift in the quantum fluctuations of the wheat field.)"))
+            cutscene:wait(cutscene:text("* (Things feel...[wait:5] a little [sound:ominous]emptier now.)"))
+        end
+    end;
+
+    grace_couch = function(cutscene)
+        cutscene:enableMovement();
+        local grace = cutscene:spawnNPC("grace", 540, 300)
+        cutscene:wait(cutscene:walkTo(grace, "grace_leaf", 0.7))
+        grace:remove()
+    end;
+
+    barracks = function(cutscene, event)
+        local colonel = cutscene:getCharacter("colonel", 2)
+        local vess = cutscene:getCharacter("vess")
+        local options = {
+            ["talk"] = true;
+        }
+        cutscene:setSpeaker(colonel, true)
+        cutscene:setTextboxTop(false)
+        Game.world.music:pause()
+        cutscene:wait(cutscene:alert(colonel, 1))
+        cutscene:setSprite(colonel, "talk", 1/6)
+        cutscene:text("* WAIT !!", nil, colonel, options) --It should not be this difficult to get npcs in a cutscene to use talk sprites
+        cutscene:text("* WAIT !!", nil, colonel, options)
+        cutscene:text("* [speed:0.05]...", nil, colonel, options)
+        cutscene:text("[speed:0.60]* ...you're with the Gardner,[wait:5] aren't you.[wait:5] Lieutenant.[wait:5]", nil, colonel, options)
+        cutscene:look(vess, "left")
+        cutscene:wait(2)
+        cutscene:text("* Well ??[wait:5] Are you ??![wait:5] \nARE YOU ??!?[wait:5]")
+        local choice = cutscene:choicer({"Yes with \nGardner", "No with Gardner.\nWho Gardner"})
+        if choice == 1 then
+            cutscene:text("* [speed:0.05]...")
+            cutscene:text("[speed:0.60]* Lieutenant...")
+            cutscene:text("* No you're not !!!!!!!!!")
+            cutscene:text("* You seem a little too...[wait:5] animated,[wait:5] for his tastes...")
+            cutscene:text("* And regardless,[wait:5] that old Gardner likes to work alone !!")
+        else 
+            cutscene:text("* Heh.[wait:5] I knew that,[wait:5] lietenant!")
+            cutscene:text("* You just seem a little too...[wait:5] animated,[wait:5] for his tastes.")
+            cutscene:text("* As for who he is...[wait:5]")
+            cutscene:text("* Let's just say...[wait:5] he likes to work alone.")
+        end
+        cutscene:text("* He works alone to \"harvest the crops.\"[wait:5] That's how he puts it.")
+        cutscene:text("* Now,[wait:5] about harvesting the crops...")
+        cutscene:wait(1)
+        cutscene:text("* THAT'S US !!![wait:5] HE'S BEEN HARVESTING US COLONELS AND STEALING OUR LIFE FORCE !!!")
+        cutscene:wait(1)
+        cutscene:text("* Lieutenant,[wait:5] when you meet that Gardner,[wait:5] don't run away !!")
+        cutscene:text("* Stand your ground,[wait:5] and...[wait:5] and give him hell,[wait:5] you hear me !!")
+        Game.world.music:resume()
+        if (Game:getFlag("jimmy_rustled")) == true then
+            cutscene:wait(1)
+            Game.world.music:pause()
+            cutscene:text("* WAIT !!")
+            cutscene:text("* Lieutenant...[wait:5] I sense a disturbance in the nearby quantum fluctuations...")
+            cutscene:text("* It feels as though...[wait:5]")
+            cutscene:text("* [speed:0.05]...")
+            cutscene:text("* ...Jimmy...[wait:30] no...")
+            cutscene:text("* YOU !!![wait:5] You rustled Jimmy,[wait:5] \ndidn't you ??!?")
+            cutscene:wait(1)
+            cutscene:text("* Well, GOOD.[wait:5] None of us really liked him anyway.")
+            cutscene:text("* Zah ha ha!")
+            Game.world.music:resume()
+        end
+        cutscene:setSprite(colonel, "idle")
+        
+    end;
 }
