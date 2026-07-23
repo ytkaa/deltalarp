@@ -192,7 +192,7 @@ return {
           properties = {
             ["solid"] = true,
             ["text1_1"] = "* (Spikes.)",
-            ["text2_1"] = "* (What kind of farmer puts spikes in his field ??!?)",
+            ["text2_1"] = "* (What kind of farmer puts spikes in their field ??!?)",
             ["text3_1"] = "* (Unscrupulous spikes.)"
           }
         },

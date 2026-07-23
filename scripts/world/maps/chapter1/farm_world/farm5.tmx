@@ -54,7 +54,7 @@
    <properties>
     <property name="solid" type="bool" value="true"/>
     <property name="text1_1" value="* (Spikes.)"/>
-    <property name="text2_1" value="* (What kind of farmer puts spikes in his field ??!?)"/>
+    <property name="text2_1" value="* (What kind of farmer puts spikes in their field ??!?)"/>
     <property name="text3_1" value="* (Unscrupulous spikes.)"/>
    </properties>
   </object>
