@@ -77,7 +77,7 @@ return {
     grace_voice_test = function(cutscene)
         cutscene:text("[voice:grace]* Hey,[wait:5] hey![wait:5] Look at me![wait:5] I'm GRACE,[wait:5] and I sound like this,[wait:5] mew~")
         cutscene:text("[voice:susie]* And I'm Susie.[wait:5]")
-        local susie = cutscene:spawnNPC("susie", 690, 240)
+        local susie = cutscene:spawnNPC("susie", 690, 880)
         cutscene:wait(cutscene:walkTo(susie, "susie_walk", 0.8))
         cutscene:setSpeaker(susie)
         cutscene:text("* Heh,[wait:5] you couldn't see \nmy portrait...", "smirk")
