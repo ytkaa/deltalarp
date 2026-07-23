@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 55,
+  nextobjectid = 65,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -26,6 +26,30 @@ return {
       firstgid = 41,
       filename = "../tilesets/rural_buildings.tsx",
       exportfilename = "../tilesets/rural_buildings.lua"
+    },
+    {
+      name = "farm_world_extras",
+      firstgid = 64,
+      filename = "../tilesets/farm_world_extras.tsx",
+      exportfilename = "../tilesets/farm_world_extras.lua"
+    },
+    {
+      name = "GONER",
+      firstgid = 78,
+      filename = "../tilesets/GONER.tsx",
+      exportfilename = "../tilesets/GONER.lua"
+    },
+    {
+      name = "intro",
+      firstgid = 103,
+      filename = "../tilesets/intro.tsx",
+      exportfilename = "../tilesets/intro.lua"
+    },
+    {
+      name = "farm_world",
+      firstgid = 106,
+      filename = "../tilesets/farm_world.tsx",
+      exportfilename = "../tilesets/farm_world.lua"
     }
   },
   layers = {
@@ -52,25 +76,25 @@ return {
         0, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 28, 0, 0, 0, 0, 0, 0,
         0, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 0, 0, 0, 0, 0, 0,
         0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 7, 7, 7, 7, 7, 7,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 15, 15, 15, 15, 15, 15,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
-        0, 14, 15, 15, 11, 11, 11, 11, 11, 11, 11, 15, 15, 16, 0, 0, 0, 0, 0, 0,
+        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 7, 78, 7, 7, 78, 78,
+        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 78, 78, 15, 15, 78, 78, 78, 78,
+        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 78, 78, 78, 0, 0, 0, 0, 0, 0,
+        0, 14, 15, 15, 11, 11, 11, 11, 11, 11, 11, 78, 15, 16, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 14, 15, 11, 11, 11, 15, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 18, 19, 20, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 23, 24, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 9, 24, 0,
+        0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        69, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 18, 19, 20, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 23, 24, 0,
+        0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 22, 9, 24, 0,
         0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 10, 11, 12, 0,
-        0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 10, 11, 12, 0,
+        0, 0, 0, 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 10, 11, 12, 0,
         0, 6, 7, 7, 7, 7, 11, 11, 11, 7, 7, 7, 7, 7, 7, 7, 11, 11, 12, 0,
         0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 15, 15, 15, 15, 16, 0,
         0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
         0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
-        0, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        0, 11, 11, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 0, 0, 0, 0, 0, 0,
+        0, 120, 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
       }
     },
     {
@@ -91,23 +115,23 @@ return {
       properties = {},
       encoding = "lua",
       data = {
+        0, 103, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 104, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 74, 0, 71, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 30, 31, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 34, 35, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 38, 39, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 71, 74, 0, 0, 0, 38, 39, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0,
+        0, 75, 72, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0,
+        0, 0, 0, 75, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0,
+        0, 0, 72, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -262,9 +286,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 40,
+          x = 120,
           y = 920,
-          width = 520,
+          width = 440,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -279,7 +303,7 @@ return {
           x = 0,
           y = 720,
           width = 40,
-          height = 200,
+          height = 240,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -292,7 +316,7 @@ return {
           shape = "rectangle",
           x = 40,
           y = 680,
-          width = 200,
+          width = 160,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -318,10 +342,10 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 40,
+          x = 0,
           y = 360,
-          width = 120,
-          height = 40,
+          width = 40,
+          height = 360,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -334,20 +358,6 @@ return {
           shape = "rectangle",
           x = 0,
           y = 120,
-          width = 40,
-          height = 240,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 17,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 200,
-          y = 440,
           width = 40,
           height = 240,
           rotation = 0,
@@ -455,12 +465,12 @@ return {
           visible = true,
           properties = {
             ["actor"] = "starwalker",
-            ["text1_1"] = "* These [color:red]larpers[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
-            ["text1_2"] = "* I'm the original   [color:red]Larp[color:yellow]walker[color:reset]",
-            ["text2_1"] = "* ...",
-            ["text2_2"] = "* Have you heard of [color:green][sound:QUADO]Quado[color:reset]?",
-            ["text2_3"] = "* I think the wall to the north\nof [color:blue]KRIS[color:reset] has heard of [color:green][sound:PREDICTIVE]Quado[color:reset]...",
-            ["text3_1"] = "* [wait:40][sound:quato][color:green]Quado"
+            ["text1_1"] = "* These [color:red]larpers[color:reset] are...",
+            ["text1_2"] = "* Hey,[wait:5] uh...",
+            ["text1_3"] = "* Is anyone going to do anything about the big ass [color:green][sound:QUADO]green[color:reset] couch in this room?",
+            ["text1_4"] = "* Or like...[wait:5] [color:red]any[sound:ominous][color:reset] of the other $$!$ ??!?[sound:awkward]",
+            ["text2_1"] = "* Guess[sound:QUADO] not. [sound:GPT]",
+            ["text3_1"] = "* [color:yellow]...[sound:PREDICTIVE]"
           }
         },
         {
@@ -476,8 +486,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["text1"] = "* Silence echoes in the darkness\nof this familiar-yet-different\nscenery.",
-            ["text2"] = "* The power of larpery shines\nwithin you."
+            ["text1"] = "* Many things have changed in this testing area. Mostlys for the worse.",
+            ["text2"] = "* Yet still,[wait:5] the immutable power of larpery steels within you."
           }
         },
         {
@@ -559,7 +569,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["text"] = "* This is the coolest wall in the room.[wait:5]\n* Trade on [sound:GPT][color:green]Quado[color:reset]!"
+            ["text"] = "* This[sound:quato] is[sound:quato] the[sound:quato] coolest[sound:quato] wall[sound:quato] in[sound:quato] the[sound:quato] room[sound:quato].[wait:5]\n* Trade on [sound:GPT][color:green]Quado[sound:quato]\nQuado\nQuado\nQuado\nQuado\nQuado\nQuado\nQuado\nQuado"
           }
         },
         {
@@ -577,9 +587,9 @@ return {
           properties = {
             ["actor"] = "kris",
             ["facing"] = "left",
-            ["text1_1"] = "* Dude[wait:10] let me back in the party",
-            ["text1_2"] = "* [color:red]D[wait:10]u[wait:10]u[wait:10]u[wait:10]u[wait:10]d[wait:10]e",
-            ["text2_1"] = "* Heh.[sound:farmerlaugh][wait:5] As if you could even envision it.",
+            ["text1_1"] = "* Never mind dude.[wait:5] I don't even wanna be in your party anyway",
+            ["text1_2"] = "* *Is not a tsundere*",
+            ["text2_1"] = "* Stawp.[sound:farmerlaugh][wait:5] I'm not a tsundereeee",
             ["turn"] = true
           }
         },
@@ -633,6 +643,177 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "room1.grace_voice_test"
+          }
+        },
+        {
+          id = 55,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 160,
+          y = 830,
+          width = 320,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          gid = 77,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 56,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 760,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch2]walker"
+          }
+        },
+        {
+          id = 57,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 160,
+          y = 750,
+          width = 320,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text"] = "* (Just a green couch in a green room.)"
+          }
+        },
+        {
+          id = 58,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 380,
+          y = 290,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch7]walker"
+          }
+        },
+        {
+          id = 59,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 180,
+          y = 150,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch1]walker"
+          }
+        },
+        {
+          id = 60,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 190,
+          y = 280,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch4]walker"
+          }
+        },
+        {
+          id = 61,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 350,
+          y = 200,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch3]walker"
+          }
+        },
+        {
+          id = 62,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 320,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "larpwalker",
+            ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch6]walker"
+          }
+        },
+        {
+          id = 63,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 840,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "GONER_0",
+            ["facing"] = "right",
+            ["text1_1"] = "* Meet me...[wait:5] down the path to our south...",
+            ["text2_1"] = "* Oh,[wait:5] Vess...[wait:5] Uhm,[wait:5] I mean,[wait:5] you can come too,[wait:5] I guess.[wait:5] Fahaha! ",
+            ["text3_1"] = "* (They're silently sneering and jeering...)",
+            ["turn"] = false
+          }
+        },
+        {
+          id = 64,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 960,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/farm_world.cornplate_puzzle"
           }
         }
       }

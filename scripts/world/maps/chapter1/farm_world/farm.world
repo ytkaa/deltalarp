@@ -41,6 +41,20 @@
             "width": 640,
             "x": 3920,
             "y": -920
+        },
+        {
+            "fileName": "farm6.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 4680,
+            "y": -1680
+        },
+        {
+            "fileName": "farm4_revivemint.tmx",
+            "height": 960,
+            "width": 640,
+            "x": 2800,
+            "y": -2840
         }
     ],
     "onlyShowAdjacentMaps": false,
