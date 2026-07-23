@@ -4,8 +4,8 @@ return {
   tiledversion = "1.12.2",
   name = "rural_buildings",
   class = "",
-  tilewidth = 720,
-  tileheight = 400,
+  tilewidth = 800,
+  tileheight = 800,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 23,
+  tilecount = 25,
   tiles = {
     {
       id = 0,
@@ -162,6 +162,18 @@ return {
       image = "../../../assets/sprites/tilesets/rural/whiteboard.png",
       width = 260,
       height = 80
+    },
+    {
+      id = 23,
+      image = "../../../assets/sprites/tilesets/rural/ladder.jpg",
+      width = 800,
+      height = 800
+    },
+    {
+      id = 24,
+      image = "../../../assets/sprites/tilesets/rural/climb.png",
+      width = 120,
+      height = 60
     }
   }
 }

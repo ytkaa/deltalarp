@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="65">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="90">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -8,26 +8,42 @@
  </properties>
  <tileset firstgid="1" source="../tilesets/castle.tsx"/>
  <tileset firstgid="41" source="../tilesets/rural_buildings.tsx"/>
- <tileset firstgid="64" source="../tilesets/farm_world_extras.tsx"/>
- <tileset firstgid="78" source="../tilesets/GONER.tsx"/>
- <tileset firstgid="103" source="../tilesets/intro.tsx"/>
- <tileset firstgid="106" source="../tilesets/farm_world.tsx"/>
- <layer id="1" name="tiles" width="20" height="24">
+ <tileset firstgid="66" source="../tilesets/farm_world_extras.tsx"/>
+ <tileset firstgid="80" source="../tilesets/GONER.tsx"/>
+ <tileset firstgid="105" source="../tilesets/intro.tsx"/>
+ <tileset firstgid="108" source="../tilesets/farm_world.tsx"/>
+ <layer id="1" name="tiles" width="20" height="40">
   <data encoding="csv">
+0,109,0,0,0,0,109,0,0,0,0,0,0,0,119,0,0,0,0,0,
+0,0,0,0,119,0,0,0,0,119,0,121,0,0,0,0,120,0,0,0,
+0,0,109,0,110,0,0,0,0,0,0,0,0,121,0,0,0,0,0,0,
+0,0,0,0,109,0,0,0,0,0,0,0,0,0,116,116,115,115,0,109,
+0,0,0,0,0,0,0,0,119,110,110,109,0,116,114,114,114,114,115,0,
+0,0,0,0,0,0,0,0,109,129,128,129,115,114,114,114,114,114,114,0,
+0,0,0,0,0,0,0,0,121,128,112,112,112,124,124,124,125,124,125,113,
+0,0,109,0,0,0,0,0,121,128,112,112,112,112,112,113,112,113,113,112,
+0,0,0,0,0,0,0,0,0,0,129,112,114,114,114,114,114,114,114,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,114,114,114,114,114,114,0,
+0,0,0,0,0,119,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,22,13,23,23,13,23,23,23,13,23,23,13,24,0,0,0,0,0,0,
 0,22,23,23,23,23,23,21,23,23,23,23,23,24,0,0,0,0,0,0,
 0,26,27,27,27,27,27,27,27,27,27,27,27,28,0,0,0,0,0,0,
 0,6,7,7,7,7,7,7,7,7,7,7,7,8,0,0,0,0,0,0,
 0,10,11,11,11,11,11,11,11,11,11,11,11,12,0,0,0,0,0,0,
-0,10,11,11,11,11,11,11,11,11,11,11,11,11,7,78,7,7,78,78,
-0,10,11,11,11,11,11,11,11,11,11,11,78,78,15,15,78,78,78,78,
-0,10,11,11,11,11,11,11,11,11,11,78,78,78,0,0,0,0,0,0,
-0,14,15,15,11,11,11,11,11,11,11,78,15,16,0,0,0,0,0,0,
+0,10,11,11,11,11,11,11,11,11,11,11,11,11,7,80,7,7,80,80,
+0,10,11,11,11,11,11,11,11,11,11,11,80,80,15,15,80,80,80,80,
+0,10,11,11,11,11,11,11,11,11,11,80,80,80,0,0,0,0,0,0,
+0,14,15,15,11,11,11,11,11,11,11,80,15,16,0,0,0,0,0,0,
 0,0,0,0,14,15,11,11,11,15,16,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,2,3,4,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,
-69,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,18,19,20,0,
+71,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,18,19,20,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,23,24,0,
 0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,22,9,24,0,
 0,0,0,0,0,0,2,3,4,0,0,0,0,0,0,0,10,11,12,0,
@@ -37,28 +53,44 @@
 0,10,11,11,11,11,11,11,11,11,11,11,11,12,0,0,0,0,0,0,
 0,10,11,11,11,11,11,11,11,11,11,11,11,12,0,0,0,0,0,0,
 0,11,11,15,15,15,15,15,15,15,15,15,15,16,0,0,0,0,0,0,
-0,120,121,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,122,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="2" name="decal" width="20" height="24">
+ <layer id="2" name="decal" width="20" height="40">
   <data encoding="csv">
-0,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,74,0,71,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,0,130,
+0,0,0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,0,130,
+0,0,0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,105,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,106,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,76,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,30,31,32,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,34,35,36,0,0,0,0,0,0,0,0,0,0,0,
-0,71,74,0,0,0,38,39,40,0,0,0,0,0,0,0,0,0,0,0,
-0,0,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,73,76,0,0,0,38,39,40,0,0,0,0,0,0,0,0,0,0,0,
+0,0,73,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,0,0,0,
-0,75,72,72,0,0,0,0,0,0,0,0,0,0,0,0,105,0,0,0,
-0,0,0,75,71,0,0,0,0,0,0,0,0,0,0,0,105,0,0,0,
-0,0,72,72,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,0,0,0,
+0,77,74,74,0,0,0,0,0,0,0,0,0,0,0,0,107,0,0,0,
+0,0,0,77,73,0,0,0,0,0,0,0,0,0,0,0,107,0,0,0,
+0,0,74,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -69,29 +101,39 @@
 </data>
  </layer>
  <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
-  <object id="1" x="40" y="80" width="520" height="40"/>
-  <object id="2" x="560" y="120" width="40" height="80"/>
-  <object id="3" x="600" y="160" width="200" height="40"/>
-  <object id="4" x="560" y="280" width="40" height="80"/>
-  <object id="5" x="600" y="280" width="200" height="40"/>
-  <object id="6" x="440" y="360" width="120" height="40"/>
-  <object id="7" x="360" y="400" width="80" height="40"/>
-  <object id="8" x="360" y="680" width="280" height="40"/>
-  <object id="9" x="560" y="800" width="40" height="120"/>
-  <object id="10" x="120" y="920" width="440" height="40"/>
-  <object id="11" x="0" y="720" width="40" height="240"/>
-  <object id="12" x="40" y="680" width="160" height="40"/>
-  <object id="14" x="160" y="400" width="80" height="40"/>
-  <object id="15" x="0" y="360" width="40" height="360"/>
-  <object id="16" x="0" y="120" width="40" height="240"/>
-  <object id="18" x="360" y="440" width="40" height="240"/>
-  <object id="23" x="600" y="640" width="40" height="40"/>
-  <object id="24" x="640" y="600" width="120" height="40"/>
-  <object id="25" x="760" y="640" width="40" height="160"/>
-  <object id="26" x="600" y="800" width="160" height="40"/>
+  <object id="1" x="40" y="720" width="520" height="40"/>
+  <object id="2" x="560" y="760" width="40" height="80"/>
+  <object id="3" x="600" y="800" width="200" height="40"/>
+  <object id="4" x="560" y="920" width="40" height="80"/>
+  <object id="5" x="600" y="920" width="200" height="40"/>
+  <object id="6" x="440" y="1000" width="120" height="40"/>
+  <object id="7" x="360" y="1040" width="80" height="40"/>
+  <object id="8" x="360" y="1320" width="280" height="40"/>
+  <object id="9" x="560" y="1440" width="40" height="120"/>
+  <object id="10" x="120" y="1560" width="440" height="40"/>
+  <object id="11" x="0" y="1360" width="40" height="240"/>
+  <object id="12" x="40" y="1320" width="160" height="40"/>
+  <object id="14" x="160" y="1040" width="80" height="40"/>
+  <object id="15" x="0" y="1000" width="40" height="360"/>
+  <object id="16" x="0" y="760" width="40" height="240"/>
+  <object id="18" x="360" y="1080" width="40" height="240"/>
+  <object id="23" x="600" y="1280" width="40" height="40"/>
+  <object id="24" x="640" y="1240" width="120" height="40"/>
+  <object id="25" x="760" y="1280" width="40" height="160"/>
+  <object id="26" x="600" y="1440" width="160" height="40"/>
+  <object id="76" x="520" y="320" width="240" height="40"/>
+  <object id="77" x="760" y="240" width="40" height="80"/>
+  <object id="78" x="520" y="200" width="240" height="40"/>
+  <object id="79" x="400" y="240" width="40" height="80"/>
+  <object id="80" x="440" y="200" width="80" height="40"/>
+  <object id="81" x="400" y="320" width="40" height="40"/>
+  <object id="82" x="480" y="320" width="40" height="40"/>
  </objectgroup>
- <objectgroup color="#ff00ff" id="4" name="objects">
-  <object id="19" name="npc" x="480" y="840" width="40" height="40">
+ <objectgroup id="6" name="objects_ladder">
+  <object id="71" gid="64" x="390" y="760" width="150" height="430"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects_party">
+  <object id="19" name="npc" x="480" y="1480" width="40" height="40">
    <properties>
     <property name="actor" value="starwalker"/>
     <property name="text1_1" value="* These [color:red]larpers[color:reset] are..."/>
@@ -102,26 +144,26 @@
     <property name="text3_1" value="* [color:yellow]...[sound:PREDICTIVE]"/>
    </properties>
   </object>
-  <object id="27" name="savepoint" x="80" y="210" width="40" height="40">
+  <object id="27" name="savepoint" x="80" y="850" width="40" height="40">
    <properties>
     <property name="text1" value="* Many things have changed in this testing area. Mostlys for the worse."/>
     <property name="text2" value="* Yet still,[wait:5] the immutable power of larpery steels within you."/>
    </properties>
   </object>
-  <object id="28" name="squeak" x="680" y="600" width="40" height="40"/>
-  <object id="29" name="transition" x="800" y="200" width="40" height="80">
+  <object id="28" name="squeak" x="680" y="1240" width="40" height="40"/>
+  <object id="29" name="transition" x="800" y="840" width="40" height="80">
    <properties>
     <property name="map" value="room2"/>
     <property name="marker" value="entry"/>
    </properties>
   </object>
-  <object id="33" name="interactable" x="280" y="80" width="40" height="40">
+  <object id="33" name="interactable" x="280" y="720" width="40" height="40">
    <properties>
     <property name="cutscene" value="room1.wall"/>
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="35" name="npc" x="300" y="160">
+  <object id="35" name="npc" x="300" y="800">
    <properties>
     <property name="actor" value="wall"/>
     <property name="flagcheck" value="wall_hit"/>
@@ -131,7 +173,7 @@ no-good wall slammers.</property>
    </properties>
    <point/>
   </object>
-  <object id="44" name="interactable" x="40" y="680" width="160" height="40">
+  <object id="44" name="interactable" x="40" y="1320" width="160" height="40">
    <properties>
     <property name="text">* This[sound:quato] is[sound:quato] the[sound:quato] coolest[sound:quato] wall[sound:quato] in[sound:quato] the[sound:quato] room[sound:quato].[wait:5]
 * Trade on [sound:GPT][color:green]Quado[sound:quato]
@@ -145,7 +187,7 @@ Quado
 Quado</property>
    </properties>
   </object>
-  <object id="45" name="npc" x="120" y="840" width="40" height="40">
+  <object id="45" name="npc" x="120" y="1480" width="40" height="40">
    <properties>
     <property name="actor" value="kris"/>
     <property name="facing" value="left"/>
@@ -155,7 +197,7 @@ Quado</property>
     <property name="turn" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="49" name="npc" x="440" y="160" width="40" height="40">
+  <object id="49" name="npc" x="490" y="1150" width="40" height="40">
    <properties>
     <property name="actor" value="flight"/>
     <property name="text1_1" value="* About time someone interacted with me."/>
@@ -165,56 +207,56 @@ Quado</property>
     <property name="text3_1" value="* Don't you have anything better to do?"/>
    </properties>
   </object>
-  <object id="53" gid="61" x="80" y="100" width="120" height="60"/>
-  <object id="54" name="interactable" x="80" y="80" width="120" height="40">
+  <object id="53" gid="61" x="80" y="740" width="120" height="60"/>
+  <object id="54" name="interactable" x="80" y="720" width="120" height="40">
    <properties>
     <property name="cutscene" value="room1.grace_voice_test"/>
    </properties>
   </object>
-  <object id="55" gid="77" x="160" y="830" width="320" height="80"/>
-  <object id="56" name="npc" x="80" y="760" width="40" height="40">
+  <object id="55" gid="79" x="160" y="1470" width="320" height="80"/>
+  <object id="56" name="npc" x="80" y="1400" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch2]walker"/>
    </properties>
   </object>
-  <object id="57" name="interactable" x="160" y="750" width="320" height="60">
+  <object id="57" name="interactable" x="160" y="1390" width="320" height="60">
    <properties>
     <property name="solid" type="bool" value="true"/>
     <property name="text" value="* (Just a green couch in a green room.)"/>
    </properties>
   </object>
-  <object id="58" name="npc" x="380" y="290" width="40" height="40">
+  <object id="58" name="npc" x="380" y="930" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch7]walker"/>
    </properties>
   </object>
-  <object id="59" name="npc" x="180" y="150" width="40" height="40">
+  <object id="59" name="npc" x="180" y="790" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch1]walker"/>
    </properties>
   </object>
-  <object id="60" name="npc" x="190" y="280" width="40" height="40">
+  <object id="60" name="npc" x="190" y="920" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch4]walker"/>
    </properties>
   </object>
-  <object id="61" name="npc" x="350" y="200" width="40" height="40">
+  <object id="61" name="npc" x="350" y="840" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch3]walker"/>
    </properties>
   </object>
-  <object id="62" name="npc" x="280" y="320" width="40" height="40">
+  <object id="62" name="npc" x="280" y="960" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
     <property name="text1_1" value="* [color:red]Larp[sound:DELTALARP_ch6]walker"/>
    </properties>
   </object>
-  <object id="63" name="npc" x="40" y="840" width="40" height="40">
+  <object id="63" name="npc" x="40" y="1480" width="40" height="40">
    <properties>
     <property name="actor" value="GONER_0"/>
     <property name="facing" value="right"/>
@@ -224,23 +266,83 @@ Quado</property>
     <property name="turn" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="64" name="script" x="0" y="960" width="120" height="40">
+  <object id="64" name="script" x="0" y="1600" width="120" height="40">
    <properties>
     <property name="cutscene" value="chapter1/farm_world.cornplate_puzzle"/>
    </properties>
   </object>
+  <object id="65" name="interactable" x="400" y="1320" width="200" height="40">
+   <properties>
+    <property name="text" value="* Help"/>
+   </properties>
+  </object>
+  <object id="66" name="interactable" x="360" y="1080" width="40" height="240">
+   <properties>
+    <property name="text" value="* Help"/>
+   </properties>
+  </object>
+  <object id="70" name="climbarea" x="400" y="360" width="120" height="360"/>
+  <object id="67" name="climbentry" x="440" y="720" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="75"/>
+   </properties>
+  </object>
+  <object id="74" name="climbentry" x="440" y="320" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="68"/>
+   </properties>
+  </object>
+  <object id="88" name="climbentry" x="480" y="720" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="86"/>
+   </properties>
+  </object>
+  <object id="89" name="climbentry" x="400" y="720" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="87"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="objects">
+  <object id="68" name="climbexit" x="440" y="360" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="69"/>
+   </properties>
+  </object>
+  <object id="75" name="climbexit" x="440" y="680" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="73"/>
+   </properties>
+  </object>
+  <object id="85" gid="65" x="310" y="700" width="120" height="60"/>
+  <object id="86" name="climbexit" x="480" y="680" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="73"/>
+   </properties>
+  </object>
+  <object id="87" name="climbexit" x="400" y="680" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="73"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="5" name="markers">
-  <object id="20" name="spawn" x="300" y="250">
+  <object id="20" name="spawn" x="300" y="890">
    <point/>
   </object>
-  <object id="30" name="entry" x="760" y="240">
+  <object id="30" name="entry" x="760" y="880">
    <point/>
   </object>
-  <object id="50" name="susie_spawn" x="690" y="240">
+  <object id="50" name="susie_spawn" x="690" y="880">
    <point/>
   </object>
-  <object id="51" name="susie_walk" x="560" y="240">
+  <object id="51" name="susie_walk" x="560" y="880">
+   <point/>
+  </object>
+  <object id="69" name="climb_exit" x="460" y="300">
+   <point/>
+  </object>
+  <object id="73" name="climb_exit" x="480" y="810">
    <point/>
   </object>
  </objectgroup>
