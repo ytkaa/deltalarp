@@ -106,13 +106,13 @@
     <property name="text" value="* (Green couch in the room.)"/>
    </properties>
   </object>
-  <object id="18" name="interactable" x="280" y="160" width="120" height="20">
+  <object id="18" name="interactable" x="280" y="160" width="100" height="20">
    <properties>
     <property name="solid" type="bool" value="true"/>
     <property name="text" value="* (Green couch in the room.)"/>
    </properties>
   </object>
-  <object id="21" name="interactable" x="440" y="120" width="40" height="60">
+  <object id="21" name="interactable" x="460" y="120" width="20" height="60">
    <properties>
     <property name="solid" type="bool" value="true"/>
     <property name="text" value="* (Green couch in the room.)"/>
@@ -149,7 +149,7 @@
   <object id="8" x="520" y="120" width="40" height="120"/>
   <object id="9" x="560" y="200" width="80" height="40"/>
   <object id="29" x="240" y="160" width="40" height="20"/>
-  <object id="30" x="400" y="160" width="40" height="20"/>
+  <object id="30" x="380" y="160" width="80" height="20"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="3" name="markers">
   <object id="3" name="to_farm3" x="40" y="300">

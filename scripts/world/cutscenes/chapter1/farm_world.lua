@@ -135,8 +135,11 @@ return {
             cutscene:text("* Let's just say...[wait:5] he likes to work alone.")
         end
         cutscene:text("* He works alone to \"harvest the crops.\"[wait:5] That's how he puts it.")
-        cutscene:text("* Now,[wait:5] about harvesting the crops...")
+        cutscene:text("* Now,[wait:5] about harvesting those crops...")
         cutscene:wait(1)
+        cutscene:shakeCharacter(colonel)
+        Assets.playSound("bump")
+        cutscene:wait(0.5)
         cutscene:text("* THAT'S US !!![wait:5] HE'S BEEN HARVESTING US COLONELS AND STEALING OUR LIFE FORCE !!!")
         cutscene:wait(1)
         cutscene:text("* Lieutenant,[wait:5] when you meet that Gardner,[wait:5] don't run away !!")
