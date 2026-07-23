@@ -124,7 +124,7 @@ return {
             cutscene:text("* You seem a little too...[wait:5] animated,[wait:5] for his tastes...")
             cutscene:text("* And regardless,[wait:5] that old Gardner likes to work alone !!")
         else 
-            cutscene:text("* Heh.[wait:5] I knew that,[wait:5] lietenant!")
+            cutscene:text("* Heh.[wait:5] I knew that,[wait:5] lieutenant!")
             cutscene:text("* You just seem a little too...[wait:5] animated,[wait:5] for his tastes.")
             cutscene:text("* As for who he is...[wait:5]")
             cutscene:text("* Let's just say...[wait:5] he likes to work alone.")
@@ -147,7 +147,7 @@ return {
             cutscene:text("* ...Jimmy...[wait:30] no...")
             cutscene:text("* YOU !!![wait:5] You rustled Jimmy,[wait:5] \ndidn't you ??!?")
             cutscene:wait(1)
-            cutscene:text("* Well, GOOD.[wait:5] None of us really liked him anyway.")
+            cutscene:text("* Well, GOOD.[wait:5][sound:ominous_cancel] None of us really liked him anyway.")
             cutscene:text("* Zah ha ha!")
             Game.world.music:resume()
         end
