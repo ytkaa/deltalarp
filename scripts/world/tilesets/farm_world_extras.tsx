@@ -47,6 +47,6 @@
   <image source="../../../assets/sprites/tilesets/farm_world/couch.png" width="160" height="40"/>
  </tile>
  <tile id="14">
-  <image source="../../../assets/sprites/tilesets/farm_world/wheat_wall.png" width="135" height="45"/>
+  <image source="../../../assets/sprites/tilesets/farm_world/wheat_wall.png" width="120" height="40"/>
  </tile>
 </tileset>

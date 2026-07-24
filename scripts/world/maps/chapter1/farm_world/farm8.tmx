@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="5">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="8">
  <editorsettings>
   <export target="farm8.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="music" value="field_jarona"/>
+  <property name="name" value="Wheat Field - Lawnmower"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
@@ -75,8 +76,9 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup color="#0000ff" id="5" name="collision"/>
  <objectgroup id="3" name="markers">
-  <object id="2" name="to_farm7_south" x="418.667" y="45.3333">
+  <object id="2" name="to_farm7_south" x="420" y="40">
    <point/>
   </object>
  </objectgroup>

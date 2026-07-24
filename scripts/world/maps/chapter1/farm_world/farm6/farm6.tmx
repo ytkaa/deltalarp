@@ -81,8 +81,8 @@
   <object id="22" name="script" x="560" y="240" width="40" height="120">
    <properties>
     <property name="cutscene" value="chapter1/farm_world.barracks"/>
-    <property name="flag" value="barracks"/>
     <property name="once" type="bool" value="true"/>
+    <property name="setflag" value="barracks"/>
    </properties>
   </object>
   <object id="25" name="savepoint" x="300" y="220" width="40" height="40">
@@ -126,8 +126,8 @@
   </object>
   <object id="32" name="transition" x="640" y="240" width="40" height="120">
    <properties>
-    <property name="map" value="chapter1/farm_world/farm7"/>
-    <property name="marker" value="to_barracks"/>
+    <property name="map" value="chapter1/farm_world/farm6_warpdoor"/>
+    <property name="marker" value="to_farm6"/>
    </properties>
   </object>
  </objectgroup>
@@ -170,7 +170,7 @@
   <object id="26" name="spawn" x="240" y="280">
    <point/>
   </object>
-  <object id="31" name="to_farm7" x="610.667" y="304.667">
+  <object id="31" name="to_warpdoor" x="600" y="300">
    <point/>
   </object>
  </objectgroup>

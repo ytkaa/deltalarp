@@ -112,8 +112,8 @@ return {
     {
       id = 14,
       image = "../../../assets/sprites/tilesets/farm_world/wheat_wall.png",
-      width = 135,
-      height = 45
+      width = 120,
+      height = 40
     }
   }
 }
