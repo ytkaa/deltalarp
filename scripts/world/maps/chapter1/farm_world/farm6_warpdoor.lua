@@ -196,7 +196,7 @@ return {
             ["map1"] = "chapter1/farm_world/farm6_warpdoor",
             ["marker1"] = "warp",
             ["name1"] = "Wheat Field",
-            ["open"] = true
+            ["openflag"] = "farm_warpdoors"
           }
         }
       }

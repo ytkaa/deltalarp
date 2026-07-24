@@ -62,7 +62,7 @@
     <property name="map1" value="chapter1/farm_world/farm6_warpdoor"/>
     <property name="marker1" value="warp"/>
     <property name="name1" value="Wheat Field"/>
-    <property name="open" type="bool" value="true"/>
+    <property name="openflag" value="farm_warpdoors"/>
    </properties>
    <point/>
   </object>
