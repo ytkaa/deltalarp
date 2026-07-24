@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="5">
+ <editorsettings>
+  <export target="farm8.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="field_jarona"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="1" name="Camada de Blocos 1" width="20" height="20">
+  <data encoding="csv">
+3,4,4,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,2,3,
+2,3,5,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,2,3,
+2,3,5,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,2,3,
+2,3,5,5,5,5,5,5,5,15,15,15,15,5,5,5,5,5,2,3,
+2,3,5,5,5,5,5,5,5,15,15,15,15,5,5,5,5,5,5,3,
+2,3,5,5,5,5,5,5,5,15,15,15,5,5,5,5,5,5,5,3,
+2,3,5,5,5,5,5,5,5,15,15,15,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,5,5,15,15,15,15,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,5,5,15,15,15,15,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,5,5,2,
+3,5,5,5,5,5,15,15,15,15,15,15,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,15,15,15,15,15,15,5,5,5,5,5,5,5,2,
+5,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,5,5,5,2,
+5,5,5,5,5,5,15,15,15,15,15,5,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,
+2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,11,2,
+2,2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,11,2,
+4,11,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,3,
+2,3,4,5,5,5,5,4,4,4,4,4,4,5,5,5,5,4,3,4,
+13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,4,4,4
+</data>
+ </layer>
+ <layer id="4" name="Camada de Blocos 2" width="20" height="20">
+  <data encoding="csv">
+108,103,108,0,0,0,0,0,0,0,0,0,0,0,0,0,108,103,103,108,
+108,103,108,0,0,0,0,0,0,0,0,0,0,0,0,108,108,103,103,103,
+108,103,108,0,0,0,0,0,0,0,0,0,0,108,108,108,108,108,103,103,
+108,103,108,0,0,0,0,0,0,0,108,108,108,108,108,108,112,112,103,103,
+108,103,108,108,108,108,108,108,108,108,108,108,108,108,108,112,112,112,112,103,
+0,103,103,108,108,108,108,108,108,108,108,108,108,108,108,112,108,108,112,103,
+103,103,103,108,108,109,108,108,108,108,108,109,109,108,112,112,108,108,108,103,
+103,103,112,112,112,112,112,112,112,108,112,112,112,112,112,108,108,108,108,103,
+112,103,112,108,108,109,109,112,112,112,112,108,109,109,108,108,108,108,108,103,
+103,108,112,112,108,108,109,104,104,104,104,109,112,112,108,109,109,108,108,103,
+103,109,109,112,112,112,112,104,108,108,104,104,112,112,108,109,109,108,108,103,
+103,103,108,109,109,112,112,109,109,112,112,104,108,112,112,109,103,103,103,103,
+109,103,103,103,109,112,112,112,112,112,109,104,104,103,103,103,103,109,108,103,
+109,108,108,103,103,103,103,103,112,112,109,103,104,104,109,112,108,109,108,103,
+109,108,112,112,112,112,112,103,103,103,103,103,109,104,109,112,112,109,108,103,
+112,112,112,112,104,109,109,109,108,112,112,112,108,104,108,108,112,109,108,103,
+112,109,109,104,104,108,108,108,108,108,108,112,112,104,112,112,112,109,108,103,
+108,108,104,104,109,109,109,109,109,109,109,109,104,104,103,103,103,103,108,103,
+108,108,104,108,108,104,104,104,104,104,104,104,104,103,103,108,108,103,103,108,
+103,104,104,104,104,104,103,103,108,108,108,108,108,108,108,108,108,108,108,108
+</data>
+ </layer>
+ <objectgroup color="#ff007f" id="2" name="objects_party">
+  <object id="1" name="transition" x="360.5" y="-42.5" width="118.667" height="42.3333">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm7"/>
+    <property name="marker" value="to_shredder"/>
+   </properties>
+  </object>
+  <object id="4" name="npc" x="200.667" y="79.3333" width="40" height="40">
+   <properties>
+    <property name="actor" value="starwalker"/>
+    <property name="text1_1" value="* So the idea here is theres gonna be a shredder/lawnmower enemy that chases you."/>
+    <property name="text1_2" value="* As it chases you it ends up shredding a lot of the wheat"/>
+    <property name="text1_3" value="* Maybe shredding wheat can reveal some item but maybe we've given a lot already"/>
+    <property name="text1_4" value="* But mainly its just a fun thing that teaches a mechanic we can reuse later"/>
+    <property name="text1_5" value="* The lawnmower chasing is also not the intended solution for the wheat wall above btw"/>
+    <property name="text1_6" value="* That will require backtracking from the garden, i got a vague idea of it in my head"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="markers">
+  <object id="2" name="to_farm7_south" x="418.667" y="45.3333">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

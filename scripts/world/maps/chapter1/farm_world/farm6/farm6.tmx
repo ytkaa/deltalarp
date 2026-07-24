@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="31">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="33">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -124,6 +124,12 @@
     <property name="text" value="* (Green couch in the room.)"/>
    </properties>
   </object>
+  <object id="32" name="transition" x="640" y="240" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm7"/>
+    <property name="marker" value="to_barracks"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="5" name="Tile Layer 2" width="16" height="12">
   <data encoding="csv">
@@ -164,9 +170,12 @@
   <object id="26" name="spawn" x="240" y="280">
    <point/>
   </object>
+  <object id="31" name="to_farm7" x="610.667" y="304.667">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup color="#ffff00" id="8" name="controllers">
-  <object id="28" name="toggle" x="690" y="180">
+  <object id="28" name="toggle" x="663.5" y="187.25">
    <properties>
     <property name="flag" value="barracks"/>
     <property name="inverted" type="bool" value="true"/>

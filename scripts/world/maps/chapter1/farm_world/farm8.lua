@@ -1,0 +1,198 @@
+return {
+  version = "1.11",
+  luaversion = "5.1",
+  tiledversion = "1.12.2",
+  class = "",
+  orientation = "orthogonal",
+  renderorder = "right-down",
+  width = 20,
+  height = 20,
+  tilewidth = 40,
+  tileheight = 40,
+  nextlayerid = 5,
+  nextobjectid = 5,
+  properties = {
+    ["music"] = "field_jarona"
+  },
+  tilesets = {
+    {
+      name = "farm_world",
+      firstgid = 1,
+      filename = "../../../tilesets/farm_world.tsx",
+      exportfilename = "../../../tilesets/farm_world.lua"
+    },
+    {
+      name = "farm_world_extras",
+      firstgid = 101,
+      filename = "../../../tilesets/farm_world_extras.tsx",
+      exportfilename = "../../../tilesets/farm_world_extras.lua"
+    }
+  },
+  layers = {
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 20,
+      height = 20,
+      id = 1,
+      name = "Camada de Blocos 1",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        3, 4, 4, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 2, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 2, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 2, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 5, 5, 5, 5, 5, 2, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 3,
+        2, 3, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        3, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 2,
+        5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 2,
+        5, 5, 5, 5, 5, 5, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2,
+        2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 11, 2,
+        2, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 11, 2,
+        4, 11, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 3,
+        2, 3, 4, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 4, 3, 4,
+        13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 4, 4, 4
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 20,
+      height = 20,
+      id = 4,
+      name = "Camada de Blocos 2",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        108, 103, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 108, 103, 103, 108,
+        108, 103, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 108, 108, 103, 103, 103,
+        108, 103, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 108, 108, 108, 108, 108, 103, 103,
+        108, 103, 108, 0, 0, 0, 0, 0, 0, 0, 108, 108, 108, 108, 108, 108, 112, 112, 103, 103,
+        108, 103, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 112, 112, 112, 112, 103,
+        0, 103, 103, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 112, 108, 108, 112, 103,
+        103, 103, 103, 108, 108, 109, 108, 108, 108, 108, 108, 109, 109, 108, 112, 112, 108, 108, 108, 103,
+        103, 103, 112, 112, 112, 112, 112, 112, 112, 108, 112, 112, 112, 112, 112, 108, 108, 108, 108, 103,
+        112, 103, 112, 108, 108, 109, 109, 112, 112, 112, 112, 108, 109, 109, 108, 108, 108, 108, 108, 103,
+        103, 108, 112, 112, 108, 108, 109, 104, 104, 104, 104, 109, 112, 112, 108, 109, 109, 108, 108, 103,
+        103, 109, 109, 112, 112, 112, 112, 104, 108, 108, 104, 104, 112, 112, 108, 109, 109, 108, 108, 103,
+        103, 103, 108, 109, 109, 112, 112, 109, 109, 112, 112, 104, 108, 112, 112, 109, 103, 103, 103, 103,
+        109, 103, 103, 103, 109, 112, 112, 112, 112, 112, 109, 104, 104, 103, 103, 103, 103, 109, 108, 103,
+        109, 108, 108, 103, 103, 103, 103, 103, 112, 112, 109, 103, 104, 104, 109, 112, 108, 109, 108, 103,
+        109, 108, 112, 112, 112, 112, 112, 103, 103, 103, 103, 103, 109, 104, 109, 112, 112, 109, 108, 103,
+        112, 112, 112, 112, 104, 109, 109, 109, 108, 112, 112, 112, 108, 104, 108, 108, 112, 109, 108, 103,
+        112, 109, 109, 104, 104, 108, 108, 108, 108, 108, 108, 112, 112, 104, 112, 112, 112, 109, 108, 103,
+        108, 108, 104, 104, 109, 109, 109, 109, 109, 109, 109, 109, 104, 104, 103, 103, 103, 103, 108, 103,
+        108, 108, 104, 108, 108, 104, 104, 104, 104, 104, 104, 104, 104, 103, 103, 108, 108, 103, 103, 108,
+        103, 104, 104, 104, 104, 104, 103, 103, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108, 108
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 2,
+      name = "objects_party",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 1,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 360.5,
+          y = -42.5,
+          width = 118.667,
+          height = 42.3333,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm7",
+            ["marker"] = "to_shredder"
+          }
+        },
+        {
+          id = 4,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 200.667,
+          y = 79.3333,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "starwalker",
+            ["text1_1"] = "* So the idea here is theres gonna be a shredder/lawnmower enemy that chases you.",
+            ["text1_2"] = "* As it chases you it ends up shredding a lot of the wheat",
+            ["text1_3"] = "* Maybe shredding wheat can reveal some item but maybe we've given a lot already",
+            ["text1_4"] = "* But mainly its just a fun thing that teaches a mechanic we can reuse later",
+            ["text1_5"] = "* The lawnmower chasing is also not the intended solution for the wheat wall above btw",
+            ["text1_6"] = "* That will require backtracking from the garden, i got a vague idea of it in my head"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 3,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 2,
+          name = "to_farm7_south",
+          type = "",
+          shape = "point",
+          x = 418.667,
+          y = 45.3333,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    }
+  }
+}

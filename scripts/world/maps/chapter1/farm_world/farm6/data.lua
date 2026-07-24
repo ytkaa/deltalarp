@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 31,
+  nextobjectid = 33,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - \"Barracks\""
@@ -327,6 +327,23 @@ return {
             ["solid"] = true,
             ["text"] = "* (Green couch in the room.)"
           }
+        },
+        {
+          id = 32,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 240,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm7",
+            ["marker"] = "to_barracks"
+          }
         }
       }
     },
@@ -559,6 +576,20 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 31,
+          name = "to_farm7",
+          type = "",
+          shape = "point",
+          x = 610.667,
+          y = 304.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -581,8 +612,8 @@ return {
           name = "toggle",
           type = "",
           shape = "point",
-          x = 690,
-          y = 180,
+          x = 663.5,
+          y = 187.25,
           width = 0,
           height = 0,
           rotation = 0,

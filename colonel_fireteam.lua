@@ -1,0 +1,23 @@
+local Colonel, super = Class(Encounter)
+
+function Colonel:init()
+    super.init(self)
+
+    -- Text displayed at the bottom of the screen at the start of the encounter
+    self.text = "* The fireteam conducts an ambush!"
+
+    -- Battle music ("battle" is rude buster)
+    self.music = "petal_limiter"
+    -- Enables the purple grid battle background
+    self.background = true
+
+    self:addEnemy("colonel")
+    self:addEnemy("colonel")
+    self:addEnemy("colonel")
+end
+
+function Colonel:onBattleStart()
+    Game:setFlag("fireteam_fought", true)
+end
+
+return Colonel

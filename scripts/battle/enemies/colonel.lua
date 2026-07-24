@@ -179,7 +179,7 @@ function Colonel:init()
                     Game.battle.enemies[2]:setAnimation("idledisarmed")
                 end
                 if Game.battle.enemies[3].disarmed == false then
-                    Assets.playSound("grenadeannounce", 3) 
+                    Assets.playSound("grenadeannounce") 
                     Game.battle.enemies[3].getNextWaves = function(self)
                         return { "colonelgrenade" }
                     end

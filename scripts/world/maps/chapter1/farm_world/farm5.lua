@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 75,
+  nextobjectid = 76,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Block Puzzle"
@@ -296,6 +296,24 @@ return {
           properties = {
             ["item"] = "cornplate",
             ["setflag"] = "enemies_cornplate_puzzle"
+          }
+        },
+        {
+          id = 75,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 441,
+          y = -39.5,
+          width = 118,
+          height = 39,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1_1"] = "* (Heh, you thought there was something here.)",
+            ["text1_2"] = "* (WRONG!!!!!)"
           }
         }
       }

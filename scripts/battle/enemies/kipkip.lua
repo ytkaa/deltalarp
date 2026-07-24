@@ -40,7 +40,7 @@ function Kipkip:init()
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = { -- these will be voiced by me (pikmin) in a similar manner to how pikmin sound
-        "Waaahhh!",
+        "Yeho!",
         "Hup hup hup!",
         "Hunnng...",
         "Mi yen hop!",

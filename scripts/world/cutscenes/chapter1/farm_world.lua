@@ -159,7 +159,25 @@ return {
             cutscene:text("* Zah ha ha!")
             Game.world.music:resume()
         end
-        cutscene:setSprite(colonel, "idle")
-        
+        cutscene:setSprite(colonel, "idle") 
+    end;
+
+    disgustingspikes = function(cutscene, event)
+        if event.interact_count == 1 then
+            cutscene:wait(cutscene:text("* (More spikes.)"))
+            Game:setFlag("disgusting_spikes", true)
+        elseif event.interact_count == 2 then
+            cutscene:wait(cutscene:text("* (More spikes in a farmer's field ??!?)"))
+        elseif event.interact_count >= 3 then
+            cutscene:wait(cutscene:text("* (Disgusting.)"))
+        end
+    end;
+
+    disgustingSpikesAttack = function(cutscene, event)
+        if (Game:getFlag("disgusting_spikes", false)) == true and (Game:getFlag("foughtDisgustingSpikes", false)) == false then
+            Game:setFlag("disgustingSpikesAttack", true)
+        elseif (Game:getFlag("disgusting_spikes", false)) == true and (Game:getFlag("foughtDisgustingSpikes", false)) == true then
+            return
+        end
     end;
 }
