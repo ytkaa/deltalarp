@@ -219,8 +219,8 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "chapter1/farm_world.barracks",
-            ["flag"] = "barracks",
-            ["once"] = true
+            ["once"] = true,
+            ["setflag"] = "barracks"
           }
         },
         {
@@ -341,8 +341,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["map"] = "chapter1/farm_world/farm7",
-            ["marker"] = "to_barracks"
+            ["map"] = "chapter1/farm_world/farm6_warpdoor",
+            ["marker"] = "to_farm6"
           }
         }
       }
@@ -579,11 +579,11 @@ return {
         },
         {
           id = 31,
-          name = "to_farm7",
+          name = "to_warpdoor",
           type = "",
           shape = "point",
-          x = 610.667,
-          y = 304.667,
+          x = 600,
+          y = 300,
           width = 0,
           height = 0,
           rotation = 0,

@@ -53,3 +53,8 @@
   <image source="../../../assets/sprites/tilesets/farm_world/artillery.png" width="120" height="120"/>
  </tile>
 </tileset>
+ </tile>
+ <tile id="16">
+  <image source="../../../assets/sprites/tilesets/farm_world/artillery.png" width="120" height="120"/>
+ </tile>
+</tileset>

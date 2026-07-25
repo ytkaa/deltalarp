@@ -9,10 +9,11 @@ return {
   height = 20,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 5,
-  nextobjectid = 5,
+  nextlayerid = 6,
+  nextobjectid = 8,
   properties = {
-    ["music"] = "field_jarona"
+    ["music"] = "field_jarona",
+    ["name"] = "Wheat Field - Lawnmower"
   },
   tilesets = {
     {
@@ -167,6 +168,21 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 5,
+      name = "collision",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {}
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 3,
       name = "markers",
       class = "",
@@ -183,8 +199,8 @@ return {
           name = "to_farm7_south",
           type = "",
           shape = "point",
-          x = 418.667,
-          y = 45.3333,
+          x = 420,
+          y = 40,
           width = 0,
           height = 0,
           rotation = 0,
