@@ -95,8 +95,22 @@
             "fileName": "farm10.tmx",
             "height": 800,
             "width": 5200,
-            "x": 7960,
-            "y": -1840
+            "x": 8400,
+            "y": -1320
+        },
+        {
+            "fileName": "farm10_real.tmx",
+            "height": 800,
+            "width": 5200,
+            "x": 8400,
+            "y": -2360
+        },
+        {
+            "fileName": "farm_gardner_test.tmx",
+            "height": 1600,
+            "width": 3200,
+            "x": 8400,
+            "y": -4280
         }
     ],
     "onlyShowAdjacentMaps": false,
