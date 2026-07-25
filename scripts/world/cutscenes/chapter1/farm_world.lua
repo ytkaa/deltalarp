@@ -200,4 +200,189 @@ return {
         cutscene:text("[voice:gardner][speed:0.4]* To finally breathe the fresh air, move an unfamiliar movement?")
         cutscene:text("[voice:gardner][speed:0.4]* Do you[wait:5] know the joys[wait:5] of running a farm?")
     end;
+
+    setMajorWheatPuzzleFlag = function(cutscene, event)
+        Game:setFlag("completedMajorWheatPuzzle", true)
+    end;
+
+    majorWheatPuzzle = function(cutscene, event)
+        if (Game:getFlag("completedMajorWheatPuzzle", false)) and (Game:getFlag("sawMajorWheatPuzzleCutscene", false)) == false then
+            Game:setFlag("sawMajorWheatPuzzleCutscene", true)
+            Game.world.music:pause()
+            Assets.playSound("moss_fanfare")
+            cutscene:wait(2)
+            local spike1 = Game.world:getEvent(189)
+            local spike2 = Game.world:getEvent(180)
+            local spike3 = Game.world:getEvent(181)
+            local spike4 = Game.world:getEvent(190)
+            local spike5 = Game.world:getEvent(185)
+            local spike6 = Game.world:getEvent(186)
+            local spike7 = Game.world:getEvent(187)
+            local spike8 = Game.world:getEvent(182)
+            local spike9 = Game.world:getEvent(183)
+            local spike10 = Game.world:getEvent(184)
+            local spike11 = Game.world:getEvent(179)
+            local options = {
+                ["play_sound"] = false
+            }
+            spike1:explode(0, 0, false)
+            spike2:explode(0, 0, false, options)
+            spike3:explode(0, 0, false, options)
+            spike4:explode(0, 0, false, options)
+            spike5:explode(0, 0, false, options)
+            spike6:explode(0, 0, false, options)
+            spike7:explode(0, 0, false, options)
+            spike8:explode(0, 0, false, options)
+            spike9:explode(0, 0, false, options)
+            spike10:explode(0, 0, false, options)
+            spike11:explode(0, 0, false, options)
+            Game:setFlag("completeMajorWheatPuzzle", true)
+            Game.world.music:resume()
+            local colonel = cutscene:getCharacter("colonel", 2)
+            local vess = cutscene:getCharacter("vess")
+            local options2 = {
+                ["talk"] = true;
+            }
+            cutscene:setSpeaker(colonel, true)
+            cutscene:setTextboxTop(false)
+            cutscene:look(colonel, "right")
+            cutscene:wait(cutscene:alert(colonel, 2))
+            cutscene:setSprite(colonel, "talk", 1/6)
+            cutscene:text("* Wow,[wait:5] lieutenant !!", nil, colonel, options2)
+            cutscene:text("* You got rid of the spikes !!", nil, colonel, options2)
+            cutscene:text("* Now we can save our encircled men !!", nil, colonel, options2)
+            cutscene:text("* You're promoted to commander,[wait:5] lieutenant !!", nil, colonel, options2)
+            cutscene:wait(cutscene:walkTo(colonel, "colonel_run", 2))
+        else
+            return
+        end
+    end;
+
+    artilleryWheatPuzzle = function(cutscene, event)
+            local colonel = cutscene:getCharacter("colonel", 1)
+            cutscene:look(colonel, "right")
+            Game:setFlag("sawartilleryWheatPuzzleCutscene", true)
+            cutscene:wait(1)
+            cutscene:detachCamera()
+            cutscene:wait(cutscene:panTo("end_marker", 7, "in-out-quad"))
+            cutscene:wait(2)
+            cutscene:wait(cutscene:panTo("script_marker", 2, "in-out-quad"))
+            cutscene:wait(1)
+            local rightColonel = cutscene:getCharacter("colonel", 2)
+            local leftColonel = cutscene:getCharacter("colonel", 3)
+            local vess = cutscene:getCharacter("vess")
+            local options = {
+                ["talk"] = true;
+            }
+            local options2 = {
+                ["play_sound"] = false;
+            }
+            cutscene:setSpeaker(colonel, true)
+            cutscene:setTextboxTop(false)
+            cutscene:look(colonel, "left")
+            cutscene:wait(0.5)
+            Game.world.music:pause()
+            cutscene:setSprite(colonel, "talk", 1/6)
+            cutscene:text("* Lieutenant.", nil, colonel, options)
+            cutscene:wait(1)
+            cutscene:text("* We're not gonna waste time figuring this puzzle out.", nil, colonel, options)
+            cutscene:text("* Lives are at stake.", nil, colonel, options)
+            cutscene:wait(1)
+            cutscene:text("* This leaves us with only one option.", nil, colonel, options)
+            cutscene:wait(cutscene:panTo("artillery_marker"))
+            cutscene:text("* Fire.", nil, colonel, options)
+            cutscene:setSpeaker(leftColonel, true)
+            cutscene:setSprite(colonel, "idle", 1/6)
+            cutscene:setSprite(leftColonel, "talk", 1/6)
+            cutscene:text("* Sir,[wait:5] yes sir!", nil, leftColonel, options)
+            cutscene:setSpeaker(rightColonel, true)
+            cutscene:setSprite(leftColonel, "idle", 1/6)
+            cutscene:setSprite(rightColonel, "talk", 1/6)
+            cutscene:text("* But Colonel,[wait:5] theres civilians there![wait:5] All those wheat and kernels !![wait:5] Grasses, even !!", nil, rightColonel, options)
+            cutscene:setSpeaker(colonel, true)
+            cutscene:setSprite(colonel, "talk", 1/6)
+            cutscene:setSprite(rightColonel, "idle", 1/6)
+            cutscene:text("* We warned them to evacuate days before the operation...[wait:5] They should've been gone long ago.", nil, Colonel, options)
+            cutscene:text("* Plus,[wait:5] this is enemy territory.[wait:5] For all we know,[wait:5] they could be loyal to the GARDNER. ", nil, Colonel, options)
+            cutscene:text("* FIRE!!!! ", nil, Colonel, options)
+            cutscene:setSpeaker(leftColonel, true)
+            cutscene:setSprite(colonel, "idle", 1/6)
+            cutscene:setSprite(leftColonel, "talk", 1/6)
+            cutscene:text("* YOU HEARD THE MAN !![wait:5] FIRE EVERYTHING !!", nil, leftColonel, options)
+            cutscene:setSpeaker(rightColonel, true)
+            cutscene:setSprite(leftColonel, "idle", 1/6)
+            cutscene:setSprite(rightColonel, "talk", 1/6)
+            cutscene:text("* NOOOOO !!!!!", nil, rightColonel, options)
+            cutscene:wait(cutscene:fadeOut(1, {color = {1, 1, 1}}))
+            cutscene:wait(cutscene:panTo("script_marker", 0.05))
+            cutscene:panTo("end_marker", 14)
+            cutscene:fadeIn(1)
+            for i = 1, 400 do
+                local random_x = love.math.random(529, 4910) -- pick random coordinates
+                local random_y = love.math.random(130, 665)
+                local explode_point = cutscene:spawnNPC("blanknpc", random_x, random_y) --you cant just spawn an explosion, you have to spawn an object and explode it. but you CANT SPAWN AN OBJECT (I THINK), SO YOU HAVE TO SPAWN AN NPC!!! THIS IS DUMB"!!!!! THIS SIS STUPDIU!!!!!!!!!!!!
+
+                explode_point:explode(0, 0, false, options2)
+
+                if love.math.random() < 0.15 then
+                    Assets.playSound("explosion") 
+                end
+                cutscene:wait(0.025)
+            end
+            cutscene:setSprite(rightColonel, "idle", 1/6)
+            cutscene:setSprite(colonel, "idle", 1/6)
+            cutscene:wait(cutscene:fadeOut(2, {color = {1, 1, 1}}))
+            Game.world:loadMap("chapter1/farm_world/farm10_real", "spawn")
+            cutscene:wait(2)
+            cutscene:wait(cutscene:fadeIn(3))
+            cutscene:wait(cutscene:attachCamera())
+    end;
+
+    rescue_colonel = function(cutscene, event)
+        if (Game:getFlag("rescuedColonel", false)) == false then
+            Game:setFlag("rescuedColonel", true)
+            Game.world.music:pause()
+            Assets.playSound("moss_fanfare")
+            cutscene:wait(2)
+            local spike1 = Game.world:getEvent(212)
+            local spike2 = Game.world:getEvent(213)
+            local spike3 = Game.world:getEvent(216)
+            local spike4 = Game.world:getEvent(215)
+            local spike5 = Game.world:getEvent(214)
+            local spike6 = Game.world:getEvent(207)
+            local spike7 = Game.world:getEvent(210)
+            local spike8 = Game.world:getEvent(211)
+            local options = {
+                ["play_sound"] = false
+            }
+            spike1:explode(0, 0, false)
+            spike2:explode(0, 0, false, options)
+            spike3:explode(0, 0, false, options)
+            spike4:explode(0, 0, false, options)
+            spike5:explode(0, 0, false, options)
+            spike6:explode(0, 0, false, options)
+            spike7:explode(0, 0, false, options)
+            spike8:explode(0, 0, false, options)
+            Game.world.music:resume()
+            local colonel = cutscene:getCharacter("colonel", 1)
+            local vess = cutscene:getCharacter("vess")
+            local options2 = {
+                ["talk"] = true;
+            }
+            cutscene:setSpeaker(colonel, true)
+            cutscene:setTextboxTop(false)
+            cutscene:wait(cutscene:alert(colonel, 1))
+            cutscene:setSprite(colonel, "talk", 1/6)
+            cutscene:text("* Private !![wait:5] You saved me !!", nil, colonel, options2)
+            cutscene:text("* You got rid of the spikes !!", nil, colonel, options2)
+            cutscene:wait(1)
+            cutscene:text("* ...I didn't really have anything important to do,[wait:5] though...", nil, colonel, options2)
+            cutscene:wait(1)
+            cutscene:text("* ...and now you have to restart the puzzle.", nil, colonel, options2)
+            cutscene:wait(2)
+            cutscene:text("* Thanks though.", nil, colonel, options2)
+        else
+            return
+        end
+    end;
 }
