@@ -48,11 +48,13 @@
  </tile>
  <tile id="14">
   <image source="../../../assets/sprites/tilesets/farm_world/wheat_wall.png" width="120" height="40"/>
-<<<<<<< HEAD
  </tile>
  <tile id="16">
   <image source="../../../assets/sprites/tilesets/farm_world/artillery.png" width="120" height="120"/>
-=======
->>>>>>> e28ab3e324c2b4778616a3dbcf9f10b4193408d5
+ </tile>
+</tileset>
+ </tile>
+ <tile id="16">
+  <image source="../../../assets/sprites/tilesets/farm_world/artillery.png" width="120" height="120"/>
  </tile>
 </tileset>

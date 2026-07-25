@@ -114,15 +114,21 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/wheat_wall.png",
       width = 120,
       height = 40
-<<<<<<< HEAD
     },
     {
       id = 16,
       image = "../../../assets/sprites/tilesets/farm_world/artillery.png",
       width = 120,
       height = 120
-=======
->>>>>>> e28ab3e324c2b4778616a3dbcf9f10b4193408d5
+    }
+  }
+}
+    },
+    {
+      id = 16,
+      image = "../../../assets/sprites/tilesets/farm_world/artillery.png",
+      width = 120,
+      height = 120
     }
   }
 }

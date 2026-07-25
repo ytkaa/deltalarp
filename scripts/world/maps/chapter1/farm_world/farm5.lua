@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 76,
+  nextobjectid = 77,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Block Puzzle"
