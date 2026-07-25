@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 local MovingArena, super = Class(Wave)
 
 function MovingArena:init()
