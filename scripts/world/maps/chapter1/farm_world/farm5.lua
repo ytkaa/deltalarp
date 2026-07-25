@@ -277,6 +277,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "larpwalker",
+            ["setflag"] = "larpwalker",
+            ["setvalue"] = true,
             ["text1_1"] = "* This wheat is [color:red]pissing[color:reset] me off",
             ["text1_2"] = "* I'm the original[wait:10]    [color:red]Larpwalker"
           }

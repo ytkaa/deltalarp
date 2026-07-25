@@ -80,6 +80,8 @@
   <object id="73" name="npc" x="740" y="70" width="40" height="40">
    <properties>
     <property name="actor" value="larpwalker"/>
+    <property name="setflag" value="larpwalker"/>
+    <property name="setvalue" type="bool" value="true"/>
     <property name="text1_1" value="* This wheat is [color:red]pissing[color:reset] me off"/>
     <property name="text1_2" value="* I'm the original[wait:10]    [color:red]Larpwalker"/>
    </properties>

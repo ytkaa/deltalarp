@@ -181,7 +181,7 @@ return {
         end
     end;
 
-    gardner_chase1 = function(cutscene, event)
+    gardner_chase = function(cutscene, event)
         local vess = cutscene:getCharacter("vess")
         local turn_vess = function(speed)
             cutscene:look(vess, "down")
@@ -193,12 +193,142 @@ return {
             cutscene:look(vess, "right")
             cutscene:wait(speed)
         end
-        cutscene:text("[voice:gardner][speed:0.4]* Do you[wait:5] know the joys[wait:5] of running a farm?")
+        cutscene:text("[speed:0.4]* Do you[wait:5] know how it feels[wait:5] to defy a fate deemed unavoidable?")
         cutscene:wait(0.5)
         turn_vess(0.75)
-        cutscene:text("[voice:gardner][speed:0.4]* Do you know how it feels to finally breathe?")
-        cutscene:text("[voice:gardner][speed:0.4]* To finally breathe the fresh air, move an unfamiliar movement?")
-        cutscene:text("[voice:gardner][speed:0.4]* Do you[wait:5] know the joys[wait:5] of running a farm?")
+        cutscene:text("[speed:0.4]* Do you know how it feels to finally[wait:4] breathe?")
+        cutscene:text("[speed:0.4]* To finally breathe[wait:4] the fresh air?")
+        cutscene:text("[speed:0.4]* To move[wait:4] an unfamiliar movement?")
+        cutscene:wait(turn_vess(0.5))
+        cutscene:text("[speed:0.4]* Do you know...")
+        cutscene:wait(turn_vess(0.3))
+        cutscene:text("[speed:0.4]* ...[wait:5]the joys...")
+        cutscene:wait(turn_vess(0.15))
+        --cutscene:wait(0.2)
+        Assets.playSound("noise")
+        cutscene:fadeOut(0)
+
+        cutscene:detachCamera()
+        cutscene:wait(cutscene:panTo("gardner_camera"), 0)
+        local gardner = cutscene:spawnNPC("gardner", 1500, 1420)
+        cutscene:setSpeaker(gardner)
+
+        cutscene:wait(0.5)
+        Assets.playSound("noise")
+        cutscene:fadeIn(0)
+        cutscene:wait(0.8)
+        Assets.playSound("tensionhorn")
+        cutscene:wait(cutscene:slideTo(gardner, "gardner_slide", 0.4))
+        cutscene:text("[face:smile]* ...[wait:5]of runnin' a farm?")
+        local music = Music()
+        music:play("gardner1")
+        cutscene:wait(2)
+        cutscene:setSprite(gardner, "threat_pink")
+        cutscene:text("[face:threat_pink]* That's all I have to say \nfor now,[wait:5] sun.")
+        music:pause()
+        cutscene:wait(2)
+        cutscene:setSprite(gardner, "neutral")
+        cutscene:text("[face:neutral]* What,[wait:5] no,[wait:5] \"sun\" was used \nas a...[wait:5] gender neutral \nterm there.")
+        cutscene:setSprite(gardner, "smile")
+        cutscene:text("[face:smile]* Sure,[wait:5] I'm evil.[wait:5] \nBut I'm not a monster!")
+        cutscene:setSprite(gardner, "smug")
+        cutscene:text("[face:smug]* Fahaha!")
+        Assets.playSound("noise")
+        cutscene:wait(cutscene:fadeOut(0))
+        cutscene:setSprite(gardner, "threat_pink")
+        cutscene:slideTo(gardner, "gardner_teleport", 0.1) --Zero-second slide softlocks the game
+        cutscene:attachCameraImmediate()
+        --cutscene:wait(cutscene:panTo("gardner_teleport"), 0)
+        cutscene:wait(0.5)
+        Assets.playSound("noise")
+        cutscene:fadeIn(0)
+        cutscene:wait(0.5)
+        cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
+        music:stop()
+        Game.world.music:play("pursuit1")
+        cutscene:enableMovement()
+        cutscene:wait(0.5)
+        Game.world:setBattle(true) --Realized i dont need a battleareas layer
+        local properties = {
+            ["aura"] = false,
+            ["chase"] = true,
+            ["chasedist"] = 9999,
+            ["chasespeed"] = 6,
+            ["chasetype"] = "linear",
+            ["chasing"] = true,
+            ["encounter"] = "colonel_squad",
+            ["enemy"] = "gardner",
+            ["actor"] = "gardner",
+            ["sprite"] = "threat_pink"
+        }
+        cutscene:getCharacter("gardner"):convertToEnemy(properties)
+    end;
+
+    gardner_chase_short = function(cutscene)
+        local vess = cutscene:getCharacter("vess")
+        local turn_vess = function(speed)
+            cutscene:look(vess, "down")
+            cutscene:wait(speed)
+            cutscene:look(vess, "left")
+            cutscene:wait(speed)
+            cutscene:look(vess, "up")
+            cutscene:wait(speed)
+            cutscene:look(vess, "right")
+            cutscene:wait(speed)
+        end
+
+        Assets.playSound("farmerlaugh")
+        cutscene:wait(0.75)
+        cutscene:wait(turn_vess(0.2))
+
+        Assets.playSound("noise")
+        cutscene:wait(cutscene:fadeOut(0))
+        local gardner = cutscene:spawnNPC("gardner", 600, 1420)
+        cutscene:setSpeaker(gardner)
+        cutscene:setSprite(gardner, "threat_pink")
+        cutscene:attachCameraImmediate()
+        --cutscene:wait(cutscene:panTo("gardner_teleport"), 0)
+        cutscene:wait(0.5)
+        Assets.playSound("noise")
+        cutscene:fadeIn(0)
+        cutscene:wait(0.5)
+        cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
+        Game.world.music:play("pursuit1")
+        cutscene:enableMovement()
+        cutscene:wait(0.5)
+        Game.world:setBattle(true) --Realized i dont need a battleareas layer
+        local properties = {
+            ["aura"] = false,
+            ["chase"] = true,
+            ["chasedist"] = 9999,
+            ["chasespeed"] = 6,
+            ["chasetype"] = "linear",
+            ["chasing"] = true,
+            ["encounter"] = "colonel_squad",
+            ["enemy"] = "gardner",
+            ["actor"] = "gardner",
+            ["sprite"] = "threat_pink"
+        }
+        cutscene:getCharacter("gardner"):convertToEnemy(properties)
+    end;
+
+    gardner_caught = function(cutscene)
+        cutscene:fadeOut(0)
+        Game.world.music:stop()
+        Assets.playSound("grab")
+        Game:setFlag("gardner_chase_death", true)
+        Game:setFlag("#chapter1/farm_world/farm_gardner_test#91:used_once", false)
+        Game:setFlag("#chapter1/farm_world/farm_gardner_test#20:used_once", false)
+        Game:saveQuick()
+        print("Quicksaved!")
+        cutscene:wait(0.75)
+        Assets.playSound("farmerlaugh")
+        cutscene:wait(0.75)
+        --Assets.playSound("hurt")
+        --cutscene:wait(0.5)
+        --print("Loaded quicksave!")
+        --Game:loadQuick(true) --This is redundant. Game over screen loads quicksaves automagically
+        Game.world:hurtParty("ALL", 999)
     end;
 
     setMajorWheatPuzzleFlag = function(cutscene, event)

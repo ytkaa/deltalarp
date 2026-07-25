@@ -9,7 +9,7 @@ return {
   height = 40,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 8,
+  nextlayerid = 9,
   nextobjectid = 59,
   properties = {
     ["music"] = "field_jarona"
@@ -470,30 +470,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["map"] = "chapter1/farm_world/farm6",
+            ["map"] = "chapter1/farm_world/farm6_warpdoor",
             ["marker"] = "to_farm7"
-          }
-        },
-        {
-          id = 25,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1040,
-          y = 800,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {
-            ["actor"] = "spike",
-            ["chase"] = true,
-            ["chasedist"] = 500,
-            ["chasespeed"] = 20,
-            ["encounter"] = "disgustingSpikes",
-            ["enemy"] = "spike",
-            ["once"] = true
           }
         },
         {
@@ -576,6 +554,45 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/farm9",
             ["marker"] = "spawn"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 8,
+      name = "objects_spikes",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 25,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 1040,
+          y = 800,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "spike",
+            ["chase"] = true,
+            ["chasedist"] = 500,
+            ["chasespeed"] = 20,
+            ["chasing"] = true,
+            ["encounter"] = "disgustingSpikes",
+            ["enemy"] = "spike",
+            ["once"] = true
           }
         }
       }
@@ -932,7 +949,7 @@ return {
       objects = {
         {
           id = 17,
-          name = "to_barracks",
+          name = "to_warpdoor",
           type = "",
           shape = "point",
           x = 25.5,

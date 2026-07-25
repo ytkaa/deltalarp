@@ -43,7 +43,8 @@ return {
 
             
         else
-            cutscene:text("* (Then,[wait:5] the [color:pink][style:GONER]LARPERS' RUNE[color:reset][style:none][wait:5] will\nbe waiting.)")
+            --cutscene:text("* (Then,[wait:5] the [color:pink][style:GONER]LARPERS' RUNE[color:reset][style:none][wait:5] will\nbe waiting.)")
+            cutscene:text("* (Then,[wait:5] it will be waiting.)")
         end
     end
 }
