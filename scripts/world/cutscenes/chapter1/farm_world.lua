@@ -180,4 +180,24 @@ return {
             return
         end
     end;
+
+    gardner_chase1 = function(cutscene, event)
+        local vess = cutscene:getCharacter("vess")
+        local turn_vess = function(speed)
+            cutscene:look(vess, "down")
+            cutscene:wait(speed)
+            cutscene:look(vess, "left")
+            cutscene:wait(speed)
+            cutscene:look(vess, "up")
+            cutscene:wait(speed)
+            cutscene:look(vess, "right")
+            cutscene:wait(speed)
+        end
+        cutscene:text("[voice:gardner][speed:0.4]* Do you[wait:5] know the joys[wait:5] of running a farm?")
+        cutscene:wait(0.5)
+        turn_vess(0.75)
+        cutscene:text("[voice:gardner][speed:0.4]* Do you know how it feels to finally breathe?")
+        cutscene:text("[voice:gardner][speed:0.4]* To finally breathe the fresh air, move an unfamiliar movement?")
+        cutscene:text("[voice:gardner][speed:0.4]* Do you[wait:5] know the joys[wait:5] of running a farm?")
+    end;
 }

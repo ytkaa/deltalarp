@@ -7,7 +7,7 @@ function Kipkip_one:init()
     self.text = "* Kipkips sprout from the ground!"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "farm_battle_wip_1"
+    self.music = "farm_battle_wip_2"
     -- Enables the purple grid battle background
     self.background = true
 
