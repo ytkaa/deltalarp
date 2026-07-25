@@ -59,7 +59,6 @@ function MovingArena:update()
 end
 
 return MovingArena
-=======
 local MovingArena, super = Class(Wave)
 
 function MovingArena:init()
@@ -121,4 +120,3 @@ function MovingArena:update()
 end
 
 return MovingArena
->>>>>>> e28ab3e324c2b4778616a3dbcf9f10b4193408d5
