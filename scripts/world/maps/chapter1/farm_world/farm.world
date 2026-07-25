@@ -57,6 +57,8 @@
             "y": -2840
         },
         {
+<<<<<<< HEAD
+=======
             "fileName": "farm7.tmx",
             "height": 1600,
             "width": 1200,
@@ -64,6 +66,7 @@
             "y": -2160
         },
         {
+>>>>>>> e28ab3e324c2b4778616a3dbcf9f10b4193408d5
             "fileName": "farm6/farm6.tmx",
             "height": 480,
             "width": 640,
@@ -71,6 +74,41 @@
             "y": -1680
         },
         {
+<<<<<<< HEAD
+            "fileName": "GONER_0/GONER_0.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 3960,
+            "y": -760
+        },
+        {
+            "fileName": "farm7.tmx",
+            "height": 1600,
+            "width": 1200,
+            "x": 5400,
+            "y": -2160
+        },
+        {
+            "fileName": "farm8.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 5560,
+            "y": -480
+        },
+        {
+            "fileName": "farm9.tmx",
+            "height": 1600,
+            "width": 1200,
+            "x": 6680,
+            "y": -2160
+        },
+        {
+            "fileName": "farm10.tmx",
+            "height": 800,
+            "width": 5200,
+            "x": 7960,
+            "y": -1840
+=======
             "fileName": "farm8.tmx",
             "height": 800,
             "width": 800,
@@ -90,6 +128,7 @@
             "width": 3200,
             "x": 4824,
             "y": -4273
+>>>>>>> e28ab3e324c2b4778616a3dbcf9f10b4193408d5
         }
     ],
     "onlyShowAdjacentMaps": false,
