@@ -55,6 +55,48 @@
             "width": 640,
             "x": 2800,
             "y": -2840
+        },
+        {
+            "fileName": "farm6/farm6.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 4680,
+            "y": -1680
+        },
+        {
+            "fileName": "GONER_0/GONER_0.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 3960,
+            "y": -760
+        },
+        {
+            "fileName": "farm7.tmx",
+            "height": 1600,
+            "width": 1200,
+            "x": 5400,
+            "y": -2160
+        },
+        {
+            "fileName": "farm8.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 5560,
+            "y": -480
+        },
+        {
+            "fileName": "farm9.tmx",
+            "height": 1600,
+            "width": 1200,
+            "x": 6680,
+            "y": -2160
+        },
+        {
+            "fileName": "farm10.tmx",
+            "height": 800,
+            "width": 5200,
+            "x": 7960,
+            "y": -1840
         }
     ],
     "onlyShowAdjacentMaps": false,

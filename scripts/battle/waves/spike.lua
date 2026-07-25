@@ -46,7 +46,7 @@ function MovingArena:update()
             self.arena_start_y + y
         )
     else
-        local x = 444 * math.sin(t) -- moves the arena like a lemniscate --- r=\sqrt{a\sin\left(2\theta\right)} (put into desmos)
+        local x = 200 * math.sin(t) -- moves the arena like a lemniscate --- r=\sqrt{a\sin\left(2\theta\right)} (put into desmos)
         local y = 60 * math.sin(2 * t)
         Game.battle.arena:setPosition(
             self.arena_start_x + x,

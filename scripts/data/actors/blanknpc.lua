@@ -1,28 +1,28 @@
-local actor, super = Class(Actor, "spike")
+local actor, super = Class(Actor, "blanknpc")
 
 function actor:init()
     super.init(self)
 
     -- Display name (optional)
-    self.name = "Spike"
+    self.name = "blanknpc"
 
     -- Width and height for this actor, used to determine its center
     self.width = 20
     self.height = 20
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
-    --self.hitbox = { 0, 25, 19, 14 }
+    --self.hitbox = { 2, 26, 27, 10 }
 
     -- Color for this actor used in outline areas (optional, defaults to red)
-    self.color = { 1, 0, 0 }
+    self.color = { 1, 1, 0 }
 
     -- Whether this actor flips horizontally (optional, values are "right" or "left", indicating the flip direction)
     self.flip = nil
 
     -- Path to this actor's sprites (defaults to "")
-    self.path = "enemies/spike"
+    self.path = "npcs/blanknpc"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
-    self.default = "spikery"
+    self.default = ""
 
     -- Sound to play when this actor speaks (optional)
     self.voice = nil
@@ -38,17 +38,10 @@ function actor:init()
     self.talk_sprites = {}
 
     -- Table of sprite animations
-    self.animations = {
-        -- Looping animation with 0.25 seconds between each frame
-        -- (even though there's only 1 idle frame)
-        ["spikery"] = { "spikery", 0.25, true },
-    }
+    self.animations = {}
 
     -- Table of sprite offsets (indexed by sprite name)
-    self.offsets = {
-        -- Since the width and height is the idle sprite size, the offset is 0,0
-        ["spikery"] = { 0, 0 },
-    }
+    self.offsets = {}
 end
 
 return actor
