@@ -123,12 +123,3 @@ return {
     }
   }
 }
-    },
-    {
-      id = 16,
-      image = "../../../assets/sprites/tilesets/farm_world/artillery.png",
-      width = 120,
-      height = 120
-    }
-  }
-}
