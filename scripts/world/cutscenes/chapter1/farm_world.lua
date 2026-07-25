@@ -193,12 +193,13 @@ return {
             cutscene:look(vess, "right")
             cutscene:wait(speed)
         end
-        cutscene:text("[speed:0.4]* Do you[wait:5] know how it feels[wait:5] to defy a fate deemed unavoidable?")
+        --cutscene:text("[speed:0.4]* Do you[wait:5] know how it feels[wait:5] to defy a fate deemed unavoidable?")
+        cutscene:text("[speed:0.4]* Do you know[wait:5] how it feels[wait:5] to finally[wait:4] breathe?")
         cutscene:wait(0.5)
         turn_vess(0.75)
-        cutscene:text("[speed:0.4]* Do you know how it feels to finally[wait:4] breathe?")
         cutscene:text("[speed:0.4]* To finally breathe[wait:4] the fresh air?")
         cutscene:text("[speed:0.4]* To move[wait:4] an unfamiliar movement?")
+        cutscene:text("[speed:0.4]* To defy[wait:5] a fate deemed[wait:4] unavoidable?")
         cutscene:wait(turn_vess(0.5))
         cutscene:text("[speed:0.4]* Do you know...")
         cutscene:wait(turn_vess(0.3))
@@ -211,6 +212,7 @@ return {
         cutscene:detachCamera()
         cutscene:wait(cutscene:panTo("gardner_camera"), 0)
         local gardner = cutscene:spawnNPC("gardner", 1500, 1420)
+        --gardner:setHitbox(8, 52, 22, 14) --Smaller hitbox for game feel --Doesn't work
         cutscene:setSpeaker(gardner)
 
         cutscene:wait(0.5)
@@ -247,6 +249,7 @@ return {
         music:stop()
         Game.world.music:play("pursuit1")
         cutscene:enableMovement()
+        Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
         Game.world:setBattle(true) --Realized i dont need a battleareas layer
         local properties = {
@@ -284,6 +287,7 @@ return {
         Assets.playSound("noise")
         cutscene:wait(cutscene:fadeOut(0))
         local gardner = cutscene:spawnNPC("gardner", 600, 1420)
+        --gardner:setHitbox(8, 52, 22, 14) --Smaller hitbox for game feel --Doesn't work
         cutscene:setSpeaker(gardner)
         cutscene:setSprite(gardner, "threat_pink")
         cutscene:attachCameraImmediate()
@@ -295,6 +299,7 @@ return {
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
         Game.world.music:play("pursuit1")
         cutscene:enableMovement()
+        Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
         Game.world:setBattle(true) --Realized i dont need a battleareas layer
         local properties = {
@@ -319,6 +324,7 @@ return {
         Game:setFlag("gardner_chase_death", true)
         Game:setFlag("#chapter1/farm_world/farm_gardner_test#91:used_once", false)
         Game:setFlag("#chapter1/farm_world/farm_gardner_test#20:used_once", false)
+        Game:setFlag("gardner_mid_chase", false)
         Game:saveQuick()
         print("Quicksaved!")
         cutscene:wait(0.75)

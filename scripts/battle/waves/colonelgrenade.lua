@@ -63,6 +63,7 @@ function colonelgrenade:onStart()
                     b:remove()
                     local grenade_explosion = self:spawnBullet("grenade_explosion", b.x, b.y) --summons the explosion which is dealt with in its own bullet file
                     Assets.playSound("bomb")
+                    Game.battle:shakeCamera()
                 end
             end
         end)
