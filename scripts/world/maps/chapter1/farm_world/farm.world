@@ -87,9 +87,9 @@
         {
             "fileName": "farm_gardner_test.tmx",
             "height": 1600,
-            "width": 3200,
-            "x": 4824,
-            "y": -4273
+            "width": 6000,
+            "x": 4024,
+            "y": -5353
         }
     ],
     "onlyShowAdjacentMaps": false,
