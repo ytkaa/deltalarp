@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="218">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="369">
  <editorsettings>
   <export target="farm9.lua" format="lua"/>
  </editorsettings>
@@ -26,23 +26,23 @@
 21,21,21,21,5,5,5,15,15,1,15,15,15,2,2,2,2,2,2,15,15,15,15,15,5,5,5,5,21,21,
 21,21,21,21,5,5,5,5,15,1,15,15,15,2,2,2,2,2,2,15,15,15,15,15,5,5,5,5,5,5,
 21,21,5,5,5,5,5,5,15,15,1,15,15,2,2,2,2,2,2,15,15,15,15,15,5,5,5,5,5,5,
-5,5,5,5,5,5,5,5,15,15,1,15,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,5,5,
-5,5,5,5,5,5,5,15,15,15,2,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
-5,5,5,5,5,5,5,15,1,1,1,1,1,5,1,1,1,1,15,15,15,15,15,15,15,15,15,15,15,15,
-5,5,5,5,5,5,5,15,15,15,1,1,1,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
-5,5,5,5,5,5,5,15,15,15,1,15,1,1,1,15,15,15,15,15,15,14,15,15,15,15,15,5,5,5,
-5,5,5,5,5,5,5,15,15,15,1,15,15,15,15,5,15,15,15,15,15,15,14,15,15,15,15,5,5,5,
-5,5,5,5,5,5,5,15,15,15,1,15,15,15,15,5,14,15,15,15,15,15,15,14,14,15,15,5,5,21,
-5,5,5,5,5,5,15,1,1,1,1,15,15,15,15,14,14,15,15,15,15,14,15,15,15,5,15,5,21,21,
-5,5,5,5,5,5,15,1,15,15,15,15,15,15,15,14,14,15,15,15,15,14,15,14,15,5,15,2,2,2,
-5,5,5,5,5,5,15,1,15,1,15,15,1,1,15,14,14,14,2,14,15,15,15,14,15,14,15,5,21,21,
-5,5,5,5,5,5,15,1,15,15,15,1,15,15,1,15,15,15,15,14,15,14,14,15,15,14,5,5,21,21,
-5,5,5,5,5,5,15,1,15,15,15,5,15,15,1,15,15,15,15,15,15,15,15,15,15,14,5,21,21,21,
-5,5,5,5,5,5,15,1,15,15,1,15,15,15,1,15,15,15,15,15,15,15,15,15,15,14,5,21,21,21,
-5,5,5,5,5,5,15,1,15,15,15,15,15,15,1,14,15,15,15,15,15,15,15,14,14,14,5,5,21,21,
-5,5,5,5,5,5,15,1,15,15,15,15,15,15,1,14,15,15,15,15,15,15,15,14,5,5,5,5,5,21,
-5,5,5,5,5,15,15,1,15,15,15,15,15,15,1,15,14,14,14,14,14,14,14,14,5,5,5,21,21,21,
-5,5,5,15,15,15,15,15,1,15,15,15,15,15,1,15,15,15,15,15,15,15,5,5,5,5,21,21,21,21,
+21,5,5,5,5,5,5,5,15,15,1,15,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,5,5,
+4,22,5,5,5,5,5,15,15,15,2,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+2,22,5,5,5,5,5,15,1,1,1,1,1,5,1,1,1,1,15,15,15,15,15,15,15,15,15,15,15,15,
+14,21,5,5,5,5,5,15,15,15,1,1,1,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
+1,21,5,5,5,5,5,15,15,15,1,15,1,1,1,15,15,15,15,15,15,14,15,15,15,15,15,5,5,5,
+22,21,5,5,5,5,5,15,15,15,1,15,15,15,15,5,15,15,15,15,15,15,14,15,15,15,15,5,5,5,
+21,22,22,5,5,5,5,15,15,15,1,15,15,15,15,5,14,15,15,15,15,15,15,14,14,15,15,5,5,21,
+13,22,22,21,5,5,15,1,1,1,1,15,15,15,15,14,14,15,15,15,15,14,15,15,15,5,15,5,21,21,
+0,3,12,21,5,5,15,1,15,15,15,15,15,15,15,14,14,15,15,15,15,14,15,14,15,5,15,2,2,2,
+0,0,11,22,21,5,15,1,15,1,15,15,1,1,15,14,14,14,2,14,15,15,15,14,15,14,15,5,21,21,
+0,0,1,3,21,5,15,1,15,15,15,1,15,15,1,15,15,15,15,14,15,14,14,15,15,14,5,5,21,21,
+0,0,14,1,22,5,15,1,15,15,15,5,15,15,1,15,15,15,15,15,15,15,15,15,15,14,5,21,21,21,
+0,0,1,2,13,22,15,1,15,15,1,15,15,15,1,15,15,15,15,15,15,15,15,15,15,14,5,21,21,21,
+0,0,3,3,14,3,15,1,15,15,15,15,15,15,1,14,15,15,15,15,15,15,15,14,14,14,5,5,21,21,
+0,2,12,3,21,22,15,1,15,15,15,15,15,15,1,14,15,15,15,15,15,15,15,14,5,5,5,5,5,21,
+2,13,21,22,22,15,15,1,15,15,15,15,15,15,1,15,14,14,14,14,14,14,14,14,5,5,5,21,21,21,
+21,22,21,15,15,15,15,15,1,15,15,15,15,15,1,15,15,15,15,15,15,15,5,5,5,5,21,21,21,21,
 15,15,15,15,15,15,15,15,15,5,5,5,5,5,15,15,15,15,15,15,15,15,5,5,5,21,21,21,21,21,
 15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,5,5,5,5,5,21,21,1,1,1,1,
 15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,21,21,1,1,1,1,13,
@@ -57,43 +57,43 @@
 0,102,0,101,101,110,0,110,102,102,111,101,110,110,103,101,112,102,102,102,112,111,105,111,112,103,105,105,105,105,
 102,103,112,102,102,110,105,105,105,111,112,105,103,110,112,102,112,112,112,111,112,111,105,105,105,105,103,103,105,105,
 103,104,101,105,101,103,110,105,102,111,101,112,112,102,112,112,110,110,0,110,110,104,0,24,24,104,24,104,105,102,
-104,112,105,105,110,105,110,110,111,112,104,108,105,110,105,110,110,0,104,0,0,104,24,24,0,0,0,103,102,102,
+104,112,105,105,110,105,110,110,111,112,104,108,105,110,105,110,110,0,0,0,0,104,24,24,0,0,0,103,102,102,
 103,112,101,101,110,110,103,105,104,0,0,112,110,105,24,0,0,0,0,0,0,0,0,0,0,0,0,24,24,102,
 104,112,102,105,105,101,105,0,24,24,24,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,102,
 112,111,0,111,112,0,0,0,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,102,
 0,0,104,104,0,37,37,0,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,102,
 104,102,0,104,37,37,37,37,37,37,0,0,37,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,
-0,103,101,101,37,37,0,37,37,37,37,37,37,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,102,102,
+0,103,101,101,37,37,0,37,37,37,37,37,37,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,
 102,104,102,102,37,37,37,37,37,37,37,37,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,102,
-103,112,112,0,37,37,37,37,37,37,37,37,37,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,103,
-104,112,110,0,0,37,0,0,37,37,108,108,110,108,110,108,110,110,108,110,110,108,110,110,0,0,0,0,0,104,
-0,0,0,0,0,0,0,0,0,110,0,0,0,110,110,108,110,110,110,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,110,0,0,0,104,102,110,110,102,110,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,110,0,0,110,110,102,108,104,110,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,110,102,110,110,102,24,110,102,110,110,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,110,102,102,24,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,112,0,110,110,102,0,0,0,0,0,0,108,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,102,0,0,0,0,0,24,0,0,0,0,0,110,24,24,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,112,0,0,0,0,24,110,0,0,0,0,24,24,110,111,0,0,0,0,0,
-0,0,0,0,0,0,0,112,105,112,112,0,0,0,0,110,110,0,0,0,0,110,24,24,0,24,0,0,0,0,
-0,0,0,0,0,0,0,105,0,0,0,0,0,0,0,108,111,0,0,0,0,110,24,111,0,24,0,108,110,110,
-0,0,0,0,0,0,0,112,0,108,10,0,105,109,0,110,110,111,101,110,0,0,0,110,0,110,0,0,0,0,
-0,0,0,0,0,0,0,102,0,0,0,110,0,0,110,0,0,0,0,110,0,110,111,0,0,105,0,0,0,0,
-0,0,0,0,0,0,0,105,0,0,0,24,0,0,110,0,0,0,0,0,0,0,0,0,0,111,0,0,0,0,
-0,0,0,0,0,0,0,112,0,0,111,0,0,0,103,0,0,0,0,0,0,0,0,0,0,110,0,0,0,0,
-0,0,0,0,0,0,0,102,0,0,0,0,0,0,110,110,0,0,0,0,0,0,0,105,110,110,0,0,0,0,
-0,0,0,0,0,0,0,102,0,0,0,0,0,0,110,103,0,0,0,0,0,0,0,110,0,0,0,0,0,0,
-0,0,0,0,0,0,0,112,0,0,0,0,0,0,110,0,105,109,110,109,105,110,108,110,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,112,0,0,0,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+103,112,112,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,103,
+104,112,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,110,108,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,108,108,108,110,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,111,108,111,110,110,
-0,0,0,0,0,108,108,108,108,108,108,0,0,0,0,0,0,0,0,0,0,0,110,110,110,110,110,110,110,110,
-0,0,0,0,108,108,108,110,108,108,108,108,0,0,0,0,0,0,0,0,0,110,110,110,110,108,108,108,111,108,
-108,108,108,108,108,108,110,110,108,108,108,108,108,108,108,108,108,110,108,110,110,110,108,108,108,108,110,110,110,110
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+102,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+103,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+101,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+105,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,103,101,103,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,104,104,104,101,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,104,104,103,102,102,
+0,0,0,0,0,102,104,105,103,102,104,0,0,0,0,0,0,0,0,0,0,0,105,101,105,101,104,102,105,104,
+0,0,0,0,105,102,102,101,101,105,105,102,0,0,0,0,0,0,0,0,0,105,103,105,102,105,102,102,101,104
 </data>
  </layer>
  <objectgroup color="#ff007f" id="9" name="objects">
@@ -116,6 +116,78 @@
   <object id="214" name="spike1" gid="113" x="1040" y="280" width="40" height="40"/>
   <object id="215" name="spike1" gid="113" x="960" y="280" width="40" height="40"/>
   <object id="216" name="spike1" gid="113" x="1045.25" y="239" width="40" height="40"/>
+  <object id="25" name="tilebutton" x="320" y="1040" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="26" name="tilebutton" x="640" y="1201.33" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="61" name="tilebutton" x="400" y="960" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="63" name="tilebutton" x="400" y="560" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="98" name="tilebutton" x="960" y="960" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="99" name="tilebutton" x="880" y="1000" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="100" name="tilebutton" x="440" y="800" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="101" name="tilebutton" x="840" y="240" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.rescue_colonel"/>
+    <property name="group" type="int" value="2"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="140" name="tilebutton" x="600" y="1040" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
+    <property name="group" type="int" value="1"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="1" name="enemy" x="880" y="880" width="40" height="40">
@@ -140,41 +212,9 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="25" name="tilebutton" x="320" y="1040" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="26" name="tilebutton" x="640" y="1201.33" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="27" name="pushblock" x="440" y="1120" width="40" height="40">
    <properties>
     <property name="lock" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="61" name="tilebutton" x="400" y="960" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="63" name="tilebutton" x="400" y="560" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
    </properties>
   </object>
   <object id="67" name="pushblock" x="360" y="1280" width="40" height="40">
@@ -218,38 +258,6 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="98" name="tilebutton" x="960" y="960" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="99" name="tilebutton" x="880" y="1000" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="100" name="tilebutton" x="440" y="800" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="101" name="tilebutton" x="840" y="240" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.rescue_colonel"/>
-    <property name="group" type="int" value="2"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="136" name="npc" x="1000" y="240" width="40" height="40">
    <properties>
     <property name="actor" value="colonel"/>
@@ -279,14 +287,6 @@
     <property name="chasespeed" type="int" value="20"/>
     <property name="encounter" value="disgustingSpikes"/>
     <property name="enemy" value="spike"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="140" name="tilebutton" x="600" y="1040" width="40" height="40">
-   <properties>
-    <property name="blocks" type="bool" value="true"/>
-    <property name="cutscene" value="chapter1/farm_world.setMajorWheatPuzzleFlag"/>
-    <property name="group" type="int" value="1"/>
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
@@ -354,8 +354,193 @@
     <property name="text1_1" value="* (Save him...)"/>
    </properties>
   </object>
+  <object id="234" gid="101" x="800" y="520" width="60" height="80"/>
+  <object id="235" gid="101" x="920" y="520" width="60" height="80"/>
+  <object id="236" gid="101" x="880" y="520" width="60" height="80"/>
+  <object id="237" gid="101" x="840" y="520" width="60" height="80"/>
+  <object id="238" gid="101" x="760" y="520" width="60" height="80"/>
+  <object id="239" gid="101" x="720" y="520" width="60" height="80"/>
+  <object id="240" gid="101" x="680" y="520" width="60" height="80"/>
+  <object id="241" gid="101" x="600" y="520" width="60" height="80"/>
+  <object id="242" gid="101" x="640" y="520" width="60" height="80"/>
+  <object id="243" gid="101" x="560" y="520" width="60" height="80"/>
+  <object id="244" gid="101" x="520" y="520" width="60" height="80"/>
+  <object id="245" gid="101" x="480" y="520" width="60" height="80"/>
+  <object id="246" gid="101" x="440" y="520" width="60" height="80"/>
+  <object id="247" gid="101" x="400" y="520" width="60" height="80"/>
+  <object id="248" gid="103" x="360" y="560" width="60" height="80"/>
+  <object id="250" gid="102" x="360" y="600" width="60" height="80"/>
+  <object id="251" gid="108" x="400" y="640" width="60" height="80"/>
+  <object id="252" gid="108" x="400" y="680" width="60" height="80"/>
+  <object id="253" gid="103" x="400" y="720" width="60" height="80"/>
+  <object id="254" gid="108" x="320" y="760" width="60" height="80"/>
+  <object id="255" gid="108" x="360" y="760" width="60" height="80"/>
+  <object id="256" gid="102" x="400" y="760" width="60" height="80"/>
+  <object id="257" gid="102" x="440" y="760" width="60" height="80"/>
+  <object id="258" gid="102" x="480" y="760" width="60" height="80"/>
+  <object id="259" gid="109" x="400" y="800" width="60" height="80"/>
+  <object id="260" gid="109" x="440" y="800" width="60" height="80"/>
+  <object id="261" gid="103" x="480" y="840" width="60" height="80"/>
+  <object id="262" gid="103" x="520" y="840" width="60" height="80"/>
+  <object id="263" gid="103" x="560" y="840" width="60" height="80"/>
+  <object id="264" gid="101" x="400" y="840" width="60" height="80"/>
+  <object id="265" gid="101" x="400" y="880" width="60" height="80"/>
+  <object id="266" gid="101" x="400" y="920" width="60" height="80"/>
+  <object id="267" gid="108" x="400" y="960" width="60" height="80"/>
+  <object id="268" gid="102" x="360" y="960" width="60" height="80"/>
+  <object id="269" gid="102" x="320" y="960" width="60" height="80"/>
+  <object id="270" gid="108" x="280" y="960" width="60" height="80"/>
+  <object id="271" gid="101" x="280" y="1000" width="60" height="80"/>
+  <object id="272" gid="101" x="280" y="1040" width="60" height="80"/>
+  <object id="273" gid="105" x="280" y="1080" width="60" height="80"/>
+  <object id="274" gid="105" x="280" y="1120" width="60" height="80"/>
+  <object id="276" gid="102" x="280" y="1160" width="60" height="80"/>
+  <object id="277" gid="102" x="280" y="1200" width="60" height="80"/>
+  <object id="278" gid="102" x="280" y="1240" width="60" height="80"/>
+  <object id="279" gid="102" x="280" y="1280" width="60" height="80"/>
+  <object id="280" gid="102" x="320" y="1320" width="60" height="80"/>
+  <object id="282" gid="102" x="360" y="1040" width="60" height="80"/>
+  <object id="283" gid="102" x="440" y="1080" width="60" height="80"/>
+  <object id="284" gid="105" x="480" y="1040" width="60" height="80"/>
+  <object id="285" gid="105" x="520" y="1040" width="60" height="80"/>
+  <object id="286" gid="102" x="560" y="1080" width="60" height="80"/>
+  <object id="287" gid="102" x="560" y="1120" width="60" height="80"/>
+  <object id="288" gid="102" x="560" y="1160" width="60" height="80"/>
+  <object id="289" gid="102" x="560" y="1200" width="60" height="80"/>
+  <object id="290" gid="104" x="600" y="1200" width="60" height="80"/>
+  <object id="291" gid="102" x="600" y="1240" width="60" height="80"/>
+  <object id="292" gid="101" x="560" y="1240" width="60" height="80"/>
+  <object id="293" gid="101" x="560" y="1280" width="60" height="80"/>
+  <object id="294" gid="101" x="560" y="1320" width="60" height="80"/>
+  <object id="295" gid="102" x="560" y="760" width="60" height="80"/>
+  <object id="296" gid="102" x="600" y="760" width="60" height="80"/>
+  <object id="298" gid="103" x="680" y="760" width="60" height="80"/>
+  <object id="299" gid="108" x="520" y="560" width="60" height="80"/>
+  <object id="300" gid="108" x="560" y="560" width="60" height="80"/>
+  <object id="301" gid="108" x="600" y="560" width="60" height="80"/>
+  <object id="302" gid="108" x="640" y="560" width="60" height="80"/>
+  <object id="303" gid="108" x="680" y="560" width="60" height="80"/>
+  <object id="304" gid="102" x="720" y="560" width="60" height="80"/>
+  <object id="305" gid="102" x="720" y="600" width="60" height="80"/>
+  <object id="306" gid="102" x="720" y="640" width="60" height="80"/>
+  <object id="307" gid="102" x="640" y="640" width="60" height="80"/>
+  <object id="308" gid="102" x="520" y="640" width="60" height="80"/>
+  <object id="309" gid="102" x="560" y="640" width="60" height="80"/>
+  <object id="310" gid="102" x="560" y="640" width="60" height="80"/>
+  <object id="311" gid="102" x="600" y="640" width="60" height="80"/>
+  <object id="312" gid="112" x="680" y="600" width="60" height="80"/>
+  <object id="313" gid="112" x="640" y="600" width="60" height="80"/>
+  <object id="314" gid="112" x="520" y="600" width="60" height="80"/>
+  <object id="315" gid="112" x="560" y="600" width="60" height="80"/>
+  <object id="316" gid="112" x="600" y="600" width="60" height="80"/>
+  <object id="317" gid="102" x="680" y="640" width="60" height="80"/>
+  <object id="318" gid="102" x="600" y="960" width="60" height="80"/>
+  <object id="319" gid="102" x="600" y="1000" width="60" height="80"/>
+  <object id="320" gid="102" x="600" y="1000" width="60" height="80"/>
+  <object id="321" gid="102" x="640" y="1000" width="60" height="80"/>
+  <object id="322" gid="102" x="640" y="960" width="60" height="80"/>
+  <object id="323" gid="102" x="640" y="920" width="60" height="80"/>
+  <object id="324" gid="102" x="600" y="1040" width="60" height="80"/>
+  <object id="325" gid="102" x="640" y="1040" width="60" height="80"/>
+  <object id="327" gid="102" x="720" y="1040" width="60" height="80"/>
+  <object id="328" gid="102" x="760" y="1040" width="60" height="80"/>
+  <object id="329" gid="102" x="760" y="1080" width="60" height="80"/>
+  <object id="331" gid="102" x="880" y="1080" width="60" height="80"/>
+  <object id="332" gid="102" x="920" y="1040" width="60" height="80"/>
+  <object id="333" gid="102" x="920" y="1000" width="60" height="80"/>
+  <object id="334" gid="102" x="840" y="1000" width="60" height="80"/>
+  <object id="335" gid="102" x="840" y="960" width="60" height="80"/>
+  <object id="336" gid="102" x="840" y="840" width="60" height="80"/>
+  <object id="337" gid="102" x="880" y="880" width="60" height="80"/>
+  <object id="338" gid="102" x="920" y="920" width="60" height="80"/>
+  <object id="339" gid="102" x="1000" y="1160" width="60" height="80"/>
+  <object id="340" gid="102" x="1000" y="1040" width="60" height="80"/>
+  <object id="341" gid="102" x="1000" y="1080" width="60" height="80"/>
+  <object id="342" gid="102" x="1000" y="1120" width="60" height="80"/>
+  <object id="343" gid="102" x="920" y="1200" width="60" height="80"/>
+  <object id="344" gid="103" x="920" y="1240" width="60" height="80"/>
+  <object id="345" gid="103" x="960" y="1200" width="60" height="80"/>
+  <object id="346" gid="103" x="1000" y="1200" width="60" height="80"/>
+  <object id="347" gid="103" x="880" y="1280" width="60" height="80"/>
+  <object id="348" gid="103" x="920" y="1280" width="60" height="80"/>
+  <object id="349" gid="108" x="840" y="1280" width="60" height="80"/>
+  <object id="350" gid="108" x="760" y="1280" width="60" height="80"/>
+  <object id="351" gid="108" x="800" y="1280" width="60" height="80"/>
+  <object id="352" gid="110" x="720" y="1280" width="60" height="80"/>
+  <object id="353" gid="110" x="680" y="1280" width="60" height="80"/>
+  <object id="354" gid="110" x="640" y="1280" width="60" height="80"/>
+  <object id="356" name="interactable" x="1120" y="480" width="40" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1_1" value="* Ey!"/>
+    <property name="text1_2" value="* Ya can't see me,[wait:5] but I'm a Spikes,[wait:5] and I'm blocking the way too!"/>
+    <property name="text2_1" value="* Just making sure I don't fit in..."/>
+   </properties>
+  </object>
+  <object id="357" gid="102" x="40" y="1040" width="60" height="80"/>
+  <object id="358" gid="101" x="1080" y="1000" width="60" height="80"/>
+  <object id="359" gid="101" x="1120" y="1000" width="60" height="80"/>
+  <object id="360" gid="101" x="1160" y="1000" width="60" height="80"/>
+  <object id="364" name="resetbell" x="400" y="1120" width="40" height="40"/>
+  <object id="366" name="resetbell" x="840" y="1040" width="40" height="40"/>
+  <object id="367" name="resetbell" x="640" y="720" width="40" height="40"/>
+  <object id="368" gid="102" x="680" y="1040" width="60" height="80"/>
  </objectgroup>
- <objectgroup color="#55ffff" id="3" name="blockcollision">
+ <objectgroup id="11" name="objects_invisiblegag">
+  <object id="362" name="interactable" x="1120" y="480" width="40" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1_1" value="* ..."/>
+    <property name="text1_2" value="* Guess I should move now?"/>
+    <property name="text2_1" value="* Don't look at me !!![wait:5] I'm too conformist right now !!!"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="10" name="Tile Layer 3" width="30" height="40">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,105,103,105,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,0,0,0,0,0,
+0,0,0,0,0,101,103,101,105,102,101,0,0,0,0,0,0,0,0,0,0,0,103,105,0,0,0,0,0,0,
+0,0,0,0,101,0,0,0,0,0,0,105,0,0,0,0,0,0,0,0,0,105,0,0,0,0,0,0,0,0,
+103,103,101,102,0,0,0,0,0,0,0,0,101,105,102,105,104,101,102,101,105,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#55ffff" id="3" name="blockcollision" visible="0">
   <object id="43" x="280" y="920" width="120" height="40"/>
   <object id="45" x="280" y="960" width="40" height="320"/>
   <object id="46" x="760" y="1000" width="40" height="80"/>
@@ -398,7 +583,7 @@
   <object id="102" x="520" y="520" width="240.667" height="120.667"/>
   <object id="205" x="960" y="240" width="40.0003" height="40"/>
  </objectgroup>
- <objectgroup color="#0000ff" id="5" name="collision">
+ <objectgroup color="#0000ff" id="5" name="collision" visible="0">
   <object id="103" x="640" y="1240" width="319.333" height="40"/>
   <object id="104" x="280" y="920" width="120" height="40"/>
   <object id="105" x="280" y="960" width="40" height="320"/>
@@ -435,29 +620,33 @@
   <object id="145" x="560" y="-2" width="121.667" height="163.667"/>
   <object id="146" x="680" y="-1" width="237.667" height="124.667"/>
   <object id="147" x="920" y="0" width="279.667" height="84.667"/>
-  <object id="148" x="1080" y="80" width="119.667" height="84.667"/>
   <object id="149" x="1160" y="160" width="39.667" height="361.667"/>
-  <object id="150" x="1120" y="361" width="46.667" height="158.667"/>
+  <object id="150" x="1120" y="361" width="46.667" height="119"/>
   <object id="151" x="999.667" y="84.6665" width="38.667" height="35.667"/>
   <object id="152" x="840" y="120" width="38.667" height="40.667"/>
-  <object id="153" x="0.6665" y="203.166" width="317.667" height="38.667"/>
+  <object id="153" x="0.6665" y="203.166" width="299.417" height="38.667"/>
   <object id="154" x="0" y="241" width="116.667" height="277.667"/>
-  <object id="155" x="120" y="245" width="40.667" height="232.667"/>
-  <object id="156" x="160" y="320" width="38.667" height="40.667"/>
+  <object id="155" x="120" y="245" width="40.667" height="195"/>
   <object id="157" x="160" y="240" width="38.667" height="40.667"/>
-  <object id="158" x="5" y="1560" width="1196.67" height="38.667"/>
-  <object id="159" x="840" y="1520" width="357.667" height="38.667"/>
-  <object id="160" x="880" y="1480" width="317.667" height="38.667"/>
-  <object id="161" x="960" y="1440" width="237.667" height="38.667"/>
-  <object id="162" x="1000" y="1400" width="197.667" height="38.667"/>
-  <object id="163" x="1040" y="1360" width="157.667" height="38.667"/>
-  <object id="164" x="160" y="1520" width="325.667" height="38.667"/>
-  <object id="165" x="200" y="1480" width="250.667" height="38.667"/>
   <object id="172" x="-40.3333" y="509" width="39.3337" height="849.515"/>
   <object id="173" x="-36.6667" y="1480" width="37.3337" height="124.515"/>
   <object id="174" x="1200" y="877" width="46.667" height="524.667"/>
   <object id="175" x="1201" y="0" width="45.667" height="560.667"/>
   <object id="199" x="1080" y="960" width="120.667" height="38.667"/>
+  <object id="218" x="0" y="1200" width="40" height="40"/>
+  <object id="219" x="40" y="1000" width="40" height="200"/>
+  <object id="220" x="0" y="960" width="40" height="40"/>
+  <object id="221" x="0" y="1560" width="160" height="40"/>
+  <object id="222" x="160" y="1520" width="40" height="40"/>
+  <object id="223" x="200" y="1480" width="240" height="40"/>
+  <object id="224" x="440" y="1520" width="40" height="40"/>
+  <object id="225" x="480" y="1560" width="360" height="40"/>
+  <object id="226" x="840" y="1520" width="40" height="40"/>
+  <object id="227" x="880" y="1480" width="80" height="40"/>
+  <object id="228" x="960" y="1440" width="40" height="40"/>
+  <object id="229" x="1000" y="1400" width="40" height="40"/>
+  <object id="230" x="1040" y="1360" width="160" height="40"/>
+  <object id="355" x="1080" y="80" width="120" height="80"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="6" name="markers">
   <object id="135" name="spawn" x="40" y="1440">
@@ -479,6 +668,7 @@
     <property name="target10" type="object" value="180"/>
     <property name="target11" type="object" value="181"/>
     <property name="target12" type="object" value="166"/>
+    <property name="target13" type="object" value="356"/>
     <property name="target2" type="object" value="190"/>
     <property name="target3" type="object" value="185"/>
     <property name="target4" type="object" value="186"/>
@@ -527,6 +717,14 @@
     <property name="target7" type="object" value="213"/>
     <property name="target8" type="object" value="216"/>
     <property name="target9" type="object" value="215"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="361" name="toggle" x="1280" y="440">
+   <properties>
+    <property name="flag" value="completeMajorWheatPuzzle"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target" type="object" value="362"/>
    </properties>
    <point/>
   </object>

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 77,
+  nextobjectid = 78,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Block Puzzle"
@@ -317,6 +317,20 @@ return {
             ["text1_1"] = "* (Heh, you thought there was something here.)",
             ["text1_2"] = "* (WRONG!!!!!)"
           }
+        },
+        {
+          id = 77,
+          name = "resetbell",
+          type = "",
+          shape = "rectangle",
+          x = 600,
+          y = 40,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -716,9 +730,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 600,
+          x = 640,
           y = 40,
-          width = 280,
+          width = 240,
           height = 40,
           rotation = 0,
           opacity = 1,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="77">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="78">
  <editorsettings>
   <export target="farm5.lua" format="lua"/>
  </editorsettings>
@@ -99,6 +99,7 @@
     <property name="text1_2" value="* (WRONG!!!!!)"/>
    </properties>
   </object>
+  <object id="77" name="resetbell" x="600" y="40" width="40" height="40"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="7" name="objects"/>
  <objectgroup color="#55ffff" id="3" name="blockcollision">
@@ -170,7 +171,7 @@
  </objectgroup>
  <objectgroup color="#0000ff" id="10" name="collision">
   <object id="52" x="880" y="40" width="40" height="440"/>
-  <object id="53" x="600" y="40" width="280" height="40"/>
+  <object id="53" x="640" y="40" width="240" height="40"/>
   <object id="54" x="560" y="0" width="40" height="40"/>
   <object id="55" x="440" y="-40" width="120" height="40"/>
   <object id="56" x="400" y="0" width="40" height="40"/>
