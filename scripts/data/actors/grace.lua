@@ -17,9 +17,8 @@ function actor:init()
     self.path = "party/grace/dark"
     self.default = "walk"
 
-    self.voice = nil
-    self.portrait_path = nil
-    self.portait_offset = nil
+    self.portrait_path = "face/grace"
+    self.portait_offset = {-19, -13}
 
     self.can_blush = false
 
