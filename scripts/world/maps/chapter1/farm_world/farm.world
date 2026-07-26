@@ -121,10 +121,10 @@
         },
         {
             "fileName": "farm_climb.tmx",
-            "height": 1120,
+            "height": 3120,
             "width": 640,
-            "x": 13824,
-            "y": -6833
+            "x": 13584,
+            "y": -8833
         },
         {
             "fileName": "farm_gardner_test/farm_gardner_test.tmx",
