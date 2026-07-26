@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="319" tileheight="219" tilecount="16" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="320" tileheight="560" tilecount="24" columns="0">
  <editorsettings>
   <export target="farm_world_extras.lua" format="lua"/>
  </editorsettings>
@@ -52,5 +52,28 @@
  <tile id="16">
   <image source="../../../assets/sprites/tilesets/farm_world/artillery.png" width="120" height="120"/>
  </tile>
-</tileset>
+ <tile id="17">
+  <image source="../../../assets/sprites/tilesets/farm_world/field_climb.png" width="320" height="560"/>
+ </tile>
+ <tile id="18">
+  <image source="../../../assets/sprites/tilesets/farm_world/foreground_cloud.png" width="121" height="61"/>
+ </tile>
+ <tile id="19">
+  <image source="../../../assets/sprites/tilesets/farm_world/foreground_flower.png" width="98" height="93"/>
+ </tile>
+ <tile id="20">
+  <image source="../../../assets/sprites/tilesets/farm_world/foreground_flower2.png" width="104" height="98"/>
+ </tile>
+ <tile id="21">
+  <image source="../../../assets/sprites/tilesets/farm_world/mid(less)ground_flower2.png" width="33" height="25"/>
+ </tile>
+ <tile id="22">
+  <image source="../../../assets/sprites/tilesets/farm_world/midground_apple.png" width="26" height="28"/>
+ </tile>
+ <tile id="23">
+  <image source="../../../assets/sprites/tilesets/farm_world/midground_flower.png" width="43" height="33"/>
+ </tile>
+ <tile id="24">
+  <image source="../../../assets/sprites/tilesets/farm_world/background_gardner.png" width="19" height="16"/>
+ </tile>
 </tileset>

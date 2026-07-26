@@ -4,8 +4,8 @@ return {
   tiledversion = "1.12.2",
   name = "farm_world_extras",
   class = "",
-  tilewidth = 319,
-  tileheight = 219,
+  tilewidth = 320,
+  tileheight = 560,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 16,
+  tilecount = 24,
   tiles = {
     {
       id = 0,
@@ -120,6 +120,54 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/artillery.png",
       width = 120,
       height = 120
+    },
+    {
+      id = 17,
+      image = "../../../assets/sprites/tilesets/farm_world/field_climb.png",
+      width = 320,
+      height = 560
+    },
+    {
+      id = 18,
+      image = "../../../assets/sprites/tilesets/farm_world/foreground_cloud.png",
+      width = 121,
+      height = 61
+    },
+    {
+      id = 19,
+      image = "../../../assets/sprites/tilesets/farm_world/foreground_flower.png",
+      width = 98,
+      height = 93
+    },
+    {
+      id = 20,
+      image = "../../../assets/sprites/tilesets/farm_world/foreground_flower2.png",
+      width = 104,
+      height = 98
+    },
+    {
+      id = 21,
+      image = "../../../assets/sprites/tilesets/farm_world/mid(less)ground_flower2.png",
+      width = 33,
+      height = 25
+    },
+    {
+      id = 22,
+      image = "../../../assets/sprites/tilesets/farm_world/midground_apple.png",
+      width = 26,
+      height = 28
+    },
+    {
+      id = 23,
+      image = "../../../assets/sprites/tilesets/farm_world/midground_flower.png",
+      width = 43,
+      height = 33
+    },
+    {
+      id = 24,
+      image = "../../../assets/sprites/tilesets/farm_world/background_gardner.png",
+      width = 19,
+      height = 16
     }
   }
 }
