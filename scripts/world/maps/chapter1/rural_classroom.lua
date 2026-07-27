@@ -9,9 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 58,
-  backgroundcolor = { 0, 0, 0 },
+  nextlayerid = 9,
+  nextobjectid = 74,
   properties = {
     ["light"] = true
   },
@@ -112,7 +111,7 @@ return {
       type = "objectgroup",
       draworder = "topdown",
       id = 5,
-      name = "objects",
+      name = "objects_party",
       class = "",
       visible = true,
       opacity = 1,
@@ -271,11 +270,183 @@ return {
           visible = true,
           properties = {
             ["text1_1"] = "* (Whiteboard.)",
-            ["text1_2"] = "* (There never was much to say about this thing...)",
+            ["text1_2"] = "* (Hasn't been much to say about this thing...)",
             ["text2_1"] = "* (Not much to say about this thing.)"
+          }
+        },
+        {
+          id = 63,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 460,
+          y = 301.333,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "starwalker",
+            ["text"] = "* What the hell is this class bro."
+          }
+        },
+        {
+          id = 64,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 460,
+          y = 220,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "yoori",
+            ["text"] = "* I love books!"
+          }
+        },
+        {
+          id = 66,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 330,
+          y = 230,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "blunderbuss",
+            ["text"] = "* SWEETCHEEK."
+          }
+        },
+        {
+          id = 67,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 330,
+          y = 300,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "glaggle",
+            ["solid"] = false,
+            ["text"] = "* Dude."
+          }
+        },
+        {
+          id = 68,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 203,
+          y = 307.5,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "handle",
+            ["text"] = "* Look at my encirclement!!!",
+            ["turn"] = true
+          }
+        },
+        {
+          id = 69,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 330,
+          y = 384,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "grace_lw",
+            ["text"] = "[face:kawaii_neutral, -19, -13]* Uh,[wait:5] hey.",
+            ["turn"] = true
+          }
+        },
+        {
+          id = 70,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 460,
+          y = 384,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "tundra_lw",
+            ["text"] = "* Hi!",
+            ["turn"] = true
           }
         }
       }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 7,
+      name = "objects_floaters",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 65,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 200,
+          y = 180,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "walrus",
+            ["solid"] = false,
+            ["text"] = "* Yeah,[wait:5] man."
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "objects_test",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {}
     },
     {
       type = "objectgroup",
@@ -494,14 +665,82 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 130,
-          y = 230,
+          x = 140,
+          y = 240,
           width = 0,
           height = 0,
           rotation = 0,
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 72,
+          name = "vess_outbound",
+          type = "",
+          shape = "point",
+          x = 240,
+          y = -70,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 73,
+          name = "front_of_door",
+          type = "",
+          shape = "point",
+          x = 140,
+          y = 180,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 8,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 71,
+          name = "",
+          type = "",
+          shape = "point",
+          x = 440,
+          y = -60,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "start_cutscene_active",
+            ["target1"] = { id = 65 },
+            ["target2"] = { id = 66 },
+            ["target3"] = { id = 64 },
+            ["target4"] = { id = 68 },
+            ["target5"] = { id = 63 },
+            ["target6"] = { id = 69 },
+            ["target7"] = { id = 70 },
+            ["target8"] = { id = 67 }
+          }
         }
       }
     }

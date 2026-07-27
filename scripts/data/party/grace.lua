@@ -6,7 +6,7 @@ function character:init()
     self.name = "Grace"
 
     self:setActor("grace")
-    self:setLightActor("grace")
+    self:setLightActor("grace_lw")
 
     self.level = 1
     self.title = "Pink Rose\nElegant, and light!"
