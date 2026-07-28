@@ -53,7 +53,8 @@
     // These config values can control chapter-specific features as well.
     "config": {
         "kristal": {
-            "tpName": "AP"
+            "tpName": "AP",
+            "newChoicers": true
             // End of config
         }
     },

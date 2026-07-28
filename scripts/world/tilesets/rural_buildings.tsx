@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="25" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="30" columns="0">
  <editorsettings>
   <export target="rural_buildings.lua" format="lua"/>
  </editorsettings>
@@ -78,5 +78,20 @@
  </tile>
  <tile id="24">
   <image source="../../../assets/sprites/tilesets/rural/climb.png" width="120" height="60"/>
+ </tile>
+ <tile id="25">
+  <image source="../../../assets/sprites/npcs/classmates/handle/handle_blush.png" width="44" height="50"/>
+ </tile>
+ <tile id="26">
+  <image source="../../../assets/sprites/npcs/classmates/yoori/yoori_1.png" width="25" height="44"/>
+ </tile>
+ <tile id="27">
+  <image source="../../../assets/sprites/npcs/classmates/walrus/walrus_1.png" width="19" height="24"/>
+ </tile>
+ <tile id="28">
+  <image source="../../../assets/sprites/npcs/classmates/glaggle/glaggle_1.png" width="21" height="24"/>
+ </tile>
+ <tile id="29">
+  <image source="../../../assets/sprites/npcs/classmates/blunderbuss/blunderbuss_1.png" width="40" height="60"/>
  </tile>
 </tileset>

@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 25,
+  tilecount = 30,
   tiles = {
     {
       id = 0,
@@ -173,6 +173,36 @@ return {
       id = 24,
       image = "../../../assets/sprites/tilesets/rural/climb.png",
       width = 120,
+      height = 60
+    },
+    {
+      id = 25,
+      image = "../../../assets/sprites/npcs/classmates/handle/handle_blush.png",
+      width = 44,
+      height = 50
+    },
+    {
+      id = 26,
+      image = "../../../assets/sprites/npcs/classmates/yoori/yoori_1.png",
+      width = 25,
+      height = 44
+    },
+    {
+      id = 27,
+      image = "../../../assets/sprites/npcs/classmates/walrus/walrus_1.png",
+      width = 19,
+      height = 24
+    },
+    {
+      id = 28,
+      image = "../../../assets/sprites/npcs/classmates/glaggle/glaggle_1.png",
+      width = 21,
+      height = 24
+    },
+    {
+      id = 29,
+      image = "../../../assets/sprites/npcs/classmates/blunderbuss/blunderbuss_1.png",
+      width = 40,
       height = 60
     }
   }

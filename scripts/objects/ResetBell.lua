@@ -9,6 +9,9 @@ end
 
 function ResetBell:onInteract(player, dir)
     Assets.playSound("awkward")
+
+    --The following code is completely snatched from the wiki
+
     -- Get every PushBlock in the current scene and reset it
     for _, pushblock in ipairs(Game.stage:getObjects(PushBlock)) do
         pushblock:reset()
