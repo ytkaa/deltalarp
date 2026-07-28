@@ -1,7 +1,7 @@
 return {
     start_day = function(cutscene, event)
-        cutscene:text("* (Start the day?)")
-        local start = cutscene:choicer({"Yes", "Noooo"})
+        --cutscene:text("* (Start the day?)")
+        local start = cutscene:textChoicer("* (Start the day?)", {"Yes", "Noooo"})
 
         if start == 1 then
             --cutscene:text("* (...)")
@@ -49,8 +49,8 @@ return {
     end;
 
     test_school = function(cutscene)
-        cutscene:text("* (Watch the school cutscene \nso far?)")
-        local start = cutscene:choicer({"Yes", "Noooo"})
+        --cutscene:text("* (Watch the school cutscene \nso far?)")
+        local start = cutscene:textChoicer("* (Watch the school cutscene \nso far?)", {"Yes", "Noooo"})
 
         if start == 1 then
             --cutscene:wait(cutscene:fadeOut(4))
