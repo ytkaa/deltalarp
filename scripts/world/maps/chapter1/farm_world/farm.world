@@ -139,6 +139,13 @@
             "width": 640,
             "x": 18600,
             "y": -6791
+        },
+        {
+            "fileName": "garden2.tmx",
+            "height": 1920,
+            "width": 2560,
+            "x": 19320,
+            "y": -6791
         }
     ],
     "onlyShowAdjacentMaps": false,
