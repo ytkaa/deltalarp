@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="130" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="113">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="130" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="121">
  <editorsettings>
   <export target="farm10_real.lua" format="lua"/>
  </editorsettings>
@@ -57,7 +57,7 @@
 </data>
  </layer>
  <objectgroup color="#ff007f" id="3" name="objects_party">
-  <object id="92" name="transition" x="-43.3333" y="240" width="38.5" height="318">
+  <object id="92" name="transition" x="-38.3333" y="241" width="38.5" height="318">
    <properties>
     <property name="map" value="chapter1/farm_world/farm9"/>
     <property name="marker" value="to_farm10"/>
@@ -122,15 +122,40 @@
     <property name="text_once" type="bool" value="true"/>
    </properties>
   </object>
+  <object id="114" name="transition" x="5200" y="359.5" width="38.5" height="120.5">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm_gardner_test"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#0000ff" id="4" name="collision">
   <object id="83" x="0" y="0" width="41.667" height="239.667"/>
   <object id="109" x="0.1665" y="560.167" width="41.667" height="239.667"/>
   <object id="110" x="41.1665" y="800.833" width="5154.88" height="40.667"/>
   <object id="111" x="320.318" y="-39.1214" width="4877.36" height="40.667"/>
+  <object id="115" x="5200.56" y="481.667" width="40.88" height="320.667"/>
+  <object id="116" x="5200" y="-2.66667" width="40.88" height="363.334"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="5" name="markers">
   <object id="90" name="spawn" x="30.4167" y="422">
+   <point/>
+  </object>
+  <object id="117" name="to_gardner" x="5169.33" y="420">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="6" name="controllers">
+  <object id="120" name="toggle" x="192" y="-107">
+   <properties>
+    <property name="flag" value="gardner_chase_end"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="97"/>
+    <property name="target2" type="object" value="98"/>
+    <property name="target3" type="object" value="101"/>
+    <property name="target4" type="object" value="95"/>
+    <property name="target5" type="object" value="100"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>

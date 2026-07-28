@@ -9,8 +9,8 @@ return {
   height = 20,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 113,
+  nextlayerid = 7,
+  nextobjectid = 121,
   properties = {
     ["name"] = "Wheat Field - Destroyed Field"
   },
@@ -128,8 +128,8 @@ return {
           name = "transition",
           type = "",
           shape = "rectangle",
-          x = -43.3333,
-          y = 240,
+          x = -38.3333,
+          y = 241,
           width = 38.5,
           height = 318,
           rotation = 0,
@@ -289,6 +289,23 @@ return {
             ["text2"] = "* (It fills you with shock and awe.[wait:5] It also fills you with a certain power...)",
             ["text_once"] = true
           }
+        },
+        {
+          id = 114,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 5200,
+          y = 359.5,
+          width = 38.5,
+          height = 120.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm_gardner_test",
+            ["marker"] = "spawn"
+          }
         }
       }
     },
@@ -361,6 +378,34 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 115,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 5200.56,
+          y = 481.667,
+          width = 40.88,
+          height = 320.667,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 116,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 5200,
+          y = -2.66667,
+          width = 40.88,
+          height = 363.334,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -391,6 +436,58 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 117,
+          name = "to_gardner",
+          type = "",
+          shape = "point",
+          x = 5169.33,
+          y = 420,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 120,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 192,
+          y = -107,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "gardner_chase_end",
+            ["inverted"] = true,
+            ["target1"] = { id = 97 },
+            ["target2"] = { id = 98 },
+            ["target3"] = { id = 101 },
+            ["target4"] = { id = 95 },
+            ["target5"] = { id = 100 }
+          }
         }
       }
     }

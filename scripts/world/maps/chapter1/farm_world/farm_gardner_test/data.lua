@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 104,
+  nextobjectid = 105,
   properties = {
     ["name"] = "Wheat Field - Gardner Chase"
   },
@@ -1404,6 +1404,23 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/farm_climb",
             ["marker"] = "spawn"
+          }
+        },
+        {
+          id = 104,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 1360,
+          width = 38.5,
+          height = 120.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm10_real",
+            ["marker"] = "to_gardner"
           }
         }
       }

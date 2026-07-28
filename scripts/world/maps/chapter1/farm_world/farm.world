@@ -123,15 +123,22 @@
             "fileName": "farm_climb.tmx",
             "height": 3120,
             "width": 640,
-            "x": 13584,
-            "y": -8833
+            "x": 18520,
+            "y": -6021
         },
         {
             "fileName": "farm_gardner_test/farm_gardner_test.tmx",
             "height": 1600,
             "width": 6000,
-            "x": 9024,
-            "y": -5633
+            "x": 13960,
+            "y": -2840
+        },
+        {
+            "fileName": "garden1.tmx",
+            "height": 600,
+            "width": 600,
+            "x": 18640,
+            "y": -6671
         }
     ],
     "onlyShowAdjacentMaps": false,

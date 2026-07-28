@@ -118,7 +118,7 @@ return {
         cutscene:text("* WAIT !!", nil, colonel, options) --It should not be this difficult to get npcs in a cutscene to use talk sprites
         cutscene:text("* WAIT !!", nil, colonel, options)
         cutscene:text("* [speed:0.05]...", nil, colonel, options)
-        cutscene:text("[speed:0.60]* ...you're with the Gardner,[wait:5] aren't you.[wait:5] Lieutenant.[wait:5]", nil, colonel, options)
+        cutscene:text("[speed:0.60]* ...you're with the GARDNER,[wait:5] aren't you.[wait:5] Lieutenant.[wait:5]", nil, colonel, options)
         cutscene:look(vess, "left")
         cutscene:wait(2)
         cutscene:text("* Well ??[wait:5] Are you ??![wait:5] \nARE YOU ??!?[wait:5]")
@@ -143,7 +143,7 @@ return {
         cutscene:wait(0.5)
         cutscene:text("* THAT'S US !!![wait:5] HE'S BEEN HARVESTING US COLONELS AND STEALING OUR LIFE FORCE !!!")
         cutscene:wait(1)
-        cutscene:text("* Lieutenant,[wait:5] when you meet that Gardner,[wait:5] don't run away !!")
+        cutscene:text("* Lieutenant,[wait:5] when you meet that GARDNER,[wait:5] don't run away !!")
         cutscene:text("* Stand your ground,[wait:5] and...[wait:5] and give him hell,[wait:5] you hear me !!")
         Game.world.music:resume()
         if (Game:getFlag("jimmy_rustled", false)) == true then
@@ -519,6 +519,33 @@ return {
             cutscene:wait(2)
             cutscene:text("* Thanks though.", nil, colonel, options2)
         else
+            return
+        end
+    end;
+    breakWheatWall = function(cutscene, event)
+        if (Game:getFlag("leading_colonels_squad", false)) == false then
+            cutscene:text("* (A giant wall of wheat...)")
+            cutscene:text("* (Seems like you'll need someone that can break it up.)")
+        else
+            local mainColonel = Game.world.followers[1]
+            cutscene:setTextboxTop(true)
+            cutscene:setSpeaker(mainColonel, true)
+            cutscene:setSprite(mainColonel, "talk", 1/6)
+            cutscene:text("* WHAT !?[wait:5] A WALL OF WHEAT,[wait:5] LOITERING AROUND ??!?")
+            cutscene:text("* Seems like they're trying to PROTEST !!")
+            cutscene:text("* Lieutenant,[wait:5] give me the word and I'll have this RIOT broken UP !!")
+            cutscene:setSprite(mainColonel, "idle", 1/6)
+        end
+        local choice = cutscene:choicer({"Break it \nup", "Not yet"})
+        if choice == 1 then
+            cutscene:text("* DISPERSE !!")
+            cutscene:fadeOut(0.5)
+            cutscene:wait(1)
+            Assets.playSound("noise")
+            Game:setFlag("brokeWheatWall", true)
+            cutscene:wait(0.5)
+            cutscene:fadeIn(0.5)
+        else 
             return
         end
     end;

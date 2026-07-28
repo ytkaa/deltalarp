@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 70,
+  nextobjectid = 75,
   properties = {
     ["music"] = "the entrance",
     ["name"] = "Wheat Field - Climb"
@@ -711,6 +711,40 @@ return {
             ["map"] = "chapter1/farm_world/farm_gardner_test",
             ["marker"] = "to_climb"
           }
+        },
+        {
+          id = 73,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 359.667,
+          y = -25.6667,
+          width = 120,
+          height = 25,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden1",
+            ["marker"] = "to_farm"
+          }
+        },
+        {
+          id = 74,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 358.75,
+          y = 3065.5,
+          width = 122.25,
+          height = 43.25,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["script"] = "gardner_chase_end"
+          }
         }
       }
     },
@@ -735,6 +769,22 @@ return {
           shape = "point",
           x = 420,
           y = 3080,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["player_state"] = "CLIMB"
+          }
+        },
+        {
+          id = 71,
+          name = "to_garden",
+          type = "",
+          shape = "point",
+          x = 419.333,
+          y = 51,
           width = 0,
           height = 0,
           rotation = 0,

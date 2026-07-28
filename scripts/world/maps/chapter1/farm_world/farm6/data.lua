@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 33,
+  nextobjectid = 34,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - \"Barracks\""
@@ -623,6 +623,25 @@ return {
             ["flag"] = "barracks",
             ["inverted"] = true,
             ["target"] = { id = 22 }
+          }
+        },
+        {
+          id = 33,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 335,
+          y = -101,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "gardner_chase_end",
+            ["inverted"] = true,
+            ["target1"] = { id = 12 },
+            ["target2"] = { id = 13 }
           }
         }
       }

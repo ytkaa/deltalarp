@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 75,
+  nextobjectid = 76,
   properties = {
     ["music"] = "field_jarona"
   },
@@ -502,6 +502,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
+            ["cutscene"] = "chapter1/farm_world.breakWheatWall",
             ["solid"] = true,
             ["text1_1"] = "* (A giant wall of wheat...)",
             ["text1_2"] = "* (Seems like you'll need someone that can break it up.)"
@@ -735,6 +736,25 @@ return {
             ["target7"] = { id = 45 },
             ["target8"] = { id = 46 },
             ["target9"] = { id = 51 }
+          }
+        },
+        {
+          id = 75,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 114.667,
+          y = -73.3333,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "brokeWheatWall",
+            ["inverted"] = true,
+            ["target1"] = { id = 30 },
+            ["target2"] = { id = 36 }
           }
         }
       }
