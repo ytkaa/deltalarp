@@ -5,5 +5,8 @@ function Mod:init()
     Game:registerEvent("resetbell", function(data)
         return ResetBell(data.x, data.y)
     end)
+    Game:registerEvent("mysterygate", function(data)
+        return MysteryGate(data.x, data.y)
+    end)
     print("LOADED " .. self.info.name .. " - THE START..!")
 end

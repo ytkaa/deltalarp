@@ -535,18 +535,26 @@ return {
             cutscene:text("* Seems like they're trying to PROTEST !!")
             cutscene:text("* Lieutenant,[wait:5] give me the word and I'll have this RIOT broken UP !!")
             cutscene:setSprite(mainColonel, "idle", 1/6)
-        end
-        local choice = cutscene:choicer({"Break it \nup", "Not yet"})
-        if choice == 1 then
-            cutscene:text("* DISPERSE !!")
-            cutscene:fadeOut(0.5)
-            cutscene:wait(1)
-            Assets.playSound("noise")
-            Game:setFlag("brokeWheatWall", true)
-            cutscene:wait(0.5)
-            cutscene:fadeIn(0.5)
-        else 
-            return
+            local choice = cutscene:choicer({"Break it \nup", "Listen to\ntheir demands???"})
+            if choice == 1 then
+                cutscene:setSprite(mainColonel, "talk", 1/6)
+                cutscene:text("* DISPERSE !!")
+                cutscene:setSprite(mainColonel, "idle", 1/6)
+                cutscene:fadeOut(0.5)
+                cutscene:wait(1)
+                Assets.playSound("noise")
+                cutscene:wait(1)
+                Assets.playSound("bump")
+                cutscene:wait(1)
+                Assets.playSound("badexplosion")
+                Game:setFlag("brokeWheatWall", true)
+                cutscene:wait(0.75)
+                cutscene:fadeIn(0.5)
+            else
+                cutscene:setSprite(mainColonel, "talk", 1/6)
+                cutscene:text("* TREASON !!")
+                cutscene:setSprite(mainColonel, "idle", 1/6)
+            end
         end
     end;
 }
