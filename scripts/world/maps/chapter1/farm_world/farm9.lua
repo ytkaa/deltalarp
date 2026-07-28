@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 370,
+  nextobjectid = 371,
   properties = {
     ["music"] = "field_jarona"
   },
@@ -692,7 +692,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -708,7 +708,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -724,7 +724,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -740,7 +740,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -756,7 +756,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -772,7 +772,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -788,7 +788,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -829,7 +829,7 @@ return {
             ["actor"] = "colonel",
             ["talk"] = true,
             ["talksprite"] = "talk",
-            ["text1"] = "* Thanks, private."
+            ["text1"] = "* Thanks,[wait:5] private."
           }
         },
         {
@@ -848,11 +848,11 @@ return {
             ["actor"] = "colonel",
             ["talk"] = true,
             ["talksprite"] = "talk",
-            ["text1_1"] = "* Darn... The GARDNER has increased his defenses.",
-            ["text1_2"] = "* These spikes... I've never seen anything like 'em before !!",
-            ["text1_3"] = "* This is awful, lieutenant !! Our men are on the other side of these spikes !!",
-            ["text1_4"] = "* Cut off, without supply... The GARDNER must be exceptional at micro.",
-            ["text2_1"] = "* Huh? The puzzle? Oh yeah, that might get rid of the spikes.",
+            ["text1_1"] = "* Darn...[wait:5] The GARDNER has increased his defenses.",
+            ["text1_2"] = "* These spikes...[wait:5] I've never seen anything like 'em before !!",
+            ["text1_3"] = "* This is awful,[wait:5] lieutenant !![wait:5] Our men are on the other side of these spikes !!",
+            ["text1_4"] = "* Cut off,[wait:5] without supply...[wait:5] The GARDNER must be exceptional at micro.",
+            ["text2_1"] = "* Huh?[wait:5] The puzzle?[wait:5] Oh yeah,[wait:5] that might get rid of the spikes.",
             ["text2_2"] = "* I'm gonna sit here and keep looking at the spikes though."
           }
         },
@@ -891,7 +891,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["lock"] = true
+            ["lock"] = false
           }
         },
         {
@@ -917,9 +917,9 @@ return {
           type = "",
           shape = "rectangle",
           x = -35,
-          y = 1360,
+          y = 1280,
           width = 35,
-          height = 120,
+          height = 280,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -2912,6 +2912,24 @@ return {
           gid = 102,
           visible = true,
           properties = {}
+        },
+        {
+          id = 370,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 1320,
+          width = 80,
+          height = 200,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["setflag"] = "couch_moved",
+            ["setvalue"] = true
+          }
         }
       }
     },
@@ -3606,7 +3624,7 @@ return {
       id = 5,
       name = "collision",
       class = "",
-      visible = false,
+      visible = true,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -4238,7 +4256,7 @@ return {
           x = -40.3333,
           y = 509,
           width = 39.3337,
-          height = 849.515,
+          height = 771,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -4250,9 +4268,9 @@ return {
           type = "",
           shape = "rectangle",
           x = -36.6667,
-          y = 1480,
+          y = 1560,
           width = 37.3337,
-          height = 124.515,
+          height = 44.515,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -4575,8 +4593,8 @@ return {
           name = "toggle",
           type = "",
           shape = "point",
-          x = 1244.17,
-          y = 438.667,
+          x = 1240,
+          y = 480,
           width = 0,
           height = 0,
           rotation = 0,
@@ -4590,6 +4608,9 @@ return {
             ["target11"] = { id = 181 },
             ["target12"] = { id = 166 },
             ["target13"] = { id = 356 },
+            ["target14"] = { id = 194 },
+            ["target15"] = { id = 193 },
+            ["target16"] = { id = 196 },
             ["target2"] = { id = 190 },
             ["target3"] = { id = 185 },
             ["target4"] = { id = 186 },
@@ -4641,8 +4662,8 @@ return {
           name = "toggle",
           type = "",
           shape = "point",
-          x = 1241.33,
-          y = 378.667,
+          x = 1250,
+          y = 410,
           width = 0,
           height = 0,
           rotation = 0,

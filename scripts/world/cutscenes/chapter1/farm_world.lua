@@ -26,33 +26,33 @@ return {
         -- Making and choosing faces is fun asl tho
         cutscene:panTo(320, 420)
         cutscene:wait(cutscene:walkTo(grace, 320, 340, 2))
-        cutscene:wait(cutscene:text("[face:sus, -19, -13]* So YOU were the one \ntaking food from \nthe barn.", options))
+        cutscene:text("[face:sus, -19, -13]* So YOU were the one \ntaking food from \nthe barn.", options)
 
-        cutscene:wait(cutscene:text("[face:sad_brow, -19, -13]* Guess that's why there's \nbeen less food for[wait:5] \nme[wait:3] recently...", options))
-        cutscene:wait(cutscene:text("[face:smug, -19, -13]* Hah.[wait:5] Okay.[wait:5] That's cool.[wait:5]", options))
+        cutscene:text("[face:sad_brow, -19, -13]* Guess that's why there's \nbeen less food for[wait:5] \nme[wait:3] recently...", options)
+        cutscene:text("[face:smug, -19, -13]* Hah.[wait:5] Okay.[wait:5] That's cool.[wait:5]", options)
         
         cutscene:panTo(320, 500)
         cutscene:wait(cutscene:walkTo(grace, 320, 420, 2.5))
-        cutscene:wait(cutscene:text("[face:pissed, -19, -13]* You creepy #$$@#."))
+        cutscene:text("[face:pissed, -19, -13]* You creepy #$$@#.")
         music:play("grace")
         cutscene:setSprite(grace, "down_angry")
         cutscene:wait(2)
-        cutscene:wait(cutscene:text("[face:angry, -19, -13]* This is why nobody \nlikes you."))
-        cutscene:wait(cutscene:text("[face:angry_mark, -19, -13]* Of COURSE it would be \nYOUR fault I've had \nto...[wait:5] to...", options))
+        cutscene:text("[face:angry, -19, -13]* This is why nobody \nlikes you.")
+        cutscene:text("[face:angry_mark, -19, -13]* Of COURSE it would be \nYOUR fault I've had \nto...[wait:5] to...", options)
         music:stop()
         --Assets.playSound("grace_surprise_wip")
         cutscene:wait(2)
         cutscene:resetSprite(grace)
-        cutscene:wait(cutscene:text("[face:nervous, -19, -13]* Huh?[wait:5] Why am I dressed \nlike this?", options))
-        cutscene:wait(cutscene:text("[face:nervous, -19, -13]* Why is the inside of \nthis barn so dark?", options))
-        cutscene:wait(cutscene:text("[face:kawaii, -19, -13]* Hah,[wait:5] I don't know either", auto))
+        cutscene:text("[face:nervous, -19, -13]* Huh?[wait:5] Why am I dressed \nlike this?", options)
+        cutscene:text("[face:nervous, -19, -13]* Why is the inside of \nthis barn so dark?", options)
+        cutscene:text("[face:kawaii, -19, -13]* Hah,[wait:5] I don't know either", auto)
         music:play("grace")
         cutscene:setSprite(grace, "down_angry")
-        cutscene:wait(cutscene:text("[face:angry_mark, -19, -13]* Wait,[wait:5] no,[wait:5] I don't like \nyou,[wait:5] we're NOT talking."))
-        cutscene:wait(cutscene:text("[face:pissed, -19, -13]* Just...[wait:5] go away."))
-        cutscene:wait(cutscene:text("[face:pissed, -19, -13]* I don't need you \nstealing more of my \nfood..."))
+        cutscene:text("[face:angry_mark, -19, -13]* Wait,[wait:5] no,[wait:5] I don't like \nyou,[wait:5] we're NOT talking.")
+        cutscene:text("[face:pissed, -19, -13]* Just...[wait:5] go away.")
+        cutscene:text("[face:pissed, -19, -13]* I don't need you \nstealing more of my \nfood...")
         cutscene:text("[face:angry, -19, -13]* ...food that I found \nfair and $$$$ing square.")
-        cutscene:wait(cutscene:text("[face:neutral, -19, -13]* $$!$ is hard enough to \ncome by already."))
+        cutscene:text("[face:neutral, -19, -13]* $$!$ is hard enough to \ncome by already.")
         music:stop()
         cutscene:resetSprite(grace)
         cutscene:walkTo(grace, "grace_leaf", 3)
@@ -81,19 +81,19 @@ return {
 
     jimmy_rustling = function(cutscene, event)
         if Game:getFlag("jimmy_rustled", false) == true then
-            cutscene:wait(cutscene:text("* (...)"))
+            cutscene:text("* (...)")
             Game.world:stopCutscene()
         end
         if event.interact_count == 1 then
-            cutscene:wait(cutscene:text("* Y'know,[wait:5] it's illegal around heres to rustle Jimmy's (!)"))
+            cutscene:text("* Y'know,[wait:5] it's illegal around heres to rustle Jimmy's (!)")
         elseif event.interact_count == 2 then
-            cutscene:wait(cutscene:text("* STOP RUSTLING JIMMY'S (!!!)"))
+            cutscene:text("* STOP RUSTLING JIMMY'S (!!!)")
         elseif event.interact_count == 3 then
-            cutscene:wait(cutscene:text("* Why are you still rustling Jimmy."))
+            cutscene:text("* Why are you still rustling Jimmy.")
         elseif event.interact_count == 4 then
             Game:setFlag("jimmy_rustled", true)
-            cutscene:wait(cutscene:text("* (You felt a shift in the quantum fluctuations of the wheat field.)"))
-            cutscene:wait(cutscene:text("* (Things feel...[wait:5] a little [sound:ominous]emptier now.)"))
+            cutscene:text("* (You felt a shift in the quantum fluctuations of the wheat field.)")
+            cutscene:text("* (Things feel...[wait:5] a little [sound:ominous]emptier now.)")
         end
     end;
 
@@ -165,12 +165,12 @@ return {
 
     disgustingspikes = function(cutscene, event)
         if event.interact_count == 1 then
-            cutscene:wait(cutscene:text("* (More spikes.)"))
+            cutscene:text("* (More spikes.)")
             Game:setFlag("disgusting_spikes", true)
         elseif event.interact_count == 2 then
-            cutscene:wait(cutscene:text("* (More spikes in a farmer's field ??!?)"))
+            cutscene:text("* (More spikes in a farmer's field ??!?)")
         elseif event.interact_count >= 3 then
-            cutscene:wait(cutscene:text("* (Disgusting.)"))
+            cutscene:text("* (Disgusting.)")
         end
     end;
 
@@ -298,7 +298,7 @@ return {
         cutscene:fadeIn(0)
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
-        Game.world.music:play("pursuit1")
+        Game.world.music:play("pursuit1", 1)
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -327,7 +327,7 @@ return {
         Game:setFlag("#chapter1/farm_world/farm_gardner_test#20:used_once", false)
         Game:setFlag("gardner_mid_chase", false)
         Game:saveQuick()
-        print("Quicksaved!")
+        print("QUICKSAVED.")
         cutscene:wait(0.75)
         Assets.playSound("farmerlaugh")
         cutscene:wait(0.75)
@@ -439,9 +439,9 @@ return {
             cutscene:setSpeaker(colonel, true)
             cutscene:setSprite(colonel, "talk", 1/6)
             cutscene:setSprite(rightColonel, "idle", 1/6)
-            cutscene:text("* We warned them to evacuate days before the operation...[wait:5] They should've been gone long ago.", nil, Colonel, options)
-            cutscene:text("* Plus,[wait:5] this is enemy territory.[wait:5] For all we know,[wait:5] they could be loyal to the GARDNER. ", nil, Colonel, options)
-            cutscene:text("* FIRE!!!! ", nil, Colonel, options)
+            cutscene:text("* We warned them to evacuate days before the operation...[wait:5] They should've been gone long ago.", nil, colonel, options)
+            cutscene:text("* Plus,[wait:5] this is enemy territory.[wait:5] For all we know,[wait:5] they could be loyal to the GARDNER. ", nil, colonel, options)
+            cutscene:text("* FIRE!!!! ", nil, colonel, options)
             cutscene:setSpeaker(leftColonel, true)
             cutscene:setSprite(colonel, "idle", 1/6)
             cutscene:setSprite(leftColonel, "talk", 1/6)

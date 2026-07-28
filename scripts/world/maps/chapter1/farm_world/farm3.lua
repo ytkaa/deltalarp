@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 85,
+  nextobjectid = 86,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Start"
@@ -934,6 +934,23 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/farm6",
             ["marker"] = "to_farm3"
+          }
+        },
+        {
+          id = 85,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 160,
+          y = 640,
+          width = 80,
+          height = 160,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["script"] = "music_logo"
           }
         }
       }

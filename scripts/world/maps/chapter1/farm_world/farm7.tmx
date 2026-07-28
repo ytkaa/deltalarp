@@ -162,7 +162,7 @@
     <property name="marker" value="to_farm7_south"/>
    </properties>
   </object>
-  <object id="55" name="transition" x="1200" y="1360" width="45.3333" height="120">
+  <object id="55" name="transition" x="1200" y="1320" width="45.3333" height="200">
    <properties>
     <property name="map" value="chapter1/farm_world/farm9"/>
     <property name="marker" value="spawn"/>
@@ -253,6 +253,8 @@
     <property name="target11" type="object" value="49"/>
     <property name="target12" type="object" value="47"/>
     <property name="target13" type="object" value="48"/>
+    <property name="target14" type="object" value="32"/>
+    <property name="target15" type="object" value="15"/>
     <property name="target2" type="object" value="43"/>
     <property name="target3" type="object" value="40"/>
     <property name="target4" type="object" value="39"/>
@@ -286,8 +288,8 @@
   <object id="23" x="-42.7516" y="157.243" width="41.5033" height="558.515"/>
   <object id="35" x="24.7485" y="1360" width="307.503" height="39.255"/>
   <object id="52" x="641.082" y="1519.66" width="557.17" height="84.015"/>
-  <object id="56" x="1200" y="508" width="38.667" height="849.515"/>
-  <object id="57" x="1200" y="1480" width="42.667" height="124.515"/>
+  <object id="56" x="1200" y="508" width="38.667" height="812"/>
+  <object id="57" x="1200" y="1520" width="42.667" height="84.515"/>
   <object id="59" x="0" y="840" width="160" height="40"/>
   <object id="60" x="120" y="880" width="40" height="400"/>
   <object id="61" x="120" y="1280" width="40" height="80"/>

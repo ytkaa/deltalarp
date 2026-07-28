@@ -279,7 +279,7 @@
  <objectgroup color="#ffff00" id="7" name="controllers">
   <object id="21" name="toggle" x="750" y="1140">
    <properties>
-    <property name="flag" value="gardner_chase1"/>
+    <property name="flag" value="gardner_chase_end"/>
     <property name="inverted" type="bool" value="true"/>
     <property name="target1" type="object" value="20"/>
     <property name="target2" type="object" value="91"/>

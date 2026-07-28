@@ -61,6 +61,18 @@ function actor:init()
         --["battle/item"] = {-6, -6},
         --["battle/itemready"] = {-6, -6},
         --["battle/defend"] = {-5, -3},
+
+        -- Climb offsets
+        ["climb/climbing"] = {-5, -15},
+        ["climb/fall"] = {-3, -14},
+        ["climb/charge"] = {-4, -12},
+        ["climb/charge_right"] = {-4, -12},
+        ["climb/charge_left"] = {-4, -12},
+        ["climb/slip_right"] = {-3, -13},
+        ["climb/slip_left"] = {-2, -13},
+        ["climb/jump_up"] = {-4, -13},
+        ["climb/land_right"] = {-4, -13},
+        ["climb/land_left"] = {-4, -13},
     }
 
     self.mirror_sprites = {

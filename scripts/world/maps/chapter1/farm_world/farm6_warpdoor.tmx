@@ -59,10 +59,14 @@
   <object id="9" name="warpdoor" x="320" y="240">
    <properties>
     <property name="flag1" value="barracks"/>
+    <property name="flag2" value="gardner_chase_end"/>
     <property name="map1" value="chapter1/farm_world/farm6_warpdoor"/>
+    <property name="map2" value="chapter1/farm_world/garden1"/>
     <property name="marker1" value="warp"/>
+    <property name="marker2" value="warp"/>
     <property name="name1" value="Wheat Field"/>
-    <property name="openflag" value="farm_warpdoors"/>
+    <property name="name2" value="Garden"/>
+    <property name="openflag" value="gardner_chase_end"/>
    </properties>
    <point/>
   </object>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="85">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="86">
  <editorsettings>
   <export target="farm3.lua" format="lua"/>
  </editorsettings>
@@ -173,6 +173,12 @@ of corn.)</property>
    <properties>
     <property name="map" value="chapter1/farm_world/farm6"/>
     <property name="marker" value="to_farm3"/>
+   </properties>
+  </object>
+  <object id="85" name="script" x="160" y="640" width="80" height="160">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="music_logo"/>
    </properties>
   </object>
  </objectgroup>

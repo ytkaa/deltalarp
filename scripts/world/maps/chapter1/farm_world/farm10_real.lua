@@ -156,8 +156,8 @@ return {
             ["actor"] = "colonel",
             ["talk"] = true,
             ["talksprite"] = "talk",
-            ["text1_1"] = "* Well done, lieutenant. We did what we had to do.",
-            ["text2_1"] = "* ... Go on, lieutenant."
+            ["text1_1"] = "* Well done,[wait:5] lieutenant.[wait:5] We did what we had to do.",
+            ["text2_1"] = "* ...[wait:5] Go on,[wait:5] lieutenant."
           }
         },
         {
@@ -286,7 +286,8 @@ return {
             ["heals"] = true,
             ["marker"] = "spawn",
             ["text1"] = "* (Seeing the brutality of 21st century warfare...)",
-            ["text2"] = "* (It fills you with shock and awe.[wait:5] It also fills you with a certain power...)",
+            ["text2"] = "* (It fills you with...[wait:20]\nthe power of litigation.)",
+            ["text3"] = "* (It also fills you with a certain other power...)",
             ["text_once"] = true
           }
         },

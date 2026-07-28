@@ -68,8 +68,8 @@
     <property name="actor" value="colonel"/>
     <property name="talk" type="bool" value="true"/>
     <property name="talksprite" value="talk"/>
-    <property name="text1_1" value="* Well done, lieutenant. We did what we had to do."/>
-    <property name="text2_1" value="* ... Go on, lieutenant."/>
+    <property name="text1_1" value="* Well done,[wait:5] lieutenant.[wait:5] We did what we had to do."/>
+    <property name="text2_1" value="* ...[wait:5] Go on,[wait:5] lieutenant."/>
    </properties>
   </object>
   <object id="97" name="npc" x="95.5" y="38.5" width="40" height="40">
@@ -118,7 +118,9 @@
     <property name="heals" type="bool" value="true"/>
     <property name="marker" value="spawn"/>
     <property name="text1" value="* (Seeing the brutality of 21st century warfare...)"/>
-    <property name="text2" value="* (It fills you with shock and awe.[wait:5] It also fills you with a certain power...)"/>
+    <property name="text2">* (It fills you with...[wait:20]
+the power of litigation.)</property>
+    <property name="text3" value="* (It also fills you with a certain other power...)"/>
     <property name="text_once" type="bool" value="true"/>
    </properties>
   </object>

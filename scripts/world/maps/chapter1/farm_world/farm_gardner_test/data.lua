@@ -1605,7 +1605,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["flag"] = "gardner_chase1",
+            ["flag"] = "gardner_chase_end",
             ["inverted"] = true,
             ["target1"] = { id = 20 },
             ["target2"] = { id = 91 }

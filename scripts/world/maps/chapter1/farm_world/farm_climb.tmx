@@ -216,13 +216,13 @@
     <property name="marker" value="to_climb"/>
    </properties>
   </object>
-  <object id="73" name="transition" x="359.667" y="-25.6667" width="120" height="25">
+  <object id="73" name="transition" x="360" y="-30" width="120" height="40">
    <properties>
     <property name="map" value="chapter1/farm_world/garden1"/>
     <property name="marker" value="to_farm"/>
    </properties>
   </object>
-  <object id="74" name="script" x="358.75" y="3065.5" width="122.25" height="43.25">
+  <object id="74" name="script" x="360" y="3080" width="120" height="40">
    <properties>
     <property name="once" type="bool" value="true"/>
     <property name="script" value="gardner_chase_end"/>
@@ -236,7 +236,7 @@
    </properties>
    <point/>
   </object>
-  <object id="71" name="to_garden" x="419.333" y="51">
+  <object id="71" name="to_garden" x="420" y="40">
    <properties>
     <property name="player_state" value="CLIMB"/>
    </properties>

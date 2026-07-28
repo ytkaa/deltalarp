@@ -54,7 +54,7 @@
   <object id="64" name="npc" x="460" y="220" width="40" height="40">
    <properties>
     <property name="actor" value="yoori"/>
-    <property name="text" value="* I love books!"/>
+    <property name="text" value="[voice:none][sound:yoori]* I love books!"/>
    </properties>
   </object>
   <object id="66" name="npc" x="330" y="230" width="40" height="40">

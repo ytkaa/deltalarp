@@ -135,10 +135,10 @@
         },
         {
             "fileName": "garden1.tmx",
-            "height": 600,
-            "width": 600,
-            "x": 18640,
-            "y": -6671
+            "height": 720,
+            "width": 640,
+            "x": 18600,
+            "y": -6791
         }
     ],
     "onlyShowAdjacentMaps": false,

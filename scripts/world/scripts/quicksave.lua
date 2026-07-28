@@ -1,4 +1,4 @@
 return function(event)
-    print("Quicksaved!")
+    print("QUICKSAVED.")
     Game:saveQuick()
 end

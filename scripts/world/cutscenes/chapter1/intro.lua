@@ -10,10 +10,10 @@ return {
         end, true)
 
         local seen_intro = Kristal.hasAnySaves()
-        print("Is it true that you have any saves...?\n...it's " .. tostring(seen_intro) .. ".")
+        print("IS IT TRUE THAT YOU HAVE ANY SAVES...?\n...IT IS " .. tostring(seen_intro):upper() .. ".")
 
         if seen_intro == false then
-            print("Showing long intro!")
+            print("SHOWING LONG INTRO...")
             --Game:setFlag("seen_intro", true)
             --local skipped = false;
             cutscene:during(function()
@@ -39,7 +39,7 @@ return {
             cutscene:wait(Game.world:loadMap("fileselect"))
             cutscene:fadeIn(0.5)
         else
-            print("Showing short intro!")
+            print("SHOWING SHORT INTRO...")
             cutscene:fadeOut(0)
             cutscene:wait(1.5)
             cutscene:fadeIn(0)

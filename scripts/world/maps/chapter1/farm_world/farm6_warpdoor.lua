@@ -193,10 +193,14 @@ return {
           visible = true,
           properties = {
             ["flag1"] = "barracks",
+            ["flag2"] = "gardner_chase_end",
             ["map1"] = "chapter1/farm_world/farm6_warpdoor",
+            ["map2"] = "chapter1/farm_world/garden1",
             ["marker1"] = "warp",
+            ["marker2"] = "warp",
             ["name1"] = "Wheat Field",
-            ["openflag"] = "farm_warpdoors"
+            ["name2"] = "Garden",
+            ["openflag"] = "gardner_chase_end"
           }
         }
       }

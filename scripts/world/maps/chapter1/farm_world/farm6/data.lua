@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 34,
+  nextobjectid = 36,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - \"Barracks\""
@@ -344,6 +344,27 @@ return {
             ["map"] = "chapter1/farm_world/farm6_warpdoor",
             ["marker"] = "to_farm6"
           }
+        },
+        {
+          id = 34,
+          name = "savepoint",
+          type = "",
+          shape = "rectangle",
+          x = 300,
+          y = 220,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["heals"] = true,
+            ["marker"] = "spawn",
+            ["text1"] = "* (...)",
+            ["text2"] = "* (...[wait:5]the sly movement of the green couch and its associates...)",
+            ["text3"] = "* (It fills you with...[wait:5] something.)",
+            ["text_once"] = true
+          }
         }
       }
     },
@@ -630,18 +651,44 @@ return {
           name = "toggle",
           type = "",
           shape = "point",
-          x = 335,
-          y = -101,
+          x = 330,
+          y = 50,
           width = 0,
           height = 0,
           rotation = 0,
           opacity = 1,
           visible = true,
           properties = {
-            ["flag"] = "gardner_chase_end",
+            ["flag"] = "couch_moved",
             ["inverted"] = true,
             ["target1"] = { id = 12 },
-            ["target2"] = { id = 13 }
+            ["target10"] = { id = 25 },
+            ["target2"] = { id = 13 },
+            ["target3"] = { id = 15 },
+            ["target4"] = { id = 16 },
+            ["target5"] = { id = 17 },
+            ["target6"] = { id = 27 },
+            ["target7"] = { id = 21 },
+            ["target8"] = { id = 29 },
+            ["target9"] = { id = 30 }
+          }
+        },
+        {
+          id = 35,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 410,
+          y = 270,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "couch_moved",
+            ["inverted"] = false,
+            ["target1"] = { id = 34 }
           }
         }
       }

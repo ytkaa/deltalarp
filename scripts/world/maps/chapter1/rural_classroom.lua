@@ -305,7 +305,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "yoori",
-            ["text"] = "* I love books!"
+            ["text"] = "[voice:none][sound:yoori]* I love books!"
           }
         },
         {
