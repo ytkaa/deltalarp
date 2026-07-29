@@ -67,8 +67,8 @@
             "fileName": "GONER_0/GONER_0.tmx",
             "height": 480,
             "width": 640,
-            "x": 3960,
-            "y": -760
+            "x": 3920,
+            "y": -920
         },
         {
             "fileName": "farm7.tmx",
@@ -146,6 +146,13 @@
             "width": 2560,
             "x": 19320,
             "y": -6791
+        },
+        {
+            "fileName": "garden_manor.tmx",
+            "height": 720,
+            "width": 1280,
+            "x": 21960,
+            "y": -5591
         }
     ],
     "onlyShowAdjacentMaps": false,

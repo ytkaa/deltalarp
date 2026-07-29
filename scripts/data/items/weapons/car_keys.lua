@@ -21,7 +21,7 @@ function item:init()
     -- Default shop price (sell price is halved)
     self.price = 2
     -- Whether the item can be sold
-    self.can_sell = true
+    self.can_sell = false
 
     -- Consumable target mode (ally, party, enemy, enemies, or none)
     self.target = "none"
@@ -50,7 +50,8 @@ function item:init()
     self.reactions = {
         --vess = "Feels right."
         --vess = "But of course."
-        grace = "Nooo. That's like... your thing."
+        grace = "Nooo. That's like... your thing.",
+        tofer = "Check it!"
     }
 end
 

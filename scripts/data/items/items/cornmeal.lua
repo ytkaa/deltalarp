@@ -24,7 +24,7 @@ function item:init()
     self.heal_amount = 35
 
     -- Default shop price (sell price is halved)
-    self.price = 25
+    self.price = 150
     -- Whether the item can be sold
     self.can_sell = true
 
@@ -49,6 +49,7 @@ function item:init()
     -- Character reactions (key = party member id)
     self.reactions = {
         grace = "Crunchy.",
+        tofer = "Check it!",
     }
 end
 

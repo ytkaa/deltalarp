@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 24,
+  tilecount = 26,
   tiles = {
     {
       id = 0,
@@ -168,6 +168,18 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/background_gardner.png",
       width = 19,
       height = 16
+    },
+    {
+      id = 25,
+      image = "../../../assets/sprites/tilesets/farm_world/manor.png",
+      width = 240,
+      height = 120
+    },
+    {
+      id = 26,
+      image = "../../../assets/sprites/tilesets/farm_world/manor_door.png",
+      width = 240,
+      height = 120
     }
   }
 }

@@ -298,7 +298,7 @@ return {
         cutscene:fadeIn(0)
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
-        Game.world.music:play("pursuit1", 1)
+        Game.world.music:play("pursuit1", 2)
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
