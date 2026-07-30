@@ -10,9 +10,8 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 76,
+  nextobjectid = 92,
   properties = {
-    ["music"] = "soil_theme",
     ["name"] = "Flower Den - Sublevel 1"
   },
   tilesets = {
@@ -1015,6 +1014,51 @@ return {
           gid = 140,
           visible = true,
           properties = {}
+        },
+        {
+          id = 79,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 840,
+          y = 2120,
+          width = 94.9682,
+          height = 84,
+          rotation = 0,
+          opacity = 1,
+          gid = 141,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 80,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1080,
+          y = 1840,
+          width = 94.9682,
+          height = 84,
+          rotation = 0,
+          opacity = 1,
+          gid = 141,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 83,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 220.03,
+          y = 2013.33,
+          width = 94.0247,
+          height = 170.667,
+          rotation = 0,
+          opacity = 1,
+          gid = 142,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -1099,6 +1143,101 @@ return {
             ["cutscene"] = "chapter1/treasures.pickupBugAnnihilator",
             ["solid"] = true
           }
+        },
+        {
+          id = 81,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 1080,
+          y = 1754.67,
+          width = 83.666,
+          height = 84.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupArmoredNut2",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 82,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 838,
+          y = 2036,
+          width = 83.666,
+          height = 84.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupArmoredNut",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 84,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 227.167,
+          y = 1846.42,
+          width = 83.666,
+          height = 164.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupRedPikmin",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 90,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 1680,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "spike",
+            ["chase"] = true,
+            ["chasedist"] = 200,
+            ["chasespeed"] = "17",
+            ["encounter"] = "caveSpike",
+            ["enemy"] = "spike",
+            ["once"] = true
+          }
+        },
+        {
+          id = 91,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 1480,
+          y = 1920,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "spike",
+            ["chase"] = true,
+            ["chasedist"] = 200,
+            ["chasespeed"] = "17",
+            ["encounter"] = "caveSpike",
+            ["enemy"] = "spike",
+            ["once"] = true
+          }
         }
       }
     },
@@ -1152,6 +1291,63 @@ return {
             ["inverted"] = true,
             ["target1"] = { id = 74 },
             ["target2"] = { id = 73 }
+          }
+        },
+        {
+          id = 85,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1346,
+          y = 1654,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "pickedUpArmoredNut2",
+            ["inverted"] = true,
+            ["target1"] = { id = 81 },
+            ["target2"] = { id = 80 }
+          }
+        },
+        {
+          id = 86,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 684,
+          y = 2201,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "pickedUpArmoredNut",
+            ["inverted"] = true,
+            ["target1"] = { id = 82 },
+            ["target2"] = { id = 79 }
+          }
+        },
+        {
+          id = 87,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 315.152,
+          y = 2175.76,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "pickedUpRedPikmin",
+            ["inverted"] = true,
+            ["target1"] = { id = 84 },
+            ["target2"] = { id = 83 }
           }
         }
       }

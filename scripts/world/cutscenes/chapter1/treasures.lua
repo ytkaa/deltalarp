@@ -1,11 +1,18 @@
+local treasuresCollected = 0
 return {
     pickupRakeTreasure = function(cutscene, event)
         cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)") --needs a cutscene for each treasure unfortunately, trust me i tried making this easier
         local choice = cutscene:choicer({"Yes", "No"})
             if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                local current_time = Game.music:tell()
+                Game.music:fade(0, 0.1)
+                Game.music:play("soil_treasure", 0)
+                Game.music:seek(current_time)
+                Game.music:fade(1, 0.1)
                 Game:setFlag("isCarryingTreasure", true)
                 Game:setFlag("pickedUpFoliageAssorter", true)
                 Game:setFlag("FoliageAssorter", true)
+                treasuresCollected = treasuresCollected + 1
                 cutscene:text("* (Picked up treasure.)")
                 if (not Game:getFlag("hasPickedUpTreasureBefore")) then
                     cutscene:text("* (The weight of the treasure pulls you down...)")
@@ -14,7 +21,9 @@ return {
                 else
                     return
                 end
-            else 
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+            else
                 return
             end
     end;
@@ -22,9 +31,15 @@ return {
         cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
         local choice = cutscene:choicer({"Yes", "No"})
             if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                local current_time = Game.music:tell()
+                Game.music:fade(0, 0.1)
+                Game.music:play("soil_treasure", 0)
+                Game.music:seek(current_time)
+                Game.music:fade(1, 0.1)
                 Game:setFlag("isCarryingTreasure", true)
                 Game:setFlag("pickedUpBugAnnihilator", true)
                 Game:setFlag("BugAnnihilator", true)
+                treasuresCollected = treasuresCollected + 1
                 --carriedTreasure = "BugAnnihilator" --I would`ve prefered to use a global variable, but global variables persist through ALL OF KRISTAL. How braindead is that
                 cutscene:text("* (Picked up treasure.)")
                 if (not Game:getFlag("hasPickedUpTreasureBefore")) then
@@ -34,7 +49,90 @@ return {
                 else
                     return
                 end
-            else 
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+            else
+                return
+            end
+    end;
+    pickupArmoredNut = function(cutscene, event)
+        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                local current_time = Game.music:tell()
+                Game.music:fade(0, 0.1)
+                Game.music:play("soil_treasure", 0)
+                Game.music:seek(current_time)
+                Game.music:fade(1, 0.1)
+                Game:setFlag("isCarryingTreasure", true)
+                Game:setFlag("pickedUpArmoredNut", true)
+                Game:setFlag("ArmoredNut", true)
+                treasuresCollected = treasuresCollected + 1
+                cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                    cutscene:text("* (The weight of the treasure pulls you down...)")
+                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                    Game:setFlag("hasPickedUpTreasureBefore", true)
+                else
+                    return
+                end
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+            else
+                return
+            end
+    end;
+    pickupArmoredNut2 = function(cutscene, event)
+        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                local current_time = Game.music:tell()
+                Game.music:fade(0, 0.1)
+                Game.music:play("soil_treasure", 0)
+                Game.music:seek(current_time)
+                Game.music:fade(1, 0.1)
+                Game:setFlag("isCarryingTreasure", true)
+                Game:setFlag("pickedUpArmoredNut2", true)
+                Game:setFlag("ArmoredNut", true)
+                treasuresCollected = treasuresCollected + 1
+                cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                    cutscene:text("* (The weight of the treasure pulls you down...)")
+                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                    Game:setFlag("hasPickedUpTreasureBefore", true)
+                else
+                    return
+                end
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+            else
+                return
+            end
+    end;
+    pickupRedPikmin = function(cutscene, event)
+        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                local current_time = Game.music:tell()
+                Game.music:fade(0, 0.1)
+                Game.music:play("soil_treasure", 0)
+                Game.music:seek(current_time)
+                Game.music:fade(1, 0.1)
+                Game:setFlag("isCarryingTreasure", true)
+                Game:setFlag("pickedUpRedPikmin", true)
+                Game:setFlag("RedPikmin", true)
+                treasuresCollected = treasuresCollected + 1
+                cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                    cutscene:text("* (The weight of the treasure pulls you down...)")
+                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                    Game:setFlag("hasPickedUpTreasureBefore", true)
+                else
+                    return
+                end
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+            else
                 return
             end
     end;
@@ -42,13 +140,49 @@ return {
         if Game:getFlag("FoliageAssorter") then
             cutscene:text("* (Got a treasure?[wait:5] Let's see...)")
             cutscene:text("* (This is the Foliage Assorter.[wait:5] It's worth [sound:treasureappraise]D$20.)")
+            local current_time = Game.music:tell()
+            Game.music:fade(0, 0.5)
+            Game.music:play("soil_theme", 0)
+            Game.music:seek(current_time)
+            Game.music:fade(1, 0.1)
             Game:setFlag("isCarryingTreasure", false)
             Game:setFlag("FoliageAssorter", false)
-    elseif Game:getFlag("BugAnnihilator") then
+        elseif Game:getFlag("BugAnnihilator") then
             cutscene:text("* (Got a treasure?[wait:5] Let's see...)")
             cutscene:text("* (This is the Bug Annihilator.[wait:5] It's worth [sound:treasureappraise]D$30.)")
+            local current_time = Game.music:tell()
+            Game.music:fade(0, 0.5)
+            Game.music:play("soil_theme", 0)
+            Game.music:seek(current_time)
+            Game.music:fade(1, 0.1)
             Game:setFlag("isCarryingTreasure", false)
             Game:setFlag("BugAnnihilator", false)
+        elseif Game:getFlag("ArmoredNut") then
+            cutscene:text("* (Got a treasure?[wait:5] Let's see...)")
+            cutscene:text("* (This is the Armored Nut.[wait:5] It's worth [sound:treasureappraise]D$15.)")
+            local current_time = Game.music:tell()
+            Game.music:fade(0, 0.5)
+            Game.music:play("soil_theme", 0)
+            Game.music:seek(current_time)
+            Game.music:fade(1, 0.1)
+            Game:setFlag("isCarryingTreasure", false)
+            Game:setFlag("ArmoredNut", false)
+        elseif Game:getFlag("RedPikmin") then
+            local auto = {
+                ["auto"] = true
+            }
+            cutscene:text("* (Got a treasure?[wait:5] Let's see...)")
+            cutscene:text("* (This is the ", auto)
+            local current_time = Game.music:tell()
+            Game.music:fade(0, 0.5)
+            Game.music:play("soil_theme", 0)
+            Game.music:seek(current_time)
+            Game.music:fade(1, 0.1)
+            cutscene:text("* (Eww ew ew what the $$$$ is that)")
+            cutscene:text("* (Dude it looks like a skinwalker version of me that's gross as $#!!)")
+            cutscene:text("* (It's worth like [sound:treasureappraise]D$1 i dunno if anyone will even take that)")
+            Game:setFlag("isCarryingTreasure", false)
+            Game:setFlag("RedPikmin", false)
         else
             cutscene:text("* (Time is money.[wait:5] Don't waste my time!)")
         end
@@ -99,6 +233,7 @@ return {
                             cutscene:wait(3)
                             cutscene:wait(cutscene:fadeOut(0.1))
                             Assets.playSound("closet_impact")
+                            Game.music:play("soil_theme")
                             Game.world:loadMap("chapter1/farm_world/flowerden", "spawn")
                             Kristal.saveGame()
                             cutscene:wait(cutscene:fadeIn(0.5))
@@ -136,6 +271,7 @@ return {
                     menu:addChild(SoulMenuItemComponent(optionYes, function()
                         Game.world:closeMenu(outer)
                         outer:remove()
+                        Game.music:stop()
                         Game.world:startCutscene(function(cutscene, event) --this somehow works
                             cutscene:wait(cutscene:fadeOut(0.5))
                             Game.world:loadMap("chapter1/null_room_for_cutscenes", "spawn")
@@ -156,6 +292,7 @@ return {
                             cutscene:wait(3)
                             cutscene:wait(cutscene:fadeOut(0.1))
                             Assets.playSound("closet_impact")
+                            Game.music:play("soil_theme", 0)
                             if Game:getFlag("inSublevel4") then
                                 Game.world:loadMap("chapter1/farm_world/flowerden", "spawn")
                                 Game:setFlag("inSublevel5")

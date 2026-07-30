@@ -12,7 +12,7 @@ function Kipkip:init()
     self.max_health = 120
     self.health = 120
     -- Enemy attack (determines bullet damage)
-    self.attack = 3
+    self.attack = 4
     -- Enemy defense (usually 0)
     self.defense = 1
     -- Enemy reward
@@ -22,7 +22,7 @@ function Kipkip:init()
     self.spare_points = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
-    self.check = "AT 3 DF 1\n* Friendly little guy. \nHe just wants to bloom."
+    self.check = "AT 4 DF 1\n* Friendly little guy. \nHe just wants to bloom."
 
     -- Text randomly displayed at the bottom of the screen each turn
     self.text = {

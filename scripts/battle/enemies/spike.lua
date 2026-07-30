@@ -9,12 +9,12 @@ function Spike:init()
     self:setActor("spike")
 
     -- Enemy health
-    self.max_health = 90
-    self.health = 90
+    self.max_health = 60
+    self.health = 60
     -- Enemy attack (determines bullet damage)
-    self.attack = 2
+    self.attack = 3
     -- Enemy defense (usually 0)
-    self.defense = 2
+    self.defense = 1
     -- Enemy reward
     self.money = 100
 
@@ -22,7 +22,7 @@ function Spike:init()
     self.spare_points = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
-    self.check = "AT 2 DF 2\n* Its name is Spike."
+    self.check = "AT 3 DF 1\n* Its name is Spike."
 
     -- Text randomly displayed at the bottom of the screen each turn
     self.text = {
@@ -34,6 +34,7 @@ function Spike:init()
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
         "spike",
+        "spike2",
     }
 
     -- Dialogue randomly displayed in the enemy's speech bubble
@@ -54,11 +55,10 @@ function Spike:init()
     --    self:registerActFor("grace","Wave", "Wave at\nKipkip")
     --end
 
-    self.challenge_active = false
-
     function Spike:onAct(battler, name)
         if name == "Challenge" then
-            self.challenge_active = true
+            --self.challenge_active = true --this cant be checked in a wave file
+            Game:setFlag("spikeChallengeActive", true)
             return {
                 "* You challenge Spike.[wait:5]\n* Attack speed increased!",
             }
@@ -73,8 +73,8 @@ function Spike:init()
     end
 
     function Spike:onTurnEnd()
-        if self.challenge_active then
-            self.challenge_active = false
+        if Game:getFlag("spikeChallengeActive") then
+            Game:setFlag("spikeChallengeActive", false)
             self:addMercy(100)
         end
     end

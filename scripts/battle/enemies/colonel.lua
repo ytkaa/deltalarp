@@ -276,7 +276,7 @@ function Colonel:init()
                 self:setAnimation("idledisarmed")
                 return {
                     "* Colonel's helmet comes flying off!",
-                    "* Colonel drops their gear in fear!" --sprite change
+                    "* Colonel drops their gear in fear!"
                 }
             end
         elseif name == "Standard" then --X-Action
