@@ -5,6 +5,7 @@ function item:init()
 
     -- Display name
     self.name = "KipCarrot"
+    self.name = "KipCarrot"
     -- Name displayed when used in battle (optional)
     self.use_name = nil
 
@@ -16,9 +17,9 @@ function item:init()
     -- Battle description
     self.effect = "Heals\n55 HP"
     -- Shop description
-    self.shop = "Carrot marked \nby Kip \nHeals 55HP"
+    self.shop = "Not a\nKipkip\nHeals 55HP"
     -- Menu description
-    self.description = "Carrot with the mark of Kip. +55HP"
+    self.description = "Named after the similar looking Kipkip species. +55HP"
 
     -- Amount healed (HealItem variable)
     self.heal_amount = 55

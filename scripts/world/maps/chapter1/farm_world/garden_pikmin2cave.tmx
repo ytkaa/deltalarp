@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="32">
+ <editorsettings>
+  <export target="garden_pikmin2cave.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="name" value="Garden - Cave Entrance"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/garden_extras.tsx"/>
+ <layer id="1" name="Camada de Blocos 1" width="20" height="20">
+  <data encoding="csv">
+0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,
+0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,
+0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,
+0,5,5,5,5,5,5,5,23,23,23,23,5,5,5,5,5,5,5,0,
+0,5,5,5,5,5,5,23,23,23,23,23,23,5,5,5,5,5,5,0,
+0,5,5,5,5,5,23,24,23,23,23,23,23,23,5,5,5,5,5,0,
+0,5,5,5,5,5,23,23,23,23,16,23,24,23,5,5,5,5,5,0,
+0,5,5,5,5,5,23,23,23,23,23,23,23,5,5,5,5,5,5,0,
+0,9,5,5,5,5,5,24,23,23,23,24,23,5,5,5,5,5,9,0,
+0,19,5,5,5,5,5,5,23,5,23,23,5,5,5,5,5,5,19,0,
+0,29,9,5,5,5,5,5,5,23,24,5,5,5,5,5,5,9,29,0,
+0,39,19,9,5,5,5,5,5,5,23,5,5,5,5,5,9,19,39,0,
+0,49,29,19,9,5,5,5,5,23,5,5,5,5,5,9,19,29,49,0,
+0,59,39,29,19,9,9,5,5,23,23,5,5,9,9,19,29,39,59,0,
+0,0,49,39,29,19,19,9,9,23,5,9,9,19,19,29,39,49,0,0,
+0,0,59,49,39,29,29,19,19,5,5,19,19,29,29,39,49,59,0,0,
+0,0,0,59,49,39,39,29,29,5,5,29,29,39,39,49,59,0,0,0,
+0,0,0,0,59,49,49,39,39,5,5,39,39,49,49,59,0,0,0,0,
+0,0,0,0,0,59,59,49,49,5,5,49,49,59,59,0,0,0,0,0,
+0,0,0,0,0,0,0,59,59,5,5,59,59,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="6" name="collision">
+  <object id="10" x="120" y="-40" width="558.667" height="40"/>
+  <object id="11" x="0" y="119.333" width="40.667" height="240.667"/>
+  <object id="12" x="40" y="40.6667" width="40.667" height="80.0003"/>
+  <object id="13" x="80" y="-7.10543e-15" width="40.667" height="40.0003"/>
+  <object id="14" x="680" y="0" width="40.667" height="40.0003"/>
+  <object id="15" x="720" y="40" width="40.667" height="80.0003"/>
+  <object id="16" x="760" y="120" width="40.667" height="240.667"/>
+  <object id="17" x="720" y="360" width="40.667" height="80.0003"/>
+  <object id="18" x="680" y="440" width="40.667" height="80.0003"/>
+  <object id="19" x="640" y="480" width="40.667" height="80.0003"/>
+  <object id="20" x="600" y="520" width="40.667" height="80.0003"/>
+  <object id="21" x="520.333" y="560.667" width="78.667" height="80.0003"/>
+  <object id="22" x="440" y="600" width="78.667" height="80.0003"/>
+  <object id="23" x="280" y="600" width="78.667" height="80.0003"/>
+  <object id="24" x="200" y="560" width="78.667" height="80.0003"/>
+  <object id="25" x="120" y="480" width="40.667" height="80.0003"/>
+  <object id="26" x="160" y="520" width="40.667" height="80.0003"/>
+  <object id="27" x="80" y="440" width="40.667" height="80.0003"/>
+  <object id="28" x="40" y="360" width="40.667" height="80.0003"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="2" name="objects">
+  <object id="1" name="npc" x="200" y="400" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Welcome to the Cave Zone!)"/>
+    <property name="text1_10" value="* (So,[wait:5] it's tricky.[wait:5] But I think it could be worth your while...!)"/>
+    <property name="text1_2" value="* (Up ahead is a cave you can go into to find treasures galore!)"/>
+    <property name="text1_3" value="* (Be warned though --[wait:5] it is quite dangerous,[wait:5] and there are some things to consider.)"/>
+    <property name="text1_4" value="* (The cave consists of 5 SUBLEVELS.[wait:5] Each SUBLEVEL has [color:yellow]TREASURE [color:reset]and enemies.)"/>
+    <property name="text1_5" value="* (You must bring the [color:yellow]TREASURE[color:reset] one at a time to me at the SUBLEVEL's starting zone.)"/>
+    <property name="text1_6" value="* (Then,[wait:5] the entrance to the next SUBLEVEL opens.)"/>
+    <property name="text1_7" value="* (Once you enter the cave,[wait:5] you cannot leave until you reach the EXIT at the end...)"/>
+    <property name="text1_8" value="* (No healing items can be found in the cave...[wait:5] only what you come in with.)"/>
+    <property name="text1_9" value="* (If you are DEFEATED,[wait:5] you'll end up back here with your progress lost...)"/>
+   </properties>
+  </object>
+  <object id="2" gid="138" x="224" y="402.5" width="354.667" height="266"/>
+  <object id="3" name="interactable" x="310" y="195.833" width="185.333" height="103.5">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.cave_entrance"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="30" name="savepoint" x="560" y="400" width="40" height="40">
+   <properties>
+    <property name="heals" type="bool" value="true"/>
+    <property name="marker" value="spawn"/>
+    <property name="text1" value="* (A cave full of danger and glory awaits...)"/>
+    <property name="text2" value="* (You are filled with the power of spelunking.)"/>
+    <property name="text_once" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="7" name="markers">
+  <object id="31" name="spawn" x="400" y="480">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="objects_party"/>
+</map>
