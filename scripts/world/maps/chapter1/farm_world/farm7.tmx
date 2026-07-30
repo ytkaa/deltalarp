@@ -137,7 +137,7 @@
   </object>
   <object id="13" name="chest" x="1120" y="720" width="40" height="40">
    <properties>
-    <property name="item" value="cornplate"/>
+    <property name="item" value="spike_brace"/>
    </properties>
   </object>
   <object id="18" name="transition" x="-40" y="720" width="40" height="120">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="320" tileheight="560" tilecount="24" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="farm_world_extras" tilewidth="320" tileheight="560" tilecount="26" columns="0">
  <editorsettings>
   <export target="farm_world_extras.lua" format="lua"/>
  </editorsettings>
@@ -75,5 +75,11 @@
  </tile>
  <tile id="24">
   <image source="../../../assets/sprites/tilesets/farm_world/background_gardner.png" width="19" height="16"/>
+ </tile>
+ <tile id="25">
+  <image source="../../../assets/sprites/tilesets/farm_world/manor.png" width="240" height="120"/>
+ </tile>
+ <tile id="26">
+  <image source="../../../assets/sprites/tilesets/farm_world/manor_door.png" width="240" height="120"/>
  </tile>
 </tileset>

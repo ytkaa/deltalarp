@@ -454,7 +454,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["item"] = "cornplate"
+            ["item"] = "spike_brace"
           }
         },
         {

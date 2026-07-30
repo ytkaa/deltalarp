@@ -1,10 +1,10 @@
-local item, super = Class(Item, "cornplate")
+local item, super = Class(Item, "spike_brace")
 
 function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "CornPlate"
+    self.name = "SpikeBrace"
 
     -- Item type (item, key, weapon, armor)
     self.type = "armor"
@@ -16,12 +16,12 @@ function item:init()
     -- Shop description
     self.shop = ""
     -- Menu description
-    self.description = "Put some corn on your cob... \nMinor defence against the Plant element." -- Does not actually do this yet
+    self.description = "A band of spikes pledges to accompany you \non your journey..."
 
     -- Default shop price (sell price is halved)
-    self.price = 500
+    self.price = 400
     -- Whether the item can be sold
-    self.can_sell = false
+    self.can_sell = true
 
     -- Consumable target mode (ally, party, enemy, enemies, or none)
     self.target = "none"
@@ -34,19 +34,19 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        attack = 0,
-        defense = 2
+        attack = 1,
+        defense = 1
     }
     -- Bonus name and icon (displayed in equip menu)
-    self.bonus_name = "PlantDefend"
-    self.bonus_icon = "ui/menu/icon/armor"
+    self.bonus_name = "Spikes"
+    self.bonus_icon = "ui/menu/icon/up"
 
     -- Equippable characters (default true for armors, false for weapons)
     self.can_equip = {}
 
     -- Character reactions
     self.reactions = {
-        grace = "Sharing is caring..!",
+        grace = "An ambush ??!?",
         tofer = "Check it!"
     }
 

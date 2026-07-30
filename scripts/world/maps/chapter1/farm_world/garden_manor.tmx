@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="24">
+ <editorsettings>
+  <export target="garden_manor.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="32" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,6,5,6,5,5,5,5,5,5,6,5,6,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,6,5,5,5,6,5,5,5,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,6,5,5,5,5,6,5,6,5,5,5,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,6,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,6,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,5,5,6,6,5,5,5,6,6,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,6,5,5,5,5,6,5,0,0,0,0,0,
+15,15,15,15,15,15,15,15,15,15,16,15,16,5,5,5,5,5,5,5,5,6,6,6,5,5,5,15,15,15,15,15,
+15,15,15,16,15,15,15,15,15,15,15,15,16,15,15,15,15,16,15,15,15,15,15,16,15,15,15,15,15,15,15,15,
+45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,46,45,45,45,45,46,45,45,45,46,45,45,45,45,45,
+19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,
+29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,
+39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,
+49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
+59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,59,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="2" name="collision">
+  <object id="1" x="0" y="480" width="1280" height="40"/>
+  <object id="8" x="604" y="200" width="392" height="40"/>
+  <object id="9" x="520" y="-40" width="560" height="40"/>
+  <object id="10" x="480" y="0" width="40" height="360"/>
+  <object id="11" x="0" y="320" width="480" height="40"/>
+  <object id="12" x="1080" y="320" width="200" height="40"/>
+  <object id="14" x="1080" y="0" width="40" height="320"/>
+  <object id="15" x="604" y="0" width="36" height="200"/>
+  <object id="16" x="960" y="0" width="36" height="200"/>
+ </objectgroup>
+ <objectgroup id="5" name="framing" locked="1">
+  <object id="4" x="560" y="0" width="480" height="240"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="3" name="objects_party">
+  <object id="2" name="transition" x="0" y="360" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden2"/>
+    <property name="marker" value="to_manor"/>
+   </properties>
+  </object>
+  <object id="5" gid="126" x="560" y="240" width="480" height="240"/>
+  <object id="6" gid="127" x="560" y="240" width="480" height="240"/>
+  <object id="17" name="script" x="200" y="360" width="40" height="120">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.ofer_intro"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="4" name="markers">
+  <object id="3" name="to_garden2" x="80" y="420">
+   <point/>
+  </object>
+  <object id="18" name="grace_spawn" x="860" y="420">
+   <point/>
+  </object>
+  <object id="19" name="spawn" x="120" y="420">
+   <point/>
+  </object>
+  <object id="20" name="vess_target" x="740" y="420">
+   <point/>
+  </object>
+  <object id="21" name="vess_walkback" x="720" y="420">
+   <point/>
+  </object>
+  <object id="22" name="tofer_spawn" x="1200" y="280">
+   <point/>
+  </object>
+  <object id="23" name="tofer_slide" x="800" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

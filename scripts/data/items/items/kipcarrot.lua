@@ -1,30 +1,36 @@
-local item, super = Class(Item, "cornplate")
+local item, super = Class(HealItem, "kipcarrot")
 
 function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "CornPlate"
+    self.name = "KipCarrot"
+    self.name = "KipCarrot"
+    -- Name displayed when used in battle (optional)
+    self.use_name = nil
 
     -- Item type (item, key, weapon, armor)
-    self.type = "armor"
+    self.type = "item"
     -- Item icon (for equipment)
-    self.icon = "ui/menu/icon/armor"
+    self.icon = nil
 
     -- Battle description
-    self.effect = ""
+    self.effect = "Heals\n55 HP"
     -- Shop description
-    self.shop = ""
+    self.shop = "Not a\nKipkip\nHeals 55HP"
     -- Menu description
-    self.description = "Put some corn on your cob... \nMinor defence against the Plant element." -- Does not actually do this yet
+    self.description = "Named after the similar looking Kipkip species. +55HP"
+
+    -- Amount healed (HealItem variable)
+    self.heal_amount = 55
 
     -- Default shop price (sell price is halved)
-    self.price = 500
+    self.price = 200
     -- Whether the item can be sold
-    self.can_sell = false
+    self.can_sell = true
 
     -- Consumable target mode (ally, party, enemy, enemies, or none)
-    self.target = "none"
+    self.target = "ally"
     -- Where this item can be used (world, battle, all, or none)
     self.usable_in = "all"
     -- Item this item will get turned into when consumed
@@ -33,25 +39,24 @@ function item:init()
     self.instant = false
 
     -- Equip bonuses (for weapons and armor)
-    self.bonuses = {
-        attack = 0,
-        defense = 2
-    }
+    self.bonuses = {}
     -- Bonus name and icon (displayed in equip menu)
-    self.bonus_name = "PlantDefend"
-    self.bonus_icon = "ui/menu/icon/armor"
+    self.bonus_name = nil
+    self.bonus_icon = nil
 
     -- Equippable characters (default true for armors, false for weapons)
     self.can_equip = {}
 
-    -- Character reactions
+    -- Character reactions (key = party member id)
     self.reactions = {
-        grace = "Sharing is caring..!",
-        tofer = "Check it!"
+        grace = "It's good. For a carrot.",
+        tofer = "Check it..?",
     }
+end
 
-    -- TODO: Elemental resistance
-    -- Resists element 6 by 0.2
+function item:getShopDescription()
+    -- Don't automatically add item type
+    return self.shop
 end
 
 return item
