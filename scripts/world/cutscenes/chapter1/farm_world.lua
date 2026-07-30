@@ -195,6 +195,7 @@ return {
             cutscene:wait(speed)
         end
         --cutscene:text("[speed:0.4]* Do you[wait:5] know how it feels[wait:5] to defy a fate deemed unavoidable?")
+        cutscene:setTextboxTop(false)
         cutscene:text("[speed:0.4]* Do you know[wait:5] how it feels[wait:5] to finally[wait:4] breathe?")
         cutscene:wait(0.5)
         turn_vess(0.75)
@@ -248,7 +249,7 @@ return {
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
         music:stop()
-        music:play("pursuit1")
+        Game.world.music:play("pursuit1")
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -269,7 +270,6 @@ return {
     end;
 
     gardner_chase_short = function(cutscene)
-        local music = Music()
         local vess = cutscene:getCharacter("vess")
         local turn_vess = function(speed)
             cutscene:look(vess, "down")
