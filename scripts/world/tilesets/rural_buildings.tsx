@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="30" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="32" columns="0">
  <editorsettings>
   <export target="rural_buildings.lua" format="lua"/>
  </editorsettings>
@@ -93,5 +93,11 @@
  </tile>
  <tile id="29">
   <image source="../../../assets/sprites/npcs/classmates/blunderbuss/blunderbuss_1.png" width="40" height="60"/>
+ </tile>
+ <tile id="30">
+  <image source="../../../assets/sprites/tilesets/rural/wheat_trans.png" width="40" height="60"/>
+ </tile>
+ <tile id="31">
+  <image source="../../../assets/sprites/tilesets/rural/wheat_trans2.png" width="40" height="60"/>
  </tile>
 </tileset>

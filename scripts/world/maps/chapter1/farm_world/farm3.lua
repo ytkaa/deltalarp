@@ -841,10 +841,13 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["actor"] = "starwalker",
-            ["text1_1"] = "* Hey,[wait:5] so,[wait:5] I'm a placeholder npc,[wait:5] but I heard that there's something cool in that haybale.",
+            ["actor"] = "shovel",
+            ["text1_1"] = "* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel...",
+            ["text1_2"] = "* ...[wait:5]but I heard that there's something glamorous in that haybale.",
             ["text2_1"] = "* Not this one.[wait:5] Thought I'd clarify a bit.",
-            ["text3_1"] = "* Well,[wait:5] did you find it ??!?"
+            ["text2_2"] = "* Hm,[wait:5] what's that?[wait:5] My \"talent?\"",
+            ["text2_3"] = "* Welph,[wait:5] as a mere lowly shovel,[wait:5] I do not possess any [wait:5]\"talent\"[wait:5] outside of shovelitudes.",
+            ["text3_1"] = "* Enough about \"talent!\"[wait:5] Did you find the [color:pink]GLOWSHARD[color:reset] in the haybale ??!?"
           }
         },
         {

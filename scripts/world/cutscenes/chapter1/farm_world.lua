@@ -248,7 +248,7 @@ return {
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
         music:stop()
-        Game.world.music:play("pursuit1")
+        music:play("pursuit1")
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -269,6 +269,7 @@ return {
     end;
 
     gardner_chase_short = function(cutscene)
+        local music = Music()
         local vess = cutscene:getCharacter("vess")
         local turn_vess = function(speed)
             cutscene:look(vess, "down")
@@ -298,7 +299,7 @@ return {
         cutscene:fadeIn(0)
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
-        Game.world.music:play("pursuit1", 2)
+        Game.world.music:play("pursuit1")
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -431,6 +432,7 @@ return {
             cutscene:setSpeaker(leftColonel, true)
             cutscene:setSprite(colonel, "idle", 1/6)
             cutscene:setSprite(leftColonel, "talk", 1/6)
+            cutscene:setTextboxTop(false)
             cutscene:text("* Sir,[wait:5] yes sir!", nil, leftColonel, options)
             cutscene:setSpeaker(rightColonel, true)
             cutscene:setSprite(leftColonel, "idle", 1/6)
@@ -439,10 +441,12 @@ return {
             cutscene:setSpeaker(colonel, true)
             cutscene:setSprite(colonel, "talk", 1/6)
             cutscene:setSprite(rightColonel, "idle", 1/6)
+            cutscene:setTextboxTop(true)
             cutscene:text("* We warned them to evacuate days before the operation...[wait:5] They should've been gone long ago.", nil, colonel, options)
             cutscene:text("* Plus,[wait:5] this is enemy territory.[wait:5] For all we know,[wait:5] they could be loyal to the GARDNER. ", nil, colonel, options)
             cutscene:text("* FIRE!!!! ", nil, colonel, options)
             cutscene:setSpeaker(leftColonel, true)
+            cutscene:setTextboxTop(false)
             cutscene:setSprite(colonel, "idle", 1/6)
             cutscene:setSprite(leftColonel, "talk", 1/6)
             cutscene:text("* YOU HEARD THE MAN !![wait:5] FIRE EVERYTHING !!", nil, leftColonel, options)
@@ -528,6 +532,9 @@ return {
             cutscene:text("* (Seems like you'll need someone that can break it up.)")
         else
             local mainColonel = Game.world.followers[1]
+            if #Game.party > 1 then
+                mainColonel = Game.world.followers[2]
+            end
             cutscene:setTextboxTop(true)
             cutscene:setSpeaker(mainColonel, true)
             cutscene:setSprite(mainColonel, "talk", 1/6)

@@ -9,8 +9,8 @@ return {
   height = 128,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 47,
+  nextlayerid = 7,
+  nextobjectid = 62,
   properties = {
     ["light"] = true
   },
@@ -364,6 +364,20 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 50,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 520,
+          y = 5140,
+          width = 240,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -371,7 +385,7 @@ return {
       type = "objectgroup",
       draworder = "topdown",
       id = 3,
-      name = "objects",
+      name = "objects_party",
       class = "",
       visible = true,
       opacity = 1,
@@ -692,7 +706,7 @@ return {
           visible = true,
           properties = {
             ["map"] = "chapter1/rural_farm",
-            ["marker"] = "entry"
+            ["marker"] = "spawn"
           }
         },
         {
@@ -773,6 +787,204 @@ return {
             ["text2_2"] = "* (If only there was some sort of mantra you could repeat to make yourself not forget...)",
             ["text2_3"] = "* (...[wait:5]maybe not.)",
             ["text3_1"] = "* (Oh well.)"
+          }
+        },
+        {
+          id = 51,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 3680,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 132,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 52,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 3680,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 132,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 53,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 3680,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 132,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 54,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 4120,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 132,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 55,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 4080,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 132,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 56,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 4040,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 57,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 4000,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 58,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 3960,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 59,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 3960,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 60,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 4000,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 61,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 3960,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 133,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "objects_cooler",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 49,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 520,
+          y = 5120,
+          width = 240,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/rural.hungry",
+            ["once"] = false
           }
         }
       }
@@ -879,6 +1091,42 @@ return {
             ["flag"] = "start_cutscene_active",
             ["inverted"] = true,
             ["target1"] = { id = 3 }
+          }
+        },
+        {
+          id = 47,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 840,
+          y = 5050,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "dark_world_end",
+            ["inverted"] = false,
+            ["target1"] = { id = 2 }
+          }
+        },
+        {
+          id = 48,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 420,
+          y = 5020,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "dark_world_end",
+            ["inverted"] = true,
+            ["target1"] = { id = 49 }
           }
         }
       }

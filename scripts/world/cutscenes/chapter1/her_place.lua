@@ -1,8 +1,9 @@
 return {
     her_place = function(cutscene, depths)
         --Function for Gaster style unskippable text
+        -- [noskip] btw
         local function dialogue(text)
-            local dialogueText = DialogueText("[style:GONER][color:#f0e4f7][speed:0.25][voice:none]" .. text, 160, 120, 400, 240)
+            local dialogueText = DialogueText("[style:GONER][color:#f0e4f7][speed:0.25][voice:none][noskip]" .. text, 160, 120, 400, 240)
             Game.world:addChild(dialogueText)
             dialogueText.layer = 6
             dialogueText.advance_callback = function() dialogueText:remove() end

@@ -134,10 +134,13 @@
   </object>
   <object id="46" name="npc" x="640" y="160" width="40" height="40">
    <properties>
-    <property name="actor" value="starwalker"/>
-    <property name="text1_1" value="* Hey,[wait:5] so,[wait:5] I'm a placeholder npc,[wait:5] but I heard that there's something cool in that haybale."/>
+    <property name="actor" value="shovel"/>
+    <property name="text1_1" value="* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel..."/>
+    <property name="text1_2" value="* ...[wait:5]but I heard that there's something glamorous in that haybale."/>
     <property name="text2_1" value="* Not this one.[wait:5] Thought I'd clarify a bit."/>
-    <property name="text3_1" value="* Well,[wait:5] did you find it ??!?"/>
+    <property name="text2_2" value="* Hm,[wait:5] what's that?[wait:5] My &quot;talent?&quot;"/>
+    <property name="text2_3" value="* Welph,[wait:5] as a mere lowly shovel,[wait:5] I do not possess any [wait:5]&quot;talent&quot;[wait:5] outside of shovelitudes."/>
+    <property name="text3_1" value="* Enough about &quot;talent!&quot;[wait:5] Did you find the [color:pink]GLOWSHARD[color:reset] in the haybale ??!?"/>
    </properties>
   </object>
   <object id="47" name="interactable" x="480" y="360" width="80" height="80">

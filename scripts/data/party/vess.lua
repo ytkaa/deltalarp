@@ -7,6 +7,7 @@ function character:init()
 
     self:setActor("vess")
     self:setLightActor("vess")
+    self:setDarkTransitionActor("vess_dark_transition")
 
     self.level = 1
     self.title = "Vessel\nLost."

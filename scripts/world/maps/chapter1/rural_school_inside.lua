@@ -9,8 +9,8 @@ return {
   height = 18,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 19,
+  nextlayerid = 7,
+  nextobjectid = 24,
   properties = {
     ["light"] = true
   },
@@ -144,7 +144,7 @@ return {
           shape = "rectangle",
           x = 110,
           y = 160,
-          width = 960,
+          width = 830,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -174,6 +174,20 @@ return {
           y = 200,
           width = 40,
           height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 22,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1020,
+          y = 160,
+          width = 60,
+          height = 40,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -243,6 +257,25 @@ return {
           gid = 106,
           visible = true,
           properties = {}
+        },
+        {
+          id = 23,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 820,
+          y = 200,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "starwalker",
+            ["text1_1"] = "* (...)",
+            ["text1_2"] = "* (They're not interested in even looking at you...)",
+            ["text2_1"] = "* (Maybe they're more interested in the corkboard..?)"
+          }
         }
       }
     },
@@ -276,10 +309,31 @@ return {
             ["text1_1"] = "* (It's the school corkboard.[wait:5]\nToday it says...)",
             ["text1_2"] = "* (...[wait:5]actually,[wait:5] it's quite a long message.[wait:5] You choose to skim the text.)",
             ["text1_3"] = "* (Apparently,[wait:5] it's harvest season...)",
+            ["text1_4"] = "* (...[wait:5]and there's been a major plumbing issue at the farm you like to frequent.)",
             ["text2_1"] = "* (You,[wait:5] of course,[wait:5] knew that already.)",
             ["text2_2"] = "* (You found this very,[wait:5] very[wait:25] intriguing.)",
             ["text2_3"] = "* (As an avid enjoyer of fresh produce.)",
             ["text3_1"] = "* (Of course,[wait:5] of course.)"
+          }
+        },
+        {
+          id = 20,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 940,
+          y = 160,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["exit_sound"] = "doorclose",
+            ["facing"] = "down",
+            ["map"] = "chapter1/rural_classroom",
+            ["marker"] = "to_hall",
+            ["sound"] = "dooropen"
           }
         }
       }
@@ -353,6 +407,55 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 21,
+          name = "to_class",
+          type = "",
+          shape = "point",
+          x = 980,
+          y = 240,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 19,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1150,
+          y = 60,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "start_cutscene_active",
+            ["inverted"] = true,
+            ["target1"] = { id = 20 },
+            ["target2"] = { id = 23 }
+          }
         }
       }
     }

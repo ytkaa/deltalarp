@@ -42,7 +42,7 @@
   <object id="4" x="560" y="0" width="480" height="240"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="3" name="objects_party">
-  <object id="2" name="transition" x="0" y="360" width="40" height="120">
+  <object id="2" name="transition" x="-40" y="360" width="40" height="120">
    <properties>
     <property name="map" value="chapter1/farm_world/garden2"/>
     <property name="marker" value="to_manor"/>
@@ -58,7 +58,7 @@
   </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
-  <object id="3" name="to_garden2" x="80" y="420">
+  <object id="3" name="to_garden2" x="40" y="420">
    <point/>
   </object>
   <object id="18" name="grace_spawn" x="860" y="420">

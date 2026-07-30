@@ -34,7 +34,7 @@ return {
     },
     {
       name = "garden_extras",
-      firstgid = 226,
+      firstgid = 228,
       filename = "../../../tilesets/garden_extras.tsx",
       exportfilename = "../../../tilesets/garden_extras.lua"
     }
@@ -161,7 +161,7 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 255, 256, 258, 255, 257, 258, 255, 255, 257, 255, 257, 255, 0, 0, 0,
+        0, 257, 258, 260, 257, 259, 260, 257, 257, 259, 257, 259, 257, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -423,9 +423,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 240,
+          x = 220,
           y = 240,
-          width = 40,
+          width = 160,
           height = 20,
           rotation = 0,
           opacity = 1,
@@ -550,9 +550,9 @@ return {
           type = "",
           shape = "rectangle",
           x = 200,
-          y = 210,
+          y = 200,
           width = 260,
-          height = 30,
+          height = 40,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -627,9 +627,9 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 280,
+          x = 310,
           y = 240,
-          width = 100,
+          width = 50,
           height = 20,
           rotation = 0,
           opacity = 1,
@@ -958,7 +958,8 @@ return {
             ["target2"] = { id = 26 },
             ["target3"] = { id = 23 },
             ["target4"] = { id = 24 },
-            ["target5"] = { id = 27 }
+            ["target5"] = { id = 27 },
+            ["target6"] = { id = 71 }
           }
         },
         {

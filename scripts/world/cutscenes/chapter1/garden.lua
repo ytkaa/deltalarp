@@ -61,6 +61,9 @@ return {
         }
         if Game:getFlag("leading_colonels_squad", true) then
             local mainColonel = Game.world.followers[1]
+            if #Game.party > 1 then
+                mainColonel = Game.world.followers[2]
+            end
             local vessPos = vess:getPosition() --Lmao
             local followers = Game.world.followers
             cutscene:setTextboxTop(true)
@@ -79,16 +82,22 @@ return {
             --Game.world:removeFollower(colonel4, 4)
             --Game.world:removeFollower(colonel5, 5)
             for _, follower in pairs(followers) do
-                Game.world:removeFollower(follower)
-                follower:remove()
+                if follower:getPartyMember() == nil then
+                    Game.world:removeFollower(follower)
+                    follower:remove()
+                end
             end
             for _, follower in pairs(followers) do
-                Game.world:removeFollower(follower)
-                follower:remove()
+                if follower:getPartyMember() == nil then
+                    Game.world:removeFollower(follower)
+                    follower:remove()
+                end
             end
             for _, follower in pairs(followers) do
-                Game.world:removeFollower(follower)
-                follower:remove()
+                if follower:getPartyMember() == nil then
+                    Game.world:removeFollower(follower)
+                    follower:remove()
+                end
             end
             Game:setFlag("leading_colonels_squad", false)
             Game.world:loadMap("chapter1/farm_world/garden1")
@@ -103,7 +112,8 @@ return {
         local grace = cutscene:spawnNPC("grace", 860, 420)
         local vess = cutscene:getCharacter("vess")
         local door = Game.world:getEvent(6)
-        local tofer = cutscene:spawnNPC("tofer", 1200, 280)
+        local tofer = cutscene:spawnNPC("tofer", 1200, 280, {["solid"] = false})
+        local music = Music()
         cutscene:look(grace, "up")
         cutscene:detachCamera()
         cutscene:wait(cutscene:panTo(800, Game.world.camera.y, 2))
@@ -146,7 +156,7 @@ return {
         cutscene:text("* Hey,[wait:5] hey,[wait:5] hey!")
         cutscene:setSpeaker(grace)
         cutscene:text("[face:nervous, -19, -13]* UHHHHH...")
-        Game.world.music:play("tofer")
+        music:play("tofer")
         cutscene:wait(1.2) -- Intro of this song is 2 seconds on the dot. Thank god
         Assets.playSound("drive")
         cutscene:setAnimation(tofer, "cycle")
@@ -170,7 +180,7 @@ return {
         cutscene:setSpeaker(tofer)
         cutscene:text("* Wanna know how cool I am ??!?")
         cutscene:setSpeaker(grace)
-        cutscene:text("[face:sus, -19, -13][next]* Not really..")
+        cutscene:text("[face:sus, -19, -13][next]* No????")
         cutscene:setSpeaker(tofer)
         cutscene:text("* ONE TIME,[wait:5] while I was skating!")
         cutscene:text("* Someone fell and broke their ribs.")
@@ -180,6 +190,6 @@ return {
         cutscene:text("[face:consider, -19, -13]* ...")
         cutscene:text("[face:brow, -19, -13]* ...")
         cutscene:setSpeaker(tofer)
-        cutscene:text("* I gave them snare ribs![wait:5] [sound:tofer_checkit]:joy:")
+        cutscene:text("* I gave them snare ribs![wait:5] [sound:tofer_checkit][voice:none]:joy:")
     end;
 }

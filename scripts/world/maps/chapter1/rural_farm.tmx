@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="24" height="31" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="25">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="24" height="31" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="165">
  <editorsettings>
   <export target="rural_farm.lua" format="lua"/>
  </editorsettings>
@@ -21,15 +21,15 @@
 32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,
 32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,
 32,32,32,32,32,32,32,33,33,33,33,32,32,32,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,32,32,11,12,12,12,12,13,32,32,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,32,11,12,21,22,22,23,12,13,32,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-32,32,32,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-0,0,0,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
-0,0,0,32,11,12,24,21,22,22,23,24,12,13,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,32,32,33,12,12,12,12,13,32,32,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,32,33,11,21,22,22,23,13,33,32,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,33,33,11,21,22,22,23,13,33,33,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,33,33,11,21,22,22,23,13,33,33,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,33,33,11,21,22,22,23,13,33,33,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,33,33,11,21,22,22,23,13,33,33,32,32,32,32,32,32,32,32,32,32,
+32,32,32,32,33,33,11,21,22,22,23,13,33,33,32,32,32,32,32,32,32,32,32,32,
+0,0,0,32,33,33,11,21,22,22,23,13,33,32,32,32,32,32,32,32,32,32,32,32,
+0,0,0,32,33,33,24,21,22,22,23,24,33,33,32,32,32,32,32,32,32,32,32,32,
 0,0,0,24,24,24,24,21,22,22,23,24,24,24,24,24,24,24,24,24,24,24,24,24,
 0,0,0,24,24,41,41,15,22,22,16,41,41,41,41,41,41,41,41,41,41,41,41,41,
 0,0,0,24,21,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,
@@ -55,6 +55,17 @@
   <object id="22" x="160" y="0" width="40" height="40"/>
   <object id="23" x="560" y="40" width="48" height="320"/>
   <object id="24" x="520" y="0" width="40" height="40"/>
+  <object id="160" x="950" y="800" width="40" height="240"/>
+ </objectgroup>
+ <objectgroup id="8" name="objects">
+  <object id="164" name="interactable" x="310" y="360" width="100" height="50">
+   <properties>
+    <property name="cutscene" value="chapter1/rural.enter_dw"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="setflag" value="barn_opened"/>
+    <property name="setvalue" type="bool" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="1" name="transition" x="960" y="800" width="40" height="240">
@@ -69,10 +80,152 @@
     <property name="text1_1" value="* (This wheat...[wait:5] it doesn't look very harvested.)"/>
     <property name="text2_1" value="* (It doesn't look very harvested.)"/>
    </properties>
-   <polygon points="0,0 0,40 0,360 880,360 880,320 40,320 40,0"/>
+   <polygon points="0,0 0,40 0,360 880,360 880,320 40,320 40,40 120,40 120,0 160,0 160,-40 200,-40 200,-320 40,0"/>
   </object>
   <object id="18" gid="118" x="0" y="400" width="720" height="400"/>
-  <object id="19" gid="119" x="266" y="400" width="188" height="210"/>
+  <object id="34" gid="131" x="120" y="760" width="40" height="60"/>
+  <object id="35" gid="131" x="120" y="720" width="40" height="60"/>
+  <object id="36" gid="131" x="120" y="680" width="40" height="60"/>
+  <object id="37" gid="131" x="120" y="640" width="40" height="60"/>
+  <object id="38" gid="131" x="120" y="600" width="40" height="60"/>
+  <object id="39" gid="131" x="120" y="560" width="40" height="60"/>
+  <object id="40" gid="131" x="160" y="520" width="40" height="60"/>
+  <object id="41" gid="131" x="200" y="480" width="40" height="60"/>
+  <object id="42" gid="131" x="240" y="440" width="40" height="60"/>
+  <object id="43" gid="132" x="440" y="440" width="40" height="60"/>
+  <object id="44" gid="132" x="480" y="480" width="40" height="60"/>
+  <object id="45" gid="132" x="520" y="520" width="40" height="60"/>
+  <object id="46" gid="132" x="560" y="560" width="40" height="60"/>
+  <object id="47" gid="132" x="560" y="600" width="40" height="60"/>
+  <object id="48" gid="132" x="560" y="640" width="40" height="60"/>
+  <object id="49" gid="132" x="560" y="680" width="40" height="60"/>
+  <object id="50" gid="132" x="560" y="720" width="40" height="60"/>
+  <object id="51" gid="132" x="560" y="800" width="40" height="60"/>
+  <object id="52" gid="132" x="80" y="720" width="40" height="60"/>
+  <object id="53" gid="132" x="40" y="720" width="40" height="60"/>
+  <object id="54" gid="132" x="80" y="680" width="40" height="60"/>
+  <object id="55" gid="132" x="80" y="640" width="40" height="60"/>
+  <object id="56" gid="132" x="80" y="600" width="40" height="60"/>
+  <object id="57" gid="132" x="40" y="640" width="40" height="60"/>
+  <object id="58" gid="132" x="0" y="680" width="40" height="60"/>
+  <object id="59" gid="132" x="0" y="720" width="40" height="60"/>
+  <object id="60" gid="132" x="40" y="680" width="40" height="60"/>
+  <object id="61" gid="132" x="80" y="560" width="40" height="60"/>
+  <object id="62" gid="132" x="120" y="520" width="40" height="60"/>
+  <object id="63" gid="132" x="160" y="480" width="40" height="60"/>
+  <object id="64" gid="132" x="200" y="440" width="40" height="60"/>
+  <object id="65" gid="132" x="40" y="600" width="40" height="60"/>
+  <object id="66" gid="132" x="0" y="640" width="40" height="60"/>
+  <object id="67" gid="132" x="560" y="760" width="40" height="60"/>
+  <object id="68" gid="132" x="600" y="800" width="40" height="60"/>
+  <object id="69" gid="131" x="640" y="800" width="40" height="60"/>
+  <object id="70" gid="131" x="680" y="800" width="40" height="60"/>
+  <object id="71" gid="131" x="720" y="800" width="40" height="60"/>
+  <object id="72" gid="132" x="760" y="800" width="40" height="60"/>
+  <object id="73" gid="132" x="800" y="800" width="40" height="60"/>
+  <object id="74" gid="132" x="840" y="800" width="40" height="60"/>
+  <object id="75" gid="131" x="880" y="800" width="40" height="60"/>
+  <object id="76" gid="131" x="920" y="800" width="40" height="60"/>
+  <object id="77" gid="131" x="600" y="600" width="40" height="60"/>
+  <object id="78" gid="131" x="600" y="640" width="40" height="60"/>
+  <object id="79" gid="131" x="600" y="680" width="40" height="60"/>
+  <object id="80" gid="131" x="640" y="680" width="40" height="60"/>
+  <object id="81" gid="131" x="640" y="720" width="40" height="60"/>
+  <object id="82" gid="131" x="600" y="720" width="40" height="60"/>
+  <object id="83" gid="131" x="600" y="760" width="40" height="60"/>
+  <object id="84" gid="131" x="640" y="760" width="40" height="60"/>
+  <object id="85" gid="131" x="680" y="760" width="40" height="60"/>
+  <object id="86" gid="131" x="680" y="720" width="40" height="60"/>
+  <object id="87" gid="131" x="720" y="760" width="40" height="60"/>
+  <object id="88" gid="131" x="760" y="760" width="40" height="60"/>
+  <object id="89" gid="131" x="760" y="720" width="40" height="60"/>
+  <object id="90" gid="131" x="720" y="720" width="40" height="60"/>
+  <object id="91" gid="131" x="680" y="680" width="40" height="60"/>
+  <object id="92" gid="131" x="640" y="640" width="40" height="60"/>
+  <object id="93" gid="131" x="800" y="760" width="40" height="60"/>
+  <object id="94" gid="131" x="840" y="760" width="40" height="60"/>
+  <object id="95" gid="131" x="880" y="760" width="40" height="60"/>
+  <object id="96" gid="131" x="600" y="560" width="40" height="60"/>
+  <object id="97" gid="131" x="560" y="520" width="40" height="60"/>
+  <object id="98" gid="131" x="520" y="480" width="40" height="60"/>
+  <object id="99" gid="131" x="480" y="440" width="40" height="60"/>
+  <object id="101" gid="132" x="200" y="520" width="40" height="60"/>
+  <object id="102" gid="132" x="200" y="560" width="40" height="60"/>
+  <object id="103" gid="132" x="160" y="560" width="40" height="60"/>
+  <object id="104" gid="132" x="160" y="640" width="40" height="60"/>
+  <object id="105" gid="132" x="200" y="600" width="40" height="60"/>
+  <object id="106" gid="132" x="160" y="600" width="40" height="60"/>
+  <object id="107" gid="132" x="200" y="640" width="40" height="60"/>
+  <object id="108" gid="132" x="160" y="680" width="40" height="60"/>
+  <object id="109" gid="132" x="200" y="680" width="40" height="60"/>
+  <object id="110" gid="132" x="160" y="720" width="40" height="60"/>
+  <object id="111" gid="132" x="200" y="720" width="40" height="60"/>
+  <object id="112" gid="132" x="160" y="760" width="40" height="60"/>
+  <object id="113" gid="132" x="240" y="640" width="40" height="60"/>
+  <object id="114" gid="132" x="240" y="600" width="40" height="60"/>
+  <object id="115" gid="132" x="240" y="520" width="40" height="60"/>
+  <object id="116" gid="132" x="240" y="560" width="40" height="60"/>
+  <object id="117" gid="132" x="240" y="480" width="40" height="60"/>
+  <object id="118" gid="131" x="520" y="720" width="40" height="60"/>
+  <object id="119" gid="131" x="520" y="720" width="40" height="60"/>
+  <object id="120" gid="131" x="480" y="720" width="40" height="60"/>
+  <object id="121" gid="131" x="480" y="680" width="40" height="60"/>
+  <object id="122" gid="131" x="520" y="680" width="40" height="60"/>
+  <object id="123" gid="131" x="520" y="640" width="40" height="60"/>
+  <object id="124" gid="131" x="480" y="640" width="40" height="60"/>
+  <object id="125" gid="131" x="480" y="600" width="40" height="60"/>
+  <object id="126" gid="131" x="520" y="600" width="40" height="60"/>
+  <object id="127" gid="131" x="520" y="560" width="40" height="60"/>
+  <object id="128" gid="131" x="480" y="560" width="40" height="60"/>
+  <object id="129" gid="131" x="480" y="520" width="40" height="60"/>
+  <object id="130" gid="131" x="440" y="480" width="40" height="60"/>
+  <object id="131" gid="131" x="440" y="560" width="40" height="60"/>
+  <object id="132" gid="131" x="440" y="640" width="40" height="60">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="133" gid="131" x="440" y="600" width="40" height="60"/>
+  <object id="134" gid="131" x="440" y="520" width="40" height="60"/>
+  <object id="135" gid="131" x="440" y="680" width="40" height="60"/>
+  <object id="136" gid="131" x="240" y="680" width="40" height="60"/>
+  <object id="137" name="script" x="280" y="600" width="160" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/rural.barn_entrance"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="142" name="barndoor" x="266" y="190" width="188" height="210"/>
+  <object id="154" name="interactable" x="440" y="400" width="40" height="280">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (This wheat...[wait:5] it doesn't look very harvested.)"/>
+   </properties>
+  </object>
+  <object id="155" name="interactable" x="480" y="680" width="80" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (This wheat...[wait:5] it doesn't look very harvested.)"/>
+   </properties>
+  </object>
+  <object id="156" name="interactable" x="560" y="720" width="40" height="80">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (This wheat...[wait:5] it doesn't look very harvested.)"/>
+   </properties>
+  </object>
+  <object id="158" name="interactable" x="600" y="760" width="360" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (This wheat...[wait:5] it doesn't look very harvested.)"/>
+   </properties>
+  </object>
+  <object id="161" name="script" x="920" y="800" width="40" height="240">
+   <properties>
+    <property name="cutscene" value="chapter1/rural.barn_opened"/>
+    <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="6" name="Tile Layer 2" width="24" height="31">
   <data encoding="csv">
@@ -86,15 +239,15 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-114,115,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,131,131,131,0,0,0,0,0,0,0,0,132,131,131,0,0,0,0,0,0,0,0,
+131,131,131,131,0,0,0,0,0,0,0,0,0,132,131,131,132,0,0,0,0,0,0,0,
+131,131,131,0,0,0,0,0,0,0,0,0,0,0,0,132,132,132,0,0,0,0,0,0,
+131,131,0,0,0,0,0,0,0,0,0,0,0,0,0,132,132,131,131,132,0,0,0,0,
+131,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,131,131,132,132,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,131,131,131,131,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,132,131,132,132,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132,132,131,131,
+114,115,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132,
 115,114,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 117,117,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 114,114,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -110,7 +263,33 @@
 </data>
  </layer>
  <objectgroup color="#aa00ff" id="3" name="markers">
-  <object id="2" name="entry" x="920" y="920">
+  <object id="2" name="spawn" x="920" y="920">
+   <point/>
+  </object>
+  <object id="139" name="center" x="360" y="520">
+   <point/>
+  </object>
+  <object id="141" name="in_front" x="360" y="420">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="9" name="controllers">
+  <object id="162" name="toggle" x="850" y="830">
+   <properties>
+    <property name="flag" value="barn_opened"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="161"/>
+    <property name="target2" type="object" value="160"/>
+    <property name="target3" type="object" value="164"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="163" name="toggle" x="850" y="930">
+   <properties>
+    <property name="flag" value="barn_opened"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="1"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>

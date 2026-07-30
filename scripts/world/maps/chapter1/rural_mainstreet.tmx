@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="47">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="62">
  <editorsettings>
   <export target="rural_mainstreet/data.lua" format="lua"/>
  </editorsettings>
@@ -154,8 +154,9 @@
   <object id="39" x="1280" y="0" width="40" height="1120"/>
   <object id="40" x="0" y="-40" width="520" height="40"/>
   <object id="41" x="760" y="-40" width="520" height="40"/>
+  <object id="50" x="520" y="5140" width="240" height="60"/>
  </objectgroup>
- <objectgroup color="#ff007f" id="3" name="objects">
+ <objectgroup color="#ff007f" id="3" name="objects_party">
   <object id="2" name="transition" x="520" y="5120" width="240" height="40">
    <properties>
     <property name="map" value="chapter1/rural1"/>
@@ -199,7 +200,7 @@
   <object id="26" name="transition" x="-40" y="3680" width="40" height="240">
    <properties>
     <property name="map" value="chapter1/rural_farm"/>
-    <property name="marker" value="entry"/>
+    <property name="marker" value="spawn"/>
    </properties>
   </object>
   <object id="42" gid="117" x="280" y="3680" width="200" height="160"/>
@@ -239,6 +240,25 @@ I'm sure you know yourself very well by now.</property>
     <property name="text3_1" value="* (Oh well.)"/>
    </properties>
   </object>
+  <object id="51" gid="132" x="0" y="3680" width="40" height="60"/>
+  <object id="52" gid="132" x="40" y="3680" width="40" height="60"/>
+  <object id="53" gid="132" x="80" y="3680" width="40" height="60"/>
+  <object id="54" gid="132" x="0" y="4120" width="40" height="60"/>
+  <object id="55" gid="132" x="0" y="4080" width="40" height="60"/>
+  <object id="56" gid="133" x="0" y="4040" width="40" height="60"/>
+  <object id="57" gid="133" x="40" y="4000" width="40" height="60"/>
+  <object id="58" gid="133" x="40" y="3960" width="40" height="60"/>
+  <object id="59" gid="133" x="0" y="3960" width="40" height="60"/>
+  <object id="60" gid="133" x="0" y="4000" width="40" height="60"/>
+  <object id="61" gid="133" x="80" y="3960" width="40" height="60"/>
+ </objectgroup>
+ <objectgroup id="6" name="objects_cooler">
+  <object id="49" name="script" x="520" y="5120" width="240" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/rural.hungry"/>
+    <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="2" name="markers">
   <object id="1" name="spawn" x="640" y="5080">
@@ -260,6 +280,22 @@ I'm sure you know yourself very well by now.</property>
     <property name="flag" value="start_cutscene_active"/>
     <property name="inverted" type="bool" value="true"/>
     <property name="target1" type="object" value="3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="toggle" x="840" y="5050">
+   <properties>
+    <property name="flag" value="dark_world_end"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="toggle" x="420" y="5020">
+   <properties>
+    <property name="flag" value="dark_world_end"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="49"/>
    </properties>
    <point/>
   </object>

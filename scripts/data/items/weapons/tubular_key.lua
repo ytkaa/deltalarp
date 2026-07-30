@@ -48,7 +48,7 @@ function item:init()
 
     -- Character reactions
     self.reactions = {
-        grace = "I'm good. Looks cool though",
+        grace = "I'm good. Looks cool though..!",
         tofer = "Check it!"
     }
 end
