@@ -5,5 +5,6 @@
  <tile id="5" probability="0.2"/>
  <tile id="6" probability="0.1"/>
  <tile id="15" probability="0.1"/>
+ <tile id="37" probability="0.1"/>
  <tile id="45" probability="0.1"/>
 </tileset>
