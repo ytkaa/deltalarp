@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="60" tileheight="80" tilecount="4" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="864" tileheight="580" tilecount="9" columns="0">
  <editorsettings>
   <export target="garden_extras.lua" format="lua"/>
  </editorsettings>
@@ -15,5 +15,20 @@
  </tile>
  <tile id="32">
   <image source="../../../assets/sprites/tilesets/farm_world/garden/trillium_flowers.png" width="60" height="80"/>
+ </tile>
+ <tile id="33">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin3_stonebarrier.png" width="864" height="580"/>
+ </tile>
+ <tile id="34">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin3_flowerbg.png" width="404" height="304"/>
+ </tile>
+ <tile id="35">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin3_pot.png" width="197" height="219"/>
+ </tile>
+ <tile id="36">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin3_rock.png" width="252" height="202"/>
+ </tile>
+ <tile id="37">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin2_cave.png" width="640" height="480"/>
  </tile>
 </tileset>

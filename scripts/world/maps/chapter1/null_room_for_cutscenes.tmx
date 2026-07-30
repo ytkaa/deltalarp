@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="2" height="2" tilewidth="40" tileheight="40" infinite="0" nextlayerid="4" nextobjectid="3">
+ <editorsettings>
+  <export target="farm_world/null_room_for_cutscenes.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../tilesets/garden.tsx"/>
+ <layer id="1" name="Camada de Blocos 1" width="2" height="2">
+  <data encoding="csv">
+0,0,
+0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="markers">
+  <object id="2" name="spawn" x="41.0909" y="42.1818">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="objects_party">
+  <object id="1" gid="82" x="-4.125" y="90.1136" width="91.75" height="90.8409"/>
+ </objectgroup>
+</map>

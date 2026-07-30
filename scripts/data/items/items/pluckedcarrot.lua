@@ -1,10 +1,10 @@
-local item, super = Class(HealItem, "pluckedcarrot")
+local item, super = Class(HealItem, "kipcarrot")
 
 function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "PluckedCarrot"
+    self.name = "KipCarrot"
     -- Name displayed when used in battle (optional)
     self.use_name = nil
 
@@ -16,9 +16,9 @@ function item:init()
     -- Battle description
     self.effect = "Heals\n55 HP"
     -- Shop description
-    self.shop = ""
+    self.shop = "Not a\nKipkip\nHeals 55HP"
     -- Menu description
-    self.description = ""
+    self.description = "Named after the similar looking Kipkip species. +55HP"
 
     -- Amount healed (HealItem variable)
     self.heal_amount = 55
@@ -48,7 +48,7 @@ function item:init()
 
     -- Character reactions (key = party member id)
     self.reactions = {
-        grace = "",
+        grace = "Crunchy...",
     }
 end
 

@@ -77,7 +77,7 @@ return {
             --Game.world:removeFollower(colonel2, 1)
             --Game.world:removeFollower(colonel3, 3)
             --Game.world:removeFollower(colonel4, 4)
-            --Game.world:removeFollower(colonel5, 5)
+            --Game.world:removeFollower(colonel5, 5) --i probably shouldnt have added the numbers here
             for _, follower in pairs(followers) do
                 Game.world:removeFollower(follower)
                 follower:remove()
@@ -86,7 +86,7 @@ return {
                 Game.world:removeFollower(follower)
                 follower:remove()
             end
-            for _, follower in pairs(followers) do
+            for _, follower in pairs(followers) do --dude this is disgusting
                 Game.world:removeFollower(follower)
                 follower:remove()
             end
