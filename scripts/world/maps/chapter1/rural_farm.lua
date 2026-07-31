@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 165,
+  nextobjectid = 166,
   properties = {
     ["light"] = true
   },
@@ -2129,6 +2129,20 @@ return {
           shape = "point",
           x = 360,
           y = 420,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 165,
+          name = "walk_back",
+          type = "",
+          shape = "point",
+          x = 360,
+          y = 480,
           width = 0,
           height = 0,
           rotation = 0,

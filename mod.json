@@ -54,8 +54,8 @@
     "config": {
         "kristal": {
             "tpName": "AP",
-            "newChoicers": true
-            // End of config
+            "newChoicers": true,
+            "storageSlots": 12
         }
     },
 

@@ -41,17 +41,60 @@ function Zobate:init()
     self:registerItem("cornmeal")
     self:registerItem("kipcarrot")
 
-
-    self:registerTalk("About you")
-    self:registerTalk("About Gardner")
+    
     self:registerTalk("About this world")
+    self:registerTalk("About GARDNER")
     self:registerTalk("About me")
-    self:registerTalkAfter("About show", 1)
+    self:registerTalk("About you")
+    self:registerTalkAfter("About show", 4)
     
 end
 
 function Zobate:startTalk(dialogue)
-    if dialogue == "About you" then
+    if dialogue == "About this world" then
+        self:startDialogue({
+            --emotes get used here
+            "[emote:talk]* This world...[wait:5] it is a strange one,[wait:5] gitau.",
+            "[emote:talk]* One hand...[wait:5] a world heading toward certain tragedy...",
+            "[emote:talk]* Not too dissimilar to your own,[wait:5] Vessel.[wait:5] [emote:slight_smile]Perhaps not too unrelated,[wait:5] either...[wait:5] zah ha ha...",
+            "[emote:talk]* The other hand,[wait:5] a world allowing for an unfamiliar movement,[wait:5] a nascent breath...[wait:5] hokero.",
+            "[emote:talk]* Is quite entertaining,[wait:5] I must confess.",
+            "[emote:talk]* To watch these many[wait:5] “souls”[wait:5] who,[wait:5] without darkness,[wait:5] would retain their[wait:5] “original”[wait:5] states...",
+            "[emote:talk]* Gitau,[wait:5] gitau...[wait:5] To short,[wait:5] speaking to crops and inanimates entertains me.[wait:5] Zah ha ha.",
+            "[emote:oh]* Though my face does not assume the form of hilarity...[wait:5] zah.",
+            "[emote:slight_smile]* Deeply,[wait:5] I would prefer being the one entertaining,[wait:5] but legend and fate has chosen...[wait:5] [emote:idle]a different \npath for myself,[wait:5] I suppose...",
+            "[emote:talk]* Itahu.",
+        }, function ()
+            -- Use this to reset the animation of the shopkeeper
+            self.shopkeeper:setSprite("talk")
+        end)
+    elseif dialogue == "About GARDNER" then
+        self:startDialogue({
+            --emotes get used here
+            "[emote:smile]* Zah ha ha,[wait:5] the Gardner...[wait:5] [emote:talk]I assume I am to exposit?[wait:5] Itahu...",
+            "[emote:talk]* Welph,[wait:5] there was once...[wait:5] a time[wait:5] which the Gardner was an equal to the others,[wait:5] the other Darkners...",
+            "[emote:oh]* Least,[wait:5] that was until the[wait:10] [color:red]KNIGHTS[color:reset] appeared...",
+            "[emote:idle]* ...",
+            "[emote:talk]* Ultimately.[wait:5] He was informed of the power of[wait:5] [color:pink]life force[color:reset].[wait:5] A power that he has gone mad with...",
+            "[emote:talk]* A power that...",
+            "[emote:slight_smile]* ...",
+            "[emote:oh]* As an extent,[wait:5] it is understandable...[wait:5] [emote:talk]many would do similar for a fraction of such a power.",
+            "[emote:talk]* To think what he would do if one threatened to dissolve that power...[wait:5]",
+            "[emote:slight_smile]* Welph,[wait:5] it would make a good show,[wait:5] it would.[wait:5] Za ha ha..."
+        }, function ()
+            -- Use this to reset the animation of the shopkeeper
+            self.shopkeeper:setSprite("talk")
+        end)
+    elseif dialogue == "About me" then
+        self:startDialogue({
+            --emotes get used here
+            "[emote:oh]* About you..?",
+            "[emote:slight_smile]* You are...[wait:10] the Vessel.",
+        }, function ()
+            -- Use this to reset the animation of the shopkeeper
+            self.shopkeeper:setSprite("talk")
+        end)
+    elseif dialogue == "About you" then
         self:startDialogue({
             --emotes get used here
             "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
@@ -60,30 +103,6 @@ function Zobate:startTalk(dialogue)
             self.shopkeeper:setSprite("talk")
         end)
     elseif dialogue == "About show" then
-        self:startDialogue({
-            --emotes get used here
-            "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
-        }, function ()
-            -- Use this to reset the animation of the shopkeeper
-            self.shopkeeper:setSprite("talk")
-        end)
-    elseif dialogue == "About Gardner" then
-        self:startDialogue({
-            --emotes get used here
-            "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
-        }, function ()
-            -- Use this to reset the animation of the shopkeeper
-            self.shopkeeper:setSprite("talk")
-        end)
-    elseif dialogue == "About this world" then
-        self:startDialogue({
-            --emotes get used here
-            "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
-        }, function ()
-            -- Use this to reset the animation of the shopkeeper
-            self.shopkeeper:setSprite("talk")
-        end)
-    elseif dialogue == "About me" then
         self:startDialogue({
             --emotes get used here
             "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",

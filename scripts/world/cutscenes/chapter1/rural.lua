@@ -323,8 +323,7 @@ return {
         cutscene:wait(1)
 
         Game.world.music:play("the entrance")
-        cutscene:wait(0.25)
-        cutscene:wait(cutscene:walkTo(vess, "center", 2, "up", true))
+        cutscene:wait(cutscene:walkTo(vess, "walk_back", 1, "up", true))
     end;
 
     barn_opened = function(cutscene, event)
