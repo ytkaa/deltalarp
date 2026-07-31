@@ -54,7 +54,7 @@ function Dummy:init()
     self:registerAct("Smile")
     -- Register party act with Ralsei called "Tell Story"
     -- (second argument is description, usually empty)
-    self:registerAct("Tell Story", "", {"ralsei"})
+    self:registerAct("Tell Story", "", {"tofer"})
 end
 
 function Dummy:onAct(battler, name)
@@ -75,7 +75,7 @@ function Dummy:onAct(battler, name)
             -- Make the enemy tired
             enemy:setTired(true)
         end
-        return "* You and Ralsei told the dummy\na bedtime story.\n* The enemies became [color:blue]TIRED[color:reset]..."
+        return "* You and Tofer told the dummy\na bedtime story.\n* The enemies became [color:blue]TIRED[color:reset]..."
 
     elseif name == "Standard" then --X-Action
         -- Give the enemy 50% mercy
