@@ -22,9 +22,9 @@ function character:init()
 
     self.health = 90
 
-    self.stats = {
+    self.stats = { -- 3ATK 3DEF 3MAG when counting armor.
         health = 90,
-        attack = 3,
+        attack = 2,
         defense = 1,
         magic = 2
     }
@@ -33,11 +33,11 @@ function character:init()
         health = 110
     }
 
-    self.weapon_icon = "ui/menu/equip/sword"
+    self.weapon_icon = "ui/menu/equip/cycle"
 
-    self:setWeapon("car_keys")
-    --self:setArmor(1, "amber_card")
-    --self:setArmor(2, "amber_card")
+    self:setWeapon("unicycle")
+    self:setArmor(1, "sickshades")
+    self:setArmor(2, "the_pods")
 
     --self.lw_armor_default = "light/bandage"
     --self.lw_weapon_default = "light/car_keys"
@@ -54,14 +54,14 @@ function character:init()
     self.xact_color = {1, 0.5, 0.25}
 
     -- Head icon in the equip / power menu
-    self.menu_icon = "party/grace/head"
+    self.menu_icon = "party/tofer/head"
     -- Path to head icons used in battle
     self.head_icons = "party/grace/icon"
     -- Name sprite
     self.name_sprite = "party/vess/name"
 
     -- Effect shown above enemy after attacking it
-    self.attack_sprite = "effects/attack/cut"
+    self.attack_sprite = "effects/attack/slap_t"
     -- Sound played when this character attacks
     self.attack_sound = "bomb"
     -- Pitch of the attack sound
@@ -83,6 +83,42 @@ function character:onLevelUp(level)
     if level % 10 == 0 then
         self:increaseStat("attack", 1)
     end
+end
+
+--The following two functions are stolen from Susie and they prevent taking equipment from the party member.
+-- Never mind, actually. I replaced all of the Susan code
+function character:canEquip(item, slot_type, slot_index)
+    return false;
+end
+
+function character:getReaction(item, user)
+    if user.id ~= self.id then --We have to account for equipping anyone who isn't Tofer.
+        return super.getReaction(self, item, user)
+    else --But if it is Tofer...
+        Assets.playSound("tofer_checkit")
+        return "Check it!"
+    end
+end
+
+function character:onAttackHit(enemy, damage)
+    local tofer = Game.battle:getPartyBattler("tofer")
+    local inital_x = tofer.x
+    local inital_y = tofer.y
+
+    -- Tofer runs over the enemy with the Cycle
+    tofer:slideTo(enemy.x + 40, enemy.y, 0.2)
+    Game.battle.timer:after(0.2, function()
+    tofer:slideTo(enemy.x - 40, enemy.y, 0.1)
+    end)
+    Game.battle.timer:after(0.3, function()
+    tofer:slideTo(enemy.x + 40, enemy.y, 0.1)
+    end)
+    Game.battle.timer:after(0.4, function()
+    tofer:slideTo(enemy.x - 40, enemy.y, 0.1)
+    end)
+    Game.battle.timer:after(0.5, function()
+        tofer:slideTo(inital_x, inital_y, 0.2)
+    end)
 end
 
 return character

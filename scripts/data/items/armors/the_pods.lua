@@ -1,27 +1,27 @@
-local item, super = Class(Item, "tubular_key")
+local item, super = Class(Item, "the_pods")
 
 function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "TubeBlade"
+    self.name = "The Pods"
 
     -- Item type (item, key, weapon, armor)
-    self.type = "weapon"
+    self.type = "armor"
     -- Item icon (for equipment)
-    self.icon = "ui/menu/icon/knife"
+    self.icon = "ui/menu/icon/specs"
 
     -- Battle description
     self.effect = ""
     -- Shop description
-    self.shop = "Cylinder blade"
+    self.shop = ""
     -- Menu description
-    self.description = "A key weapon with cool cuts around its edge!"
+    self.description = "Pods for the ear. They go well with air."
 
     -- Default shop price (sell price is halved)
-    self.price = 300
+    self.price = 400
     -- Whether the item can be sold
-    self.can_sell = true
+    self.can_sell = false
 
     -- Consumable target mode (ally, party, enemy, enemies, or none)
     self.target = "none"
@@ -34,31 +34,28 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        attack = 3,
-        defense = 0
+        attack = 0,
+        defense = 1
     }
     -- Bonus name and icon (displayed in equip menu)
-    self.bonus_name = "Coolness"
-    self.bonus_icon = "ui/menu/icon/up"
+    self.bonus_name = "Hearing DOWN"
+    self.bonus_icon = "ui/menu/icon/down"
 
     -- Equippable characters (default true for armors, false for weapons)
     self.can_equip = {
-        vess = true
+        tofer = true,
+        vess = false,
+        grace = false
     }
 
     -- Character reactions
     self.reactions = {
-        grace = "I'm good. Looks cool though..!",
+        grace = "No.",
         tofer = "Check it!"
     }
-end
 
-function item:convertToLightEquip(chara)
-    return "light/tubular_key"
+    -- TODO: Elemental resistance
+    -- Resists element 6 by 0.2
 end
-
---function item:getAttackCritBoxSize(battler)
---    return 2
---end
 
 return item
