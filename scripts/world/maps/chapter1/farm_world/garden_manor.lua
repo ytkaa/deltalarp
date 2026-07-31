@@ -9,8 +9,8 @@ return {
   height = 18,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 24,
+  nextlayerid = 7,
+  nextobjectid = 33,
   properties = {},
   tilesets = {
     {
@@ -313,6 +313,22 @@ return {
             ["cutscene"] = "chapter1/garden.ofer_intro",
             ["once"] = true
           }
+        },
+        {
+          id = 32,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 740,
+          y = 200,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/garden.manor_entrance"
+          }
         }
       }
     },
@@ -427,6 +443,124 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 24,
+          name = "tofer_teleport",
+          type = "",
+          shape = "point",
+          x = 720,
+          y = 280,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 25,
+          name = "sofer_spawn",
+          type = "",
+          shape = "point",
+          x = 800,
+          y = 160,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 26,
+          name = "sofer_slide",
+          type = "",
+          shape = "point",
+          x = 800,
+          y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 27,
+          name = "grace_run",
+          type = "",
+          shape = "point",
+          x = 860,
+          y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 29,
+          name = "final_slide",
+          type = "",
+          shape = "point",
+          x = 1200,
+          y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 30,
+          name = "tofer_final",
+          type = "",
+          shape = "point",
+          x = 800,
+          y = 420,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 31,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 890,
+          y = -90,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "manor_seen",
+            ["inverted"] = true,
+            ["target1"] = { id = 6 }
+          }
         }
       }
     }

@@ -25,12 +25,11 @@ function actor:init()
     self.voice = "sofer"
 
     self.animations = {
-        -- Movement animations
         ["move"] = {"move", 1/2, true},
+        ["want"] = {"want", 1/2, true},
     }
 
     self.talk_sprites = {
-        ["talk"] = 1/2
     }
 
     self.offsets = {
@@ -40,6 +39,19 @@ function actor:init()
     self.mirror_sprites = {
         
     }
+
+    self.high_pitch = false
+
+end
+
+function actor:onTextSound(current_node, state)
+    if self.high_pitch then
+        Assets.playSound("voice/sofer", 1, 1)
+    else
+        Assets.playSound("voice/sofer", 1, 0.9)
+    end
+    
+    return true
 end
 
 return actor

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="24">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="33">
  <editorsettings>
   <export target="garden_manor.lua" format="lua"/>
  </editorsettings>
@@ -56,6 +56,11 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
+  <object id="32" name="interactable" x="740" y="200" width="120" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.manor_entrance"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
   <object id="3" name="to_garden2" x="40" y="420">
@@ -77,6 +82,34 @@
    <point/>
   </object>
   <object id="23" name="tofer_slide" x="800" y="280">
+   <point/>
+  </object>
+  <object id="24" name="tofer_teleport" x="720" y="280">
+   <point/>
+  </object>
+  <object id="25" name="sofer_spawn" x="800" y="160">
+   <point/>
+  </object>
+  <object id="26" name="sofer_slide" x="800" y="300">
+   <point/>
+  </object>
+  <object id="27" name="grace_run" x="860" y="300">
+   <point/>
+  </object>
+  <object id="29" name="final_slide" x="1200" y="300">
+   <point/>
+  </object>
+  <object id="30" name="tofer_final" x="800" y="420">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="6" name="controllers">
+  <object id="31" name="toggle" x="890" y="-90">
+   <properties>
+    <property name="flag" value="manor_seen"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="6"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>

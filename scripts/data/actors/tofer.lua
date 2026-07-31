@@ -15,7 +15,7 @@ function actor:init()
     self.color = {1, 0, 1}
 
     self.path = "party/tofer"
-    self.default = "tofer"
+    self.default = "cycle"
 
     self.portrait_path = nil
     self.portait_offset = {-19, -13}

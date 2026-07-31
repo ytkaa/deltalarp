@@ -73,10 +73,10 @@ function Zobate:startTalk(dialogue)
             --emotes get used here
             "[emote:smile]* Zah ha ha,[wait:5] the Gardner...[wait:5] [emote:talk]I assume I am to exposit?[wait:5] Itahu...",
             "[emote:talk]* Welph,[wait:5] there was once...[wait:5] a time[wait:5] which the Gardner was an equal to the others,[wait:5] the other Darkners...",
-            "[emote:oh]* Least,[wait:5] that was until the[wait:10] [color:red]KNIGHTS[color:reset] appeared...",
+            "[emote:oh]* Least,[wait:5] that was until...[wait:10] \nthe [color:red]KNIGHTS[color:reset][wait:5] appeared...",
             "[emote:idle]* ...",
-            "[emote:talk]* Ultimately.[wait:5] He was informed of the power of[wait:5] [color:pink]life force[color:reset].[wait:5] A power that he has gone mad with...",
-            "[emote:talk]* A power that...",
+            "[emote:talk]* Ultimately.[wait:5] He was informed of the power of[wait:5] [color:pink]life force[color:reset][wait:5] and its extraction.[wait:5] A power that he has gone mad with...",
+            "[emote:talk]* A power that...[wait:5] welph...",
             "[emote:slight_smile]* ...",
             "[emote:oh]* As an extent,[wait:5] it is understandable...[wait:5] [emote:talk]many would do similar for a fraction of such a power.",
             "[emote:talk]* To think what he would do if one threatened to dissolve that power...[wait:5]",
@@ -97,7 +97,8 @@ function Zobate:startTalk(dialogue)
     elseif dialogue == "About you" then
         self:startDialogue({
             --emotes get used here
-            "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
+            "[emote:oh]* About me..?",
+            "[emote:talk]* Zah,[wait:5] welph,[wait:5] "
         }, function ()
             -- Use this to reset the animation of the shopkeeper
             self.shopkeeper:setSprite("talk")
