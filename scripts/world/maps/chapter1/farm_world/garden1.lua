@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 15,
-  nextobjectid = 75,
+  nextobjectid = 77,
   properties = {
     ["name"] = "Garden - 2nd \"Barracks\""
   },
@@ -303,7 +303,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["target"] = { id = 46 }
+            ["target"] = { id = 76 }
           }
         },
         {
@@ -335,7 +335,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["target"] = { id = 46 }
+            ["target"] = { id = 75 }
           }
         }
       }
@@ -410,7 +410,7 @@ return {
       id = 6,
       name = "collision",
       class = "",
-      visible = true,
+      visible = false,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -863,9 +863,7 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {
-            ["player_state"] = "CLIMB"
-          }
+          properties = {}
         },
         {
           id = 48,
@@ -916,6 +914,34 @@ return {
           shape = "point",
           x = 600,
           y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 75,
+          name = "climb_exit",
+          type = "",
+          shape = "point",
+          x = 380,
+          y = 400,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 76,
+          name = "climb_exit",
+          type = "",
+          shape = "point",
+          x = 300,
+          y = 400,
           width = 0,
           height = 0,
           rotation = 0,

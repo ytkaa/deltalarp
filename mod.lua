@@ -12,6 +12,9 @@ function Mod:init()
     Game:registerEvent("barndoor", function(data)
         return BarnDoor(data.x, data.y)
     end)
+    Game:registerEvent("dirtflower", function(data)
+        return DirtFlower(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
+    end)
 
     --Annoying music bullshit
     Utils.merge(MUSIC_VOLUMES, {
@@ -21,6 +24,7 @@ function Mod:init()
         ["class2"] = 1,
         ["farm_battle_wip_2"] = 1,
         ["field_jarona"] = 1,
+        ["garden"] = 2,
         ["gardner1"] = 1,
         ["grace"] = 1,
         ["Her"] = 1,

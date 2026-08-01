@@ -10,8 +10,10 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 33,
-  properties = {},
+  nextobjectid = 38,
+  properties = {
+    ["name"] = "Garden - Ofer Manor"
+  },
   tilesets = {
     {
       name = "garden",
@@ -44,7 +46,7 @@ return {
       properties = {},
       encoding = "lua",
       data = {
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 6, 5, 5, 5, 5, 5, 5, 6, 5, 6, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 5, 6, 5, 6, 5, 5, 5, 5, 5, 5, 6, 5, 22, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 5, 5, 6, 5, 5, 5, 6, 5, 5, 5, 5, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 5, 5, 5, 6, 5, 6, 5, 5, 5, 5, 0, 0, 0, 0, 0,
@@ -329,6 +331,44 @@ return {
           properties = {
             ["cutscene"] = "chapter1/garden.manor_entrance"
           }
+        },
+        {
+          id = 33,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 360,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_manorladders",
+            ["marker"] = "to_manor"
+          }
+        },
+        {
+          id = 36,
+          name = "savepoint",
+          type = "",
+          shape = "rectangle",
+          x = 780,
+          y = 340,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["heals"] = true,
+            ["marker"] = "vess_walkback",
+            ["text1"] = "* (Tofer has joined your party.)",
+            ["text2"] = "* (This development fills you with the power of...)",
+            ["text3"] = "* (...[wait:5] of...[wait:5] uh...)",
+            ["text_once"] = true
+          }
         }
       }
     },
@@ -527,6 +567,20 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 34,
+          name = "to_ladders",
+          type = "",
+          shape = "point",
+          x = 1240,
+          y = 420,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -560,6 +614,24 @@ return {
             ["flag"] = "manor_seen",
             ["inverted"] = true,
             ["target1"] = { id = 6 }
+          }
+        },
+        {
+          id = 37,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 990,
+          y = -80,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "manor_seen",
+            ["inverted"] = false,
+            ["target1"] = { id = 36 }
           }
         }
       }

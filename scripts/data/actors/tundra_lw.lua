@@ -17,8 +17,8 @@ function actor:init()
     self.path = "party/tundra/light"
     self.default = "tundra"
 
-    self.portrait_path = nil
-    self.portait_offset = {-19, -13}
+    self.portrait_path = "face/tundra"
+    self.portait_offset = {-23, -7}
 
     self.can_blush = false
 

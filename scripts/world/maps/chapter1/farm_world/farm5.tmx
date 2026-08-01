@@ -102,7 +102,7 @@
   <object id="77" name="resetbell" x="600" y="40" width="40" height="40"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="7" name="objects"/>
- <objectgroup color="#55ffff" id="3" name="blockcollision">
+ <objectgroup color="#55ffff" id="3" name="blockcollision" locked="1">
   <object id="2" x="360" y="120" width="120" height="40"/>
   <object id="3" x="320" y="160" width="40" height="40"/>
   <object id="4" x="360" y="200" width="40" height="40"/>
@@ -169,7 +169,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup color="#0000ff" id="10" name="collision">
+ <objectgroup color="#0000ff" id="10" name="collision" locked="1">
   <object id="52" x="880" y="40" width="40" height="440"/>
   <object id="53" x="640" y="40" width="240" height="40"/>
   <object id="54" x="560" y="0" width="40" height="40"/>

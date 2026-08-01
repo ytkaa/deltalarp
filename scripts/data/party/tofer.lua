@@ -24,9 +24,9 @@ function character:init()
 
     self.stats = { -- 3ATK 3DEF 3MAG when counting armor.
         health = 90,
-        attack = 2,
-        defense = 1,
-        magic = 2
+        attack = 3,
+        defense = 2,
+        magic = 3
     }
 
     self.max_stats = {

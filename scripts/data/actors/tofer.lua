@@ -17,7 +17,7 @@ function actor:init()
     self.path = "party/tofer"
     self.default = "cycle"
 
-    self.portrait_path = nil
+    self.portrait_path = "face/tofer"
     self.portait_offset = {-19, -13}
 
     self.can_blush = false

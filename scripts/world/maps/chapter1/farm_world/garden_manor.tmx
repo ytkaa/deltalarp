@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="33">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="38">
  <editorsettings>
   <export target="garden_manor.lua" format="lua"/>
  </editorsettings>
+ <properties>
+  <property name="name" value="Garden - Ofer Manor"/>
+ </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/farm_world_extras.tsx"/>
  <layer id="1" name="Tile Layer 1" width="32" height="18">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,6,5,6,5,5,5,5,5,5,6,5,6,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,21,5,6,5,6,5,5,5,5,5,5,6,5,22,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,6,5,5,5,6,5,5,5,5,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,6,5,5,5,5,6,5,6,5,5,5,5,0,0,0,0,0,
@@ -61,6 +64,22 @@
     <property name="cutscene" value="chapter1/garden.manor_entrance"/>
    </properties>
   </object>
+  <object id="33" name="transition" x="1280" y="360" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_manorladders"/>
+    <property name="marker" value="to_manor"/>
+   </properties>
+  </object>
+  <object id="36" name="savepoint" x="780" y="340" width="40" height="40">
+   <properties>
+    <property name="heals" type="bool" value="true"/>
+    <property name="marker" value="vess_walkback"/>
+    <property name="text1" value="* (Tofer has joined your party.)"/>
+    <property name="text2" value="* (This development fills you with the power of...)"/>
+    <property name="text3" value="* (...[wait:5] of...[wait:5] uh...)"/>
+    <property name="text_once" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
   <object id="3" name="to_garden2" x="40" y="420">
@@ -102,6 +121,9 @@
   <object id="30" name="tofer_final" x="800" y="420">
    <point/>
   </object>
+  <object id="34" name="to_ladders" x="1240" y="420">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup color="#ffff00" id="6" name="controllers">
   <object id="31" name="toggle" x="890" y="-90">
@@ -109,6 +131,14 @@
     <property name="flag" value="manor_seen"/>
     <property name="inverted" type="bool" value="true"/>
     <property name="target1" type="object" value="6"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="toggle" x="990" y="-80">
+   <properties>
+    <property name="flag" value="manor_seen"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="36"/>
    </properties>
    <point/>
   </object>

@@ -393,7 +393,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "tundra_lw",
-            ["text"] = "* Hi!",
+            ["text"] = "[face:smile_blush_blind, -23, -7]* Yo!",
             ["turn"] = true
           }
         },

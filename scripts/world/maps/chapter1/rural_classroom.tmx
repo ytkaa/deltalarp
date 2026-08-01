@@ -87,7 +87,7 @@
   <object id="70" name="npc" x="460" y="384" width="40" height="40">
    <properties>
     <property name="actor" value="tundra_lw"/>
-    <property name="text" value="* Hi!"/>
+    <property name="text" value="[face:smile_blush_blind, -23, -7]* Yo!"/>
     <property name="turn" type="bool" value="true"/>
    </properties>
   </object>

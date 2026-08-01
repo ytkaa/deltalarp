@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="17" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="28">
+ <editorsettings>
+  <export target="garden_ladder1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="garden"/>
+  <property name="name" value="Garden - Ladder 1"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/farm_world.tsx"/>
+ <tileset firstgid="201" source="../../../tilesets/farm_world_extras.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="17" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,21,5,22,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,5,6,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,5,5,0,0,0,0,0,0,0,
+0,0,21,5,22,0,0,6,6,5,0,0,21,5,22,0,0,
+0,0,5,7,5,0,0,5,5,5,0,0,6,6,5,0,0,
+0,0,9,7,9,0,0,5,5,5,0,0,9,5,9,0,0,
+0,0,19,6,19,0,0,5,5,5,0,0,19,6,19,0,0,
+0,0,59,7,59,0,0,5,5,5,0,0,59,5,59,0,0,
+0,0,0,5,0,0,0,5,5,5,0,0,0,5,0,0,0,
+0,0,21,5,5,5,5,5,5,5,6,5,5,5,22,0,0,
+0,0,9,9,9,9,9,5,5,5,9,9,9,9,9,0,0,
+0,0,19,19,19,19,19,5,5,5,19,19,19,19,19,0,0,
+0,0,29,29,29,29,29,9,9,9,29,29,29,29,29,0,0,
+0,0,39,39,39,39,39,19,19,19,39,39,39,39,39,0,0,
+0,0,59,59,59,59,59,29,29,29,59,59,59,59,59,0,0
+</data>
+ </layer>
+ <layer id="4" name="ladders" width="17" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,130,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="objects_ladders">
+  <object id="4" name="climbarea" x="320" y="560" width="40" height="80"/>
+ </objectgroup>
+ <objectgroup id="6" name="objects_climb_entry">
+  <object id="6" name="climbentry" x="320" y="560" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="9"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="objects_climb_exit">
+  <object id="9" name="climbexit" x="320" y="560" width="40" height="40">
+   <properties>
+    <property name="target" type="object" value="11"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="objects_tilebutton">
+  <object id="23" name="tilebutton" x="120" y="200" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="false"/>
+    <property name="cutscene" value="chapter1/garden.ladder1"/>
+    <property name="group" type="int" value="1"/>
+    <property name="keepdown" type="bool" value="true"/>
+    <property name="once" type="bool" value="true"/>
+    <property name="onsound" value="noise"/>
+   </properties>
+  </object>
+  <object id="26" name="tilebutton" x="520" y="200" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="false"/>
+    <property name="cutscene" value="chapter1/garden.ladder1"/>
+    <property name="group" type="int" value="1"/>
+    <property name="keepdown" type="bool" value="true"/>
+    <property name="once" type="bool" value="true"/>
+    <property name="onsound" value="noise"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="2" name="objects_party">
+  <object id="1" name="transition" x="280" y="620" width="120" height="40">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_manorladders"/>
+    <property name="marker" value="to_ladder1"/>
+   </properties>
+  </object>
+  <object id="14" name="dirtflower" x="320" y="80" width="40" height="40">
+   <properties>
+    <property name="setflag" value="dirt1"/>
+    <property name="setvalue" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="15" name="enemy" x="130" y="360">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="chase" type="bool" value="false"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="kipkip"/>
+    <property name="enemy" value="kipkip"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="enemy" x="530" y="360">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="chase" type="bool" value="false"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="kipkip"/>
+    <property name="enemy" value="kipkip"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="spike1" gid="213" x="280" y="200" width="40" height="40"/>
+  <object id="18" name="spike2" gid="213" x="320" y="200" width="40" height="40"/>
+  <object id="19" name="spike3" gid="213" x="360" y="200" width="40" height="40"/>
+  <object id="20" name="interactable" x="280" y="160" width="120" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1_1" value="* (Spikes.)"/>
+    <property name="text2_1" value="* (It's garden warfare...)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="8" name="controllers">
+  <object id="21" name="toggle" x="230" y="-50">
+   <properties>
+    <property name="flag" value="garden_ladder1"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="21"/>
+    <property name="target2" type="object" value="19"/>
+    <property name="target3" type="object" value="18"/>
+    <property name="target4" type="object" value="17"/>
+    <property name="target5" type="object" value="20"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="3" name="markers">
+  <object id="3" name="entry" x="340" y="600">
+   <properties>
+    <property name="player_state" value="CLIMB"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" x="340" y="520">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
