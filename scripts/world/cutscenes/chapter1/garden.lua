@@ -375,4 +375,80 @@ return {
 
         Game.world.music:resume()
     end;
+
+    ladder2 = function(cutscene, event) --Recycled cornplate puzzle
+        Game.world.music:pause()
+        local fanfare = Assets.playSound("moss_fanfare")
+        cutscene:wait(1.25)
+        local spike1 = Game.world:getEvent(17)
+        local spike2 = Game.world:getEvent(18)
+        local spike3 = Game.world:getEvent(19)
+        local spike4 = Game.world:getEvent(99)
+        local options = {
+            ["play_sound"] = false
+        }
+        fanfare:stop()
+        spike1:explode(0, 0, false)
+        spike2:explode(0, 0, false, options)
+        spike3:explode(0, 0, false, options)
+        spike4:explode(0, 0, false, options)
+        Game:setFlag("garden_ladder2", true)
+
+        Game.world.music:resume()
+    end;
+
+    dirt1 = function(cutscene, event)
+        local dirt = Game.world.player.children[2]
+        local vess = cutscene:getCharacter("vess")
+        local camera = Game.world.camera
+        local initial_x = Game.world.camera.x
+        local initial_y = Game.world.camera.y
+
+        Game:addFlag("dirtflowertiles", 1)
+        Game:setFlag("dirt_cutscene_active", true) -- Exiting climbing mode activates movement. So we have to set a flag to make Vess stuck in a collision box
+
+
+        dirt:setParent(Game.world)
+        dirt:setScale(2)
+        dirt.layer = Game.world.player.layer + 1
+        dirt:setPosition(Game.world.player.x - 20, Game.world.player.y - 75)
+        cutscene:detachCamera()
+        cutscene:wait(0.5)
+        camera.target = dirt
+        Assets.playSound("sparkle_glock")
+        Game.world.timer:everyInstant(1/2, function()
+            local sparkle = GravitySparkle(dirt.x + math.random(1, 40), dirt.y + 40, 1.5, 0.3) --(x, y, scale, gravity)
+            sparkle.layer = dirt.layer - 0.2
+            Game.world:addChild(sparkle)
+        end, 9)
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 20, 0.9))
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y + 10, 0.9))
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 0.9))
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y + 10, 0.9))
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 1.2))
+        cutscene:wait(1)
+        Assets.playSound("him_quick")
+        cutscene:wait(cutscene:slideTo(dirt, "dirt1", 1, "out-cubic"))
+        cutscene:wait(1)
+
+        Assets.playSound("item")
+
+        if Game:getFlag("dirtflowertiles") == 1 then
+            Game:setFlag("dirtflowertile_1", true)
+        elseif Game:getFlag("dirtflowertiles") == 2 then
+            Game:setFlag("dirtflowertile_2", true)
+        elseif Game:getFlag("dirtflowertiles") == 3 then
+            Game:setFlag("dirtflowertile_3", true)
+        end
+
+        dirt.alpha = 0
+        cutscene:wait(1)
+        
+        --Assets.playSound("noise")
+        cutscene:wait(cutscene:panTo(initial_x, initial_y, 1, "out-cubic"))
+        dirt:remove()
+        cutscene:attachCamera()
+        cutscene:wait(1)
+        Game:setFlag("dirt_cutscene_active", false)
+    end;
 }

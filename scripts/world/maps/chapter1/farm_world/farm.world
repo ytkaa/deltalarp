@@ -165,8 +165,22 @@
             "fileName": "garden_ladder1.tmx",
             "height": 640,
             "width": 680,
-            "x": 24120,
-            "y": -8431
+            "x": 23320,
+            "y": -8631
+        },
+        {
+            "fileName": "garden_manorladders/garden_manorladders.tmx",
+            "height": 2880,
+            "width": 2880,
+            "x": 23320,
+            "y": -7751
+        },
+        {
+            "fileName": "garden_ladder2.tmx",
+            "height": 640,
+            "width": 680,
+            "x": 24440,
+            "y": -8631
         }
     ],
     "onlyShowAdjacentMaps": false,
