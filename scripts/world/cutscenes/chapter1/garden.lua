@@ -414,7 +414,7 @@ return {
         dirt:setPosition(Game.world.player.x - 20, Game.world.player.y - 75)
         cutscene:detachCamera()
         cutscene:wait(0.5)
-        camera.target = dirt
+        camera.target = dirt --Despite everything, the camera still instantly snaps to the dirt's position instead of cleanly panning there.
         Assets.playSound("sparkle_glock")
         Game.world.timer:everyInstant(1/2, function()
             local sparkle = GravitySparkle(dirt.x + math.random(1, 40), dirt.y + 40, 1.5, 0.3) --(x, y, scale, gravity)
