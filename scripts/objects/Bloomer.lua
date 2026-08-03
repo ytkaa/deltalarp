@@ -1,5 +1,5 @@
 ---@class Bloomer : Event
----@field group     integer     *[property `group`]* Which tile button activates this
+---@field group     integer     *[property `group`]* Which trigger activates this
 local Bloomer, super = Class(Event)
 
 function Bloomer:init(x, y, properties)

@@ -59,7 +59,7 @@ return {
         cutscene:wait(1)
         cutscene:wait(cutscene:attachCamera())
         grace:remove()
-        print("She gone")
+        print("SHE'S GONE.")
     end;
 
     cornplate_puzzle = function(cutscene, event)

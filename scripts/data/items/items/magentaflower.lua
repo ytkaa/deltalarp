@@ -1,12 +1,12 @@
-local item, super = Class(HealItem, "kipcarrot")
+local item, super = Class(HealItem, "magentaflower")
 
 function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "KipCarrot"
+    self.name = "MagentaFlower"
     -- Name displayed when used in battle (optional)
-    self.use_name = nil
+    self.use_name = "MAGENTA FLOWER"
 
     -- Item type (item, key, weapon, armor)
     self.type = "item"
@@ -14,22 +14,22 @@ function item:init()
     self.icon = nil
 
     -- Battle description
-    self.effect = "Heals\n55 HP"
+    self.effect = "Heals team\n50 HP"
     -- Shop description
-    self.shop = "Not a\nKipkip\nHeals 55HP"
+    self.shop = ""
     -- Menu description
-    self.description = "Named after the similar looking Kipkip species. +55HP"
+    self.description = "A very edible flower. Can't even refuse the stem! \nHeals 50HP to the team."
 
     -- Amount healed (HealItem variable)
-    self.heal_amount = 55
+    self.heal_amount = 50
 
     -- Default shop price (sell price is halved)
-    self.price = 200
+    self.price = 400
     -- Whether the item can be sold
     self.can_sell = true
 
     -- Consumable target mode (ally, party, enemy, enemies, or none)
-    self.target = "ally"
+    self.target = "party"
     -- Where this item can be used (world, battle, all, or none)
     self.usable_in = "all"
     -- Item this item will get turned into when consumed
@@ -48,8 +48,8 @@ function item:init()
 
     -- Character reactions (key = party member id)
     self.reactions = {
-        grace = "It's good. For a carrot.",
-        tofer = "Check it..?",
+        grace = "Sure.. ??!?",
+        tofer = "Check it!",
     }
 end
 

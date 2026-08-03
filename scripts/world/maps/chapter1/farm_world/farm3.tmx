@@ -135,6 +135,8 @@
   <object id="46" name="npc" x="640" y="160" width="40" height="40">
    <properties>
     <property name="actor" value="shovel"/>
+    <property name="setflag" value="talked_to_shovel"/>
+    <property name="setvalue" type="bool" value="true"/>
     <property name="text1_1" value="* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel..."/>
     <property name="text1_2" value="* ...[wait:5]but I heard that there's something glamorous in that haybale."/>
     <property name="text2_1" value="* Not this one.[wait:5] Thought I'd clarify a bit."/>

@@ -842,6 +842,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "shovel",
+            ["setflag"] = "talked_to_shovel",
+            ["setvalue"] = true,
             ["text1_1"] = "* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel...",
             ["text1_2"] = "* ...[wait:5]but I heard that there's something glamorous in that haybale.",
             ["text2_1"] = "* Not this one.[wait:5] Thought I'd clarify a bit.",

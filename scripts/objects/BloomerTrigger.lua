@@ -10,13 +10,13 @@ function BloomerTrigger:onEnter(chara)
     if chara.is_player then
         for _, bloomer in pairs(Game.world:getEvents("bloomer")) do
             if bloomer.group == self.group then
-                print("We are group " .. tostring(bloomer.group) .. "!")
+                --print("We are group " .. tostring(bloomer.group) .. "!")
                 if bloomer.x < chara.x then
-                    Game.world:spawnBullet("bloombullet", bloomer.x, bloomer.y - 35, 0)
+                    Game.world:spawnBullet("bloombullet", bloomer.x, bloomer.y - 35, 0, 25, 2, 4)
                     bloomer:setSprite("world/events/bloomer/shoot_left")
                     bloomer.sprite:play(1/5, false, function() bloomer:setSprite("world/events/bloomer/idle", 1/math.random(2, 6))end)
                 else
-                    Game.world:spawnBullet("bloombullet", bloomer.x, bloomer.y - 35, math.pi)
+                    Game.world:spawnBullet("bloombullet", bloomer.x, bloomer.y - 35, math.pi, 25, 2, 4)
                     bloomer:setSprite("world/events/bloomer/shoot")
                     bloomer.sprite:play(1/5, false, function() bloomer:setSprite("world/events/bloomer/idle", 1/math.random(2, 6))end)
                 end

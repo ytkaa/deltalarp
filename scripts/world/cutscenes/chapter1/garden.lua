@@ -43,6 +43,7 @@ return {
                 Game:addFollower(colonel3)
                 Game:addFollower(colonel4)
                 Game:addFollower(colonel5)
+                cutscene:interpolateFollowers()
             else 
                 cutscene:text("* Alrighty lieutenant.[wait:5] We'll be here.")
             end
@@ -452,9 +453,9 @@ return {
         cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 20, 0.9))
         cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y + 10, 0.9))
         cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 0.9))
-        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y + 10, 0.9))
-        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 1.2))
-        cutscene:wait(1)
+        cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y + 10, 1.4))
+        --cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 1.2))
+        cutscene:wait(0.4)
         Assets.playSound("him_quick")
         cutscene:wait(cutscene:slideTo(dirt, "dirt1", panSpeed, "out-cubic"))
         camera.keep_in_bounds = true
@@ -500,5 +501,87 @@ return {
                 cutscene:text("* It's garden warfare...")
             end
         end
+    end;
+
+    shovel_plea = function(cutscene, event)
+        local shovel = cutscene:getCharacter("shovel")
+        local tofer = cutscene:getCharacter("tofer")
+        local vess = cutscene:getCharacter("vess")
+        local camera = Game.world.camera
+        local music = Music()
+
+        local x, y = shovel:getScreenPos()
+
+        local speaker = function(speaker)
+            cutscene:setSpeaker(speaker)
+        end
+
+        local snap = function(who)
+            speaker(who)
+            camera.target = who
+            Assets.playSound("noise")
+        end
+        
+        Game.world.music:pause()
+
+        speaker(shovel)
+        cutscene:text("* HELP ??!?")
+        cutscene:wait(cutscene:alert(vess, 1))
+        vess:faceTowards(shovel)
+
+        if x > 600 or x < 40 or y > 440 or y < 40 then
+            cutscene:detachCamera()
+            cutscene:wait(cutscene:panTo(shovel.x, shovel.y, 1.5, "out-cubic"))
+            cutscene:setTextboxTop(false)
+        end
+        cutscene:wait(0.5)
+        cutscene:text("* Hi,[wait:5] so,[wait:5] I don't know what happened.")
+        cutscene:text("* But,[wait:5] as a mere lowly shovel,[wait:5] I have managed to get stuck atop this pillar!")
+        cutscene:text("* I hadn't the faintest clue I was this talented!")
+        cutscene:text("* Alas,[wait:5] this is the greatest extent of my talent.")
+        cutscene:text("* I won't even ATTEMPT to build a bridge of [color:purple]glamorous flowers[color:reset] to escape this prison of altitude!")
+        cutscene:text("* If only someone dashing and talented themself could RESCUE me from this peril!")
+        cutscene:text("* Someone like YOU!")
+        snap(tofer)
+        cutscene:attachCameraImmediate()
+        music:play("tofer")
+        music:seek(2)
+        cutscene:text("[face:tofer, -19, -13]* Check it![sound:tofer_checkit][wait:5] That's gotta \nbe me!")
+        music:pause()
+        snap(shovel)
+        cutscene:text("* Like YOU,[wait:5] in the gray!")
+        snap(tofer)
+        music:resume()
+        cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] That's me.[wait:5] \nI got a gray jacket \nback at the manor!")
+        snap(shovel)
+        music:pause()
+        if Game:getFlag("talked_to_shovel", false) then
+            cutscene:text("[speed:1.25]* YOU !!![wait:5] IN THE PURPLE AND WHITE THING !!!")
+            cutscene:text("[speed:1.25][next]* THE ONE WHO TALKED TO ME EARLIER !!![wait:5] PLEASE ??!?")
+        else
+            cutscene:text("[speed:1.25][next]* YOU !!![wait:5] IN THE PURPLE AND WHITE THING !!! PLEASE ??!?")
+        end
+        snap(tofer)
+        music:resume()
+        cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Don't worry.[wait:5] \nI'll save you,[wait:5] shovelio![wait:5] \n[voice:none][sound:tofer_checkit]:joy:")
+        snap(shovel)
+        music:pause()
+        cutscene:text("[next]* I don't WAN")
+        snap(tofer)
+        music:resume()
+        cutscene:text("[face:tofer, -19, -13]* Me and my [wait:5][color:red]LIL BUD[color:reset][wait:5] are \nhere to HELP!")
+        speaker(nil)
+        music:stop()
+        cutscene:text("[noskip]* ([sound:cd_bagel/noelle][color:yellow]NEW QUEST[color:reset]:[wait:20] Save [color:blue]SHOVEL[color:reset]!)[wait:1s]", nil, nil)
+        speaker(tofer)
+        cutscene:text("[face:tofer, -19, -13]* We gotchu![sound:tofer_checkit]")
+
+        camera.target = nil
+        Assets.playSound("noise")
+        Game.world.music:resume()
+
+        Game:setFlag("shovel_plea_active", false)
+        print("QUICKSAVED.")
+        Game:saveQuick()
     end;
 }

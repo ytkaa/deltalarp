@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 49,
+  nextobjectid = 51,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladder 1"
@@ -754,6 +754,34 @@ return {
           y = 160,
           width = 40,
           height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 49,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 560,
+          width = 40,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 50,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 560,
+          width = 40,
+          height = 80,
           rotation = 0,
           opacity = 1,
           visible = true,

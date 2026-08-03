@@ -24,6 +24,9 @@ function Mod:init()
     Game:registerEvent("bloomertrigger", function(data)
         return BloomerTrigger(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
     end)
+    Game:registerEvent("bloomobe", function(data)
+        return Bloomobe(data.x, data.y, data.properties)
+    end)
 
     --Annoying music bullshit
     Utils.merge(MUSIC_VOLUMES, {
