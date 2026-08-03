@@ -75,7 +75,7 @@ function character:init()
     self.menu_icon_offset = nil
 
     -- Message shown on gameover (optional)
-    self.gameover_message = { "Check it!" }
+    self.gameover_message = { "Check it![sound:tofer_checkit]" }
 end
 
 function character:onLevelUp(level)

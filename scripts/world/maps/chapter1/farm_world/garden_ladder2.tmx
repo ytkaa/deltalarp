@@ -127,9 +127,8 @@
   <object id="19" name="spike3" gid="213" x="360" y="200" width="40" height="40"/>
   <object id="20" name="interactable" x="280" y="160" width="120" height="40">
    <properties>
+    <property name="cutscene" value="chapter1/garden.garden_warfare"/>
     <property name="solid" type="bool" value="true"/>
-    <property name="text1_1" value="* (Spikes.)"/>
-    <property name="text2_1" value="* (It's garden warfare...)"/>
    </properties>
   </object>
   <object id="30" name="pushblock" x="280" y="400" width="40" height="40"/>
@@ -143,9 +142,8 @@
   <object id="96" name="pushblock" x="360" y="360" width="40" height="40"/>
   <object id="97" name="interactable" x="200" y="360" width="40" height="40">
    <properties>
+    <property name="cutscene" value="chapter1/garden.garden_warfare"/>
     <property name="solid" type="bool" value="true"/>
-    <property name="text1_1" value="* (Spikes.)"/>
-    <property name="text2_1" value="* (It's garden warfare...)"/>
    </properties>
   </object>
   <object id="99" name="spike" gid="213" x="200" y="400" width="40" height="40"/>
@@ -192,7 +190,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup color="#00ffff" id="12" name="blockcollision">
+ <objectgroup color="#00ffff" id="12" name="blockcollision" locked="1">
   <object id="63" x="160" y="360" width="40" height="40"/>
   <object id="64" x="240" y="400" width="40" height="40"/>
   <object id="65" x="200" y="360" width="40" height="40"/>

@@ -18,6 +18,12 @@ function Mod:init()
     Game:registerEvent("dirtflowertile", function(data)
         return DirtFlowerTile(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
     end)
+    Game:registerEvent("bloomer", function(data)
+        return Bloomer(data.x, data.y, data.properties)
+    end)
+    Game:registerEvent("bloomertrigger", function(data)
+        return BloomerTrigger(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
+    end)
 
     --Annoying music bullshit
     Utils.merge(MUSIC_VOLUMES, {

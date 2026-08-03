@@ -407,9 +407,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["solid"] = true,
-            ["text1_1"] = "* (Spikes.)",
-            ["text2_1"] = "* (It's garden warfare...)"
+            ["cutscene"] = "chapter1/garden.garden_warfare",
+            ["solid"] = true
           }
         }
       }

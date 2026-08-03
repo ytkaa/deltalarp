@@ -146,6 +146,8 @@ return {
         cutscene:text("* Lieutenant,[wait:5] when you meet that GARDNER,[wait:5] don't run away !!")
         cutscene:text("* Stand your ground,[wait:5] and...[wait:5] and give him hell,[wait:5] you hear me !!")
         Game.world.music:resume()
+
+        --Jimmy check
         if (Game:getFlag("jimmy_rustled", false)) == true then
             cutscene:wait(1)
             Game.world.music:pause()
@@ -160,6 +162,23 @@ return {
             cutscene:text("* Zah ha ha!")
             Game.world.music:resume()
         end
+
+        --Violence check
+        if Game:getFlag("encounter#colonel:violenced", false) or Game:getFlag("encounter#colonel_squad:violenced", false) or Game:getFlag("encounter#colonel_fireteam:violenced", false) then
+            cutscene:wait(1)
+            Game.world.music:pause()
+            cutscene:text("* WAIT !!")
+            cutscene:text("* Lieutenant...[wait:5] I just got word...")
+            cutscene:text("* I just got word...[wait:5] that you [color:red]BEAT UP[color:reset] some of my fellow colonels earlier !!")
+            cutscene:wait(1)
+            cutscene:text("* ...")
+            cutscene:wait(1)
+            cutscene:text("* Well, GOOD.[wait:5][sound:levelup] That's extra training for the company !!")
+            cutscene:wait(1)
+            cutscene:text("* Welph,[wait:5] that'll be all,[wait:5] lieutenant.")
+            Game.world.music:resume()
+        end
+
         cutscene:setSprite(colonel, "idle") 
     end;
 

@@ -397,12 +397,10 @@ return {
         Game.world.music:resume()
     end;
 
-    dirt1 = function(cutscene, event)
+    dirt_climb = function(cutscene, event)
         local dirt = Game.world.player.children[2]
         local vess = cutscene:getCharacter("vess")
         local camera = Game.world.camera
-        local initial_x = Game.world.camera.x
-        local initial_y = Game.world.camera.y
 
         Game:addFlag("dirtflowertiles", 1)
         Game:setFlag("dirt_cutscene_active", true) -- Exiting climbing mode activates movement. So we have to set a flag to make Vess stuck in a collision box
@@ -415,6 +413,36 @@ return {
         cutscene:detachCamera()
         cutscene:wait(0.5)
         camera.target = dirt --Despite everything, the camera still instantly snaps to the dirt's position instead of cleanly panning there.
+        cutscene:gotoCutscene("chapter1/garden.dirt1", dirt, 1)
+    end;
+
+    dirt_ground = function(cutscene, event)
+        local dirt = Game.world.player.children[2]
+        local vess = cutscene:getCharacter("vess")
+        local camera = Game.world.camera
+
+        Game:addFlag("dirtflowertiles", 1)
+        Game:setFlag("dirt_cutscene_active", true) -- This is superfluous since we're not exiting climbing mode. But hey
+
+
+        dirt:setParent(Game.world)
+        dirt:setScale(2)
+        dirt.layer = Game.world.player.layer + 1
+        dirt:setPosition(Game.world.player.x - 20, Game.world.player.y - 75)
+        --cutscene:detachCamera() --The camera mustn't be detached, since we aren't exiting from climbing mode.
+        cutscene:wait(0.5)
+        camera.keep_in_bounds = false
+        camera.target = dirt --Despite everything, the camera still instantly snaps to the dirt's position instead of cleanly panning there.
+        cutscene:gotoCutscene("chapter1/garden.dirt1", dirt, 1.5)
+    end;
+
+    dirt1 = function(cutscene, dirt, panSpeed)
+        --local dirt = Game.world.player.children[2]
+        local vess = cutscene:getCharacter("vess")
+        local camera = Game.world.camera
+        --local initial_x = Game.world.camera.x
+        --local initial_y = Game.world.camera.y
+
         Assets.playSound("sparkle_glock")
         Game.world.timer:everyInstant(1/2, function()
             local sparkle = GravitySparkle(dirt.x + math.random(1, 40), dirt.y + 40, 1.5, 0.3) --(x, y, scale, gravity)
@@ -428,7 +456,8 @@ return {
         cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 1.2))
         cutscene:wait(1)
         Assets.playSound("him_quick")
-        cutscene:wait(cutscene:slideTo(dirt, "dirt1", 1, "out-cubic"))
+        cutscene:wait(cutscene:slideTo(dirt, "dirt1", panSpeed, "out-cubic"))
+        camera.keep_in_bounds = true
         cutscene:wait(1)
 
         Assets.playSound("item")
@@ -445,10 +474,31 @@ return {
         cutscene:wait(1)
         
         --Assets.playSound("noise")
-        cutscene:wait(cutscene:panTo(initial_x, initial_y, 1, "out-cubic"))
+        cutscene:wait(cutscene:panTo(vess.x, vess.y, panSpeed, "out-cubic"))
         dirt:remove()
         cutscene:attachCamera()
         cutscene:wait(1)
         Game:setFlag("dirt_cutscene_active", false)
+        
+    end;
+
+    garden_warfare = function(cutscene, event)
+        -- All this for one joke
+        if event.interact_count == 1 then
+            cutscene:text("* Spikes.")
+            if Game.world.map.name == "Garden - Ladder 1" and Game:getFlag("one_too", false) == false then
+                Game:setFlag("two_too", true)
+            elseif Game.world.map.name == "Garden - Ladder 2" and Game:getFlag("two_too", false) == false then
+                Game:setFlag("one_too", true)
+            end
+        else
+            if Game:getFlag("two_too") and Game.world.map.name == "Garden - Ladder 2" then
+                cutscene:text("* It's garden warfare,[wait:5] too.")
+            elseif Game:getFlag("one_too") and Game.world.map.name == "Garden - Ladder 1" then
+                cutscene:text("* It's garden warfare,[wait:5] too.")
+            else
+                cutscene:text("* It's garden warfare...")
+            end
+        end
     end;
 }
