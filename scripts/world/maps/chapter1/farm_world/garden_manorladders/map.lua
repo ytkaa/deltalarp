@@ -6,6 +6,10 @@ function garden_manorladders:onEnter()
         Game.world.player:addChild(dirtFlower)
         dirtFlower:setPosition(dirtFlower.x, dirtFlower.y - 10)
     end
+    if Game:getFlag("shovel_quest", 0) > 0 then
+        Game:setFlag("shovel_lines", true)
+        Game:addFlag("shovel_quest", 1)
+    end
 end;
 
 return garden_manorladders

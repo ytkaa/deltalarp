@@ -5,7 +5,7 @@ local BloomBullet, super = Class(WorldBullet)
 ---@param y number # The Y position of the bullet
 ---@param dir number # The dir (in radians) of the bullet
 ---@param speed number # The speed the bullet will move at in the specified direction
-function BloomBullet:init(x, y, dir, damage, fadeTime, iFrames)
+function BloomBullet:init(x, y, dir, damage, iFrames)
     -- Last argument = sprite path
     super.init(self, x, y, "bullets/bloombullet")
 
@@ -18,13 +18,15 @@ function BloomBullet:init(x, y, dir, damage, fadeTime, iFrames)
     self.physics.match_rotation = false
     self.sprite:setRotationOrigin(0.5)
     self.collider = CircleCollider(self, self.width/2, self.height/2, self.width/2 + 2)
-    self:fadeOutAndRemove(fadeTime)
+    self.remove_offscreen = true
 end
 
 function BloomBullet:update()
     self.sprite.rotation = self.sprite.rotation + 0.4
 
     super.update(self)
+
+    if not self.world.in_battle_area then self:fadeOutSpeedAndRemove(0.25) end
 end
 
 return BloomBullet

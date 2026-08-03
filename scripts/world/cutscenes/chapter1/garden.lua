@@ -536,7 +536,8 @@ return {
         end
         cutscene:wait(0.5)
         cutscene:text("* Hi,[wait:5] so,[wait:5] I don't know what happened.")
-        cutscene:text("* But,[wait:5] as a mere lowly shovel,[wait:5] I have managed to get stuck atop this pillar!")
+        cutscene:text("* But,[wait:5] as a mere lowly shovel,[wait:5] I have managed to get stuck atop this pillar...")
+        cutscene:text("* ...[wait:5]surrounded by hostile and ravenous flora!")
         cutscene:text("* I hadn't the faintest clue I was this talented!")
         cutscene:text("* Alas,[wait:5] this is the greatest extent of my talent.")
         cutscene:text("* I won't even ATTEMPT to build a bridge of [color:purple]glamorous flowers[color:reset] to escape this prison of altitude!")
@@ -546,7 +547,7 @@ return {
         cutscene:attachCameraImmediate()
         music:play("tofer")
         music:seek(2)
-        cutscene:text("[face:tofer, -19, -13]* Check it![sound:tofer_checkit][wait:5] That's gotta \nbe me!")
+        cutscene:text("[face:tofer, -19, -13]* Check it![sound:tofer_checkit][wait:5] That's gotta \nbe me![wait:5] Dashing,[wait:5] and \nravenous!")
         music:pause()
         snap(shovel)
         cutscene:text("* Like YOU,[wait:5] in the gray!")
@@ -574,13 +575,14 @@ return {
         music:stop()
         cutscene:text("[noskip]* ([sound:cd_bagel/noelle][color:yellow]NEW QUEST[color:reset]:[wait:20] Save [color:blue]SHOVEL[color:reset]!)[wait:1s]", nil, nil)
         speaker(tofer)
-        cutscene:text("[face:tofer, -19, -13]* We gotchu![sound:tofer_checkit]")
+        cutscene:text("[face:tofer, -19, -13]* I gotchu![sound:tofer_checkit]")
 
         camera.target = nil
         Assets.playSound("noise")
         Game.world.music:resume()
 
         Game:setFlag("shovel_plea_active", false)
+        Game:setFlag("shovel_quest", 1)
         print("QUICKSAVED.")
         Game:saveQuick()
     end;

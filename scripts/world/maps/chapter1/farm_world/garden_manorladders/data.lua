@@ -9,8 +9,8 @@ return {
   height = 72,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 16,
-  nextobjectid = 311,
+  nextlayerid = 17,
+  nextobjectid = 313,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladders"
@@ -3333,6 +3333,39 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 16,
+      name = "objects_shovel_lines",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 311,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 1180,
+          y = 680,
+          width = 580,
+          height = 280,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = false,
+            ["script"] = "shovel_lines"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 11,
       name = "objects_camera_shenanigans",
       class = "",
@@ -3888,6 +3921,24 @@ return {
             ["target2"] = { id = 60 },
             ["target3"] = { id = 58 },
             ["target4"] = { id = 59 }
+          }
+        },
+        {
+          id = 312,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1690,
+          y = 310,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "shovel_lines",
+            ["inverted"] = false,
+            ["target1"] = { id = 311 }
           }
         }
       }

@@ -31,11 +31,11 @@ function Bloomobe:update()
         local angle = MathUtils.angle(self.x, self.y, chara.x, chara.y)
 
         for i = 1, 6 do
-            self.world:spawnBullet("bloombullet", self.x, self.y, dir, 12, 3)
+            self.world:spawnBullet("bloombullet", self.x, self.y, dir, 12)
             dir = dir + math.rad(60)
         end
 
-        self.world:spawnBullet("bloombullet", self.x, self.y, angle, 12, 3)
+        self.world:spawnBullet("bloombullet", self.x, self.y, angle, 12)
 
     end
 end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="72" height="72" tilewidth="40" tileheight="40" infinite="0" nextlayerid="16" nextobjectid="311">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="72" height="72" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="313">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -315,7 +315,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup color="#0000ff" id="8" name="collision">
+ <objectgroup color="#0000ff" id="8" name="collision" locked="1">
   <object id="32" x="0" y="2640" width="680" height="40"/>
   <object id="33" x="0" y="2480" width="680" height="40"/>
   <object id="34" x="680" y="2520" width="40" height="120"/>
@@ -853,6 +853,14 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup color="#aa557f" id="16" name="objects_shovel_lines">
+  <object id="311" name="script" x="1180" y="680" width="580" height="280">
+   <properties>
+    <property name="once" type="bool" value="false"/>
+    <property name="script" value="shovel_lines"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="11" name="objects_camera_shenanigans"/>
  <objectgroup color="#ff0000" id="9" name="battleareas" visible="0">
   <object id="57" x="960" y="440" width="320" height="1000"/>
@@ -1005,6 +1013,14 @@
     <property name="target2" type="object" value="60"/>
     <property name="target3" type="object" value="58"/>
     <property name="target4" type="object" value="59"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="312" name="toggle" x="1690" y="310">
+   <properties>
+    <property name="flag" value="shovel_lines"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="311"/>
    </properties>
    <point/>
   </object>
