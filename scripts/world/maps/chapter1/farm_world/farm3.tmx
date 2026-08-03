@@ -137,7 +137,7 @@
     <property name="actor" value="shovel"/>
     <property name="setflag" value="talked_to_shovel"/>
     <property name="setvalue" type="bool" value="true"/>
-    <property name="text1_1" value="* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel..."/>
+    <property name="text1_1" value="* Hi,[wait:5] so,[wait:5] I'm a mere lowly shovel..."/>
     <property name="text1_2" value="* ...[wait:5]but I heard that there's something glamorous in that haybale."/>
     <property name="text2_1" value="* Not this one.[wait:5] Thought I'd clarify a bit."/>
     <property name="text2_2" value="* Hm,[wait:5] what's that?[wait:5] My &quot;talent?&quot;"/>

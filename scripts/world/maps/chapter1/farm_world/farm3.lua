@@ -844,7 +844,7 @@ return {
             ["actor"] = "shovel",
             ["setflag"] = "talked_to_shovel",
             ["setvalue"] = true,
-            ["text1_1"] = "* Hi,[wait:5] so,[wait:5] I'm just a lowly shovel...",
+            ["text1_1"] = "* Hi,[wait:5] so,[wait:5] I'm a mere lowly shovel...",
             ["text1_2"] = "* ...[wait:5]but I heard that there's something glamorous in that haybale.",
             ["text2_1"] = "* Not this one.[wait:5] Thought I'd clarify a bit.",
             ["text2_2"] = "* Hm,[wait:5] what's that?[wait:5] My \"talent?\"",
