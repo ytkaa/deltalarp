@@ -92,9 +92,16 @@ function character:canEquip(item, slot_type, slot_index)
 end
 
 function character:getReaction(item, user)
-    if user.id ~= self.id or item.type == "key" then --We have to account for equipping anyone who isn't Tofer.
+    if user.id ~= self.id then --We have to account for equipping anyone who isn't Tofer.
         return super.getReaction(self, item, user)
-    else --But if it is Tofer...
+    elseif item then
+        if item.type == "key" then
+            return super.getReaction(self, item, user)
+        else
+            Assets.playSound("tofer_checkit")
+            return "Check it!"
+        end
+    else
         Assets.playSound("tofer_checkit")
         return "Check it!"
     end
