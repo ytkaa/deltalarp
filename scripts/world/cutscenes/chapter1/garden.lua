@@ -30,7 +30,6 @@ return {
             cutscene:text("* Well lieutenant?[wait:5] What'll it be?")
             local choice = cutscene:choicer({"Yes \npatrol", "No \npatrol"})
             if choice == 1 then
-                Game:setFlag("leading_colonels_squad", true)
                 cutscene:text("* Alright lieutenant !!!!!!!!!")
                 cutscene:text("* Lead the way !!")
                 colonel:convertToFollower()
@@ -44,6 +43,7 @@ return {
                 Game:addFollower(colonel4)
                 Game:addFollower(colonel5)
                 cutscene:interpolateFollowers()
+                Game:setFlag("leading_colonels_squad", true)
             else 
                 cutscene:text("* Alrighty lieutenant.[wait:5] We'll be here.")
             end
