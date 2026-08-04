@@ -188,6 +188,13 @@
             "width": 1160,
             "x": 25280,
             "y": -10231
+        },
+        {
+            "fileName": "garden_ladder_slide.tmx",
+            "height": 1920,
+            "width": 640,
+            "x": 26560,
+            "y": -9911
         }
     ],
     "onlyShowAdjacentMaps": false,

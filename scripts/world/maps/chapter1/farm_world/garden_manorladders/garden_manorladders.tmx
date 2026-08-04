@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="72" height="72" tilewidth="40" tileheight="40" infinite="0" nextlayerid="18" nextobjectid="361">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="72" height="72" tilewidth="40" tileheight="40" infinite="0" nextlayerid="23" nextobjectid="397">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -11,18 +11,63 @@
  <tileset firstgid="101" source="../../../../tilesets/farm_world.tsx"/>
  <tileset firstgid="201" source="../../../../tilesets/grass_battleboard.tsx"/>
  <tileset firstgid="301" source="../../../../tilesets/garden_extras.tsx"/>
- <tileset firstgid="340" source="../../../../tilesets/garden_slide.tsx"/>
+ <tileset firstgid="341" source="../../../../tilesets/garden_slide.tsx"/>
+ <tileset firstgid="441" source="../../../../tilesets/farm_world_extras.tsx"/>
+ <group id="18" name="deco" locked="1">
+  <objectgroup id="22" name="objects_background" visible="0" parallaxx="0.6" parallaxy="0.6">
+   <object id="394" gid="465" x="270" y="100" width="38" height="32"/>
+   <object id="395" gid="465" x="1250" y="470" width="38" height="32"/>
+  </objectgroup>
+  <objectgroup id="21" name="objects_midground" visible="0" parallaxx="0.75" parallaxy="0.75">
+   <object id="372" gid="462" x="620" y="1450" width="66" height="50"/>
+   <object id="373" gid="464" x="830" y="1560" width="86" height="66"/>
+   <object id="374" gid="462" x="320" y="1990" width="66" height="50"/>
+   <object id="375" gid="462" x="280" y="1740" width="66" height="50"/>
+   <object id="376" gid="462" x="150" y="1580" width="66" height="50"/>
+   <object id="377" gid="462" x="370" y="1060" width="66" height="50"/>
+   <object id="378" gid="462" x="180" y="810" width="66" height="50"/>
+   <object id="379" gid="464" x="1660" y="1710" width="86" height="66"/>
+   <object id="380" gid="464" x="1970" y="1650" width="86" height="66"/>
+   <object id="381" gid="464" x="1080" y="1290" width="86" height="66"/>
+   <object id="382" gid="464" x="1360" y="720" width="86" height="66"/>
+   <object id="383" gid="464" x="630" y="210" width="86" height="66"/>
+   <object id="384" gid="464" x="940" y="260" width="86" height="66"/>
+   <object id="385" gid="462" x="2080" y="2320" width="66" height="50"/>
+   <object id="386" gid="462" x="2170" y="2140" width="66" height="50"/>
+   <object id="387" gid="462" x="2580" y="1450" width="66" height="50"/>
+   <object id="388" gid="462" x="2650" y="1240" width="66" height="50"/>
+   <object id="389" gid="462" x="2600" y="650" width="66" height="50"/>
+   <object id="390" gid="462" x="2750" y="670" width="66" height="50"/>
+   <object id="391" gid="463" x="1070" y="170" width="52" height="56"/>
+   <object id="392" gid="463" x="1110" y="230" width="52" height="56"/>
+   <object id="393" gid="463" x="1140" y="90" width="52" height="56"/>
+  </objectgroup>
+  <objectgroup id="20" name="objects_foreground" visible="0" parallaxx="0.8" parallaxy="0.8">
+   <object id="361" gid="460" x="70" y="1960" width="196" height="186"/>
+   <object id="362" gid="460" x="1690" y="2060" width="196" height="186"/>
+   <object id="363" gid="460" x="2640" y="1750" width="196" height="186"/>
+   <object id="364" gid="460" x="2210" y="730" width="196" height="186"/>
+   <object id="365" gid="460" x="600" y="600" width="196" height="186"/>
+   <object id="366" gid="461" x="1130" y="1980" width="208" height="196"/>
+   <object id="367" gid="461" x="2050" y="1560" width="208" height="196"/>
+   <object id="368" gid="461" x="560" y="940" width="208" height="196"/>
+   <object id="369" gid="461" x="570" y="1300" width="208" height="196"/>
+   <object id="370" gid="461" x="2580" y="420" width="208" height="196"/>
+   <object id="371" gid="461" x="2110" y="140" width="208" height="196"/>
+   <object id="396" gid="460" x="1670" y="280" width="196" height="186"/>
+  </objectgroup>
+ </group>
  <layer id="1" name="Tile Layer 1" width="72" height="72">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,29,29,0,0,0,0,0,29,29,29,0,0,0,0,0,29,29,29,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,5,0,0,0,0,5,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,5,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,5,0,0,0,0,5,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,5,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,5,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,6,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,6,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,29,29,0,0,0,0,0,29,29,29,0,0,0,0,0,29,29,29,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,0,0,0,0,5,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,0,0,0,0,5,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,0,0,0,39,39,39,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,0,0,0,49,49,49,0,0,361,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,5,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,6,5,5,0,0,0,0,0,5,7,7,0,0,0,0,0,5,5,6,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,5,0,0,0,0,5,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,6,6,5,0,0,0,0,0,6,5,5,0,0,0,0,0,7,7,5,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,5,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,0,21,9,9,9,9,9,9,9,5,9,9,9,9,9,9,9,5,9,9,9,9,9,9,9,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -654,7 +699,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup color="#ff007f" id="3" name="objects_party" visible="0">
+ <objectgroup color="#ff007f" id="3" name="objects_party">
   <object id="1" name="transition" x="-40" y="2520" width="40" height="120">
    <properties>
     <property name="map" value="chapter1/farm_world/garden_manor"/>
@@ -717,7 +762,7 @@
     <property name="text1_1" value="* (There's just a...[wait:5] massive pile of dirt in the way.)"/>
     <property name="text1_2" value="* (You think about getting someone to dig it up.)"/>
     <property name="text2_1" value="* (You try digging the pile yourself...)"/>
-    <property name="text2_2" value="[sound:error][wait:5]* (It's no use.)"/>
+    <property name="text2_2" value="[sound:error][wait:15]* (It's no use.)"/>
     <property name="text2_3" value="* (You don't even think about getting Tofer[sound:tofer_checkit][wait:10] to dig up the dirt pile.)"/>
     <property name="text3_1" value="* (If only anyone here was talented enough to clear the way...)"/>
    </properties>

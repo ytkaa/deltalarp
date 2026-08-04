@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="864" tileheight="580" tilecount="10" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="1160" tileheight="720" tilecount="11" columns="0">
  <editorsettings>
   <export target="garden_extras.lua" format="lua"/>
  </editorsettings>
@@ -33,5 +33,8 @@
  </tile>
  <tile id="38">
   <image source="../../../assets/sprites/tilesets/farm_world/garden/dirt_pile.png" width="360" height="360"/>
+ </tile>
+ <tile id="39">
+  <image source="../../../assets/sprites/tilesets/farm_world/garden/purple_ladder3.png" width="1160" height="720"/>
  </tile>
 </tileset>

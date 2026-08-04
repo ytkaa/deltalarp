@@ -9,8 +9,8 @@ return {
   height = 16,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 13,
-  nextobjectid = 103,
+  nextlayerid = 16,
+  nextobjectid = 105,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladder 2"
@@ -35,6 +35,103 @@ return {
     }
   },
   layers = {
+    {
+      type = "group",
+      id = 13,
+      name = "deco",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      layers = {
+        {
+          type = "tilelayer",
+          x = 0,
+          y = 0,
+          width = 17,
+          height = 16,
+          id = 14,
+          name = "star",
+          class = "",
+          visible = false,
+          opacity = 1,
+          offsetx = 0,
+          offsety = 0,
+          parallaxx = 0.5,
+          parallaxy = 0.5,
+          properties = {},
+          encoding = "lua",
+          data = {
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 12, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3,
+            14, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            11, 3, 3, 3, 3, 3, 3, 14, 3, 3, 3, 3, 3, 4, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 14, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 14, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 14, 11, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 13, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+          }
+        },
+        {
+          type = "objectgroup",
+          draworder = "topdown",
+          id = 15,
+          name = "objects_midground",
+          class = "",
+          visible = true,
+          opacity = 1,
+          offsetx = 0,
+          offsety = 0,
+          parallaxx = 0.7,
+          parallaxy = 0.7,
+          properties = {},
+          objects = {
+            {
+              id = 103,
+              name = "",
+              type = "",
+              shape = "rectangle",
+              x = 100,
+              y = 50,
+              width = 52,
+              height = 56,
+              rotation = 0,
+              opacity = 1,
+              gid = 223,
+              visible = true,
+              properties = {}
+            },
+            {
+              id = 104,
+              name = "",
+              type = "",
+              shape = "rectangle",
+              x = 610,
+              y = 510,
+              width = 52,
+              height = 56,
+              rotation = 0,
+              opacity = 1,
+              gid = 223,
+              visible = true,
+              properties = {}
+            }
+          }
+        }
+      }
+    },
     {
       type = "tilelayer",
       x = 0,

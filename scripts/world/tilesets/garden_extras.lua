@@ -4,8 +4,8 @@ return {
   tiledversion = "1.12.2",
   name = "garden_extras",
   class = "",
-  tilewidth = 864,
-  tileheight = 580,
+  tilewidth = 1160,
+  tileheight = 720,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 10,
+  tilecount = 11,
   tiles = {
     {
       id = 29,
@@ -84,6 +84,12 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/garden/dirt_pile.png",
       width = 360,
       height = 360
+    },
+    {
+      id = 39,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/purple_ladder3.png",
+      width = 1160,
+      height = 720
     }
   }
 }
