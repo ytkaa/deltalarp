@@ -309,7 +309,6 @@ return {
             ["text1_1"] = "* (It's the school corkboard.[wait:5]\nToday it says...)",
             ["text1_2"] = "* (...[wait:5]actually,[wait:5] it's quite a long message.[wait:5] You choose to skim the text.)",
             ["text1_3"] = "* (Apparently,[wait:5] it's harvest season...)",
-            ["text1_4"] = "* (...[wait:5]and there's been a major plumbing issue at the farm you like to frequent.)",
             ["text2_1"] = "* (You,[wait:5] of course,[wait:5] knew that already.)",
             ["text2_2"] = "* (You found this very,[wait:5] very[wait:25] intriguing.)",
             ["text2_3"] = "* (As an avid enjoyer of fresh produce.)",

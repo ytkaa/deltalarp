@@ -99,7 +99,7 @@ return {
           properties = {
             ["actor"] = "GONER_0",
             ["setflag"] = "GONER_0",
-            ["text1_1"] = "* [speed:0.3]Have you ever...",
+            ["text1_1"] = "* [speed:0.3][noskip]Have you ever...",
             ["text1_2"] = "*[speed:0.7] ...[wait:5]Never mind.[sound:egg]",
             ["text2_1"] = "* ..."
           }

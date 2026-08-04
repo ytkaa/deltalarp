@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 18,
-  nextobjectid = 357,
+  nextobjectid = 361,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladders"
@@ -2170,9 +2170,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 1520,
+          x = 1400,
           y = 800,
-          width = 40,
+          width = 160,
           height = 80,
           rotation = 0,
           opacity = 1,
@@ -2975,7 +2975,7 @@ return {
       id = 3,
       name = "objects_party",
       class = "",
-      visible = true,
+      visible = false,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -4222,6 +4222,48 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 358,
+          name = "shovel4",
+          type = "",
+          shape = "point",
+          x = 2420,
+          y = 940,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 359,
+          name = "shovel4",
+          type = "",
+          shape = "point",
+          x = 2420,
+          y = 1480,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 360,
+          name = "toferslide",
+          type = "",
+          shape = "point",
+          x = 2180,
+          y = 910,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -4481,6 +4523,26 @@ return {
             ["flag"] = "dirtflowertile_4",
             ["inverted"] = true,
             ["target1"] = { id = 342 }
+          }
+        },
+        {
+          id = 357,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 2310,
+          y = 490,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "shovel_quest_done",
+            ["inverted"] = true,
+            ["target1"] = { id = 165 },
+            ["target2"] = { id = 56 },
+            ["target3"] = { id = 163 }
           }
         }
       }

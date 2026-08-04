@@ -31,7 +31,7 @@
    <properties>
     <property name="actor" value="GONER_0"/>
     <property name="setflag" value="GONER_0"/>
-    <property name="text1_1" value="* [speed:0.3]Have you ever..."/>
+    <property name="text1_1" value="* [speed:0.3][noskip]Have you ever..."/>
     <property name="text1_2" value="*[speed:0.7] ...[wait:5]Never mind.[sound:egg]"/>
     <property name="text2_1" value="* ..."/>
    </properties>

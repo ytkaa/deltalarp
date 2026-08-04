@@ -286,7 +286,8 @@ return {
         cutscene:fadeIn(0)
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
-        Game.world.music:play("pursuit1")
+        Game.world.music:stop()
+        Game.world.music:play("pursuit1", 1)
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -336,7 +337,8 @@ return {
         cutscene:fadeIn(0)
         cutscene:wait(0.5)
         cutscene:text("[face:threat_pink]* I'd start runnin' if \nI were you.")
-        Game.world.music:play("pursuit1")
+        Game.world.music:stop()
+        Game.world.music:play("pursuit1", 1)
         cutscene:enableMovement()
         Game:setFlag("gardner_mid_chase", true)
         cutscene:wait(0.5)
@@ -428,6 +430,7 @@ return {
             cutscene:text("* Now we can save our encircled men !!", nil, colonel, options2)
             cutscene:text("* You're promoted to commander,[wait:5] lieutenant !!", nil, colonel, options2)
             cutscene:wait(cutscene:walkTo(colonel, "colonel_run", 2))
+            Game.party[1]:setFlag("title", "Commander\nRising in rank.")
         else
             return
         end

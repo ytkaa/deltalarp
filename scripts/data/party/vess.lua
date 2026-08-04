@@ -77,6 +77,14 @@ function character:init()
 
     -- Message shown on gameover (optional)
     self.gameover_message = nil
+
+    self.flags = {
+        ["title"] = "Vessel\nLost.",
+    }
+end
+
+function character:getTitle()
+    return "LV" .. self:getLevel() .. " " .. self:getFlag("title", "Vessel\nLost.")
 end
 
 function character:onLevelUp(level)

@@ -67,7 +67,6 @@
 Today it says...)</property>
     <property name="text1_2" value="* (...[wait:5]actually,[wait:5] it's quite a long message.[wait:5] You choose to skim the text.)"/>
     <property name="text1_3" value="* (Apparently,[wait:5] it's harvest season...)"/>
-    <property name="text1_4" value="* (...[wait:5]and there's been a major plumbing issue at the farm you like to frequent.)"/>
     <property name="text2_1" value="* (You,[wait:5] of course,[wait:5] knew that already.)"/>
     <property name="text2_2" value="* (You found this very,[wait:5] very[wait:25] intriguing.)"/>
     <property name="text2_3" value="* (As an avid enjoyer of fresh produce.)"/>
