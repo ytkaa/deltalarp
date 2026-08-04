@@ -28,7 +28,7 @@ function Bloomobe:update()
         Assets.playSound("bloomer", 1, 1/math.random(5, 8))
 
         local dir = 0
-        local angle = MathUtils.angle(self.x, self.y, chara.x, chara.y)
+        local angle = MathUtils.angle(self.x, self.y, self.world.soul.x, self.world.soul.y)
 
         for i = 1, 6 do
             self.world:spawnBullet("bloombullet", self.x, self.y, dir, 12)

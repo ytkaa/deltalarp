@@ -1,6 +1,7 @@
 return function(event, player, facing)
-    if Game:getFlag("shovel_lines", false) then
+    if Game:getFlag("shovel_lines", false) and not Game:getFlag("shovel_quest_done", false) then
         Game:setFlag("shovel_lines", false)
+        Game:addFlag("shovel_quest", 1)
 
         local shovelQuest = Game:getFlag("shovel_quest", 0)
         local shovel = Game.world:getCharacter("shovel")

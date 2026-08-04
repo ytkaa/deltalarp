@@ -181,6 +181,13 @@
             "width": 680,
             "x": 24440,
             "y": -8631
+        },
+        {
+            "fileName": "garden_ladder3.tmx",
+            "height": 2240,
+            "width": 1160,
+            "x": 25280,
+            "y": -10231
         }
     ],
     "onlyShowAdjacentMaps": false,

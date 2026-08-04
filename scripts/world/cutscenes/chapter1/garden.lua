@@ -441,6 +441,8 @@ return {
         --local dirt = Game.world.player.children[2]
         local vess = cutscene:getCharacter("vess")
         local camera = Game.world.camera
+        local tofer = cutscene:getCharacter("tofer")
+        local shovel = cutscene:getCharacter("shovel")
         --local initial_x = Game.world.camera.x
         --local initial_y = Game.world.camera.y
 
@@ -457,7 +459,7 @@ return {
         --cutscene:wait(cutscene:slideTo(dirt, dirt.x, dirt.y - 10, 1.2))
         cutscene:wait(0.4)
         Assets.playSound("him_quick")
-        cutscene:wait(cutscene:slideTo(dirt, "dirt1", panSpeed, "out-cubic"))
+        cutscene:wait(cutscene:slideTo(dirt, "dirt_slide", panSpeed, "out-cubic"))
         camera.keep_in_bounds = true
         cutscene:wait(1)
 
@@ -469,7 +471,27 @@ return {
             Game:setFlag("dirtflowertile_2", true)
         elseif Game:getFlag("dirtflowertiles") == 3 then
             Game:setFlag("dirtflowertile_3", true)
+        elseif Game:getFlag("dirtflowertiles") == 4 then
+            Game:setFlag("dirtflowertile_4", true)
+            Game:setFlag("shovel_quest_done", true)
+
+            dirt.alpha = 0
+            cutscene:wait(1)
+
+            cutscene:setSpeaker(shovel)
+            cutscene:wait(cutscene:panTo(shovel.x, shovel.y, 1, "out-cubic"))
+            cutscene:text("* Oh,[wait:5] thank goodness!")
+            Assets.playSound("jump")
+            cutscene:wait(cutscene:jumpTo(shovel, 1460, 900, 20, 1, "jump", "talk"))
+            local shovelPath = {
+                {1460, 1100},
+                {1940, 1100},
+                {1940, 940},
+                {2220, 940},
+            }
+            cutscene:slidePath(shovel, shovelPath, {["time"] = 3, ["loop"] = false, ["snap"] = false, ["relative"] = false})
         end
+
 
         dirt.alpha = 0
         cutscene:wait(1)
@@ -479,8 +501,105 @@ return {
         dirt:remove()
         cutscene:attachCamera()
         cutscene:wait(1)
+
         Game:setFlag("dirt_cutscene_active", false)
-        
+
+        if Game:getFlag("dirtflowertiles") ~= 4 then
+            print("QUICKSAVED.")
+            Game:saveQuick()
+            cutscene:look(vess, "down")
+        else
+            cutscene:setSpeaker(tofer)
+            cutscene:text("[face:tofer, -19, -13]* Check it![sound:tofer_checkit][wait:5] I just \nsaved Shovelio,[wait:5] [color:red]LIL BUD[color:reset]!")
+            --vess:faceTowards(tofer)
+            cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Let's go talk to \n'em. [wait:5][voice:none][sound:tofer_checkit]:joy:")
+            cutscene:wait(cutscene:fadeOut(1, {["music"] = 2}))
+            Assets.playSound("escaped")
+
+            cutscene:detachFollowers()
+            cutscene:detachCamera()
+            vess:setPosition(2080, 910)
+            tofer:setPosition(2120, 960)
+            cutscene:look(vess, "right")
+            camera:setPosition(2160, 900)
+
+            for _,member in pairs(Game.party) do
+                member:heal(999, false)
+            end
+
+            cutscene:wait(1)
+            cutscene:wait(cutscene:fadeIn(1))
+
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* Oh,[wait:5] how will I ever repay you for rescuing me from the [color:pink]depths[color:reset] of that tall pillar ??!?")
+            cutscene:setSpeaker(tofer)
+            cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] It's nothing.[wait:5] I resuscitate on the \nregular!")
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* Oh my LORD.")
+            cutscene:text("* LOOK,[wait:5] gray person![wait:5] YOUR actions have inspired me!")
+            cutscene:text("* I have come to realize that I am NOT a mere lowly shovel...")
+            cutscene:text("* ...[wait:5]I am a shovel of [color:yellow]HIGH REGARD[color:reset]!")
+            cutscene:text("* And thus,[wait:5] my shovelitudes have proven...[wait:5] more talentfull than I had ever envisioned!")
+            cutscene:text("* WATCH,[wait:5] as I realize my talent and put it to GOOD USE!")
+            cutscene:text("* By glamorously moving this pile of dirt!")
+
+            cutscene:setSprite(tofer, "tofer")
+            Assets.playSound("noise")
+
+            cutscene:wait(2)
+            cutscene:shakeCharacter(shovel)
+            cutscene:setSprite(shovel, "jump")
+            Assets.playSound("wing")
+            cutscene:wait(0.5)
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* Zah!", {["talk"] = false})
+            local dirtPile = Game.world:getEvent(163)
+            dirtPile:explode(math.random(-150, 25), math.random(-100, 50), true)
+            cutscene:wait(0.35)
+            dirtPile:explode(math.random(-150, 25), math.random(-100, 50), true)
+            cutscene:wait(0.35)
+            dirtPile:explode(math.random(-150, 25), math.random(-100, 50), true)
+            cutscene:wait(0.35)
+            dirtPile:explode(math.random(-150, 25), math.random(-100, 50), true)
+            cutscene:wait(1.5)
+            dirtPile:explode(-75, 0, false)
+
+            cutscene:wait(2)
+
+            cutscene:setAnimation(tofer, "cycle")
+            cutscene:setSpeaker(tofer)
+            local music = Music()
+            music:play("tofer")
+            music:seek(2)
+            cutscene:text("[face:tofer, -19, -13]* Heh![wait:5] That's classic \nshovelio for you![wait:5] Nice \nmoves,[wait:5] brotato.")
+            cutscene:text("[face:tofer, -19, -13]* I didn't know I was \nso inspiring to the \npeople!")
+            cutscene:wait(2)
+
+            cutscene:setSprite(tofer, "tofer")
+            Assets.playSound("noise")
+            music:stop()
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* Tofer.")
+            cutscene:text("* You are the most OBNOXIOUS person I have ever met.")
+            cutscene:setSpeaker(tofer)
+            cutscene:text("[face:tofer, -19, -13]* Heh!")
+            cutscene:text("[face:emotioner, -19, -13]* Wait,[wait:5] what?")
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* I must inquire...")
+            cutscene:text("* ...how the HELL are YOU planning to lead rebellion against the GARDNER ??!?")
+            cutscene:text("* If all you do is IRRITATE and TAKE UNDUE CREDIT ??!?")
+            cutscene:setSpeaker(tofer)
+            cutscene:text("[face:emotionerer, -19, -13]* I,[wait:5] well...")
+            cutscene:setSpeaker(shovel)
+            cutscene:text("* Gray person,[wait:5] I trust your intent and resolve...")
+            cutscene:text("* But PLEASE reconsider![wait:5] Allying with this individual!")
+            cutscene:text("* If you do not,[wait:5] I'm afraid he may lead you down a treacherous path...[wait:5] with a tumultuous end!")
+            cutscene:wait(2)
+            cutscene:text("* That is all.[wait:5] Goodbye to my gray knight...[wait:5] and the knave!")
+            Assets.playSound("drive")
+            cutscene:wait(cutscene:slideTo(shovel, shovel.x + 500, shovel.y))
+            shovel:remove()
+        end
     end;
 
     garden_warfare = function(cutscene, event)

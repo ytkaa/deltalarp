@@ -1,11 +1,11 @@
----@class BloomBullet : WorldBullet
-local BloomBullet, super = Class(WorldBullet)
+---@class BloomBulletClimb : ClimbEnemy
+local BloomBulletClimb, super = Class(ClimbEnemy)
 
 ---@param x number # The X position of the bullet
 ---@param y number # The Y position of the bullet
 ---@param dir number # The dir (in radians) of the bullet
 ---@param speed number # The speed the bullet will move at in the specified direction
-function BloomBullet:init(x, y, dir, damage, iFrames, speed)
+function BloomBulletClimb:init(x, y, dir, damage, iFrames, speed)
     -- Last argument = sprite path
     super.init(self, x, y, "bullets/bloombullet")
 
@@ -21,7 +21,7 @@ function BloomBullet:init(x, y, dir, damage, iFrames, speed)
     self.remove_offscreen = true
 end
 
-function BloomBullet:update()
+function BloomBulletClimb:update()
     self.sprite.rotation = self.sprite.rotation + 0.4
 
     super.update(self)
@@ -29,4 +29,4 @@ function BloomBullet:update()
     if not self.world.in_battle_area then self:fadeOutSpeedAndRemove(0.25) end
 end
 
-return BloomBullet
+return BloomBulletClimb
