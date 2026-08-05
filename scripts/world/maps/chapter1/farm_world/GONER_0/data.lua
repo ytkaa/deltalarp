@@ -11,7 +11,9 @@ return {
   tileheight = 40,
   nextlayerid = 6,
   nextobjectid = 11,
-  properties = {},
+  properties = {
+    ["music"] = "mus_sc_forget"
+  },
   tilesets = {
     {
       name = "GONER",

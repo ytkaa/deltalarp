@@ -769,6 +769,8 @@ return {
         local tofer = cutscene:getCharacter("tofer")
         local vess = cutscene:getCharacter("vess")
 
+        local music = Music()
+
         local speak = function(speaker, text)
             cutscene:setSpeaker(speaker)
             cutscene:text(text)
@@ -779,22 +781,27 @@ return {
         cutscene:wait(0.5)
 
         cutscene:detachCamera()
+        Game.world.music:fade(0, 1, function() Game.world.music:pause() end)
         cutscene:wait(cutscene:panTo("sofer_scene", 2, "out-cubic"))
 
+        music:play("whoot3", 1)
         speak(grace, "[face:snark, -19, -13]* Hey.")
         speak(sofer, "* Hii.[wait:5] We should probably learn each other's names.")
         speak(grace, "[face:brow, -19, -13]* Sooo...[wait:5] what should we\nsay in this test scene?")
         cutscene:setSprite(sofer, "cannot")
         speak(sofer, "* My brother REALLY gets on my nerves!")
-        speak(grace, "[face:munch, -19, -13]* Yeah,[wait:5] I,[wait:5] uhh,[wait:5] could \nsee why.")
+        speak(grace, "[face:munch, -19, -13]* Yeah,[wait:5] I could see why.")
         speak(sofer, "* We have to deal with him somehow.")
         speak(grace, "[face:snark, -19, -13]* Hah,[wait:5] sure.[wait:5] We should,[wait:5]\nlike,[wait:5] stage an \nintervention,[wait:5] or--")
         cutscene:setSprite(sofer, "want", 1/4)
+        music:stop()
         speak(sofer, "* Let's beat the $$!$ out of him.")
+        music:play("grace", 1)
         speak(grace, "[face:nervous, -19, -13]* Uhhhh,[wait:5] maybe that's not.\nNecessary.")
         speak(grace, "[face:sus, -19, -13]* I mean,[wait:5] that gray person\nis probably with him,[wait:5]\nand I wouldn't want to...")
         speak(grace, "[face:consider, -19, -13]* Uhh,[wait:5] like,[wait:5] maybe we\ntry talking Tofer out of\nbeing...[wait:5] like this.")
 
+        music:stop()
         cutscene:setSprite(sofer, "neutral")
         cutscene:wait(2)
         cutscene:setSprite(sofer, "hm")
@@ -810,6 +817,8 @@ return {
         --Grace is like "(angry_mark or omg)* Oh my GOD." "(kawaii)* You're so right."
 
         cutscene:wait(1)
+        Game.world.music:resume()
+        Game.world.music:fade(1, 1)
         cutscene:wait(cutscene:panTo(vess.x, vess.y, 2, "out-cubic"))
         grace:remove()
         sofer:remove()

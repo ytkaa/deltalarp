@@ -10,9 +10,10 @@ return {
         end, true)
 
         local seen_intro = Kristal.hasAnySaves()
+        if seen_intro == nil then seen_intro = false end
         print("IS IT TRUE THAT YOU HAVE ANY SAVES...?\n...IT IS " .. tostring(seen_intro):upper() .. ".")
 
-        if seen_intro == false then
+        if seen_intro == false or nil then
             print("SHOWING LONG INTRO...")
             --Game:setFlag("seen_intro", true)
             --local skipped = false;
