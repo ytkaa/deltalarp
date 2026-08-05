@@ -754,6 +754,11 @@ return {
 
         Game:setFlag("shovel_plea_active", false)
         Game:setFlag("shovel_quest", 1)
+
+        for _,member in pairs(Game.party) do
+            member:heal(999, false) --We have to heal here, otherwise the quicksave will screw you over if you had low health.
+        end
+
         print("QUICKSAVED.")
         Game:saveQuick()
     end;
