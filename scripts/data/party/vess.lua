@@ -9,7 +9,7 @@ function character:init()
     self:setLightActor("vess")
     self:setDarkTransitionActor("vess_dark_transition")
 
-    self.level = 1
+    self.level = Game.chapter
     self.title = "Vessel\nLost."
 
     self.soul_priority = 5

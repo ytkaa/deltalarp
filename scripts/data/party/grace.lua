@@ -8,7 +8,7 @@ function character:init()
     self:setActor("grace")
     self:setLightActor("grace_lw")
 
-    self.level = 1
+    self.level = Game.chapter
     self.title = "Pink Rose\nElegant, and light!"
 
     self.soul_priority = 1

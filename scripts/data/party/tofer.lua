@@ -7,7 +7,7 @@ function character:init()
 
     self:setActor("tofer")
 
-    self.level = 1
+    self.level = Game.chapter
     self.title = "Carrot\nCheck it!"
 
     self.soul_priority = 1
