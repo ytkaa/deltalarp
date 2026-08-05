@@ -58,8 +58,16 @@
     <property name="text3_1" value="* (Unscrupulous spikes.)"/>
    </properties>
   </object>
-  <object id="1" name="pushblock" x="600" y="160" width="40" height="40"/>
-  <object id="16" name="pushblock" x="480" y="80" width="40" height="40"/>
+  <object id="1" name="pushblock" x="600" y="160" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="pushblock" x="480" y="80" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="30" name="enemy" x="760" y="160" width="40" height="40">
    <properties>
     <property name="actor" value="colonel"/>
@@ -92,10 +100,10 @@
     <property name="setflag" value="enemies_cornplate_puzzle"/>
    </properties>
   </object>
-  <object id="75" name="interactable" x="441" y="-39.5" width="118" height="39">
+  <object id="75" name="interactable" x="440" y="-40" width="120" height="40">
    <properties>
     <property name="solid" type="bool" value="true"/>
-    <property name="text1_1" value="* (Heh, you thought there was something here.)"/>
+    <property name="text1_1" value="* (Heh,[wait:5] you thought there was something here.)"/>
     <property name="text1_2" value="* (WRONG!!!!!)"/>
    </properties>
   </object>
@@ -169,11 +177,10 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup color="#0000ff" id="10" name="collision" locked="1">
+ <objectgroup color="#0000ff" id="10" name="collision">
   <object id="52" x="880" y="40" width="40" height="440"/>
   <object id="53" x="640" y="40" width="240" height="40"/>
   <object id="54" x="560" y="0" width="40" height="40"/>
-  <object id="55" x="440" y="-40" width="120" height="40"/>
   <object id="56" x="400" y="0" width="40" height="40"/>
   <object id="57" x="280" y="40" width="120" height="40"/>
   <object id="58" x="280" y="80" width="40" height="40"/>

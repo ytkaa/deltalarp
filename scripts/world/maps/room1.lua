@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 105,
+  nextobjectid = 107,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -1065,22 +1065,6 @@ return {
           }
         },
         {
-          id = 64,
-          name = "script",
-          type = "",
-          shape = "rectangle",
-          x = 0,
-          y = 1600,
-          width = 120,
-          height = 40,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {
-            ["cutscene"] = "chapter1/farm_world.cornplate_puzzle"
-          }
-        },
-        {
           id = 65,
           name = "interactable",
           type = "",
@@ -1289,6 +1273,23 @@ return {
             ["actor"] = "tofer",
             ["text1_1"] = "* Check it![sound:tofer_checkit]"
           }
+        },
+        {
+          id = 105,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 1600,
+          width = 78.667,
+          height = 42.3333,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm8",
+            ["marker"] = "to_room1"
+          }
         }
       }
     },
@@ -1478,6 +1479,20 @@ return {
           shape = "point",
           x = 480,
           y = 810,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 106,
+          name = "to_farm8",
+          type = "",
+          shape = "point",
+          x = 80,
+          y = 1560,
           width = 0,
           height = 0,
           rotation = 0,

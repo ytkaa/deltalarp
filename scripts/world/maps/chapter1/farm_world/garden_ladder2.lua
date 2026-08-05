@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 16,
-  nextobjectid = 105,
+  nextobjectid = 112,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladder 2"
@@ -329,8 +329,7 @@ return {
             ["cutscene"] = "chapter1/garden.ladder2",
             ["group"] = 1,
             ["keepdown"] = false,
-            ["once"] = true,
-            ["onsound"] = "noise"
+            ["once"] = true
           }
         },
         {
@@ -350,8 +349,7 @@ return {
             ["cutscene"] = "chapter1/garden.ladder2",
             ["group"] = 1,
             ["keepdown"] = false,
-            ["once"] = true,
-            ["onsound"] = "noise"
+            ["once"] = true
           }
         },
         {
@@ -371,8 +369,7 @@ return {
             ["cutscene"] = "chapter1/garden.ladder2",
             ["group"] = 1,
             ["keepdown"] = false,
-            ["once"] = true,
-            ["onsound"] = "noise"
+            ["once"] = true
           }
         },
         {
@@ -392,8 +389,7 @@ return {
             ["cutscene"] = "chapter1/garden.ladder2",
             ["group"] = 1,
             ["keepdown"] = false,
-            ["once"] = true,
-            ["onsound"] = "noise"
+            ["once"] = true
           }
         }
       }
@@ -520,7 +516,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 31,
@@ -534,7 +532,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 32,
@@ -548,7 +548,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 84,
@@ -632,7 +634,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 97,

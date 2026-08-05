@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="17" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="16" nextobjectid="105">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="17" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="16" nextobjectid="112">
  <editorsettings>
   <export target="garden_ladder2.lua" format="lua"/>
  </editorsettings>
@@ -101,7 +101,6 @@
     <property name="group" type="int" value="1"/>
     <property name="keepdown" type="bool" value="false"/>
     <property name="once" type="bool" value="true"/>
-    <property name="onsound" value="noise"/>
    </properties>
   </object>
   <object id="26" name="tilebutton" x="520" y="280" width="40" height="40">
@@ -111,7 +110,6 @@
     <property name="group" type="int" value="1"/>
     <property name="keepdown" type="bool" value="false"/>
     <property name="once" type="bool" value="true"/>
-    <property name="onsound" value="noise"/>
    </properties>
   </object>
   <object id="29" name="tilebutton" x="160" y="200" width="40" height="40">
@@ -121,7 +119,6 @@
     <property name="group" type="int" value="1"/>
     <property name="keepdown" type="bool" value="false"/>
     <property name="once" type="bool" value="true"/>
-    <property name="onsound" value="noise"/>
    </properties>
   </object>
   <object id="94" name="tilebutton" x="440" y="240" width="40" height="40">
@@ -131,7 +128,6 @@
     <property name="group" type="int" value="1"/>
     <property name="keepdown" type="bool" value="false"/>
     <property name="once" type="bool" value="true"/>
-    <property name="onsound" value="noise"/>
    </properties>
   </object>
  </objectgroup>
@@ -157,15 +153,31 @@
     <property name="solid" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="30" name="pushblock" x="280" y="400" width="40" height="40"/>
-  <object id="31" name="pushblock" x="320" y="400" width="40" height="40"/>
-  <object id="32" name="pushblock" x="360" y="400" width="40" height="40"/>
+  <object id="30" name="pushblock" x="280" y="400" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="31" name="pushblock" x="320" y="400" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="32" name="pushblock" x="360" y="400" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="84" name="pushblock" x="560" y="160" width="40" height="40"/>
   <object id="85" name="pushblock" x="280" y="200" width="40" height="40"/>
   <object id="86" name="pushblock" x="320" y="200" width="40" height="40"/>
   <object id="87" name="pushblock" x="360" y="200" width="40" height="40"/>
   <object id="88" name="pushblock" x="400" y="200" width="40" height="40"/>
-  <object id="96" name="pushblock" x="360" y="360" width="40" height="40"/>
+  <object id="96" name="pushblock" x="360" y="360" width="40" height="40">
+   <properties>
+    <property name="lock" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="97" name="interactable" x="200" y="360" width="40" height="40">
    <properties>
     <property name="cutscene" value="chapter1/garden.garden_warfare"/>

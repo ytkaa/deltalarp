@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="105">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="107">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -274,11 +274,6 @@ Quado</property>
     <property name="turn" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="64" name="script" x="0" y="1600" width="120" height="40">
-   <properties>
-    <property name="cutscene" value="chapter1/farm_world.cornplate_puzzle"/>
-   </properties>
-  </object>
   <object id="65" name="interactable" x="400" y="1320" width="200" height="40">
    <properties>
     <property name="text" value="* Help"/>
@@ -356,6 +351,12 @@ Quado</property>
     <property name="text1_1" value="* Check it![sound:tofer_checkit]"/>
    </properties>
   </object>
+  <object id="105" name="transition" x="40" y="1600" width="78.667" height="42.3333">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm8"/>
+    <property name="marker" value="to_room1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="7" name="objects">
   <object id="68" name="climbexit" x="440" y="360" width="40" height="40">
@@ -397,6 +398,9 @@ Quado</property>
    <point/>
   </object>
   <object id="73" name="climb_exit" x="480" y="810">
+   <point/>
+  </object>
+  <object id="106" name="to_farm8" x="80" y="1560">
    <point/>
   </object>
  </objectgroup>

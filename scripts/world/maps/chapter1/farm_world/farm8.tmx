@@ -4,7 +4,7 @@
   <export target="farm8.lua" format="lua"/>
  </editorsettings>
  <properties>
-  <property name="music" value="field_jarona"/>
+  <property name="music" value="mus_sc_her_2"/>
   <property name="name" value="Wheat Field - Lawnmower"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/farm_world.tsx"/>
@@ -60,8 +60,8 @@
  <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="1" name="transition" x="360.5" y="-42.5" width="118.667" height="42.3333">
    <properties>
-    <property name="map" value="chapter1/farm_world/farm7"/>
-    <property name="marker" value="to_shredder"/>
+    <property name="map" value="room1"/>
+    <property name="marker" value="to_farm8"/>
    </properties>
   </object>
   <object id="4" name="npc" x="200.667" y="79.3333" width="40" height="40">
@@ -78,7 +78,7 @@
  </objectgroup>
  <objectgroup color="#0000ff" id="5" name="collision"/>
  <objectgroup id="3" name="markers">
-  <object id="2" name="to_farm7_south" x="420" y="40">
+  <object id="2" name="to_room1" x="420" y="40">
    <point/>
   </object>
  </objectgroup>

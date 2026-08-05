@@ -36,8 +36,7 @@ return {
     {
       name = "garden_slide",
       firstgid = 228,
-      filename = "../../../tilesets/garden_slide.tsx",
-      exportfilename = "../../../tilesets/garden_slide.lua"
+      filename = "../../../tilesets/garden_slide.tsx"
     },
     {
       name = "garden_extras",
@@ -942,7 +941,7 @@ return {
           properties = {
             ["actor"] = "starwalker",
             ["text1_1"] = "* The sky...",
-            ["text1_2"] = "* ..."
+            ["text2_1"] = "* ..."
           }
         }
       }

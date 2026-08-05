@@ -12,7 +12,7 @@ return {
   nextlayerid = 6,
   nextobjectid = 8,
   properties = {
-    ["music"] = "field_jarona",
+    ["music"] = "mus_sc_her_2",
     ["name"] = "Wheat Field - Lawnmower"
   },
   tilesets = {
@@ -137,8 +137,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["map"] = "chapter1/farm_world/farm7",
-            ["marker"] = "to_shredder"
+            ["map"] = "room1",
+            ["marker"] = "to_farm8"
           }
         },
         {
@@ -196,7 +196,7 @@ return {
       objects = {
         {
           id = 2,
-          name = "to_farm7_south",
+          name = "to_room1",
           type = "",
           shape = "point",
           x = 420,

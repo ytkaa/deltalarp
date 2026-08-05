@@ -39,13 +39,13 @@
   <object id="14" x="1000.5" y="760.25" width="199" height="39.5"/>
   <object id="15" x="1120.75" y="719.75" width="79.5" height="39.5"/>
   <object id="16" x="120" y="720" width="39.5005" height="80"/>
-  <object id="17" x="440.5" y="0.5" width="278.5" height="79"/>
-  <object id="18" x="640.25" y="81" width="78.4375" height="39"/>
-  <object id="19" x="1039.75" y="0.166667" width="159.833" height="40.3333"/>
-  <object id="20" x="1080.1" y="40.8333" width="79.5" height="39"/>
+  <object id="17" x="440" y="0" width="280" height="80"/>
+  <object id="18" x="640" y="80" width="80" height="40"/>
+  <object id="19" x="1039.75" y="0" width="159.833" height="40"/>
+  <object id="20" x="1080.1" y="40" width="79.5" height="39.8333"/>
   <object id="21" x="280" y="800.25" width="480" height="39.5"/>
-  <object id="22" x="719.75" y="-41.75" width="40.25" height="39.5"/>
-  <object id="23" x="960" y="-40.75" width="240.584" height="39.5"/>
+  <object id="22" x="720" y="-40" width="40" height="40"/>
+  <object id="23" x="960" y="-40" width="240" height="40"/>
   <object id="33" x="480" y="360" width="80" height="40"/>
   <object id="34" x="480" y="400" width="80" height="40"/>
   <object id="37" x="0" y="0" width="440" height="40"/>

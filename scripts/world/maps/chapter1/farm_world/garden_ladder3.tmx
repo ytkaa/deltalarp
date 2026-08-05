@@ -285,7 +285,7 @@
    <properties>
     <property name="actor" value="starwalker"/>
     <property name="text1_1" value="* The sky..."/>
-    <property name="text1_2" value="* ..."/>
+    <property name="text2_1" value="* ..."/>
    </properties>
   </object>
  </objectgroup>

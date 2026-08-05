@@ -208,7 +208,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 16,
@@ -222,7 +224,9 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["lock"] = true
+          }
         },
         {
           id = 30,
@@ -305,16 +309,16 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 441,
-          y = -39.5,
-          width = 118,
-          height = 39,
+          x = 440,
+          y = -40,
+          width = 120,
+          height = 40,
           rotation = 0,
           opacity = 1,
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text1_1"] = "* (Heh, you thought there was something here.)",
+            ["text1_1"] = "* (Heh,[wait:5] you thought there was something here.)",
             ["text1_2"] = "* (WRONG!!!!!)"
           }
         },
@@ -747,20 +751,6 @@ return {
           x = 560,
           y = 0,
           width = 40,
-          height = 40,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 55,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 440,
-          y = -40,
-          width = 120,
           height = 40,
           rotation = 0,
           opacity = 1,
