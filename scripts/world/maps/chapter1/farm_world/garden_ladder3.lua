@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 17,
-  nextobjectid = 103,
+  nextobjectid = 106,
   properties = {
     ["music"] = "pursuit1",
     ["name"] = "Garden - Ladder 3"
@@ -206,8 +206,8 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 21, 5, 5, 5, 5, 5, 6, 5, 6, 5, 5, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 5, 5, 5, 6, 5, 5, 7, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 21, 5, 6, 5, 5, 5, 6, 5, 5, 7, 5, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 7, 5, 5, 5, 6, 6, 5, 7, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 7, 5, 5, 5, 6, 5, 7, 7, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 6, 9, 9, 9, 9, 9, 9, 9, 0,
@@ -824,27 +824,6 @@ return {
           }
         },
         {
-          id = 79,
-          name = "npc",
-          type = "",
-          shape = "rectangle",
-          x = 720,
-          y = 280,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {
-            ["actor"] = "starwalker",
-            ["text1_1"] = "* Hey,[wait:5] so,[wait:5] I'm a placeholder NPC for this ladder room.",
-            ["text1_2"] = "* I think there's a slide thing to the right.",
-            ["text2_1"] = "* No,[wait:5] I'm not related to that other guy.",
-            ["text2_2"] = "* The guy who got fired",
-            ["text3_1"] = "* WD Gaster Vecember Holiday Carol Rudy Knight Penumbra Ramb Eram Mancountry Image Friend Forgotten Man Last Prophecy Northernlight Noelle Holiday Gaster Motif Girl Next Door DDLC Theory"
-          }
-        },
-        {
           id = 83,
           name = "slidearea",
           type = "",
@@ -915,7 +894,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 560,
-          y = 240,
+          y = 280,
           width = 40,
           height = 40,
           rotation = 0,
@@ -931,7 +910,7 @@ return {
           name = "npc",
           type = "",
           shape = "rectangle",
-          x = 430,
+          x = 360,
           y = 250,
           width = 40,
           height = 40,
@@ -939,9 +918,25 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["actor"] = "starwalker",
-            ["text1_1"] = "* The sky...",
-            ["text2_1"] = "* ..."
+            ["actor"] = "bloom_king",
+            ["text1_1"] = "* No cost too great."
+          }
+        },
+        {
+          id = 103,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 1080,
+          y = 360,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/garden.forgetting",
+            ["once"] = false
           }
         }
       }
@@ -1025,7 +1020,27 @@ return {
       parallaxx = 1,
       parallaxy = 1,
       properties = {},
-      objects = {}
+      objects = {
+        {
+          id = 105,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1120,
+          y = 160,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "carrying_dirt",
+            ["inverted"] = true,
+            ["target1"] = { id = 103 },
+            ["target2"] = { id = 104 }
+          }
+        }
+      }
     },
     {
       type = "objectgroup",
@@ -1201,7 +1216,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 320,
-          y = 160,
+          y = 200,
           width = 520,
           height = 40,
           rotation = 0,
@@ -1246,6 +1261,20 @@ return {
           y = 560,
           width = 40,
           height = 10,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 104,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1090,
+          y = 360,
+          width = 30,
+          height = 40,
           rotation = 0,
           opacity = 1,
           visible = true,

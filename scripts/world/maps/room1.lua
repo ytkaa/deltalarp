@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 107,
+  nextobjectid = 108,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -742,8 +742,8 @@ return {
           name = "savepoint",
           type = "",
           shape = "rectangle",
-          x = 80,
-          y = 850,
+          x = 70,
+          y = 940,
           width = 40,
           height = 40,
           rotation = 0,
@@ -964,7 +964,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 380,
-          y = 930,
+          y = 990,
           width = 40,
           height = 40,
           rotation = 0,
@@ -972,6 +972,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "larpwalker",
+            ["solid"] = false,
             ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch7]walker"
           }
         },
@@ -989,7 +990,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "blunderbuss",
-            ["cutscene"] = "chapter1/rural.test_school"
+            ["cutscene"] = "chapter1/rural.test_school",
+            ["solid"] = false
           }
         },
         {
@@ -1006,6 +1008,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "larpwalker",
+            ["solid"] = false,
             ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch4]walker"
           }
         },
@@ -1023,6 +1026,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "larpwalker",
+            ["solid"] = false,
             ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch3]walker"
           }
         },
@@ -1040,6 +1044,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "larpwalker",
+            ["solid"] = false,
             ["text1_1"] = "* [color:red]Larp[sound:DELTALARP_ch6]walker"
           }
         },
@@ -1289,6 +1294,29 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/farm8",
             ["marker"] = "to_room1"
+          }
+        },
+        {
+          id = 107,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 70,
+          y = 830,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "starwalker",
+            ["text1_1"] = "* Hey,[wait:5] so,[wait:5] they fired me.[wait:5] Too.",
+            ["text1_2"] = "* From chapter1/farm_world/garden_ladder3.",
+            ["text2_1"] = "* I guess I was related to that other guy,[wait:5] after all...",
+            ["text3_1"] = "* No,[wait:5] I will not be trading on [color:green]QUADO[color:reset][sound:QUADO] like these lowly simpletons.",
+            ["text3_2"] = "* I have more...[wait:5] refined hobbies to indulge in instead.",
+            ["text3_3"] = "* Hobbies that stimulate the mind,[wait:5] zah ha ha!",
+            ["text4_1"] = "* WD [sound:wheredidtheyhidetheza]Gaster [sound:wheredidtheyhidetheza]Vecember [sound:wheredidtheyhidetheza]Holiday [sound:wheredidtheyhidetheza]Carol Rudy Knight Penumbra Ramb Eram Mancountry Image Friend Forgotten Man Last [sound:wheredidtheyhidetheza]Prophecy Northernlight Noelle Holiday Gaster Motif Girl Next Door DDLC [sound:wheredidtheyhidetheza]Theory"
           }
         }
       }

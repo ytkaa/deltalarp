@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="29" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="103">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="29" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="106">
  <editorsettings>
   <export target="garden_ladder3.lua" format="lua"/>
  </editorsettings>
@@ -85,8 +85,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,21,5,5,5,5,5,6,5,6,5,5,5,22,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,5,5,6,5,5,5,6,5,5,7,5,5,5,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,21,5,6,5,5,5,6,5,5,7,5,5,22,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,5,6,7,5,5,5,6,6,5,7,5,5,5,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,5,5,7,5,5,5,6,5,7,7,5,5,5,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,5,7,5,5,5,7,5,5,5,5,5,5,6,9,9,9,9,9,9,9,0,
@@ -244,16 +244,6 @@
     <property name="marker" value="to_ladder3"/>
    </properties>
   </object>
-  <object id="79" name="npc" x="720" y="280" width="40" height="40">
-   <properties>
-    <property name="actor" value="starwalker"/>
-    <property name="text1_1" value="* Hey,[wait:5] so,[wait:5] I'm a placeholder NPC for this ladder room."/>
-    <property name="text1_2" value="* I think there's a slide thing to the right."/>
-    <property name="text2_1" value="* No,[wait:5] I'm not related to that other guy."/>
-    <property name="text2_2" value="* The guy who got fired"/>
-    <property name="text3_1" value="* WD Gaster Vecember Holiday Carol Rudy Knight Penumbra Ramb Eram Mancountry Image Friend Forgotten Man Last Prophecy Northernlight Noelle Holiday Gaster Motif Girl Next Door DDLC Theory"/>
-   </properties>
-  </object>
   <object id="83" name="slidearea" x="1080" y="400" width="40" height="160">
    <properties>
     <property name="lock" type="bool" value="true"/>
@@ -275,17 +265,22 @@
   <object id="97" name="bloomobeburstcontrol" x="120" y="2000">
    <point/>
   </object>
-  <object id="99" name="dirtflower" x="560" y="240" width="40" height="40">
+  <object id="99" name="dirtflower" x="560" y="280" width="40" height="40">
    <properties>
     <property name="setflag" value="dirt1"/>
     <property name="setvalue" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="102" name="npc" x="430" y="250" width="40" height="40">
+  <object id="102" name="npc" x="360" y="250" width="40" height="40">
    <properties>
-    <property name="actor" value="starwalker"/>
-    <property name="text1_1" value="* The sky..."/>
-    <property name="text2_1" value="* ..."/>
+    <property name="actor" value="bloom_king"/>
+    <property name="text1_1" value="* No cost too great."/>
+   </properties>
+  </object>
+  <object id="103" name="script" x="1080" y="360" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.forgetting"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>
@@ -303,7 +298,17 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#ffff00" id="8" name="controllers"/>
+ <objectgroup color="#ffff00" id="8" name="controllers">
+  <object id="105" name="toggle" x="1120" y="160">
+   <properties>
+    <property name="flag" value="carrying_dirt"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="103"/>
+    <property name="target2" type="object" value="104"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup color="#0000ff" id="10" name="collision">
   <object id="29" x="480" y="520" width="40" height="120"/>
   <object id="49" x="520" y="560" width="40" height="80"/>
@@ -316,10 +321,11 @@
   <object id="89" x="840" y="440" width="40" height="40"/>
   <object id="90" x="320" y="480" width="200" height="40"/>
   <object id="91" x="280" y="200" width="40" height="280"/>
-  <object id="92" x="320" y="160" width="520" height="40"/>
+  <object id="92" x="320" y="200" width="520" height="40"/>
   <object id="93" x="840" y="200" width="40" height="120"/>
   <object id="94" x="640" y="520" width="40" height="40"/>
   <object id="101" x="560" y="560" width="40" height="10"/>
+  <object id="104" x="1090" y="360" width="30" height="40"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="3" name="markers">
   <object id="3" name="spawn" x="580" y="2180">

@@ -910,4 +910,8 @@ return {
         block:explode(0, 0, false)
         Game:setFlag("ladders_shortcut_puzzle", true)
     end;
+
+    forgetting = function(cutscene)
+        cutscene:text("* (Aren't you forgetting something important?)")
+    end;
 }
