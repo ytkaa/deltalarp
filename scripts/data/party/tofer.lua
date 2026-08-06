@@ -95,7 +95,7 @@ function character:getReaction(item, user)
     if user.id ~= self.id then --We have to account for equipping anyone who isn't Tofer.
         return super.getReaction(self, item, user)
     elseif item then
-        if item.type == "key" then
+        if item.type == "key" or item.type == "item" then
             return super.getReaction(self, item, user)
         else
             Assets.playSound("tofer_checkit")

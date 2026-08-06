@@ -195,6 +195,13 @@
             "width": 640,
             "x": 26560,
             "y": -9911
+        },
+        {
+            "fileName": "garden_shop.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 26280,
+            "y": -5511
         }
     ],
     "onlyShowAdjacentMaps": false,

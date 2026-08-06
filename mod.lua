@@ -49,6 +49,7 @@ function Mod:init()
         ["itahu_1"] = 1,
         ["last_show_wip_2"] = 1,
         ["me"] = 1,
+        ["mus_sc_forget"] = 1,
         ["mus_sc_her_2"] = 1,
         ["mus_st_troubledingle"] = 1,
         ["petal_limiter"] = 1,
