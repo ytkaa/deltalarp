@@ -9,8 +9,8 @@ return {
   height = 20,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 8,
-  nextobjectid = 32,
+  nextlayerid = 9,
+  nextobjectid = 37,
   properties = {
     ["name"] = "Garden - Cave Entrance"
   },
@@ -52,7 +52,7 @@ return {
         0, 5, 5, 5, 5, 5, 5, 5, 23, 23, 23, 23, 5, 5, 5, 5, 5, 5, 5, 0,
         0, 5, 5, 5, 5, 5, 5, 23, 23, 23, 23, 23, 23, 5, 5, 5, 5, 5, 5, 0,
         0, 5, 5, 5, 5, 5, 23, 24, 23, 23, 23, 23, 23, 23, 5, 5, 5, 5, 5, 0,
-        0, 5, 5, 5, 5, 5, 23, 23, 23, 23, 16, 23, 24, 23, 5, 5, 5, 5, 5, 0,
+        0, 5, 5, 5, 5, 5, 23, 23, 23, 23, 23, 23, 24, 23, 5, 5, 5, 5, 5, 0,
         0, 5, 5, 5, 5, 5, 23, 23, 23, 23, 23, 23, 23, 5, 5, 5, 5, 5, 5, 0,
         0, 9, 5, 5, 5, 5, 5, 24, 23, 23, 23, 24, 23, 5, 5, 5, 5, 5, 9, 0,
         0, 19, 5, 5, 5, 5, 5, 5, 23, 5, 23, 23, 5, 5, 5, 5, 5, 5, 19, 0,
@@ -353,6 +353,36 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 7,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 31,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 400,
+          y = 480,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 2,
       name = "objects",
       class = "",
@@ -387,7 +417,7 @@ return {
             ["text1_6"] = "* (Then,[wait:5] the entrance to the next SUBLEVEL opens.)",
             ["text1_7"] = "* (Once you enter the cave,[wait:5] you cannot leave until you reach the EXIT at the end...)",
             ["text1_8"] = "* (No healing items can be found in the cave...[wait:5] only what you come in with.)",
-            ["text1_9"] = "* (If you are DEFEATED,[wait:5] you'll end up back here with your progress lost...)"
+            ["text1_9"] = "* (If you are DEFEATED,[wait:5] you'll go back to the starting zone of the SUBLEVEL.)"
           }
         },
         {
@@ -441,36 +471,62 @@ return {
             ["text2"] = "* (You are filled with the power of spelunking.)",
             ["text_once"] = true
           }
-        }
-      }
-    },
-    {
-      type = "objectgroup",
-      draworder = "topdown",
-      id = 7,
-      name = "markers",
-      class = "",
-      visible = true,
-      opacity = 1,
-      offsetx = 0,
-      offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
-      properties = {},
-      objects = {
+        },
         {
-          id = 31,
-          name = "spawn",
+          id = 32,
+          name = "npc",
           type = "",
-          shape = "point",
-          x = 400,
-          y = 480,
-          width = 0,
-          height = 0,
+          shape = "rectangle",
+          x = 200,
+          y = 400,
+          width = 40,
+          height = 40,
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["actor"] = "kipkip",
+            ["text1_1"] = "* (Welcome back!)",
+            ["text1_2"] = "* (Yeah the cave closed in on itself as we left)",
+            ["text1_3"] = "* (No clue why it did that,[wait:5] never seen that happen before in my entire caving career)",
+            ["text1_4"] = "* (Might have something to do with The Key...)",
+            ["text1_5"] = "* (But that's all for this zone.[wait:5] And don't worry, you got the money already.)",
+            ["text2_1"] = "* (Huh?[wait:5] You think that cave was brutal and unfair and had bad level design?)",
+            ["text2_2"] = "* (Heh.[sound:farmerlaugh][wait:5] You don't even know the half of it.)",
+            ["text2_3"] = "* (Come back when you've finished Kipkip 2.[wait:5] There you'll see some REAL Lands of Torture.)",
+            ["text3_1"] = "* (Good job in that cave.[wait:5] Usually we don't like foreigners but you're one of the good ones)",
+            ["text3_2"] = "* (Yeah we're lowkey crazy jingoist i'll admit.[wait:5] And super $$$$ing greedy)",
+            ["text3_3"] = "* (At least we're all the same color so nothing bad really happens with us as a whole)",
+            ["text4_1"] = "* (Except for those shamans though. They think they're $$$$ing above everyone)",
+            ["text4_2"] = "* (Just because you don't desire anything doesn't mean you're better than everyone else)",
+            ["text5_1"] = "* (Like that $#!! can't be good for you your skin is orange and your leaf is on fire)",
+            ["text5_2"] = "* (Like what are you doing.[wait:5] That isn't normal)",
+            ["text6_1"] = "* (I'd really hate to see what would happen if some of them decided to join the GARDNER.)",
+            ["text6_2"] = "* (With their superiority complex and their crazy power?[wait:5] PLUS the GARDNER's powers?)",
+            ["text6_3"] = "* (...[wait:5]you're going up against the GARDNER,[wait:5] right?)",
+            ["text6_4"] = "* (...Good luck.)",
+            ["text7_1"] = "* (...Good luck.)"
+          }
+        },
+        {
+          id = 36,
+          name = "savepoint",
+          type = "",
+          shape = "rectangle",
+          x = 560,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["heals"] = true,
+            ["marker"] = "spawn",
+            ["text1"] = "* (And so,[wait:5] your spelunking adventure has ended.)",
+            ["text2"] = "* (You are filled with the power of trauma.)",
+            ["text_once"] = true
+          }
         }
       }
     },
@@ -488,6 +544,79 @@ return {
       parallaxy = 1,
       properties = {},
       objects = {}
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 8,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 33,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 852,
+          y = 57,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "finishedFlowerDen",
+            ["inverted"] = false,
+            ["target1"] = { id = 32 },
+            ["target2"] = { id = 36 }
+          }
+        },
+        {
+          id = 34,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 865,
+          y = 97,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "finishedFlowerDen",
+            ["inverted"] = true,
+            ["target1"] = { id = 1 },
+            ["target2"] = { id = 30 }
+          }
+        },
+        {
+          id = 35,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 897,
+          y = 165,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "finishedFlowerDen",
+            ["inverted"] = true,
+            ["target1"] = { id = 2 },
+            ["target2"] = { id = 3 }
+          }
+        }
+      }
     }
   }
 }

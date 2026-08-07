@@ -38,7 +38,7 @@ function MovingArena:update()
     --)
 
     local t = self.siner --somehow represents theta... i wanna research what this actually refers to later
-    if Game:getFlag("spikeChallengeActive") then
+    if Game:getFlag("spikeChallengeActive") then --taking the lazy way out sorry
         local x = 40 * math.sin(t) -- moves the arena like a lemniscate --- r=\sqrt{a\sin\left(2\theta\right)} (put into desmos)
         local y = 50 * math.sin(2 * t)
         Game.battle.arena:setPosition(

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="1160" tileheight="720" tilecount="13" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="1160" tileheight="720" tilecount="14" columns="0">
  <editorsettings>
   <export target="garden_extras.lua" format="lua"/>
  </editorsettings>
@@ -42,5 +42,8 @@
  </tile>
  <tile id="41">
   <image source="../../../assets/sprites/tilesets/farm_world/garden/shop_sign.png" width="36" height="16"/>
+ </tile>
+ <tile id="42">
+  <image source="../../../assets/sprites/tilesets/farm_world/pikmin2_geyser.png" width="123" height="113"/>
  </tile>
 </tileset>

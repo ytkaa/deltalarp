@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 13,
+  tilecount = 14,
   tiles = {
     {
       id = 29,
@@ -102,6 +102,12 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/garden/shop_sign.png",
       width = 36,
       height = 16
+    },
+    {
+      id = 42,
+      image = "../../../assets/sprites/tilesets/farm_world/pikmin2_geyser.png",
+      width = 123,
+      height = 113
     }
   }
 }

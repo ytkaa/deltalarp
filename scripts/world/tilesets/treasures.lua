@@ -4,7 +4,7 @@ return {
   tiledversion = "1.12.2",
   name = "treasures",
   class = "",
-  tilewidth = 710,
+  tilewidth = 1498,
   tileheight = 1500,
   spacing = 0,
   margin = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 5,
+  tilecount = 10,
   tiles = {
     {
       id = 0,
@@ -54,6 +54,36 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/pikmin3_pot.png",
       width = 197,
       height = 219
+    },
+    {
+      id = 5,
+      image = "../../../assets/sprites/treasures/cokezero.png",
+      width = 250,
+      height = 426
+    },
+    {
+      id = 6,
+      image = "../../../assets/sprites/treasures/100dollar.png",
+      width = 1498,
+      height = 682
+    },
+    {
+      id = 7,
+      image = "../../../assets/sprites/treasures/rubber ugly.png",
+      width = 243,
+      height = 224
+    },
+    {
+      id = 8,
+      image = "../../../assets/sprites/treasures/Adamantine Girdle.png",
+      width = 186,
+      height = 152
+    },
+    {
+      id = 9,
+      image = "../../../assets/sprites/treasures/the key.png",
+      width = 243,
+      height = 224
     }
   }
 }

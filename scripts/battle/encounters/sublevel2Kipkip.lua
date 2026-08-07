@@ -1,0 +1,33 @@
+local Sublevel2Kipkip, super = Class(Encounter)
+
+function Sublevel2Kipkip:init()
+    super.init(self)
+
+    -- Text displayed at the bottom of the screen at the start of the encounter
+    if Game:getFlag("isCarryingTreasure") then
+        self.text = "* Fleecebug and Kipkip want your treasure! Also, you're overencumbered."
+    else
+        self.text = "* Fleecebug and Kipkip ambush you!"
+    end
+
+    -- Battle music ("battle" is rude buster)
+    Game.music:stop()
+    self.music = "grass_battle"
+    -- Enables the purple grid battle background
+    self.background = true
+
+    self:addEnemy("fleecebug")
+    self:addEnemy("kipkip")
+end
+
+function Sublevel2Kipkip:onBattleEnd()
+    Game.music:stop()
+    Game.world.music:fade(0, 0.1)
+    if Game:getFlag("isCarryingTreasure") then
+        Game.music:play("grass_treasure")
+    else
+        Game.music:play("grass_theme")
+    end
+end
+
+return Sublevel2Kipkip

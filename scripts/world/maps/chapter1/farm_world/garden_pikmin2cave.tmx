@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="32">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="37">
  <editorsettings>
   <export target="garden_pikmin2cave.lua" format="lua"/>
  </editorsettings>
@@ -16,7 +16,7 @@
 0,5,5,5,5,5,5,5,23,23,23,23,5,5,5,5,5,5,5,0,
 0,5,5,5,5,5,5,23,23,23,23,23,23,5,5,5,5,5,5,0,
 0,5,5,5,5,5,23,24,23,23,23,23,23,23,5,5,5,5,5,0,
-0,5,5,5,5,5,23,23,23,23,16,23,24,23,5,5,5,5,5,0,
+0,5,5,5,5,5,23,23,23,23,23,23,24,23,5,5,5,5,5,0,
 0,5,5,5,5,5,23,23,23,23,23,23,23,5,5,5,5,5,5,0,
 0,9,5,5,5,5,5,24,23,23,23,24,23,5,5,5,5,5,9,0,
 0,19,5,5,5,5,5,5,23,5,23,23,5,5,5,5,5,5,19,0,
@@ -53,6 +53,11 @@
   <object id="27" x="80" y="440" width="40.667" height="80.0003"/>
   <object id="28" x="40" y="360" width="40.667" height="80.0003"/>
  </objectgroup>
+ <objectgroup color="#aa00ff" id="7" name="markers">
+  <object id="31" name="spawn" x="400" y="480">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects">
   <object id="1" name="npc" x="200" y="400" width="40" height="40">
    <properties>
@@ -66,7 +71,7 @@
     <property name="text1_6" value="* (Then,[wait:5] the entrance to the next SUBLEVEL opens.)"/>
     <property name="text1_7" value="* (Once you enter the cave,[wait:5] you cannot leave until you reach the EXIT at the end...)"/>
     <property name="text1_8" value="* (No healing items can be found in the cave...[wait:5] only what you come in with.)"/>
-    <property name="text1_9" value="* (If you are DEFEATED,[wait:5] you'll end up back here with your progress lost...)"/>
+    <property name="text1_9" value="* (If you are DEFEATED,[wait:5] you'll go back to the starting zone of the SUBLEVEL.)"/>
    </properties>
   </object>
   <object id="2" gid="138" x="224" y="402.5" width="354.667" height="266"/>
@@ -85,11 +90,69 @@
     <property name="text_once" type="bool" value="true"/>
    </properties>
   </object>
- </objectgroup>
- <objectgroup color="#aa00ff" id="7" name="markers">
-  <object id="31" name="spawn" x="400" y="480">
-   <point/>
+  <object id="32" name="npc" x="200" y="400" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Welcome back!)"/>
+    <property name="text1_2" value="* (Yeah the cave closed in on itself as we left)"/>
+    <property name="text1_3" value="* (No clue why it did that,[wait:5] never seen that happen before in my entire caving career)"/>
+    <property name="text1_4" value="* (Might have something to do with The Key...)"/>
+    <property name="text1_5" value="* (But that's all for this zone.[wait:5] And don't worry, you got the money already.)"/>
+    <property name="text2_1" value="* (Huh?[wait:5] You think that cave was brutal and unfair and had bad level design?)"/>
+    <property name="text2_2" value="* (Heh.[sound:farmerlaugh][wait:5] You don't even know the half of it.)"/>
+    <property name="text2_3" value="* (Come back when you've finished Kipkip 2.[wait:5] There you'll see some REAL Lands of Torture.)"/>
+    <property name="text3_1" value="* (Good job in that cave.[wait:5] Usually we don't like foreigners but you're one of the good ones)"/>
+    <property name="text3_2" value="* (Yeah we're lowkey crazy jingoist i'll admit.[wait:5] And super $$$$ing greedy)"/>
+    <property name="text3_3" value="* (At least we're all the same color so nothing bad really happens with us as a whole)"/>
+    <property name="text4_1" value="* (Except for those shamans though. They think they're $$$$ing above everyone)"/>
+    <property name="text4_2" value="* (Just because you don't desire anything doesn't mean you're better than everyone else)"/>
+    <property name="text5_1" value="* (Like that $#!! can't be good for you your skin is orange and your leaf is on fire)"/>
+    <property name="text5_2" value="* (Like what are you doing.[wait:5] That isn't normal)"/>
+    <property name="text6_1" value="* (I'd really hate to see what would happen if some of them decided to join the GARDNER.)"/>
+    <property name="text6_2" value="* (With their superiority complex and their crazy power?[wait:5] PLUS the GARDNER's powers?)"/>
+    <property name="text6_3" value="* (...[wait:5]you're going up against the GARDNER,[wait:5] right?)"/>
+    <property name="text6_4" value="* (...Good luck.)"/>
+    <property name="text7_1" value="* (...Good luck.)"/>
+   </properties>
+  </object>
+  <object id="36" name="savepoint" x="560" y="400" width="40" height="40">
+   <properties>
+    <property name="heals" type="bool" value="true"/>
+    <property name="marker" value="spawn"/>
+    <property name="text1" value="* (And so,[wait:5] your spelunking adventure has ended.)"/>
+    <property name="text2" value="* (You are filled with the power of trauma.)"/>
+    <property name="text_once" type="bool" value="true"/>
+   </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="objects_party"/>
+ <objectgroup id="8" name="controllers">
+  <object id="33" name="toggle" x="852" y="57">
+   <properties>
+    <property name="flag" value="finishedFlowerDen"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="32"/>
+    <property name="target2" type="object" value="36"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="toggle" x="865" y="97">
+   <properties>
+    <property name="flag" value="finishedFlowerDen"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="1"/>
+    <property name="target2" type="object" value="30"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="toggle" x="897" y="165">
+   <properties>
+    <property name="flag" value="finishedFlowerDen"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="2"/>
+    <property name="target2" type="object" value="3"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

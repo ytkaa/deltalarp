@@ -49,6 +49,7 @@ function Spike:init()
         "Stab stab",
         "Stabby stabby",
     }
+    self.challenge_active = false
     --self:registerAct("Sidestep", "Sidestep \nspikes")
     self:registerAct("Challenge", "Faster \nspikes")
     --if #Game.party == 2 and Game.party[2].id == "grace" then
@@ -57,14 +58,14 @@ function Spike:init()
 
     function Spike:onAct(battler, name)
         if name == "Challenge" then
-            --self.challenge_active = true --this cant be checked in a wave file
-            Game:setFlag("spikeChallengeActive", true)
+            Game:setFlag("spikeChallengeActive", true) --taking the lazy way out sorry
             return {
                 "* You challenge Spike.[wait:5]\n* Attack speed increased!",
             }
         elseif name == "Standard" then --X-Action
                 -- Text for any other character (like Noelle)
-                return "* "..battler.chara:getName().." didn't do anything because\nI wasn't sure what to program here."
+                self:addMercy(50)
+                return "* "..battler.chara:getName().." polishes Spike."
         end
         
         -- If the act is none of the above, run the base onAct function

@@ -22,7 +22,7 @@ function Kipkip:init()
     self.spare_points = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
-    self.check = "AT 4 DF 1\n* Friendly little guy. \nHe just wants to bloom."
+    self.check = "AT 4 DF 1\n* Somewhat greedy little guy. \nHe desperately wants to bloom."
 
     -- Text randomly displayed at the bottom of the screen each turn
     self.text = {
@@ -48,27 +48,34 @@ function Kipkip:init()
     }
     self:registerAct("Spray Water", "Spray with \nwater")
     self:registerAct("Give Nectar", "Makes \nstronger")    
-    if #Game.party == 2 and Game.party[2].id == "grace" then
-        self:registerActFor("grace","Wave", "Wave at\nKipkip")
-    end
-    self.kipkipBloomed = false
+    self.nectarCount = 0
 
     function Kipkip:onAct(battler, name)
         if name == "Give Nectar" then
-            if self.kipkipBloomed == false then
-                self.kipkipBloomed = true
+            self.nectarCount = self.nectarCount + 1
+            if self.nectarCount == 1 then
                 Assets.playSound("nectarslurp") 
-                -- Give the enemy 100% mercy
-                self:addMercy(100)
+                self:addMercy(50)
                 -- Change this enemy's dialogue for 1 turn
                 self.dialogue_override = "Awwhf!!!"
-                self.attack = self.attack + 3 -- increase attack damage because in the pikmin games flower pikmin are stronger than leaf pikmin
+                self.attack = self.attack + 1 -- increase attack damage because in the pikmin games flower pikmin are stronger than leaf pikmin
+                -- Act text (since it's a list, multiple textboxes)
+                return {
+                    "* Kipkip enjoyed the snack![wait:5]\n* But he needs a little more...",
+                    "* Kipkip also became stronger! \nAttack increased!"
+                }
+            elseif self.nectarCount == 2 then --sprite change
+                Assets.playSound("nectarslurp") 
+                self:addMercy(50)
+                -- Change this enemy's dialogue for 1 turn
+                self.dialogue_override = "Awwhf!!!"
+                self.attack = self.attack + 1 -- increase attack damage because in the pikmin games flower pikmin are stronger than leaf pikmin
                 -- Act text (since it's a list, multiple textboxes)
                 return {
                     "* Kipkip is overjoyed.[wait:5]\n* He has finally bloomed.",
                     "* Kipkip also became stronger! \nAttack increased!"
                 }
-            elseif self.kipkipBloomed == true then
+            elseif self.nectarCount >= 3 then
                 return {
                     "* Kipkip rejected. It's a work day tomorrow.",
                 }
@@ -79,16 +86,20 @@ function Kipkip:init()
                 "* You spritzed\nKipkip with water.", --sprite change
                 "* The enemies became agitated!\nAttack speed increased!"
             }
-        elseif name == "Wave" then
-            self.sprite:setAnimation({"wave", 0.05, true})
+        --elseif name == "Wave" then
+        --    self.sprite:setAnimation({"wave", 0.05, true})
             -- G-Action text
-            return {
-            "* Grace waves.\nKipkip waves back.", --sprite change
-            "* ...you don't feel like this\ncontributed to anything in particular."
-            }   
+        --    return {
+        --    "* Grace waves.\nKipkip waves back.", --sprite change
+        --    "* ...you don't feel like this\ncontributed to anything in particular."
+        --    }   
         elseif name == "Standard" then --X-Action
                 -- Text for any other character (like Noelle)
-                return "* "..battler.chara:getName().." didn't do anything because\nI wasn't sure what to program here."
+                self:addMercy(50)
+                return {
+                "* "..battler.chara:getName().." waves.\nKipkip waves back.",
+                "* ...some sort of bonding\noccured from this."
+                }
         end
         
         -- If the act is none of the above, run the base onAct function

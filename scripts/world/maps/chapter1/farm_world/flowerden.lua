@@ -10,8 +10,9 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 92,
+  nextobjectid = 93,
   properties = {
+    ["music"] = "soil_theme",
     ["name"] = "Flower Den - Sublevel 1"
   },
   tilesets = {
@@ -28,7 +29,7 @@ return {
     },
     {
       name = "treasures",
-      firstgid = 139,
+      firstgid = 141,
       filename = "../../../tilesets/treasures.tsx",
       exportfilename = "../../../tilesets/treasures.lua"
     }
@@ -330,7 +331,7 @@ return {
           x = 1120,
           y = 1240,
           width = 39.917,
-          height = 436,
+          height = 439.818,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -996,7 +997,7 @@ return {
           height = 178.601,
           rotation = 0,
           opacity = 1,
-          gid = 139,
+          gid = 141,
           visible = true,
           properties = {}
         },
@@ -1011,7 +1012,7 @@ return {
           height = 204.876,
           rotation = 0,
           opacity = 1,
-          gid = 140,
+          gid = 142,
           visible = true,
           properties = {}
         },
@@ -1026,7 +1027,7 @@ return {
           height = 84,
           rotation = 0,
           opacity = 1,
-          gid = 141,
+          gid = 143,
           visible = true,
           properties = {}
         },
@@ -1041,7 +1042,7 @@ return {
           height = 84,
           rotation = 0,
           opacity = 1,
-          gid = 141,
+          gid = 143,
           visible = true,
           properties = {}
         },
@@ -1056,7 +1057,7 @@ return {
           height = 170.667,
           rotation = 0,
           opacity = 1,
-          gid = 142,
+          gid = 144,
           visible = true,
           properties = {}
         }
@@ -1237,6 +1238,23 @@ return {
             ["encounter"] = "caveSpike",
             ["enemy"] = "spike",
             ["once"] = true
+          }
+        },
+        {
+          id = 92,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 957.333,
+          y = 2599.33,
+          width = 127.666,
+          height = 78.8334,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.cant_proceed_cave",
+            ["solid"] = true
           }
         }
       }
