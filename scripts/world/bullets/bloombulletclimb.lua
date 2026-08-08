@@ -17,7 +17,7 @@ function BloomBulletClimb:init(x, y, dir, damage, iFrames, speed)
     self.damage = damage --25 for Bloomer, 12 for Bloomobe
     self.physics.match_rotation = false
     self.sprite:setRotationOrigin(0.5)
-    self.collider = CircleCollider(self, self.width/2, self.height/2, self.width/2 + 2)
+    self.collider = CircleCollider(self, self.width/2, self.height/2, self.width/2)
     self.remove_offscreen = true
 end
 

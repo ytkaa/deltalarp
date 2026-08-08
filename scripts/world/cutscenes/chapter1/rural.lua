@@ -394,4 +394,8 @@ return {
         cutscene:attachCamera()
         cutscene:attachFollowers()
     end;
+
+    one_choicer = function(cutscene, event)
+        choice = cutscene:choicer({"Vess"})
+    end
 }

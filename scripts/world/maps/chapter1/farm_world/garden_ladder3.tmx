@@ -263,6 +263,10 @@
    </properties>
   </object>
   <object id="97" name="bloomobeburstcontrol" x="120" y="2000">
+   <properties>
+    <property name="cooldown" type="float" value="3.5"/>
+    <property name="cooldown_diff" type="float" value="1"/>
+   </properties>
    <point/>
   </object>
   <object id="99" name="dirtflower" x="560" y="280" width="40" height="40">
@@ -284,7 +288,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup color="#ff0000" id="12" name="battleareas">
+ <objectgroup color="#ff0000" id="12" name="battleareas" locked="1">
   <object id="98" x="0" y="680" width="1160" height="1560"/>
  </objectgroup>
  <objectgroup id="11" name="objects_camera_shenanigans" locked="1">

@@ -62,7 +62,7 @@ function character:init()
     self.name_sprite = "party/vess/name"
 
     -- Effect shown above enemy after attacking it
-    self.attack_sprite = "effects/attack/cut"
+    self.attack_sprite = "effects/attack/cut_v"
     -- Sound played when this character attacks
     self.attack_sound = "key_her"
     -- Pitch of the attack sound

@@ -25,7 +25,7 @@ function actor:init()
 
     self.animations = {
         -- Movement animations
-        --["walk"] = {"walk", 4/30, true},
+        ["slide"]               = {"slide", 4/30, true},
 
         -- Battle animations
         ["battle/idle"] = {"battle/idle", 1/6, true},
@@ -52,6 +52,11 @@ function actor:init()
         ["battle/intro"]        = {"battle/attack", 1/15, false},
         --["battle/victory"]      = {"battle/victory", 1/10, false},
         --["battle/transition_out"] = {"battle/transition_out", 1/15, false},
+
+        -- Cutscene animations
+        --["jump_fall"]           = {"fall", 1/5, true},
+        ["jump_ball"]           = {"ball", 1/15, true},
+        ["jump_ball_slow"]      = {"ball", 4/30, true},
     }
 
     self.offsets = {
@@ -60,6 +65,8 @@ function actor:init()
         ["walk/right"] = {0, 0},
         ["walk/up"] = {0, 0},
         ["walk/down"] = {0, 0},
+
+        ["slide"] = {0, 0},
 
         -- Battle offsets
         ["battle/idle"] = {-5, -1},
@@ -90,6 +97,9 @@ function actor:init()
         ["climb/jump_up"] = {-4, -13},
         ["climb/land_right"] = {-4, -13},
         ["climb/land_left"] = {-4, -13},
+
+        --Cutscene offsets
+        ["ball"] = {1, 8},
     }
 
     self.mirror_sprites = {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="11">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="12">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -23,6 +23,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="7" name="objects_hide" locked="1">
+  <object id="11" name="hideparty" x="0" y="-40" width="640" height="520"/>
+ </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects">
   <object id="2" name="transition" x="280" y="-40" width="80" height="40">
    <properties>

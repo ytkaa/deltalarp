@@ -886,7 +886,10 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["cooldown"] = 3.5,
+            ["cooldown_diff"] = 1
+          }
         },
         {
           id = 99,
