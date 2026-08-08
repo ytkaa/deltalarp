@@ -33,6 +33,9 @@ function Mod:init()
     Game:registerEvent("bloomobeburst", function(data)
         return BloomobeBurst(data.x, data.y)
     end)
+    Game:registerEvent("racingactivate", function(data)
+        return RacingActivate(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
+    end)
 
     --Annoying music bullshit
     Utils.merge(MUSIC_VOLUMES, {

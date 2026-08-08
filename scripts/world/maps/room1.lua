@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 108,
+  nextobjectid = 111,
   properties = {
     ["name"] = "Test Map - Room 1"
   },
@@ -96,10 +96,10 @@ return {
         0, 22, 23, 23, 23, 23, 23, 21, 23, 23, 23, 23, 23, 24, 0, 0, 0, 0, 0, 0,
         0, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 28, 0, 0, 0, 0, 0, 0,
         0, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 0, 0, 0, 0, 0, 0,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 7, 100, 7, 7, 100, 100,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 100, 100, 15, 15, 100, 100, 100, 100,
-        0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 100, 100, 100, 0, 0, 0, 0, 0, 0,
+        0, 10, 11, 11, 100, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0, 0, 0, 0, 0, 0,
+        100, 100, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 7, 100, 7, 7, 100, 100,
+        100, 100, 100, 11, 11, 11, 11, 11, 11, 11, 11, 11, 100, 100, 15, 15, 100, 100, 100, 100,
+        0, 10, 11, 100, 11, 11, 11, 11, 11, 11, 11, 100, 100, 100, 0, 0, 0, 0, 0, 0,
         0, 14, 15, 15, 11, 11, 11, 11, 11, 11, 11, 100, 15, 16, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 14, 15, 11, 11, 11, 15, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -394,9 +394,9 @@ return {
           type = "",
           shape = "rectangle",
           x = 0,
-          y = 760,
+          y = 920,
           width = 40,
-          height = 240,
+          height = 80,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -663,6 +663,20 @@ return {
           y = 360,
           width = 80,
           height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 108,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 760,
+          width = 40,
+          height = 80,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -1318,6 +1332,23 @@ return {
             ["text3_3"] = "* Hobbies that stimulate the mind,[wait:5] zah ha ha!",
             ["text4_1"] = "* WD [sound:wheredidtheyhidetheza]Gaster [sound:wheredidtheyhidetheza]Vecember [sound:wheredidtheyhidetheza]Holiday [sound:wheredidtheyhidetheza]Carol Rudy Knight Penumbra Ramb Eram Mancountry Image Friend Forgotten Man Last [sound:wheredidtheyhidetheza]Prophecy Northernlight Noelle Holiday Gaster Motif Girl Next Door DDLC [sound:wheredidtheyhidetheza]Theory"
           }
+        },
+        {
+          id = 110,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 840,
+          width = 40,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "room_racing",
+            ["marker"] = "entry"
+          }
         }
       }
     },
@@ -1521,6 +1552,20 @@ return {
           shape = "point",
           x = 80,
           y = 1560,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 109,
+          name = "to_racing",
+          type = "",
+          shape = "point",
+          x = 40,
+          y = 880,
           width = 0,
           height = 0,
           rotation = 0,

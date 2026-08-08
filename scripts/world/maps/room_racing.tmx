@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="4" nextobjectid="4">
+ <editorsettings>
+  <export target="room_racing.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../tilesets/castle.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,6,7,8,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,12,0,0,0,0,0,0,0,0,0,0,0,
+0,0,10,11,11,7,7,7,7,7,7,7,7,7,7,7,
+0,0,10,11,11,11,11,11,11,11,11,11,11,11,11,11,
+0,0,14,15,15,15,15,15,15,15,15,15,15,15,15,15,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects_party">
+  <object id="1" name="transition" x="640" y="280" width="40" height="80">
+   <properties>
+    <property name="map" value="room1"/>
+    <property name="marker" value="to_racing"/>
+   </properties>
+  </object>
+  <object id="3" name="racingactivate" x="480" y="320" width="40" height="40"/>
+ </objectgroup>
+ <objectgroup id="3" name="markers">
+  <object id="2" name="entry" x="600" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
