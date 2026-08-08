@@ -51,8 +51,9 @@ function item:init()
         tofer = "Check it!"
     }
 
-    -- TODO: Elemental resistance
-    -- Resists element 6 by 0.2
+    -- CUSTOM Elemental resistance !!!
+    self.element = "entertainment"
+    self.element_defense = "major"
 end
 
 return item

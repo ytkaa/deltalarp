@@ -32,6 +32,7 @@ function kipkipthrow:onStart()
             bullet.rotation = target_angle + math.rad(MathUtils.random(-20, 20))
             bullet.physics.match_rotation = true
             bullet.physics.speed = kipkipBulletSpeed
+            bullet.element = "plant"
         end)
     end
 end

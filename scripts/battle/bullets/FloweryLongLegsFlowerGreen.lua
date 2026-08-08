@@ -8,6 +8,8 @@ local FloweryLongLegsFlowerGreen, super = Class(Bullet)
 function FloweryLongLegsFlowerGreen:init(x, y, dir, speed)
     super.init(self, SCREEN_WIDTH / 2, 50, "bullets/flowerylonglegs/flower")
     self.shoot_timer = 0
+
+    self.element = "plant"
 end
 function FloweryLongLegsFlowerGreen:onCollide(soul) --stops bullet from disappearing when hitting the soul
     self.destroy_on_hit = false

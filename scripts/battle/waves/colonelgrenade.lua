@@ -25,6 +25,9 @@ function colonelgrenade:onStart()
             local target_y = Game.battle.soul.y --soul y
             local bullet = self:spawnBullet("bullets/colonel/grenade", start_x, start_y)
             
+            bullet.element = "plant"
+            bullet.destroy_on_hit = false
+
             bullet.start_x = start_x
             bullet.start_y = start_y
             bullet.target_x = target_x

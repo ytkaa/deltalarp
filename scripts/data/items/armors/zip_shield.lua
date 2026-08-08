@@ -49,9 +49,6 @@ function item:init()
         grace = "*Zips relentlessly*",
         tofer = "Check it!"
     }
-
-    -- TODO: Elemental resistance
-    -- Resists element 6 by 0.2
 end
 
 return item

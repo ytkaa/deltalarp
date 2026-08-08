@@ -7,6 +7,8 @@ local pellet, super = Class(Bullet)
 ---@param speed number # The speed the bullet will move at in the specified direction
 function pellet:init(x, y)
     super.init(self, x, y, "bullets/flowerylonglegs/bloombullet")
+
+    self.element = "plant"
 end
 
 return pellet

@@ -13,6 +13,7 @@ function colonelstand:onStart()
     local enemies = self:getAttackers()
     local bullet = self:spawnBullet("bullets/colonel/standing", x, (y + 55))
     bullet.destroy_on_hit = false
+    bullet.element = "plant"
 end
 
 function colonelstand:update()

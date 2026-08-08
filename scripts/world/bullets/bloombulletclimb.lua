@@ -19,6 +19,8 @@ function BloomBulletClimb:init(x, y, dir, damage, iFrames, speed)
     self.sprite:setRotationOrigin(0.5)
     self.collider = CircleCollider(self, self.width/2, self.height/2, self.width/2)
     self.remove_offscreen = true
+
+    self.element = "plant"
 end
 
 function BloomBulletClimb:update()

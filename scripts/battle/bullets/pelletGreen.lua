@@ -8,6 +8,8 @@ local pelletGreen, super = Class(Bullet)
 function pelletGreen:init(x, y)
     super.init(self, x, y, "bullets/flowerylonglegs/bloombullet")
     self:setColor(COLORS.lime) 
+
+    self.element = "plant"
 end
 
 function pelletGreen:onCollide(soul)

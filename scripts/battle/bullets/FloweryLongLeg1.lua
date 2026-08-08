@@ -22,6 +22,8 @@ function FloweryLongLeg1:init(x, y, dir, speed)
             Game.battle:shakeCamera()
             Assets.playSound("bump")
         end)
+
+    self.element = "plant"
 end
 
 function FloweryLongLeg1:onCollide(soul) --stops bullet from disappearing when hitting the soul

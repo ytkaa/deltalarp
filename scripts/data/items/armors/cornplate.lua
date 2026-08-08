@@ -50,8 +50,9 @@ function item:init()
         tofer = "Check it!"
     }
 
-    -- TODO: Elemental resistance
-    -- Resists element 6 by 0.2
+    -- CUSTOM Elemental resistance !!!
+    self.element = "plant"
+    self.element_defense = "minor"
 end
 
 return item

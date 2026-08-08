@@ -2,6 +2,8 @@ local ColonelRifleBullet, super = Class(Bullet)
 
 function ColonelRifleBullet:init(x, y)
     super.init(self, x, y, "bullets/colonel/gunbullet")
+    
+    self.element = "plant"
 end
 
 function ColonelRifleBullet:update()
