@@ -16,10 +16,10 @@
         },
         {
             "fileName": "maps/room_racing.tmx",
-            "height": 480,
-            "width": 640,
-            "x": -720,
-            "y": 560
+            "height": 2000,
+            "width": 2000,
+            "x": -2080,
+            "y": -240
         }
     ],
     "onlyShowAdjacentMaps": false,

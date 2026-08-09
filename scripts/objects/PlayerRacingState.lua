@@ -129,6 +129,11 @@ function PlayerRacingState:onExit(next_state)
     for _, follower in ipairs(Game.world.followers) do
         follower.sprite.alpha = 1
     end
+
+    self.velocity_x = 0
+    self.velocity_y = 0
+
+    self.last_horizontal = 1
 end
 
 function PlayerRacingState:onRemove()
