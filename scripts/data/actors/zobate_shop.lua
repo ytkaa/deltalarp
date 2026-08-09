@@ -23,6 +23,7 @@ function Zobate:init()
         ["idle"] = 8/30,
         ["slight_smile"] = 8/30,
         ["smile"] = 8/30,
+        ["bitter"] = 8/30,
     }
 end
 

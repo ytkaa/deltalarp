@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 82,
+  nextobjectid = 89,
   properties = {
     ["music"] = "field_jarona"
   },
@@ -391,6 +391,21 @@ return {
           gid = 113,
           visible = true,
           properties = {}
+        },
+        {
+          id = 83,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 160,
+          width = 160,
+          height = 160,
+          rotation = 0,
+          opacity = 1,
+          gid = 128,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -552,7 +567,10 @@ return {
           rotation = 0,
           opacity = 1,
           visible = true,
-          properties = {}
+          properties = {
+            ["cutscene"] = "chapter1/zobate.mystery_gate",
+            ["solid"] = true
+          }
         },
         {
           id = 78,
@@ -598,6 +616,23 @@ return {
           gid = 101,
           visible = true,
           properties = {}
+        },
+        {
+          id = 85,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 780,
+          y = 120,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/farm7",
+            ["marker"] = "to_gate2"
+          }
         }
       }
     },
@@ -800,6 +835,43 @@ return {
             ["target1"] = { id = 30 },
             ["target2"] = { id = 36 }
           }
+        },
+        {
+          id = 82,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 840,
+          y = -40,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "zobate_gate1",
+            ["inverted"] = true,
+            ["target1"] = { id = 88 },
+            ["target2"] = { id = 76 }
+          }
+        },
+        {
+          id = 87,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 940,
+          y = -70,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "zobate_gate1",
+            ["inverted"] = false,
+            ["target1"] = { id = 85 }
+          }
         }
       }
     },
@@ -894,7 +966,7 @@ return {
           shape = "rectangle",
           x = 1.415,
           y = 113.993,
-          width = 1199.17,
+          width = 774.582,
           height = 46.015,
           rotation = 0,
           opacity = 1,
@@ -1236,6 +1308,34 @@ return {
           opacity = 1,
           visible = true,
           properties = {}
+        },
+        {
+          id = 84,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 904,
+          y = 120,
+          width = 296,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 88,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 780,
+          y = 120,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -1274,6 +1374,20 @@ return {
           shape = "point",
           x = 1160,
           y = 1440,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 86,
+          name = "to_gate2",
+          type = "",
+          shape = "point",
+          x = 840,
+          y = 200,
           width = 0,
           height = 0,
           rotation = 0,

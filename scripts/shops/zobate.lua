@@ -46,7 +46,14 @@ function Zobate:init()
     self:registerTalk("About GARDNER")
     self:registerTalk("About me")
     self:registerTalk("About you")
-    self:registerTalkAfter("About show", 4)
+
+    -- The actual documented way to do this doesn't $$$$ing work
+    if Game:getFlag("zobate_quest", false) then
+        self:registerTalkAfter("Show", 4)
+    else
+        self:registerTalkAfter("Show?", 4)
+    end
+    
     
 end
 
@@ -98,16 +105,56 @@ function Zobate:startTalk(dialogue)
         self:startDialogue({
             --emotes get used here
             "[emote:oh]* About me..?",
-            "[emote:talk]* Zah,[wait:5] welph,[wait:5] "
+            "[emote:slight_smile]* Zah.[wait:5] welph...[wait:5]",
+            "[emote:talk]* My name is...[wait:5] Zobate.[wait:5] I am not of this strange world.",
+            "[emote:talk]* Itahu,[wait:5] itahu...[wait:5] Once,[wait:5] I was not a mere,[wait:5] lowly shopkeeper.[wait:5] I was the keeper...[wait:5] [emote:slight_smile]of the show,[wait:5] zah ha ha.",
+            "[emote:talk]* I was part of an old quartet.[wait:5] The old quartet of entertainment.",
+            "[emote:slight_smile]* The quartet...[wait:5] we...[wait:5] performed together.",
+            "[emote:smile]* We entertained together,[wait:5] we \nlaughed together...[wait:5] we cried together!",
+            "[emote:slight_smile]* We were as one.[wait:20] [emote:idle]That is,[wait:5] until[wait:5] [emote:oh]\nthat fateful day...",
+            "[emote:oh_sad]* ...[wait:5]that day...[wait:20] Kate...",
+            "[emote:idle]* ...[wait:10][emote:bitter]Kate.",
+            "[emote:talk]* Ultimately.[wait:5] I.",
+            "[emote:idle]* ...",
+            "[emote:bitter]* I was excised.[wait:5] From that old quartet.[wait:5] Cast out to this place,[wait:5] this shop.[wait:10] [emote:oh_sad]Never to begin that \nlast show.",
+            "[emote:talk]* A shame.",
+            "[emote:idle]* That one last show...[wait:5] [emote:talk]a shame it never was fruition,[wait:5] zah.[wait:5] [emote:slight_smile]But fate is unchanging...[wait:5] it is,[wait:5] it is.",
+            "[emote:talk]* Gitau."
         }, function ()
             -- Use this to reset the animation of the shopkeeper
             self.shopkeeper:setSprite("talk")
         end)
-    elseif dialogue == "About show" then
+    elseif dialogue == "Show?" then
         self:startDialogue({
             --emotes get used here
-            "[emote:smile]* LMAO I Haven't Written Any Dialogue Yet",
+            "[emote:oh]* Show...?[wait:5] You have interest?",
+            "[emote:talk]* Welph...[wait:5] I do not believe possible.",
+            "[emote:idle]* ...",
+            "[emote:idle]* But...[wait:5] hm...[wait:5] Vessel.[wait:5] You do possess a certain power,[wait:5] hokero...",
+            "[emote:talk]* Perhaps your power could be put in use...",
+            "[emote:slight_smile]* ...",
+            "[emote:smile]* Zah ha ha,[wait:5] I will tell you my knowledge.",
+            "[emote:talk]* There is an area,[wait:5] a space.[wait:5] A space rife with an air of entertainment and showdom.",
+            "[emote:oh]* But it is locked away...[wait:5] away in that field below...",
+            "[emote:talk]* As addition,[wait:5] there is three [wait:10][color:yellow]KEYS[color:reset].",
+            "[emote:talk]* One[wait:10] is TREASURE.[wait:20]\nOne[wait:10] is BARN.[wait:20]\n",
+            "[emote:slight_smile]* One...[wait:10] I possess,[wait:5] and you will take.",
+            "[emote:slight_smile]* (You got the MysteryKey.)[sound:item]",
+            "[emote:talk]* I may not,[wait:5] but,[wait:5] if you believe possible...[wait:5] trace the [color:yellow]KEYS[color:reset] and enter that area.",
+            "[emote:slight_smile]* If it is possible...[wait:5] you will find me there,[wait:5] and we will have that last show.[wait:5] [emote:smile]Zah ha ha!",
+            "[emote:smile][noskip]* ([sound:cd_bagel/noelle][color:yellow]NEW QUEST[color:reset]:[wait:20] Zobate's [color:purple]LAST SHOW[color:reset]!)[wait:1s]"
         }, function ()
+            -- Use this to reset the animation of the shopkeeper
+            self.shopkeeper:setSprite("talk")
+            Game.inventory:addItem("mystery_key")
+            Game:setFlag("zobate_quest", true)
+            self:registerTalkAfter("Show", 4)
+        end)
+    elseif dialogue == "Show" then
+        self:startDialogue({
+            --emotes get used here
+            "[emote:slight_smile]* One is TREASURE,[wait:5] one is BARN...",
+            }, function ()
             -- Use this to reset the animation of the shopkeeper
             self.shopkeeper:setSprite("talk")
         end)

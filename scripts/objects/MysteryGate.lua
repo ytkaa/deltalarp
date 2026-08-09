@@ -1,14 +1,18 @@
----@class MysteryGate : Event
-local MysteryGate, super = Class(Event)
+---@class MysteryGate : Interactable
+local MysteryGate, super = Class(Interactable)
 
-function MysteryGate:init(x, y)
-    super.init(self, x, y, 80, 80)
+function MysteryGate:init(x, y, properties)
+    super.init(self, x, y, {80, 80}, properties)
     self:setSprite("world/events/gate2")
     self.solid = true
+
+    self.key = properties["key"] or "mystery"
 end
 
 function MysteryGate:onInteract(player, dir)
-    Game.world:showText({"* (A mysterious gate...)", "* (It's locked.[sound:awkward])"})
+    if self.key == "mystery" then
+        self.world:startCutscene("chapter1/zobate", "mystery_gate", self)
+    end
 end
 
 return MysteryGate

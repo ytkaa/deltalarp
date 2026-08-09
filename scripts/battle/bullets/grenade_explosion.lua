@@ -24,7 +24,7 @@ end
 function GrenadeExplosion:onDamage(soul)
     if self.alpha >= 0.3 then -- if the explosion hasn't faded out much
         for _, party in ipairs(Game.battle.party) do
-            party:hurt(50) -- then do Big damage to all party members
+            party:hurt(25) -- then do Big damage to all party members
 
             --Swiped from Bullet code
             local inv_frames = self:getInvulnFrames()
