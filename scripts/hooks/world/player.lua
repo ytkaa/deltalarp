@@ -1,5 +1,12 @@
 local Player, super = HookSystem.hookScript(Player)
 
+function Player:init(chara, x, y)
+    super.init(self, chara, x, y)
+
+    self.racing_state = PlayerRacingState(self)
+    self.state_manager:addState("RACING", self.racing_state)
+end
+
 function Player:getCurrentSpeed(running)
     local speed = self:getBaseWalkSpeed()
     if running then
@@ -16,6 +23,10 @@ function Player:getCurrentSpeed(running)
         end
     end
     return speed
+end
+
+function Player:isRacing()
+    return self.state_manager.state == "RACING"
 end
 
 return Player

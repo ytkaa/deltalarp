@@ -36,6 +36,10 @@ function Mod:init()
     Game:registerEvent("racingactivate", function(data)
         return RacingActivate(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
     end)
+    Game:registerEvent("racingactivatenew", function(data)
+        return RacingActivateNew(data.x, data.y, {data.width, data.height, data.polygon}, data.properties)
+    end)
+
 
     --Annoying music bullshit
     Utils.merge(MUSIC_VOLUMES, {

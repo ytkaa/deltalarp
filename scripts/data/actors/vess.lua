@@ -27,6 +27,10 @@ function actor:init()
         -- Movement animations
         ["slide"]               = {"slide", 4/30, true},
 
+        -- Racing animations
+        ["racing/down_left"]               = {"racing/down_left", 1/2, false},
+        ["racing/down_right"]               = {"racing/down_right", 1/2, false},
+
         -- Battle animations
         ["battle/idle"] = {"battle/idle", 1/6, true},
 
@@ -67,6 +71,10 @@ function actor:init()
         ["walk/down"] = {0, 0},
 
         ["slide"] = {0, 0},
+
+        -- Racing offsets
+        ["racing/down_right"] = {-20, -17},
+        ["racing/down_left"] = {-20, -17},
 
         -- Battle offsets
         ["battle/idle"] = {-5, -1},
