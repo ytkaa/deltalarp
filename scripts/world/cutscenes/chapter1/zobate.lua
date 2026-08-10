@@ -25,7 +25,7 @@ return {
             Game.inventory:removeItem("mystery_key")
             Game.world.music:resume()
         else
-            Game.world:showText({"* (A mysterious gate...)", "* (It's locked.[sound:awkward])"})
+            cutscene:text({"* (A mysterious gate...)", "* (It's locked.[sound:awkward])"})
         end
     end;
 }
