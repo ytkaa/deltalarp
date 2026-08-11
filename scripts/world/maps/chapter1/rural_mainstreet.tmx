@@ -254,7 +254,7 @@ I'm sure you know yourself very well by now.</property>
   <object id="62" name="transition" x="1280" y="2400" width="40" height="240">
    <properties>
     <property name="map" value="chapter1/rural_lake"/>
-    <property name="marker" value="entry"/>
+    <property name="marker" value="spawn"/>
    </properties>
   </object>
  </objectgroup>

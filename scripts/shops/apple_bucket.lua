@@ -3,6 +3,9 @@ local AppleBucket, super = Class(Shop)
 function AppleBucket:init()
     super.init(self)
 
+    --Fixes music bug
+    self.shop_music = nil
+
     self.encounter_text = "[sound:grab][wait:15]* (You dunk your head into a bucket \nfilled with commodities.)"
     self.shop_text = "* (Apple store.)"
     self.leaving_text = "* (You took your head out of the bucket.)"

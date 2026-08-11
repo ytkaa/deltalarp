@@ -968,7 +968,7 @@ return {
           visible = true,
           properties = {
             ["map"] = "chapter1/rural_lake",
-            ["marker"] = "entry"
+            ["marker"] = "spawn"
           }
         }
       }

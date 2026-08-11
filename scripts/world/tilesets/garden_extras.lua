@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 17,
+  tilecount = 18,
   tiles = {
     {
       id = 29,
@@ -124,6 +124,12 @@ return {
     {
       id = 45,
       image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_bucket.png",
+      width = 866,
+      height = 738
+    },
+    {
+      id = 46,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_bucket_2.png",
       width = 866,
       height = 738
     }
