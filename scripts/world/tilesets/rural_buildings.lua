@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 32,
+  tilecount = 33,
   tiles = {
     {
       id = 0,
@@ -136,14 +136,14 @@ return {
     {
       id = 18,
       image = "../../../assets/sprites/tilesets/rural/barn_door_closed.png",
-      width = 188,
-      height = 210
+      width = 94,
+      height = 105
     },
     {
       id = 19,
       image = "../../../assets/sprites/tilesets/rural/barn_door_open.png",
-      width = 324,
-      height = 210
+      width = 162,
+      height = 105
     },
     {
       id = 20,
@@ -216,6 +216,12 @@ return {
       image = "../../../assets/sprites/tilesets/rural/wheat_trans2.png",
       width = 40,
       height = 60
+    },
+    {
+      id = 32,
+      image = "../../../assets/sprites/tilesets/rural/rock.png",
+      width = 40,
+      height = 36
     }
   }
 }

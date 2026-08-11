@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="32" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="rural_buildings" tilewidth="800" tileheight="800" tilecount="33" columns="0">
  <editorsettings>
   <export target="rural_buildings.lua" format="lua"/>
  </editorsettings>
@@ -59,10 +59,10 @@
   <image source="../../../assets/sprites/tilesets/rural/barn.png" width="720" height="400"/>
  </tile>
  <tile id="18">
-  <image source="../../../assets/sprites/tilesets/rural/barn_door_closed.png" width="188" height="210"/>
+  <image source="../../../assets/sprites/tilesets/rural/barn_door_closed.png" width="94" height="105"/>
  </tile>
  <tile id="19">
-  <image source="../../../assets/sprites/tilesets/rural/barn_door_open.png" width="324" height="210"/>
+  <image source="../../../assets/sprites/tilesets/rural/barn_door_open.png" width="162" height="105"/>
  </tile>
  <tile id="20">
   <image source="../../../assets/sprites/tilesets/rural/Click_here.png" width="120" height="60"/>
@@ -99,5 +99,8 @@
  </tile>
  <tile id="31">
   <image source="../../../assets/sprites/tilesets/rural/wheat_trans2.png" width="40" height="60"/>
+ </tile>
+ <tile id="32">
+  <image source="../../../assets/sprites/tilesets/rural/rock.png" width="40" height="36"/>
  </tile>
 </tileset>

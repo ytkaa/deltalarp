@@ -187,7 +187,7 @@
     <property name="cutscene" value="chapter1/treasures.evaluateCaveTreasure"/>
    </properties>
   </object>
-  <object id="58" name="enemy" x="168" y="1296" width="40" height="40">
+  <object id="58" name="enemy" x="-130.667" y="1237.33" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="true"/>
@@ -199,7 +199,7 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="60" name="enemy" x="280" y="1282" width="40" height="40">
+  <object id="60" name="enemy" x="-52" y="1248.67" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="true"/>
@@ -211,7 +211,7 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="61" name="enemy" x="336" y="1364" width="40" height="40">
+  <object id="61" name="enemy" x="-67.0303" y="1357.94" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="true"/>
@@ -223,7 +223,7 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="65" name="enemy" x="164" y="546" width="40" height="40">
+  <object id="65" name="enemy" x="-100" y="452.667" width="40" height="40">
    <properties>
     <property name="actor" value="fleecebug"/>
     <property name="chase" type="bool" value="true"/>
@@ -280,7 +280,7 @@
     <property name="cutscene" value="chapter1/caveEnemyDrops.sublevel3ColoredFrontiers4"/>
    </properties>
   </object>
-  <object id="79" name="enemy" x="66.6667" y="1333.33" width="40" height="40">
+  <object id="79" name="enemy" x="-112" y="1134.66" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="true"/>

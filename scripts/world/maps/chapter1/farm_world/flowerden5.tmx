@@ -8,7 +8,7 @@
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/garden_extras.tsx"/>
- <tileset firstgid="144" source="../../../tilesets/treasures.tsx"/>
+ <tileset firstgid="149" source="../../../tilesets/treasures.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="51" height="72">
   <data encoding="csv">
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
@@ -87,7 +87,7 @@
  </layer>
  <objectgroup id="4" name="objects">
   <object id="8" gid="143" x="1480" y="244" width="123" height="113"/>
-  <object id="13" gid="153" x="1150.67" y="2381.33" width="165.667" height="157.837"/>
+  <object id="13" gid="158" x="1150.67" y="2381.33" width="165.667" height="157.837"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="1" name="npc" x="200" y="1480" width="40" height="40">
@@ -132,7 +132,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="collision">
+ <objectgroup color="#0000ff" id="6" name="collision">
   <object id="14" x="0" y="0" width="639.568" height="1278.92"/>
   <object id="15" x="0" y="1280" width="159.568" height="1278.92"/>
   <object id="16" x="160" y="1560" width="479.841" height="918.284"/>
@@ -240,7 +240,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="5" name="controllers">
+ <objectgroup color="#ffff00" id="5" name="controllers">
   <object id="10" name="toggle" x="720" y="1755.94">
    <properties>
     <property name="flag" value="pickedUpTheKey"/>

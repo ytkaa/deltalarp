@@ -971,5 +971,6 @@ return {
         cutscene:attachFollowers()
         cutscene:attachCamera()
         Game:setFlag("treasureHuntBegan", true)
+        Game.world.music:resume()
     end;
 }

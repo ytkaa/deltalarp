@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="16">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="16">
  <editorsettings>
   <export target="garden_orchard_pre_mint.lua" format="lua"/>
  </editorsettings>
@@ -57,7 +57,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="5" name="objects_party">
+ <objectgroup color="#ff007f" id="5" name="objects_party">
   <object id="1" name="chest" x="460" y="320" width="40" height="40">
    <properties>
     <property name="item" value="revivemint"/>
@@ -70,7 +70,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="markers">
+ <objectgroup color="#aa00ff" id="6" name="markers">
   <object id="4" name="spawn" x="160" y="40">
    <point/>
   </object>

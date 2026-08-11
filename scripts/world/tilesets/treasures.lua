@@ -4,8 +4,8 @@ return {
   tiledversion = "1.12.2",
   name = "treasures",
   class = "",
-  tilewidth = 1498,
-  tileheight = 1500,
+  tilewidth = 1941,
+  tileheight = 3515,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 10,
+  tilecount = 11,
   tiles = {
     {
       id = 0,
@@ -84,6 +84,12 @@ return {
       image = "../../../assets/sprites/treasures/the key.png",
       width = 243,
       height = 224
+    },
+    {
+      id = 10,
+      image = "../../../assets/sprites/treasures/ps5.png",
+      width = 1941,
+      height = 3515
     }
   }
 }

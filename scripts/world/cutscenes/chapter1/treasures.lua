@@ -12,15 +12,8 @@ return {
                 Game:setFlag("pickedUpFoliageAssorter", true)
                 Game:setFlag("FoliageAssorter", true)
                 cutscene:text("* (Picked up treasure.)")
-                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
-                else
-                    return
-                end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -39,15 +32,8 @@ return {
                 Game:setFlag("BugAnnihilator", true)
                 --carriedTreasure = "BugAnnihilator" --I would`ve prefered to use a global variable, but global variables persist through ALL OF KRISTAL. How braindead is that
                 cutscene:text("* (Picked up treasure.)")
-                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
-                else
-                    return
-                end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -65,15 +51,8 @@ return {
                 Game:setFlag("pickedUpArmoredNut", true)
                 Game:setFlag("ArmoredNut", true)
                 cutscene:text("* (Picked up treasure.)")
-                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
-                else
-                    return
-                end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -91,15 +70,8 @@ return {
                 Game:setFlag("pickedUpArmoredNut2", true)
                 Game:setFlag("ArmoredNut", true)
                 cutscene:text("* (Picked up treasure.)")
-                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
-                else
-                    return
-                end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -117,15 +89,8 @@ return {
                 Game:setFlag("pickedUpRedPikmin", true)
                 Game:setFlag("RedPikmin", true)
                 cutscene:text("* (Picked up treasure.)")
-                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
-                else
-                    return
-                end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -144,7 +109,7 @@ return {
                 Game:setFlag("BrokenHome", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -163,7 +128,7 @@ return {
                 Game:setFlag("HolyNectar", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -182,7 +147,7 @@ return {
                 Game:setFlag("ColoredFrontiers", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -201,7 +166,7 @@ return {
                 Game:setFlag("RubberUgly", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -220,7 +185,7 @@ return {
                 Game:setFlag("AdamantineGirdle", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
@@ -234,10 +199,70 @@ return {
                 Game:setFlag("TheKey", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a human.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
             else
                 return
             end
+    end;
+    pickupJoylessDevice = function(cutscene, event)
+        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                Game:setFlag("isCarryingTreasure", true)
+                Game:setFlag("pickedUpJoylessDevice", true)
+                Game:setFlag("JoylessDevice", true)
+                cutscene:text("* (Picked up treasure.)")
+            if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                    cutscene:text("* (The weight of the treasure pulls you down...)")
+                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                    Game:setFlag("hasPickedUpTreasureBefore", true)
+                else
+                    return
+                end
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+            else
+                return
+            end
+    end;
+    pickupJoylessDevice = function(cutscene, event)
+        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                Game:setFlag("isCarryingTreasure", true)
+                Game:setFlag("pickedUpJoylessDevice", true)
+                Game:setFlag("JoylessDevice", true)
+                cutscene:text("* (Picked up treasure.)")
+            if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                    cutscene:text("* (The weight of the treasure pulls you down...)")
+                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                    Game:setFlag("hasPickedUpTreasureBefore", true)
+                else
+                    return
+                end
+            elseif Game:getFlag("isCarryingTreasure") then
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+            else
+                return
+            end
+    end;
+    evaluateOverworldTreasure = function(cutscene, event) --https://preview.redd.it/weird-yandere-simulator-fact-if-else-v0-99l916y0sgpd1.png?width=513&format=png&auto=webp&s=960f031402041549cc472cdce42820ee48c372e6
+        if Game:getFlag("JoylessDevice") then
+            local debtPaid = Game:getFlag("debtPaid", 0)
+            Game:setFlag("debtPaid", debtPaid + 335)
+            cutscene:text("* (Treasure?[wait:5] Ooh,[wait:5] shiny...)")
+            cutscene:text("* (This is the Joyless Device.[wait:5] It's worth [sound:treasureappraise]D$335.)")
+            Game:setFlag("isCarryingTreasure", false)
+            Game:setFlag("JoylessDevice", false)
+        else
+            cutscene:text("* (This field and it's connecting areas have a lot of [color:yellow]TREASURES.[color:reset])")
+            cutscene:text("* (We need D$1000 worth to pay off our debt to the Beebeldorf Conglomerate.)")
+            cutscene:text("* (Bring the treasures to me and we'll clear out the way for you.)")
+            cutscene:text("* (It's simple.[wait:5] Just interact with something interesting and bring it back to me.)")
+            cutscene:text("* (Oh,[wait:5] also...)")
+            cutscene:text("* (You can rob enemies with the ACT menu.)")
+            cutscene:text("* (Don't worry,[wait:5] it's for a good cause.)")
+        end
     end;
     evaluateCaveTreasure = function(cutscene, event) --https://preview.redd.it/weird-yandere-simulator-fact-if-else-v0-99l916y0sgpd1.png?width=513&format=png&auto=webp&s=960f031402041549cc472cdce42820ee48c372e6
         local treasuresCollected = treasuresCollected
@@ -622,5 +647,39 @@ return {
         --Game.stage:addChild(outer) -- this works way better and doesnt need jank, but player can still move, despite the fact that i nested this in a cutscene
         Game.world:openMenu(outer)
         Assets.playSound("pik2menuopen")
+    end;
+    pickupWeight = function(cutscene, event)
+        cutscene:text("* (Pickup the weight?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 then
+                local count = Game:getFlag("weightsCarried", 0)
+                Game:setFlag("weightsCarried", count + 1)
+                cutscene:text("* (Picked up weight.)")
+            else
+                return
+            end
+    end;
+    firstPaperBag = function(cutscene, event)
+        cutscene:text("* (An imposing paper bag...)")
+        cutscene:text("* (Looks like it needs 3 weights to deflate it.)")
+        cutscene:text("* (Attempt to deflate?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and Game:getFlag("weightsCarried", 0) >= 3 then
+                local count = Game:getFlag("weightsCarried", 0)
+                Game:setFlag("weightsCarried", count - 3)
+                cutscene:wait(1)
+                local options = {
+                    ["play_sound"] = false
+                }
+                local paperBag = Game.world:getEvent(8)
+                local paperBaginteract = Game.world:getEvent(9)
+                paperBag:explode(0, 0, false)
+                paperBaginteract:explode(0, 0, false, options)
+                Game:setFlag("firstPaperBag", true)
+            elseif choice == 1 and Game:getFlag("weightsCarried", 0) < 3 then
+                cutscene:text("* (Alas,[wait:5] you don't have enough weight...)")
+            else
+                return
+            end
     end;
 }

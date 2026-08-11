@@ -9,17 +9,29 @@ return {
   height = 20,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 4,
-  nextobjectid = 4,
+  nextlayerid = 8,
+  nextobjectid = 39,
   properties = {
     ["music"] = "garden",
-    ["name"] = "Garden - Weights Puzzle"
+    ["name"] = "Garden - Weight Puzzle"
   },
   tilesets = {
     {
       name = "garden",
       firstgid = 1,
       filename = "../../../tilesets/garden.tsx"
+    },
+    {
+      name = "garden_extras",
+      firstgid = 101,
+      filename = "../../../tilesets/garden_extras.tsx",
+      exportfilename = "../../../tilesets/garden_extras.lua"
+    },
+    {
+      name = "treasures",
+      firstgid = 149,
+      filename = "../../../tilesets/treasures.tsx",
+      exportfilename = "../../../tilesets/treasures.lua"
     }
   },
   layers = {
@@ -43,24 +55,436 @@ return {
       data = {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 48, 48, 47, 47, 15, 15, 15, 15, 15, 5, 5, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 48, 48, 48, 48, 15, 15, 16, 15, 5, 15, 5, 5, 5, 5, 5, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 47, 48, 48, 48, 16, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 22, 0, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 47, 48, 48, 48, 48, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 48, 48, 47, 48, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 48, 48, 48, 48, 15, 16, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-        48, 48, 48, 47, 48, 48, 15, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-        48, 48, 48, 48, 48, 48, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
-        48, 48, 48, 48, 48, 48, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
-        48, 48, 48, 48, 48, 48, 15, 15, 15, 16, 5, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39,
-        48, 48, 48, 48, 48, 48, 16, 15, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49,
-        48, 48, 48, 48, 48, 48, 15, 15, 15, 15, 15, 15, 15, 15, 5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 9, 29, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59,
-        48, 47, 47, 47, 48, 48, 15, 15, 16, 16, 15, 5, 5, 5, 5, 5, 9, 9, 9, 9, 9, 9, 9, 29, 29, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        48, 48, 48, 48, 48, 48, 15, 15, 15, 15, 5, 5, 5, 5, 5, 9, 29, 29, 29, 29, 29, 29, 29, 39, 39, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        47, 47, 48, 48, 48, 48, 37, 38, 37, 37, 9, 9, 9, 9, 9, 29, 39, 39, 39, 39, 39, 39, 39, 49, 49, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 39, 49, 49, 49, 49, 49, 49, 49, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 49, 59, 59, 59, 59, 59, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
+        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19,
+        9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29,
+        19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 9, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39,
+        29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 19, 9, 5, 5, 6, 5, 5, 5, 5, 9, 9, 29, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49,
+        39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 29, 19, 9, 9, 9, 9, 9, 9, 9, 29, 29, 39, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59,
+        49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 39, 29, 29, 29, 29, 29, 29, 29, 29, 39, 39, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 49, 39, 39, 39, 39, 39, 39, 39, 39, 49, 49, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 49, 49, 49, 49, 49, 49, 49, 49, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 59, 59, 59, 59, 59, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 4,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 9,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 186,
+          y = 464.333,
+          width = 354,
+          height = 205,
+          rotation = 0,
+          opacity = 1,
+          gid = 148,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 35,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 30,
+          y = 478.667,
+          width = 131.667,
+          height = 238.438,
+          rotation = 0,
+          opacity = 1,
+          gid = 159,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 5,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 13,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 468,
+          y = 86.6667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "firstPaperBag",
+            ["inverted"] = true,
+            ["target1"] = { id = 8 },
+            ["target2"] = { id = 9 }
+          }
+        },
+        {
+          id = 14,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 702.667,
+          y = 82.6667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight1",
+            ["inverted"] = true,
+            ["target1"] = { id = 10 }
+          }
+        },
+        {
+          id = 15,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 926.667,
+          y = 54.6667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight2",
+            ["inverted"] = true,
+            ["target1"] = { id = 11 }
+          }
+        },
+        {
+          id = 16,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1082.67,
+          y = 665.333,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight3",
+            ["inverted"] = true,
+            ["target1"] = { id = 12 }
+          }
+        },
+        {
+          id = 19,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1149,
+          y = 531,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight4",
+            ["inverted"] = true,
+            ["target1"] = { id = 18 }
+          }
+        },
+        {
+          id = 38,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 248,
+          y = 80,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "pickedUpJoylessDevice",
+            ["inverted"] = true,
+            ["target1"] = { id = 37 },
+            ["target2"] = { id = 35 }
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "collisions",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 17,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1040,
+          y = 200,
+          width = 561.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 20,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 960,
+          y = 120,
+          width = 78.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 21,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 80,
+          width = 203.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 22,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 40,
+          width = 38.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 23,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 520,
+          y = 80,
+          width = 203.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 24,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -6,
+          y = 160,
+          width = 565.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 25,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 560,
+          y = 160,
+          width = 81.833,
+          height = 39.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 26,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1040,
+          y = 400,
+          width = 561.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 27,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1040,
+          y = 480,
+          width = 78.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 28,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1000,
+          y = 520,
+          width = 38.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 29,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 560,
+          y = 520,
+          width = 38.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 30,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 480,
+          width = 565.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 31,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 920,
+          y = 560,
+          width = 78.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 32,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 600,
+          width = 286.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 33,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 600,
+          y = 560,
+          width = 38.833,
+          height = 79.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 34,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -80,
+          y = 220,
+          width = 81.833,
+          height = 259.5,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        }
       }
     },
     {
@@ -92,6 +516,112 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/garden_treasurehunt",
             ["marker"] = "to_weights"
+          }
+        },
+        {
+          id = 8,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 181,
+          y = 240,
+          width = 358.666,
+          height = 236.167,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.firstPaperBag",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 10,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 680,
+          y = 200,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight1",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 11,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 880,
+          y = 240,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight2",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 12,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 480,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight3",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 18,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 920,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight3",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 37,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 34,
+          y = 240,
+          width = 127.666,
+          height = 236.167,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupJoylessDevice",
+            ["solid"] = true
           }
         }
       }

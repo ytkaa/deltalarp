@@ -1,42 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="4" nextobjectid="4">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="39">
  <editorsettings>
   <export target="garden_treasurehunt2.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="music" value="garden"/>
-  <property name="name" value="Garden - Weights Puzzle"/>
+  <property name="name" value="Garden - Weight Puzzle"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
+ <tileset firstgid="101" source="../../../tilesets/garden_extras.tsx"/>
+ <tileset firstgid="149" source="../../../tilesets/treasures.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="40" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,48,48,47,47,15,15,15,15,15,5,5,5,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,48,48,48,48,15,15,16,15,5,15,5,5,5,5,5,5,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,47,48,48,48,16,15,15,15,5,5,5,5,5,5,5,5,5,5,22,0,5,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,47,48,48,48,48,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,48,48,47,48,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,48,48,48,48,15,16,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
-48,48,48,47,48,48,15,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
-48,48,48,48,48,48,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
-48,48,48,48,48,48,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,29,29,29,29,29,29,29,29,29,29,29,29,29,29,
-48,48,48,48,48,48,15,15,15,16,5,15,5,5,5,5,5,5,5,5,5,5,5,5,5,5,39,39,39,39,39,39,39,39,39,39,39,39,39,39,
-48,48,48,48,48,48,16,15,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,5,5,9,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
-48,48,48,48,48,48,15,15,15,15,15,15,15,15,5,5,5,5,5,5,5,5,5,9,9,29,59,59,59,59,59,59,59,59,59,59,59,59,59,59,
-48,47,47,47,48,48,15,15,16,16,15,5,5,5,5,5,9,9,9,9,9,9,9,29,29,39,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-48,48,48,48,48,48,15,15,15,15,5,5,5,5,5,9,29,29,29,29,29,29,29,39,39,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-47,47,48,48,48,48,37,38,37,37,9,9,9,9,9,29,39,39,39,39,39,39,39,49,49,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,39,49,49,49,49,49,49,49,59,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,49,59,59,59,59,59,59,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,6,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,5,5,5,5,6,5,5,5,5,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,5,5,5,5,5,5,5,5,5,5,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,5,5,5,5,19,19,19,19,19,19,19,19,19,19,19,19,19,19,
+9,9,9,9,9,9,9,9,9,9,9,9,9,9,5,5,5,5,5,5,5,5,5,5,7,5,29,29,29,29,29,29,29,29,29,29,29,29,29,29,
+19,19,19,19,19,19,19,19,19,19,19,19,19,19,9,5,5,5,5,5,5,5,5,5,5,9,39,39,39,39,39,39,39,39,39,39,39,39,39,39,
+29,29,29,29,29,29,29,29,29,29,29,29,29,29,19,9,5,5,6,5,5,5,5,9,9,29,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
+39,39,39,39,39,39,39,39,39,39,39,39,39,39,29,19,9,9,9,9,9,9,9,29,29,39,59,59,59,59,59,59,59,59,59,59,59,59,59,59,
+49,49,49,49,49,49,49,49,49,49,49,49,49,49,39,29,29,29,29,29,29,29,29,39,39,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+59,59,59,59,59,59,59,59,59,59,59,59,59,59,49,39,39,39,39,39,39,39,39,49,49,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,49,49,49,49,49,49,49,49,59,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,59,59,59,59,59,59,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup color="#ff007f" id="4" name="objects">
+  <object id="9" gid="148" x="186" y="464.333" width="354" height="205"/>
+  <object id="35" gid="159" x="30" y="478.667" width="131.667" height="238.438"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="5" name="controllers">
+  <object id="13" name="toggle" x="468" y="86.6667">
+   <properties>
+    <property name="flag" value="firstPaperBag"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="8"/>
+    <property name="target2" type="object" value="9"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="toggle" x="702.667" y="82.6667">
+   <properties>
+    <property name="flag" value="weight1"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="toggle" x="926.667" y="54.6667">
+   <properties>
+    <property name="flag" value="weight2"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="11"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="toggle" x="1082.67" y="665.333">
+   <properties>
+    <property name="flag" value="weight3"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="12"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="toggle" x="1149" y="531">
+   <properties>
+    <property name="flag" value="weight4"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="18"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="toggle" x="248" y="80">
+   <properties>
+    <property name="flag" value="pickedUpJoylessDevice"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="37"/>
+    <property name="target2" type="object" value="35"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="6" name="collisions">
+  <object id="17" x="1040" y="200" width="561.833" height="79.5"/>
+  <object id="20" x="960" y="120" width="78.833" height="79.5"/>
+  <object id="21" x="760" y="80" width="203.833" height="79.5"/>
+  <object id="22" x="720" y="40" width="38.833" height="79.5"/>
+  <object id="23" x="520" y="80" width="203.833" height="79.5"/>
+  <object id="24" x="-6" y="160" width="565.833" height="79.5"/>
+  <object id="25" x="560" y="160" width="81.833" height="39.5"/>
+  <object id="26" x="1040" y="400" width="561.833" height="79.5"/>
+  <object id="27" x="1040" y="480" width="78.833" height="79.5"/>
+  <object id="28" x="1000" y="520" width="38.833" height="79.5"/>
+  <object id="29" x="560" y="520" width="38.833" height="79.5"/>
+  <object id="30" x="0" y="480" width="565.833" height="79.5"/>
+  <object id="31" x="920" y="560" width="78.833" height="79.5"/>
+  <object id="32" x="640" y="600" width="286.833" height="79.5"/>
+  <object id="33" x="600" y="560" width="38.833" height="79.5"/>
+  <object id="34" x="-80" y="220" width="81.833" height="259.5"/>
+ </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="1" name="transition" x="1600" y="280" width="40" height="120">
    <properties>
     <property name="map" value="chapter1/farm_world/garden_treasurehunt"/>
     <property name="marker" value="to_weights"/>
+   </properties>
+  </object>
+  <object id="8" name="interactable" x="181" y="240" width="358.666" height="236.167">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.firstPaperBag"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="680" y="200" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight1"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="880" y="240" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight2"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="760" y="480" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight3"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="920" y="400" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight3"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="37" name="interactable" x="34" y="240" width="127.666" height="236.167">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupJoylessDevice"/>
+    <property name="solid" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>
