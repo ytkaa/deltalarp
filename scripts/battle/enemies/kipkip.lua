@@ -25,15 +25,15 @@ function Kipkip:init()
     self.check = "AT 4 DF 1\n* Somewhat greedy little guy. \nHe desperately wants to bloom."
 
     -- Text randomly displayed at the bottom of the screen each turn
-    if self.gotRobbed == false then
+    if self.gotRobbed == true then
+        self.text = {
+            "* Kipkip can't believe you somehow managed to rob it.",
+        }
+    else
         self.text = {
             "* Kipkip analyzes your ability to plan and lead.",
             "* Kipkip looks for nectar to make itself stronger.",
             "* Kipkip thinks you'd look authoritative with a whistle."
-        }
-    else
-        self.text = {
-            "* Kipkip can't believe you somehow managed to rob it.",
         }
     end
     -- Text displayed at the bottom of the screen when the enemy has low health

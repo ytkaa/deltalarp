@@ -28,13 +28,13 @@ function Fleecebug:init()
     self.text = {
         "* Fleecebug tries to sniff you.",
     }
-    if self.gotRobbed == false then
+    if self.gotRobbed == true then
         self.text = {
             "* Fleecebug attempts to file a police report.",
         }
     else
         self.text = {
-            "* Fleecebug attempts to file a police report.",
+            "* Fleecebug tries to sniff you.",
         }
     end
     -- Text displayed at the bottom of the screen when the enemy has low health
