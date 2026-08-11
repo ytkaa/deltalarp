@@ -32,7 +32,6 @@ function Fleecebug:init()
         self.text = {
             "* Fleecebug attempts to file a police report.",
         }
-    end
     else
         self.text = {
             "* Fleecebug attempts to file a police report.",
