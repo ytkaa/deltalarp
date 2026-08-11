@@ -4,6 +4,7 @@
   <export target="garden_pikmin2cave.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="music" value="garden"/>
   <property name="name" value="Garden - Cave Entrance"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>

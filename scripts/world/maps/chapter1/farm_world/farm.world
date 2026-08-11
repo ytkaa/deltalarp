@@ -207,15 +207,71 @@
             "fileName": "garden_orchard1.tmx",
             "height": 1400,
             "width": 1960,
-            "x": 27296,
-            "y": -7127
+            "x": 30600,
+            "y": -5231
         },
         {
             "fileName": "garden_orchard2.tmx",
             "height": 1920,
             "width": 920,
-            "x": 27056,
-            "y": -9127
+            "x": 30360,
+            "y": -7231
+        },
+        {
+            "fileName": "garden_treasurehunt.tmx",
+            "height": 2000,
+            "width": 2000,
+            "x": 27000,
+            "y": -5391
+        },
+        {
+            "fileName": "garden_treasurehunt2.tmx",
+            "height": 800,
+            "width": 1600,
+            "x": 25320,
+            "y": -4031
+        },
+        {
+            "fileName": "garden_pikmin2cave.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 29320,
+            "y": -6191
+        },
+        {
+            "fileName": "flowerden.tmx",
+            "height": 2880,
+            "width": 2040,
+            "x": 27000,
+            "y": -2871
+        },
+        {
+            "fileName": "flowerden2.tmx",
+            "height": 4520,
+            "width": 2880,
+            "x": 26560,
+            "y": 49
+        },
+        {
+            "fileName": "flowerden3.tmx",
+            "height": 2880,
+            "width": 2040,
+            "x": 27160,
+            "y": 4849
+        },
+        {
+            "fileName": "flowerden4.tmx",
+            "height": 4000,
+            "width": 4000,
+            "x": 26000,
+            "y": 7920
+        },
+        {
+            "fileName": "flowerden5.tmx",
+            "height": 2880,
+            "width": 2040,
+            "x": 27040,
+            "y": 11929
         }
     ],
     "onlyShowAdjacentMaps": false,

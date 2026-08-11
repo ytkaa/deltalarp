@@ -29,7 +29,7 @@ return {
     },
     {
       name = "treasures",
-      firstgid = 141,
+      firstgid = 147,
       filename = "../../../tilesets/treasures.tsx",
       exportfilename = "../../../tilesets/treasures.lua"
     }
@@ -997,7 +997,7 @@ return {
           height = 178.601,
           rotation = 0,
           opacity = 1,
-          gid = 141,
+          gid = 147,
           visible = true,
           properties = {}
         },
@@ -1012,7 +1012,7 @@ return {
           height = 204.876,
           rotation = 0,
           opacity = 1,
-          gid = 142,
+          gid = 148,
           visible = true,
           properties = {}
         },
@@ -1027,7 +1027,7 @@ return {
           height = 84,
           rotation = 0,
           opacity = 1,
-          gid = 143,
+          gid = 149,
           visible = true,
           properties = {}
         },
@@ -1042,7 +1042,7 @@ return {
           height = 84,
           rotation = 0,
           opacity = 1,
-          gid = 143,
+          gid = 149,
           visible = true,
           properties = {}
         },
@@ -1057,7 +1057,7 @@ return {
           height = 170.667,
           rotation = 0,
           opacity = 1,
-          gid = 144,
+          gid = 150,
           visible = true,
           properties = {}
         }
