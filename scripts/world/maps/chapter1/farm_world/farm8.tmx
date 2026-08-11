@@ -68,11 +68,9 @@
    <properties>
     <property name="actor" value="starwalker"/>
     <property name="text1_1" value="* So the idea here is theres gonna be a shredder/lawnmower enemy that chases you."/>
-    <property name="text1_2" value="* As it chases you it ends up shredding a lot of the wheat"/>
-    <property name="text1_3" value="* Maybe shredding wheat can reveal some item but maybe we've given a lot already"/>
-    <property name="text1_4" value="* But mainly its just a fun thing that teaches a mechanic we can reuse later"/>
-    <property name="text1_5" value="* The lawnmower chasing is also not the intended solution for the wheat wall above btw"/>
-    <property name="text1_6" value="* That will require backtracking from the garden, i got a vague idea of it in my head"/>
+    <property name="text1_2" value="* ..."/>
+    <property name="text1_3" value="* ...that was the idea,[wait:5] anyway."/>
+    <property name="text1_4" value="* but we can't all get what we want."/>
    </properties>
   </object>
  </objectgroup>

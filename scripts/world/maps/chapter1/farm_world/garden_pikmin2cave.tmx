@@ -45,8 +45,8 @@
   <object id="19" x="640" y="480" width="40.667" height="80.0003"/>
   <object id="20" x="600" y="520" width="40.667" height="80.0003"/>
   <object id="21" x="520.333" y="560.667" width="78.667" height="80.0003"/>
-  <object id="22" x="440" y="600" width="78.667" height="80.0003"/>
-  <object id="23" x="280" y="600" width="78.667" height="80.0003"/>
+  <object id="22" x="440" y="600" width="78.667" height="221.5"/>
+  <object id="23" x="280" y="600" width="78.667" height="218.5"/>
   <object id="24" x="200" y="560" width="78.667" height="80.0003"/>
   <object id="25" x="120" y="480" width="40.667" height="80.0003"/>
   <object id="26" x="160" y="520" width="40.667" height="80.0003"/>

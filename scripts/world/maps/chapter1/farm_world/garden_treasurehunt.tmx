@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="4" nextobjectid="17">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="127">
  <editorsettings>
   <export target="garden_treasurehunt.lua" format="lua"/>
  </editorsettings>
+ <properties>
+  <property name="music" value="garden"/>
+  <property name="name" value="Garden - Treasure Field"/>
+ </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/garden_extras.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="50" height="50">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,0,0,
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,5,5,5,5,5,5,5,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,
+0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,22,0,0,
+0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,22,0,0,0,0,0,0,0,0,5,5,5,5,22,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,22,
+0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,22,0,0,0,5,5,5,5,5,5,22,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,
 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
 9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
@@ -48,14 +52,14 @@
 0,0,0,49,39,29,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,
 0,0,0,59,49,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,
 0,0,0,0,59,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,29,19,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,
-0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,39,29,19,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,
-0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,49,39,29,29,19,9,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,
-0,0,0,0,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,59,49,39,39,29,19,19,19,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,9,0,
-0,0,0,0,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,0,59,49,49,39,29,29,29,19,19,9,9,9,9,9,9,9,9,9,9,9,9,9,9,19,19,0,
-0,0,0,0,29,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,9,9,19,0,0,59,59,49,39,39,39,29,29,19,19,19,19,19,19,19,19,19,19,19,19,19,19,29,29,0,
-0,0,0,0,39,29,19,9,9,9,9,5,5,5,5,5,5,5,9,9,19,19,29,0,0,0,0,59,49,49,49,39,39,29,29,29,29,29,29,29,29,29,29,29,29,29,29,39,39,0,
-0,0,0,0,49,39,29,19,19,19,19,9,9,9,5,5,9,9,19,19,29,29,39,0,0,0,0,0,59,59,59,49,49,39,39,39,39,39,39,39,39,39,39,39,39,39,39,49,49,0,
-0,0,0,0,59,49,39,29,29,29,29,19,19,19,9,9,19,19,29,29,39,39,49,0,0,0,0,0,0,0,0,59,59,49,49,49,49,49,49,49,49,49,49,49,49,49,49,59,59,0,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,39,29,19,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,49,39,29,29,19,9,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,
+9,9,9,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,59,49,39,39,29,19,19,19,9,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,9,0,
+19,19,19,19,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,0,59,49,49,39,29,29,29,19,19,9,9,9,9,9,9,9,9,9,9,9,9,9,9,19,19,0,
+29,29,29,29,29,19,9,5,5,5,5,5,5,5,5,5,5,5,5,5,9,9,19,0,0,59,59,49,39,39,39,29,29,19,19,19,19,19,19,19,19,19,19,19,19,19,19,29,29,0,
+39,39,39,39,39,29,19,9,9,9,9,5,5,5,5,5,5,5,9,9,19,19,29,0,0,0,0,59,49,49,49,39,39,29,29,29,29,29,29,29,29,29,29,29,29,29,29,39,39,0,
+49,49,49,49,49,39,29,19,19,19,19,9,9,9,5,5,9,9,19,19,29,29,39,0,0,0,0,0,59,59,59,49,49,39,39,39,39,39,39,39,39,39,39,39,39,39,39,49,49,0,
+59,59,59,59,59,49,39,29,29,29,29,19,19,19,9,9,19,19,29,29,39,39,49,0,0,0,0,0,0,0,0,59,59,49,49,49,49,49,49,49,49,49,49,49,49,49,49,59,59,0,
 0,0,0,0,0,59,49,39,39,39,39,29,29,29,19,19,29,29,39,39,49,49,59,0,0,0,0,0,0,0,0,0,0,59,59,59,59,59,59,59,59,59,59,59,59,59,59,0,0,0
 </data>
  </layer>
@@ -115,9 +119,9 @@
  </layer>
  <objectgroup color="#ff007f" id="3" name="objects_party">
   <object id="1" gid="136" x="720" y="1200" width="197" height="219"/>
-  <object id="2" gid="137" x="240" y="960" width="252" height="202"/>
-  <object id="3" gid="135" x="200" y="1720" width="404" height="304"/>
-  <object id="8" gid="134" x="1040" y="1480" width="706.097" height="474"/>
+  <object id="2" gid="137" x="231" y="965" width="252" height="202"/>
+  <object id="3" gid="135" x="197" y="1702.33" width="404" height="304"/>
+  <object id="8" gid="134" x="995.469" y="1326.21" width="706.097" height="474" rotation="19.5011"/>
   <object id="9" gid="137" x="1516.42" y="1758.58" width="252" height="202"/>
   <object id="10" gid="135" x="520" y="1840" width="404" height="304"/>
   <object id="11" gid="136" x="1080" y="200" width="197" height="219"/>
@@ -126,15 +130,237 @@
   <object id="14" name="npc" x="1560" y="200" width="40" height="40">
    <properties>
     <property name="actor" value="kipkip"/>
-    <property name="text1_1" value="* Collect my pages"/>
-    <property name="text1_2" value="* Treasures and whatnot"/>
+    <property name="text1_1" value="* (This field and it's connecting areas have a lot of [color:yellow]TREASURES.[color:reset])"/>
+    <property name="text1_2" value="* (We need D$1000 worth to pay off our debt to the Beebeldorf Conglomerate.)"/>
+    <property name="text1_3" value="* (Bring the treasures to me and we'll clear out the way for you.)"/>
+    <property name="text1_4" value="* (It's simple.[wait:5] Just interact with something interesting and bring it back to me.)"/>
+    <property name="text1_5" value="* (Oh,[wait:5] also...)"/>
+    <property name="text1_6" value="* (You can rob enemies with the ACT menu.)"/>
+    <property name="text1_7" value="* (Don't worry,[wait:5] it's for a good cause.)"/>
    </properties>
   </object>
-  <object id="16" name="npc" x="1680" y="320" width="40" height="40">
+  <object id="21" name="npc" x="1680" y="280" width="40" height="40">
    <properties>
     <property name="actor" value="kipkip"/>
-    <property name="text1_1" value="* Stop talking to me im blocking the way"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
    </properties>
   </object>
+  <object id="26" name="script" x="1280" y="160" width="40" height="360">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.treasureHuntBegin"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="27" name="script" x="1280" y="520" width="480.129" height="39.8859">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.treasureHuntBegin"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="31" name="transition" x="-40.4167" y="159" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_shop"/>
+    <property name="marker" value="to_treasure"/>
+   </properties>
+  </object>
+  <object id="99" name="npc" x="1680" y="240" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="100" name="npc" x="1680" y="200" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="101" name="npc" x="1680" y="160" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="102" name="npc" x="1680" y="120" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="103" name="npc" x="1680" y="320" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="104" name="npc" x="1680" y="360" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="105" name="npc" x="1720" y="400" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="106" name="npc" x="1720" y="440" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="107" name="npc" x="1720" y="480" width="40" height="40">
+   <properties>
+    <property name="actor" value="kipkip"/>
+    <property name="text1_1" value="* (Collect our pages)"/>
+    <property name="text1_2" value="* (I mean treasures)"/>
+   </properties>
+  </object>
+  <object id="116" name="transition" x="-40" y="1640" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_treasurehunt2"/>
+    <property name="marker" value="to_treasure"/>
+   </properties>
+  </object>
+  <object id="122" name="enemy" x="408.667" y="1576.67">
+   <properties>
+    <property name="actor" value="fleecebug"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="fleecebug"/>
+    <property name="enemy" value="fleecebug"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="enemy" x="1335.67" y="896.333">
+   <properties>
+    <property name="actor" value="fleecebug"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="chasedist" type="int" value="200"/>
+    <property name="encounter" value="fleecebug+"/>
+    <property name="enemy" value="fleecebug"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="6" name="controllers">
+  <object id="119" name="toggle" x="1913.33" y="812">
+   <properties>
+    <property name="flag" value="treasureHuntBegan"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="27"/>
+    <property name="target2" type="object" value="26"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="toggle" x="1905.33" y="889.333">
+   <properties>
+    <property name="flag" value="treasureHuntBegan"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="122"/>
+    <property name="target2" type="object" value="124"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="4" name="markers">
+  <object id="28" name="toferpos" x="1499.5" y="226.5">
+   <point/>
+  </object>
+  <object id="29" name="vesspos" x="1579" y="310.5">
+   <point/>
+  </object>
+  <object id="30" name="camerapos" x="1578" y="223.333">
+   <point/>
+  </object>
+  <object id="32" name="spawn" x="42.1667" y="222.167">
+   <point/>
+  </object>
+  <object id="118" name="to_weights" x="38.6667" y="1700.67">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="5" name="collisions">
+  <object id="33" x="0" y="120" width="79" height="40"/>
+  <object id="34" x="80" y="80" width="39.5" height="40"/>
+  <object id="35" x="120" y="40" width="119" height="40"/>
+  <object id="36" x="240" y="0" width="441" height="40"/>
+  <object id="37" x="680" y="40" width="119" height="40"/>
+  <object id="38" x="760" y="80" width="169.667" height="40"/>
+  <object id="39" x="920" y="120" width="119" height="40"/>
+  <object id="40" x="960" y="80" width="119" height="40"/>
+  <object id="41" x="1080" y="40" width="199.667" height="40"/>
+  <object id="42" x="1280" y="80" width="119" height="40"/>
+  <object id="43" x="1320" y="120" width="280.333" height="40"/>
+  <object id="44" x="1600" y="80" width="119" height="40"/>
+  <object id="45" x="1720" y="40" width="119" height="40"/>
+  <object id="46" x="1840" y="0" width="119" height="40"/>
+  <object id="47" x="1920" y="40" width="119" height="40"/>
+  <object id="48" x="1760" y="520" width="243.5" height="40"/>
+  <object id="49" x="1800" y="560" width="119" height="40"/>
+  <object id="50" x="1760" y="600" width="119" height="40"/>
+  <object id="51" x="1720" y="640" width="119" height="40"/>
+  <object id="52" x="1680" y="680" width="119" height="40"/>
+  <object id="53" x="1680" y="720" width="119" height="40"/>
+  <object id="54" x="1680" y="760" width="119" height="40"/>
+  <object id="55" x="1680" y="800" width="119" height="40"/>
+  <object id="56" x="1720" y="840" width="41.5" height="119.5"/>
+  <object id="57" x="1760" y="880" width="41.5" height="119.5"/>
+  <object id="58" x="1800" y="960" width="41.5" height="119.5"/>
+  <object id="59" x="1840" y="1080" width="41.5" height="119.5"/>
+  <object id="60" x="1800" y="1200" width="41.5" height="241"/>
+  <object id="61" x="1840" y="1440" width="41.5" height="119.5"/>
+  <object id="62" x="1880" y="1520" width="41.5" height="119.5"/>
+  <object id="63" x="1920" y="1560" width="41.5" height="119.5"/>
+  <object id="64" x="1960" y="1680" width="41.5" height="119.5"/>
+  <object id="65" x="920" y="1560" width="41.5" height="250.833"/>
+  <object id="66" x="960" y="1600" width="41.5" height="119.5"/>
+  <object id="67" x="1000" y="1640" width="78.8333" height="119.5"/>
+  <object id="68" x="1080" y="1680" width="41.5" height="119.5"/>
+  <object id="69" x="1120" y="1720" width="119.5" height="119.5"/>
+  <object id="70" x="1240" y="1760" width="78.8333" height="119.5"/>
+  <object id="71" x="1320" y="1800" width="560.167" height="119.5"/>
+  <object id="72" x="1880" y="1760" width="41.5" height="119.5"/>
+  <object id="73" x="1920" y="1760" width="41.5" height="119.5"/>
+  <object id="74" x="880" y="1800" width="41.5" height="119.5"/>
+  <object id="75" x="800" y="1840" width="78.8333" height="119.5"/>
+  <object id="76" x="720" y="1880" width="78.8333" height="119.5"/>
+  <object id="77" x="640" y="1920" width="78.8333" height="119.5"/>
+  <object id="78" x="560" y="1960" width="78.8333" height="119.5"/>
+  <object id="79" x="440" y="1920" width="118.833" height="119.5"/>
+  <object id="80" x="281" y="1880" width="157.833" height="119.5"/>
+  <object id="82" x="240" y="1840" width="41.5" height="119.5"/>
+  <object id="83" x="200" y="1800" width="41.5" height="119.5"/>
+  <object id="84" x="-2" y="1760" width="203.5" height="119.5"/>
+  <object id="85" x="120" y="1400" width="41.5" height="119.5"/>
+  <object id="86" x="160" y="1440" width="41.5" height="198.5"/>
+  <object id="89" x="200" y="1480" width="41.5" height="79.5"/>
+  <object id="90" x="240" y="1478" width="41.5" height="41.5"/>
+  <object id="91" x="80" y="880" width="41.5" height="547.5"/>
+  <object id="92" x="120" y="479.333" width="41.5" height="400.167"/>
+  <object id="93" x="160" y="518" width="41.5" height="282.167"/>
+  <object id="94" x="200" y="642" width="41.5" height="80.167"/>
+  <object id="95" x="80" y="320" width="41.5" height="252.834"/>
+  <object id="96" x="40" y="280" width="41.5" height="102.167"/>
+  <object id="97" x="0" y="280" width="41.5" height="102.167"/>
+  <object id="109" x="727.5" y="277" width="226" height="109"/>
+  <object id="110" x="240" y="840" width="226" height="109"/>
+  <object id="111" x="748" y="1053" width="137" height="122"/>
+  <object id="114" x="1522.67" y="1632" width="226" height="109"/>
+  <object id="117" x="0.666667" y="1560" width="160.833" height="79.5"/>
+  <object id="125" x="1129.33" y="1148" width="544.667" height="185"/>
  </objectgroup>
 </map>
