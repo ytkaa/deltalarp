@@ -202,6 +202,20 @@
             "width": 640,
             "x": 26280,
             "y": -5511
+        },
+        {
+            "fileName": "garden_orchard1.tmx",
+            "height": 1400,
+            "width": 1960,
+            "x": 27296,
+            "y": -7127
+        },
+        {
+            "fileName": "garden_orchard2.tmx",
+            "height": 1920,
+            "width": 920,
+            "x": 27056,
+            "y": -9127
         }
     ],
     "onlyShowAdjacentMaps": false,

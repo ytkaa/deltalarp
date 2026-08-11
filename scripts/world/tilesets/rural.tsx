@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="rural" tilewidth="40" tileheight="40" tilecount="100" columns="10" tilerendersize="grid">
+<tileset version="1.10" tiledversion="1.12.2" name="rural" tilewidth="40" tileheight="40" tilecount="100" columns="10" tilerendersize="grid">
  <editorsettings>
   <export target="rural.lua" format="lua"/>
  </editorsettings>

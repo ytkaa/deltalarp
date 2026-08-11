@@ -96,6 +96,7 @@ function character:getReaction(item, user)
         return super.getReaction(self, item, user)
     elseif item then
         if item.type == "key" or item.type == "item" then
+            if item.type == "item" then Assets.playSound("tofer_checkit") end
             return super.getReaction(self, item, user)
         else
             Assets.playSound("tofer_checkit")

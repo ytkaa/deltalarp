@@ -1,11 +1,11 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   name = "garden_extras",
   class = "",
   tilewidth = 1160,
-  tileheight = 720,
+  tileheight = 738,
   spacing = 0,
   margin = 0,
   columns = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 14,
+  tilecount = 17,
   tiles = {
     {
       id = 29,
@@ -108,6 +108,24 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/pikmin2_geyser.png",
       width = 123,
       height = 113
+    },
+    {
+      id = 43,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/fence.png",
+      width = 600,
+      height = 200
+    },
+    {
+      id = 44,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/apple.png",
+      width = 40,
+      height = 60
+    },
+    {
+      id = 45,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_bucket.png",
+      width = 866,
+      height = 738
     }
   }
 }
