@@ -27,5 +27,18 @@ return {
   properties = {},
   wangsets = {},
   tilecount = 100,
-  tiles = {}
+  tiles = {
+    {
+      id = 88,
+      probability = 0.5
+    },
+    {
+      id = 96,
+      probability = 0.1
+    },
+    {
+      id = 98,
+      probability = 0.5
+    }
+  }
 }

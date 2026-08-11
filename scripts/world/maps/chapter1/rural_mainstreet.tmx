@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="62">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="64">
  <editorsettings>
   <export target="rural_mainstreet/data.lua" format="lua"/>
  </editorsettings>
@@ -251,6 +251,12 @@ I'm sure you know yourself very well by now.</property>
   <object id="59" gid="133" x="0" y="3960" width="40" height="60"/>
   <object id="60" gid="133" x="0" y="4000" width="40" height="60"/>
   <object id="61" gid="133" x="80" y="3960" width="40" height="60"/>
+  <object id="62" name="transition" x="1280" y="2400" width="40" height="240">
+   <properties>
+    <property name="map" value="chapter1/rural_lake"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="objects_cooler">
   <object id="49" name="script" x="520" y="5120" width="240" height="40">
@@ -271,6 +277,9 @@ I'm sure you know yourself very well by now.</property>
    <point/>
   </object>
   <object id="27" name="to_farm" x="40" y="3800">
+   <point/>
+  </object>
+  <object id="63" name="to_lake" x="1240" y="2520">
    <point/>
   </object>
  </objectgroup>

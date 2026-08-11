@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 62,
+  nextobjectid = 64,
   properties = {
     ["light"] = true
   },
@@ -953,6 +953,23 @@ return {
           gid = 133,
           visible = true,
           properties = {}
+        },
+        {
+          id = 62,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 1280,
+          y = 2400,
+          width = 40,
+          height = 240,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/rural_lake",
+            ["marker"] = "entry"
+          }
         }
       }
     },
@@ -1052,6 +1069,20 @@ return {
           shape = "point",
           x = 40,
           y = 3800,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 63,
+          name = "to_lake",
+          type = "",
+          shape = "point",
+          x = 1240,
+          y = 2520,
           width = 0,
           height = 0,
           rotation = 0,

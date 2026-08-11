@@ -204,18 +204,18 @@
             "y": -5511
         },
         {
-            "fileName": "garden_treasurehunt.tmx",
-            "height": 2000,
-            "width": 2000,
-            "x": 27000,
-            "y": -5391
+            "fileName": "garden_orchard1.tmx",
+            "height": 1400,
+            "width": 1960,
+            "x": 27296,
+            "y": -7127
         },
         {
-            "fileName": "garden_treasurehunt2.tmx",
-            "height": 800,
-            "width": 1600,
-            "x": 25320,
-            "y": -4031
+            "fileName": "garden_orchard2.tmx",
+            "height": 1920,
+            "width": 920,
+            "x": 27056,
+            "y": -9127
         }
     ],
     "onlyShowAdjacentMaps": false,
