@@ -48,6 +48,13 @@
             "width": 640,
             "x": 480,
             "y": -7200
+        },
+        {
+            "fileName": "rural_lake.tmx",
+            "height": 960,
+            "width": 1440,
+            "x": 1320,
+            "y": -3200
         }
     ],
     "onlyShowAdjacentMaps": false,
