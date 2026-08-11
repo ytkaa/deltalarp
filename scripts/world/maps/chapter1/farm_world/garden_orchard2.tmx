@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="48" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="23">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="48" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="26">
  <editorsettings>
   <export target="garden_orchard2.lua" format="lua"/>
  </editorsettings>
@@ -311,10 +311,12 @@
   <object id="4" x="160" y="1280" width="200" height="40"/>
   <object id="5" x="520" y="1280" width="40" height="640"/>
   <object id="6" x="560" y="1280" width="200" height="40"/>
-  <object id="10" x="120" y="880" width="40" height="440"/>
-  <object id="11" x="760" y="880" width="40" height="440"/>
+  <object id="10" x="38.6667" y="880" width="121.333" height="440"/>
+  <object id="11" x="760" y="880" width="119" height="440"/>
   <object id="12" x="160" y="1020" width="240"/>
   <object id="14" x="520" y="1020" width="240"/>
   <object id="19" x="240" y="200" width="320" height="300"/>
+  <object id="23" x="-46.6667" y="156" width="126.667" height="724"/>
+  <object id="25" x="840" y="156" width="92" height="724"/>
  </objectgroup>
 </map>
