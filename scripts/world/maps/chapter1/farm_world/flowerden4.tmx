@@ -350,7 +350,7 @@
     <property name="cutscene" value="chapter1/caveEnemyDrops.sublevel4BombRock"/>
    </properties>
   </object>
-  <object id="98" name="script" x="2960" y="2720" width="185.09" height="65.833">
+  <object id="98" name="script" x="2973" y="2720" width="172.09" height="65.833">
    <properties>
     <property name="cutscene" value="chapter1/caveEnemyDrops.sublevel4BombRock"/>
    </properties>

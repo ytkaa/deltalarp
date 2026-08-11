@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 5,
-  nextobjectid = 13,
+  nextobjectid = 15,
   properties = {
     ["name"] = "Garden - Shop"
   },
@@ -221,6 +221,23 @@ return {
             ["text2"] = "* (Your [color:yellow]DARK WALLET[color:reset] quivers...)",
             ["text_once"] = true
           }
+        },
+        {
+          id = 13,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 280,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_treasurehunt",
+            ["marker"] = "spawn"
+          }
         }
       }
     },
@@ -273,6 +290,20 @@ return {
           shape = "point",
           x = 210,
           y = 310,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 14,
+          name = "to_treasure",
+          type = "",
+          shape = "point",
+          x = 597,
+          y = 342,
           width = 0,
           height = 0,
           rotation = 0,

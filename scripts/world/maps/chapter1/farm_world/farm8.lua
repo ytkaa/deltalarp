@@ -156,11 +156,9 @@ return {
           properties = {
             ["actor"] = "starwalker",
             ["text1_1"] = "* So the idea here is theres gonna be a shredder/lawnmower enemy that chases you.",
-            ["text1_2"] = "* As it chases you it ends up shredding a lot of the wheat",
-            ["text1_3"] = "* Maybe shredding wheat can reveal some item but maybe we've given a lot already",
-            ["text1_4"] = "* But mainly its just a fun thing that teaches a mechanic we can reuse later",
-            ["text1_5"] = "* The lawnmower chasing is also not the intended solution for the wheat wall above btw",
-            ["text1_6"] = "* That will require backtracking from the garden, i got a vague idea of it in my head"
+            ["text1_2"] = "* ...",
+            ["text1_3"] = "* ...that was the idea,[wait:5] anyway.",
+            ["text1_4"] = "* but we can't all get what we want."
           }
         }
       }

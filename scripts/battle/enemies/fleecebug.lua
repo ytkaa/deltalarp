@@ -28,6 +28,15 @@ function Fleecebug:init()
     self.text = {
         "* Fleecebug tries to sniff you.",
     }
+    if self.gotRobbed == false then
+        self.text = {
+            "* Fleecebug attempts to file a police report.",
+        }
+    else
+        self.text = {
+            "* Fleecebug attempts to file a police report.",
+        }
+    end
     -- Text displayed at the bottom of the screen when the enemy has low health
     --self.low_health_text = "* Kipkip's leaf is torn."
 
@@ -43,9 +52,10 @@ function Fleecebug:init()
     self:registerAct("Shave", "Reduce \ndefence")
     self:registerAct("Comb", "Comb \ncoat")
     self.fleeceShaved = false
-    --if #Game.party == 2 and Game.party[2].id == "grace" then
-    --    self:registerActFor("grace","Wave", "Wave at\nKipkip")
-    --end
+    self.gotRobbed = false
+    if Game:getFlag("treasureHuntBegan") then
+        self:registerActFor("vess","Rob", "Rob\nenemies")
+    end
 
     function Fleecebug:onAct(battler, name)
         if name == "Shave" then
@@ -70,6 +80,22 @@ function Fleecebug:init()
             elseif self.fleeceShaved == true then
                 return {
                     "* The damage is irreparable.[wait:5]\n* Nothing can fix what you did.",
+                }
+            end
+        elseif name == "Rob" then
+            if self.gotRobbed == false then
+                self.gotRobbed = true
+                function Mod:onKeyPressed(key)
+                    if Input.is("confirm", key) then --guessed first try.
+                        Assets.playSound("drive")
+                    end
+                end
+                return {
+                    "* Spam [Z] to ROB!!!!", --this should be changed to any possible confirm button
+                }
+            elseif self.gotRobbed == true then
+                return {
+                    "* Fleecebug has nothing left to its name.",
                 }
             end
         elseif name == "Standard" then --X-Action

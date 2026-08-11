@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="13">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="15">
  <editorsettings>
   <export target="garden_shop.lua" format="lua"/>
  </editorsettings>
@@ -55,6 +55,12 @@
     <property name="text_once" type="bool" value="true"/>
    </properties>
   </object>
+  <object id="13" name="transition" x="640" y="280" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_treasurehunt"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
   <object id="7" name="to_ladders" x="40" y="340">
@@ -64,6 +70,9 @@
    <point/>
   </object>
   <object id="12" name="spawn" x="210" y="310">
+   <point/>
+  </object>
+  <object id="14" name="to_treasure" x="597" y="342">
    <point/>
   </object>
  </objectgroup>
