@@ -25,11 +25,17 @@ function Kipkip:init()
     self.check = "AT 4 DF 1\n* Somewhat greedy little guy. \nHe desperately wants to bloom."
 
     -- Text randomly displayed at the bottom of the screen each turn
-    self.text = {
-        "* Kipkip analyzes your ability to plan and lead.",
-        "* Kipkip looks for nectar to make itself stronger.",
-        "* Kipkip thinks you'd look authoritative with a whistle."
-    }
+    if self.gotRobbed == false then
+        self.text = {
+            "* Kipkip analyzes your ability to plan and lead.",
+            "* Kipkip looks for nectar to make itself stronger.",
+            "* Kipkip thinks you'd look authoritative with a whistle."
+        }
+    else
+        self.text = {
+            "* Kipkip can't believe you somehow managed to rob it.",
+        }
+    end
     -- Text displayed at the bottom of the screen when the enemy has low health
     self.low_health_text = "* Kipkip's leaf is torn." --sprite change?
 
@@ -49,6 +55,11 @@ function Kipkip:init()
     self:registerAct("Spray Water", "Spray with \nwater")
     self:registerAct("Give Nectar", "Makes \nstronger")    
     self.nectarCount = 0
+    self.gotRobbed = false
+    local confirm_count = 0
+    if Game:getFlag("treasureHuntBegan") then
+        self:registerActFor("vess","Rob", "Rob\nenemies")
+    end
 
     function Kipkip:onAct(battler, name)
         if name == "Give Nectar" then
@@ -78,6 +89,37 @@ function Kipkip:init()
             elseif self.nectarCount >= 3 then
                 return {
                     "* Kipkip rejected. It's a work day tomorrow.",
+                }
+            end
+        elseif name == "Rob" then
+            if self.gotRobbed == false then
+                self.gotRobbed = true
+                function Mod:onKeyPressed(key)
+                    if Input.is("confirm", key) then
+                        Assets.playSound("drive", 1, 1 + confirm_count)
+
+                        for _, enemy in ipairs(Game.battle.enemies) do
+                            if enemy.name == "Kipkip" then
+                                enemy:shake()
+                                enemy:addMercy(10)
+                            end
+                        end
+                        confirm_count = confirm_count + 0.1
+                        if confirm_count >= 1 then
+                            confirm_count = 0
+
+                            Mod.onKeyPressed = nil
+                            Game.battle:setActText("* Nice jobv")
+                        end
+                    end
+                end
+                Game.battle:infoText("* Spam [Z] to ROB!!!!", true) --infoText cannot be skipped by the player, setActText can
+                if confirm_count == 1.1 then
+                    return "" --returning text is needed otherwise it softlocks
+                end
+            else
+                return {
+                    "* Kipkip left everything else at home,[wait:5] thankfully.",
                 }
             end
         elseif name == "Spray Water" then

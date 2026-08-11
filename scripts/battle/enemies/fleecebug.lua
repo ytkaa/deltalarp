@@ -53,6 +53,7 @@ function Fleecebug:init()
     self:registerAct("Comb", "Comb \ncoat")
     self.fleeceShaved = false
     self.gotRobbed = false
+    local confirm_count = 0
     if Game:getFlag("treasureHuntBegan") then
         self:registerActFor("vess","Rob", "Rob\nenemies")
     end
@@ -86,14 +87,29 @@ function Fleecebug:init()
             if self.gotRobbed == false then
                 self.gotRobbed = true
                 function Mod:onKeyPressed(key)
-                    if Input.is("confirm", key) then --guessed first try.
-                        Assets.playSound("drive")
+                    if Input.is("confirm", key) then
+                        Assets.playSound("drive", 1, 1 + confirm_count)
+
+                        for _, enemy in ipairs(Game.battle.enemies) do
+                            if enemy.name == "Fleecebug" then
+                                enemy:shake()
+                                enemy:addMercy(10)
+                            end
+                        end
+                        confirm_count = confirm_count + 0.1
+                        if confirm_count >= 1 then
+                            confirm_count = 0
+
+                            Mod.onKeyPressed = nil
+                            Game.battle:setActText("* Nice jobv")
+                        end
                     end
                 end
-                return {
-                    "* Spam [Z] to ROB!!!!", --this should be changed to any possible confirm button
-                }
-            elseif self.gotRobbed == true then
+                Game.battle:infoText("* Spam [Z] to ROB!!!!", true) --infoText cannot be skipped by the player, setActText can
+                if confirm_count == 1.1 then
+                    return "" --returning text is needed otherwise it softlocks
+                end
+            else
                 return {
                     "* Fleecebug has nothing left to its name.",
                 }
