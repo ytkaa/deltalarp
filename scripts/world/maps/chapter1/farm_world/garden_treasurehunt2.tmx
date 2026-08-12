@@ -69,7 +69,7 @@
   </tile>
  </tileset>
  <tileset firstgid="149" source="../../../tilesets/treasures.tsx"/>
- <tileset firstgid="160" source="../../../tilesets/garden_extras.tsx"/>
+ <tileset firstgid="161" source="../../../tilesets/garden_extras.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="40" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -97,10 +97,10 @@
  <objectgroup color="#ff007f" id="4" name="objects">
   <object id="9" gid="148" x="186" y="464.333" width="354" height="205"/>
   <object id="35" gid="159" x="30" y="478.667" width="131.667" height="238.438"/>
-  <object id="39" gid="208" x="680" y="240" width="40" height="60"/>
-  <object id="40" gid="208" x="880" y="280" width="40" height="60"/>
-  <object id="41" gid="208" x="920" y="440" width="40" height="60"/>
-  <object id="42" gid="208" x="760" y="520" width="40" height="60"/>
+  <object id="39" gid="209" x="680" y="240" width="40" height="60"/>
+  <object id="40" gid="209" x="880" y="280" width="40" height="60"/>
+  <object id="41" gid="209" x="920" y="440" width="40" height="60"/>
+  <object id="42" gid="209" x="760" y="520" width="40" height="60"/>
  </objectgroup>
  <objectgroup color="#ffff00" id="5" name="controllers">
   <object id="13" name="toggle" x="468" y="86.6667">

@@ -170,7 +170,7 @@ return {
     },
     {
       name = "garden_extras",
-      firstgid = 160,
+      firstgid = 161,
       filename = "../../../tilesets/garden_extras.tsx",
       exportfilename = "../../../tilesets/garden_extras.lua"
     }
@@ -271,7 +271,7 @@ return {
           height = 60,
           rotation = 0,
           opacity = 1,
-          gid = 208,
+          gid = 209,
           visible = true,
           properties = {}
         },
@@ -286,7 +286,7 @@ return {
           height = 60,
           rotation = 0,
           opacity = 1,
-          gid = 208,
+          gid = 209,
           visible = true,
           properties = {}
         },
@@ -301,7 +301,7 @@ return {
           height = 60,
           rotation = 0,
           opacity = 1,
-          gid = 208,
+          gid = 209,
           visible = true,
           properties = {}
         },
@@ -316,7 +316,7 @@ return {
           height = 60,
           rotation = 0,
           opacity = 1,
-          gid = 208,
+          gid = 209,
           visible = true,
           properties = {}
         }

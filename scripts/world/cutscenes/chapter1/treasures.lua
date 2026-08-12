@@ -13,7 +13,7 @@ return {
                 Game:setFlag("FoliageAssorter", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)") --Save conflict happened because we both replaced the "human" line independently. Hilarious
             else
                 return
             end
@@ -205,48 +205,85 @@ return {
             end
     end;
     pickupJoylessDevice = function(cutscene, event)
-        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
-        local choice = cutscene:choicer({"Yes", "No"})
-            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
-                Game:setFlag("isCarryingTreasure", true)
-                Game:setFlag("pickedUpJoylessDevice", true)
-                Game:setFlag("JoylessDevice", true)
-                cutscene:text("* (Picked up treasure.)")
-            if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
+        if (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (A supposedly worthless object stands before you.)")
+            cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        else
+            cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+            local choice = cutscene:choicer({"Yes", "No"})
+                if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                    Game:setFlag("isCarryingTreasure", true)
+                    Game:setFlag("pickedUpJoylessDevice", true)
+                    Game:setFlag("JoylessDevice", true)
+                    cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                        cutscene:text("* (The weight of the treasure pulls you down...)")
+                        cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                        Game:setFlag("hasPickedUpTreasureBefore", true)
+                    else
+                        return
+                    end
+                elseif Game:getFlag("isCarryingTreasure") then
+                    cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
                 else
                     return
                 end
-            elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
-            else
-                return
             end
     end;
-    pickupJoylessDevice = function(cutscene, event)
-        cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
-        local choice = cutscene:choicer({"Yes", "No"})
-            if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
-                Game:setFlag("isCarryingTreasure", true)
-                Game:setFlag("pickedUpJoylessDevice", true)
-                Game:setFlag("JoylessDevice", true)
-                cutscene:text("* (Picked up treasure.)")
-            if (not Game:getFlag("hasPickedUpTreasureBefore")) then
-                    cutscene:text("* (The weight of the treasure pulls you down...)")
-                    cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
-                    Game:setFlag("hasPickedUpTreasureBefore", true)
+    pickupDyedScam = function(cutscene, event)
+        if (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (A supposedly worthless object stands before you.)")
+            cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        else
+            cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+            local choice = cutscene:choicer({"Yes", "No"})
+                if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                    Game:setFlag("isCarryingTreasure", true)
+                    Game:setFlag("pickedUpDyedScam", true)
+                    Game:setFlag("DyedScam", true)
+                    cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                        cutscene:text("* (The weight of the treasure pulls you down...)")
+                        cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                        Game:setFlag("hasPickedUpTreasureBefore", true)
+                    else
+                        return
+                    end
+                elseif Game:getFlag("isCarryingTreasure") then
+                    cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
                 else
                     return
                 end
-            elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
-            else
-                return
+            end
+    end;
+    pickupFrostedColonel = function(cutscene, event)
+        if (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (A supposedly worthless object stands before you.)")
+            cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        else
+            cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
+            local choice = cutscene:choicer({"Yes", "No"})
+                if choice == 1 and (not Game:getFlag("isCarryingTreasure")) then
+                    Game:setFlag("isCarryingTreasure", true)
+                    Game:setFlag("pickedUpFrostedColonel", true)
+                    Game:setFlag("FrostedColonel", true)
+                    cutscene:text("* (Picked up treasure.)")
+                if (not Game:getFlag("hasPickedUpTreasureBefore")) then
+                        cutscene:text("* (The weight of the treasure pulls you down...)")
+                        cutscene:text("* (You are now overencumbered and cannot run![wait:5] SPEED in overworld and battles [sound:awkward]reduced.)")
+                        Game:setFlag("hasPickedUpTreasureBefore", true)
+                    else
+                        return
+                    end
+                elseif Game:getFlag("isCarryingTreasure") then
+                    cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
+                else
+                    return
+                end
             end
     end;
     evaluateOverworldTreasure = function(cutscene, event) --https://preview.redd.it/weird-yandere-simulator-fact-if-else-v0-99l916y0sgpd1.png?width=513&format=png&auto=webp&s=960f031402041549cc472cdce42820ee48c372e6
+        local tofer = cutscene:getCharacter("tofer")
         if Game:getFlag("JoylessDevice") then
             local debtPaid = Game:getFlag("debtPaid", 0)
             Game:setFlag("debtPaid", debtPaid + 335)
@@ -254,6 +291,74 @@ return {
             cutscene:text("* (This is the Joyless Device.[wait:5] It's worth [sound:treasureappraise]D$335.)")
             Game:setFlag("isCarryingTreasure", false)
             Game:setFlag("JoylessDevice", false)
+        elseif Game:getFlag("DyedScam") then
+            local debtPaid = Game:getFlag("debtPaid", 0)
+            Game:setFlag("debtPaid", debtPaid + 400)
+            cutscene:text("* (Treasure?[wait:5] Ooh,[wait:5] shiny...)")
+            cutscene:text("* (This is the Dyed Scam.[wait:5] It's worth [sound:treasureappraise]D$400.)")
+            Game:setFlag("isCarryingTreasure", false)
+            Game:setFlag("DyedScam", false)
+        elseif Game:getFlag("FrostedColonel") then
+            local debtPaid = Game:getFlag("debtPaid", 0)
+            Game:setFlag("debtPaid", debtPaid + 300)
+            cutscene:text("* (Treasure?[wait:5] Ooh,[wait:5] shiny...)")
+            cutscene:text("* (This is the Frosted Colonel.[wait:5] It's worth [sound:treasureappraise]D$300.)")
+            Game:setFlag("isCarryingTreasure", false)
+            Game:setFlag("FrostedColonel", false)
+        if Game:getFlag("debtPaid", 0) >= 1000 then
+                local auto = {
+                    ["auto"] = true;
+                }
+                cutscene:text("* (Wow![wait:5] You actually did it!)")
+                cutscene:setSpeaker(tofer)
+                cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Of course,[wait:5] brolio![wait:5]\nCheck it![sound:tofer_checkit]")
+                cutscene:setSpeaker(nil)
+                cutscene:text("* ($1000,[wait:5] plus anything leftover...)")
+                cutscene:text("* (Perfect,[wait:5] now we can get those corporates off our $$$ and buy more illicit commodities)", auto)
+                Game.world.music:pause()
+                cutscene:text("* (I mean)")
+                cutscene:text("* (Support the working class for the fight against the GARDNER,[wait:5] right Tofer.)")
+                cutscene:setSpeaker(tofer)
+                cutscene:text("[face:tofer, -19, -13]* Yeah,[wait:5] brolio.[wait:5]\nI support![wait:5] Check it![sound:tofer_checkit]")
+                cutscene:setSpeaker(nil)
+                cutscene:text("* (Yeah)")
+                cutscene:wait(1)
+                cutscene:text("* (Imagine if we had like more money though)")
+                cutscene:text("* (Like it would really help against the GARDNER)")
+                cutscene:text("* (Surely the Ofer Estate wouldn't mind making a small donation?)")
+                cutscene:setSpeaker(tofer)
+                cutscene:text("[face:tofer, -19, -13]* No can do,[wait:5] brolio![wait:5]\nThat's all in the renovations![wait:5]\nCheck it![sound:tofer_checkit]")
+                cutscene:text("[face:tofer, -19, -13]* My gray brolio on the\nother hand,[wait:5] they can help![wait:5]")
+                local vess = cutscene:getCharacter("vess")
+                cutscene:look(vess, "left")
+                cutscene:wait(1)
+                cutscene:setSpeaker(nil)
+                cutscene:text("* (So)")
+                cutscene:look(vess, "up")
+                cutscene:text("* (Gonna be real with you)")
+                cutscene:text("* (Empty your wallet)")
+                local choice = cutscene:choicer({"Okay", "No dude"})
+                if choice == 1 then
+                    cutscene:text("* (Your [color:yellow]DARK WALLET[color:reset] is trembling...)")
+                    cutscene:text("* (Are you sure you want to give up all your money...?)")
+                    local choice2 = cutscene:choicer({"Yes...", "No"})
+                    if choice2 == 1 then
+                        Game.money = 0
+                        cutscene:text("* (Thanks. We'll be out of your way now.)")
+                        cutscene:wait(1)
+                        cutscene:text("* (Lmao i didnt implement that yet)")
+                    else 
+                        cutscene:text("* (...)")
+                        cutscene:text("* (Guys lets jump em)")
+                        cutscene:wait(1)
+                        cutscene:text("* (Lmao i didnt implement the battle yet)")
+                    end
+                else 
+                    cutscene:text("* (...)")
+                    cutscene:text("* (Guys lets jump em)")
+                    cutscene:wait(1)
+                    cutscene:text("* (Lmao i didnt implement the battle yet)")
+                end
         else
             cutscene:text("* (This field and it's connecting areas have a lot of [color:yellow]TREASURES.[color:reset])")
             cutscene:text("* (We need D$1000 worth to pay off our debt to the Beebeldorf Conglomerate.)")

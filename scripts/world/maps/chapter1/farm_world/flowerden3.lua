@@ -98,7 +98,7 @@ return {
     },
     {
       name = "garden_extras",
-      firstgid = 118,
+      firstgid = 120,
       filename = "../../../tilesets/garden_extras.tsx",
       exportfilename = "../../../tilesets/garden_extras.lua"
     }
@@ -855,7 +855,7 @@ return {
           height = 160.427,
           rotation = 0,
           opacity = 1,
-          gid = 155,
+          gid = 157,
           visible = true,
           properties = {}
         }
