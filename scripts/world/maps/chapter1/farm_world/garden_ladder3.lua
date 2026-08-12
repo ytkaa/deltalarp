@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 17,
-  nextobjectid = 106,
+  nextobjectid = 115,
   properties = {
     ["music"] = "pursuit1",
     ["name"] = "Garden - Ladder 3"
@@ -941,6 +941,105 @@ return {
             ["cutscene"] = "chapter1/garden.forgetting",
             ["once"] = false
           }
+        },
+        {
+          id = 106,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 240,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight11",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 107,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 280,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 377,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 108,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 280,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight10",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 109,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 320,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 377,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 110,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight9",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 111,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 440,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 377,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -1041,6 +1140,63 @@ return {
             ["inverted"] = true,
             ["target1"] = { id = 103 },
             ["target2"] = { id = 104 }
+          }
+        },
+        {
+          id = 112,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 742,
+          y = 90,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight10",
+            ["inverted"] = true,
+            ["target1"] = { id = 109 },
+            ["target2"] = { id = 108 }
+          }
+        },
+        {
+          id = 113,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 803,
+          y = 79,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight11",
+            ["inverted"] = true,
+            ["target1"] = { id = 106 },
+            ["target2"] = { id = 107 }
+          }
+        },
+        {
+          id = 114,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 883,
+          y = 84,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight9",
+            ["inverted"] = true,
+            ["target1"] = { id = 110 },
+            ["target2"] = { id = 111 }
           }
         }
       }

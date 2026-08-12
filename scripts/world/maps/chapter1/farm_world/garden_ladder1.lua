@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 14,
-  nextobjectid = 54,
+  nextobjectid = 62,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladder 1"
@@ -32,6 +32,12 @@ return {
       firstgid = 201,
       filename = "../../../tilesets/farm_world_extras.tsx",
       exportfilename = "../../../tilesets/farm_world_extras.lua"
+    },
+    {
+      name = "garden_extras",
+      firstgid = 229,
+      filename = "../../../tilesets/garden_extras.tsx",
+      exportfilename = "../../../tilesets/garden_extras.lua"
     }
   },
   layers = {
@@ -507,6 +513,72 @@ return {
             ["cutscene"] = "chapter1/garden.garden_warfare",
             ["solid"] = true
           }
+        },
+        {
+          id = 54,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 120,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight14",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 55,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 120,
+          y = 440,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 277,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 58,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 440,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight15",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 59,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 480,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 277,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -544,6 +616,44 @@ return {
             ["target3"] = { id = 18 },
             ["target4"] = { id = 17 },
             ["target5"] = { id = 20 }
+          }
+        },
+        {
+          id = 60,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 134.667,
+          y = 44,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight14",
+            ["inverted"] = true,
+            ["target1"] = { id = 54 },
+            ["target2"] = { id = 55 }
+          }
+        },
+        {
+          id = 61,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 58,
+          y = 54.6667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight15",
+            ["inverted"] = true,
+            ["target1"] = { id = 59 },
+            ["target2"] = { id = 58 }
           }
         }
       }
