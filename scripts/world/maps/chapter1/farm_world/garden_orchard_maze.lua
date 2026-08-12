@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 25,
+  nextobjectid = 26,
   properties = {
     ["music"] = "orchard_wip",
     ["name"] = "Garden - Orchard (Maze)"
@@ -32,6 +32,12 @@ return {
       firstgid = 201,
       filename = "../../../tilesets/garden_extras.tsx",
       exportfilename = "../../../tilesets/garden_extras.lua"
+    },
+    {
+      name = "orchard_extras",
+      firstgid = 250,
+      filename = "../../../tilesets/orchard_extras.tsx",
+      exportfilename = "../../../tilesets/orchard_extras.lua"
     }
   },
   layers = {
@@ -426,7 +432,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 23,
+          id = 25,
           name = "",
           type = "",
           shape = "rectangle",
@@ -436,7 +442,7 @@ return {
           height = 96,
           rotation = 0,
           opacity = 1,
-          gid = 249,
+          gid = 250,
           visible = true,
           properties = {}
         }

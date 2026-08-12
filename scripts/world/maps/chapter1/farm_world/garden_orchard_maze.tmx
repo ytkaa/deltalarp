@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="19" height="74" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="25">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="19" height="74" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="26">
  <editorsettings>
   <export target="garden_orchard_maze.lua" format="lua"/>
  </editorsettings>
@@ -10,6 +10,7 @@
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/orchard.tsx"/>
  <tileset firstgid="201" source="../../../tilesets/garden_extras.tsx"/>
+ <tileset firstgid="250" source="../../../tilesets/orchard_extras.tsx"/>
  <layer id="1" name="Tile Layer 1" width="19" height="74">
   <data encoding="csv">
 5,7,7,5,6,6,5,7,5,5,5,5,6,7,5,5,5,5,5,
@@ -323,7 +324,7 @@
 </data>
  </layer>
  <objectgroup id="9" name="objects_tree">
-  <object id="23" gid="249" x="330" y="730" width="102" height="96"/>
+  <object id="25" gid="250" x="330" y="730" width="102" height="96"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="6" name="objects_party">
   <object id="13" name="transition" x="320" y="2960" width="120" height="40">
