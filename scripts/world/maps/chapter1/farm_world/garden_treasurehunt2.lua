@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 39,
+  nextobjectid = 45,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Weight Puzzle"
@@ -24,14 +24,155 @@ return {
     {
       name = "garden_extras",
       firstgid = 101,
-      filename = "../../../tilesets/garden_extras.tsx",
-      exportfilename = "../../../tilesets/garden_extras.lua"
+      class = "",
+      tilewidth = 1160,
+      tileheight = 738,
+      spacing = 0,
+      margin = 0,
+      columns = 0,
+      objectalignment = "unspecified",
+      tilerendersize = "tile",
+      fillmode = "stretch",
+      tileoffset = {
+        x = 0,
+        y = 0
+      },
+      grid = {
+        orientation = "orthogonal",
+        width = 1,
+        height = 1
+      },
+      properties = {},
+      wangsets = {},
+      tilecount = 19,
+      tiles = {
+        {
+          id = 29,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/pikmin_flowers.png",
+          width = 60,
+          height = 80
+        },
+        {
+          id = 30,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/saskatchewan_flowers.png",
+          width = 60,
+          height = 80
+        },
+        {
+          id = 31,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/saskatchewan_flowers_small.png",
+          width = 60,
+          height = 80
+        },
+        {
+          id = 32,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/trillium_flowers.png",
+          width = 60,
+          height = 80
+        },
+        {
+          id = 33,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin3_stonebarrier.png",
+          width = 864,
+          height = 580
+        },
+        {
+          id = 34,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin3_flowerbg.png",
+          width = 404,
+          height = 304
+        },
+        {
+          id = 35,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin3_pot.png",
+          width = 197,
+          height = 219
+        },
+        {
+          id = 36,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin3_rock.png",
+          width = 252,
+          height = 202
+        },
+        {
+          id = 37,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin2_cave.png",
+          width = 640,
+          height = 480
+        },
+        {
+          id = 38,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/dirt_pile.png",
+          width = 360,
+          height = 360
+        },
+        {
+          id = 39,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/purple_ladder3.png",
+          width = 1160,
+          height = 720
+        },
+        {
+          id = 40,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/shop_door.png",
+          width = 36,
+          height = 49
+        },
+        {
+          id = 41,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/shop_sign.png",
+          width = 36,
+          height = 16
+        },
+        {
+          id = 42,
+          image = "../../../../../assets/sprites/tilesets/farm_world/pikmin2_geyser.png",
+          width = 123,
+          height = 113
+        },
+        {
+          id = 43,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/orchard/fence.png",
+          width = 600,
+          height = 200
+        },
+        {
+          id = 44,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/orchard/apple.png",
+          width = 40,
+          height = 60
+        },
+        {
+          id = 45,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_bucket.png",
+          width = 866,
+          height = 738
+        },
+        {
+          id = 46,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_bucket_2.png",
+          width = 866,
+          height = 738
+        },
+        {
+          id = 47,
+          image = "../../../../../assets/sprites/tilesets/farm_world/garden/paperbag.png",
+          width = 456,
+          height = 205
+        }
+      }
     },
     {
       name = "treasures",
       firstgid = 149,
       filename = "../../../tilesets/treasures.tsx",
       exportfilename = "../../../tilesets/treasures.lua"
+    },
+    {
+      name = "garden_extras",
+      firstgid = 160,
+      filename = "../../../tilesets/garden_extras.tsx",
+      exportfilename = "../../../tilesets/garden_extras.lua"
     }
   },
   layers = {
@@ -118,6 +259,66 @@ return {
           gid = 159,
           visible = true,
           properties = {}
+        },
+        {
+          id = 39,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 680,
+          y = 240,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 208,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 40,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 880,
+          y = 280,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 208,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 920,
+          y = 440,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 208,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 42,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 520,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 208,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -169,7 +370,8 @@ return {
           properties = {
             ["flag"] = "weight1",
             ["inverted"] = true,
-            ["target1"] = { id = 10 }
+            ["target1"] = { id = 10 },
+            ["target2"] = { id = 39 }
           }
         },
         {
@@ -187,7 +389,8 @@ return {
           properties = {
             ["flag"] = "weight2",
             ["inverted"] = true,
-            ["target1"] = { id = 11 }
+            ["target1"] = { id = 11 },
+            ["target2"] = { id = 40 }
           }
         },
         {
@@ -205,7 +408,8 @@ return {
           properties = {
             ["flag"] = "weight3",
             ["inverted"] = true,
-            ["target1"] = { id = 12 }
+            ["target1"] = { id = 12 },
+            ["target2"] = { id = 42 }
           }
         },
         {
@@ -223,7 +427,8 @@ return {
           properties = {
             ["flag"] = "weight4",
             ["inverted"] = true,
-            ["target1"] = { id = 18 }
+            ["target1"] = { id = 18 },
+            ["target2"] = { id = 41 }
           }
         },
         {
@@ -603,7 +808,7 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "chapter1/treasures.pickupWeight",
-            ["setflag"] = "weight3",
+            ["setflag"] = "weight4",
             ["solid"] = true
           }
         },

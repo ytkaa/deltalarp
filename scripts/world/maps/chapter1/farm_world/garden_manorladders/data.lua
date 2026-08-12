@@ -9,8 +9,8 @@ return {
   height = 72,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 24,
-  nextobjectid = 416,
+  nextlayerid = 25,
+  nextobjectid = 429,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Ladders"
@@ -41,12 +41,12 @@ return {
     },
     {
       name = "garden_slide",
-      firstgid = 343,
+      firstgid = 350,
       filename = "../../../../tilesets/garden_slide.tsx"
     },
     {
       name = "farm_world_extras",
-      firstgid = 443,
+      firstgid = 450,
       filename = "../../../../tilesets/farm_world_extras.tsx",
       exportfilename = "../../../../tilesets/farm_world_extras.lua"
     }
@@ -90,7 +90,7 @@ return {
               height = 32,
               rotation = 0,
               opacity = 1,
-              gid = 467,
+              gid = 474,
               visible = true,
               properties = {}
             },
@@ -105,7 +105,7 @@ return {
               height = 32,
               rotation = 0,
               opacity = 1,
-              gid = 467,
+              gid = 474,
               visible = true,
               properties = {}
             }
@@ -136,7 +136,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -151,7 +151,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -166,7 +166,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -181,7 +181,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -196,7 +196,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -211,7 +211,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -226,7 +226,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -241,7 +241,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -256,7 +256,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -271,7 +271,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -286,7 +286,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -301,7 +301,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -316,7 +316,7 @@ return {
               height = 66,
               rotation = 0,
               opacity = 1,
-              gid = 466,
+              gid = 473,
               visible = true,
               properties = {}
             },
@@ -331,7 +331,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -346,7 +346,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -361,7 +361,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -376,7 +376,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -391,7 +391,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -406,7 +406,7 @@ return {
               height = 50,
               rotation = 0,
               opacity = 1,
-              gid = 464,
+              gid = 471,
               visible = true,
               properties = {}
             },
@@ -421,7 +421,7 @@ return {
               height = 56,
               rotation = 0,
               opacity = 1,
-              gid = 465,
+              gid = 472,
               visible = true,
               properties = {}
             },
@@ -436,7 +436,7 @@ return {
               height = 56,
               rotation = 0,
               opacity = 1,
-              gid = 465,
+              gid = 472,
               visible = true,
               properties = {}
             },
@@ -451,7 +451,7 @@ return {
               height = 56,
               rotation = 0,
               opacity = 1,
-              gid = 465,
+              gid = 472,
               visible = true,
               properties = {}
             }
@@ -482,7 +482,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             },
@@ -497,7 +497,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             },
@@ -512,7 +512,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             },
@@ -527,7 +527,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             },
@@ -542,7 +542,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             },
@@ -557,7 +557,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -572,7 +572,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -587,7 +587,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -602,7 +602,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -617,7 +617,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -632,7 +632,7 @@ return {
               height = 196,
               rotation = 0,
               opacity = 1,
-              gid = 463,
+              gid = 470,
               visible = true,
               properties = {}
             },
@@ -647,7 +647,7 @@ return {
               height = 186,
               rotation = 0,
               opacity = 1,
-              gid = 462,
+              gid = 469,
               visible = true,
               properties = {}
             }
@@ -673,15 +673,15 @@ return {
       properties = {},
       encoding = "lua",
       data = {
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 6, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 363, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 0, 0, 0, 29, 29, 29, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 0, 0, 0, 39, 39, 39, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 6, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 0, 0, 0, 49, 49, 49, 0, 0, 370, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 0, 0, 0, 0, 0, 5, 7, 7, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 5, 0, 0, 0, 0, 0, 6, 5, 5, 0, 0, 0, 0, 0, 7, 7, 5, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 5, 0, 0, 0, 0, 6, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 9, 9, 9, 9, 9, 9, 9, 5, 9, 9, 9, 9, 9, 9, 9, 5, 9, 9, 9, 9, 9, 9, 9, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -728,11 +728,11 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 19, 19, 19, 19, 19, 19, 19, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 19, 19, 19, 5, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 29, 29, 29, 29, 29, 29, 29, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 29, 29, 29, 5, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 39, 39, 39, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 6, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 347, 345, 345, 345, 345, 345, 346, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 5, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 346, 344, 344, 344, 344, 344, 344, 344, 345, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 59, 59, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 59, 59, 59, 5, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 346, 344, 344, 344, 344, 344, 344, 344, 344, 344, 345, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 344, 344, 344, 344, 344, 344, 344, 344, 344, 344, 344, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 354, 356, 356, 356, 356, 356, 356, 356, 356, 356, 355, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 39, 39, 39, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 6, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 354, 352, 352, 352, 352, 352, 353, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 5, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 353, 351, 351, 351, 351, 351, 351, 351, 352, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 59, 59, 59, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 59, 59, 59, 5, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 353, 351, 351, 351, 351, 351, 351, 351, 351, 351, 352, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 39, 39, 39, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 5, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 351, 351, 351, 351, 351, 351, 351, 351, 351, 351, 351, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 361, 363, 363, 363, 363, 363, 363, 363, 363, 363, 362, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 6, 5, 5, 5, 6, 5, 5, 5, 5, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 5, 5, 7, 5, 5, 5, 5, 5, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 49, 49, 49, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 6, 7, 5, 0, 0, 0, 0,
@@ -2908,6 +2908,139 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 24,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 418,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 1240,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight5",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 419,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 1840,
+          y = 1840,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight6",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 420,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1840,
+          y = 1880,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 349,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 421,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 2000,
+          y = 1920,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight7",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 422,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2000,
+          y = 1960,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 349,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 423,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 2640,
+          y = 920,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupWeight",
+            ["setflag"] = "weight8",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 424,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2640,
+          y = 960,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 349,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 6,
       name = "objects_climb_entry",
       class = "",
@@ -4310,7 +4443,7 @@ return {
           height = 40,
           rotation = 0,
           opacity = 1,
-          gid = 455,
+          gid = 462,
           visible = true,
           properties = {}
         },
@@ -4325,7 +4458,7 @@ return {
           height = 40,
           rotation = 0,
           opacity = 1,
-          gid = 455,
+          gid = 462,
           visible = true,
           properties = {}
         },
@@ -4340,7 +4473,7 @@ return {
           height = 40,
           rotation = 0,
           opacity = 1,
-          gid = 455,
+          gid = 462,
           visible = true,
           properties = {}
         },
@@ -4395,6 +4528,21 @@ return {
             ["map"] = "chapter1/farm_world/garden_shop",
             ["marker"] = "to_ladders"
           }
+        },
+        {
+          id = 416,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 1280,
+          width = 40,
+          height = 60,
+          rotation = 0,
+          opacity = 1,
+          gid = 349,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -5397,6 +5545,82 @@ return {
             ["inverted"] = true,
             ["target1"] = { id = 411 },
             ["target2"] = { id = 412 }
+          }
+        },
+        {
+          id = 425,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 603.333,
+          y = 1091.33,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight5",
+            ["inverted"] = true,
+            ["target1"] = { id = 418 },
+            ["target2"] = { id = 416 }
+          }
+        },
+        {
+          id = 426,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 2002.67,
+          y = 1719.33,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight6",
+            ["inverted"] = true,
+            ["target1"] = { id = 419 },
+            ["target2"] = { id = 420 }
+          }
+        },
+        {
+          id = 427,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 2102.67,
+          y = 1711.33,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight7",
+            ["inverted"] = true,
+            ["target1"] = { id = 422 },
+            ["target2"] = { id = 421 }
+          }
+        },
+        {
+          id = 428,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 2752.67,
+          y = 772,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "weight8",
+            ["inverted"] = true,
+            ["target1"] = { id = 423 },
+            ["target2"] = { id = 424 }
           }
         }
       }

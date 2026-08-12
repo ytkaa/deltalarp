@@ -141,9 +141,9 @@ return {
     },
     {
       id = 48,
-      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/fallen_tree.png",
-      width = 51,
-      height = 48
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_weight.png",
+      width = 40,
+      height = 60
     }
   }
 }

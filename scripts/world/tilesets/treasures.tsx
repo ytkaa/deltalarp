@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="treasures" tilewidth="1941" tileheight="3515" tilecount="11" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="treasures" tilewidth="1941" tileheight="3515" tilecount="12" columns="0">
  <editorsettings>
   <export target="treasures.lua" format="lua"/>
  </editorsettings>
@@ -36,5 +36,8 @@
  </tile>
  <tile id="10">
   <image source="../../../assets/sprites/treasures/ps5.png" width="1941" height="3515"/>
+ </tile>
+ <tile id="11">
+  <image source="../../../assets/sprites/treasures/printerink.png" width="446" height="725"/>
  </tile>
 </tileset>

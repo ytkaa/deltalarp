@@ -682,4 +682,50 @@ return {
                 return
             end
     end;
+    secondPaperBag = function(cutscene, event)
+        cutscene:text("* (An imposing paper bag...)")
+        cutscene:text("* (Looks like it needs 5 weights to deflate it.)")
+        cutscene:text("* (Attempt to deflate?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and Game:getFlag("weightsCarried", 0) >= 5 then
+                local count = Game:getFlag("weightsCarried", 0)
+                Game:setFlag("weightsCarried", count - 5)
+                cutscene:wait(1)
+                local options = {
+                    ["play_sound"] = false
+                }
+                local paperBag = Game.world:getEvent(4)
+                local paperBaginteract = Game.world:getEvent(7)
+                paperBag:explode(0, 0, false)
+                paperBaginteract:explode(0, 0, false, options)
+                Game:setFlag("secondPaperBag", true)
+            elseif choice == 1 and Game:getFlag("weightsCarried", 0) < 5 then
+                cutscene:text("* (Alas,[wait:5] you don't have enough weight...)")
+            else
+                return
+            end
+    end;
+    thirdPaperBag = function(cutscene, event)
+        cutscene:text("* (An imposing paper bag...)")
+        cutscene:text("* (Looks like it needs 8 weights to deflate it.)")
+        cutscene:text("* (Attempt to deflate?)")
+        local choice = cutscene:choicer({"Yes", "No"})
+            if choice == 1 and Game:getFlag("weightsCarried", 0) >= 8 then
+                local count = Game:getFlag("weightsCarried", 0)
+                Game:setFlag("weightsCarried", count - 8)
+                cutscene:wait(1)
+                local options = {
+                    ["play_sound"] = false
+                }
+                local paperBag = Game.world:getEvent(5)
+                local paperBaginteract = Game.world:getEvent(8)
+                paperBag:explode(0, 0, false)
+                paperBaginteract:explode(0, 0, false, options)
+                Game:setFlag("thirdPaperBag", true)
+            elseif choice == 1 and Game:getFlag("weightsCarried", 0) < 8 then
+                cutscene:text("* (Alas,[wait:5] you don't have enough weight...)")
+            else
+                return
+            end
+    end;
 }

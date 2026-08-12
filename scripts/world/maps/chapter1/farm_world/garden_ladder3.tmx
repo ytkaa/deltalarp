@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="29" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="106">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="29" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="115">
  <editorsettings>
   <export target="garden_ladder3.lua" format="lua"/>
  </editorsettings>
@@ -287,6 +287,30 @@
     <property name="once" type="bool" value="false"/>
    </properties>
   </object>
+  <object id="106" name="interactable" x="760" y="240" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight11"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="107" gid="377" x="760" y="280" width="40" height="60"/>
+  <object id="108" name="interactable" x="720" y="280" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight10"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="109" gid="377" x="720" y="320" width="40" height="60"/>
+  <object id="110" name="interactable" x="720" y="400" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupWeight"/>
+    <property name="setflag" value="weight9"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="111" gid="377" x="720" y="440" width="40" height="60"/>
  </objectgroup>
  <objectgroup color="#ff0000" id="12" name="battleareas" locked="1">
   <object id="98" x="0" y="680" width="1160" height="1560"/>
@@ -309,6 +333,33 @@
     <property name="inverted" type="bool" value="true"/>
     <property name="target1" type="object" value="103"/>
     <property name="target2" type="object" value="104"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="toggle" x="742" y="90">
+   <properties>
+    <property name="flag" value="weight10"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="109"/>
+    <property name="target2" type="object" value="108"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="toggle" x="803" y="79">
+   <properties>
+    <property name="flag" value="weight11"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="106"/>
+    <property name="target2" type="object" value="107"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="toggle" x="883" y="84">
+   <properties>
+    <property name="flag" value="weight9"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="110"/>
+    <property name="target2" type="object" value="111"/>
    </properties>
    <point/>
   </object>

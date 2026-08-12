@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.12.2" name="garden_extras" tilewidth="1160" tileheight="738" tilecount="20" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="garden_extras" tilewidth="1160" tileheight="738" tilecount="20" columns="0">
  <editorsettings>
   <export target="garden_extras.lua" format="lua"/>
  </editorsettings>
@@ -62,6 +62,6 @@
   <image source="../../../assets/sprites/tilesets/farm_world/garden/paperbag.png" width="456" height="205"/>
  </tile>
  <tile id="48">
-  <image source="../../../assets/sprites/tilesets/farm_world/garden/orchard/fallen_tree.png" width="51" height="48"/>
+  <image source="../../../assets/sprites/tilesets/farm_world/garden/orchard/apple_weight.png" width="40" height="60"/>
  </tile>
 </tileset>
