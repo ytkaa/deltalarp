@@ -40,7 +40,7 @@ function AppleBucket:onStateChange(old, new)
     elseif new == "LEAVE" then
         Assets.playSound("grab_reverse")
     elseif new == "ROB" then
-        self:startDialogue({"[sound:wing][wait:15]* (...)", "* (You failed...[sound:awkward])"})
+        self:startDialogue({"[noskip][sound:wing][wait:20][sound:wing][wait:30]* (...)", "* (You failed...[sound:awkward])"})
     end
 end
 

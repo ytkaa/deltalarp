@@ -13,7 +13,7 @@ return {
                 Game:setFlag("FoliageAssorter", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -33,7 +33,7 @@ return {
                 --carriedTreasure = "BugAnnihilator" --I would`ve prefered to use a global variable, but global variables persist through ALL OF KRISTAL. How braindead is that
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -52,7 +52,7 @@ return {
                 Game:setFlag("ArmoredNut", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -71,7 +71,7 @@ return {
                 Game:setFlag("ArmoredNut", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -90,7 +90,7 @@ return {
                 Game:setFlag("RedPikmin", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -109,7 +109,7 @@ return {
                 Game:setFlag("BrokenHome", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -128,7 +128,7 @@ return {
                 Game:setFlag("HolyNectar", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -147,7 +147,7 @@ return {
                 Game:setFlag("ColoredFrontiers", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -166,7 +166,7 @@ return {
                 Game:setFlag("RubberUgly", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -185,7 +185,7 @@ return {
                 Game:setFlag("AdamantineGirdle", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -199,7 +199,7 @@ return {
                 Game:setFlag("TheKey", true)
                 cutscene:text("* (Picked up treasure.)")
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -220,7 +220,7 @@ return {
                     return
                 end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end
@@ -241,7 +241,7 @@ return {
                     return
                 end
             elseif Game:getFlag("isCarryingTreasure") then
-                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible for a vessel.)")
+                cutscene:text("* (Alas,[wait:5] picking up 2 treasures at a time is a feat not possible in this world.)")
             else
                 return
             end

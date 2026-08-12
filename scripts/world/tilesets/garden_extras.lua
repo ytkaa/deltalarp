@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   name = "garden_extras",
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 19,
+  tilecount = 20,
   tiles = {
     {
       id = 29,
@@ -138,6 +138,12 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/garden/paperbag.png",
       width = 456,
       height = 205
+    },
+    {
+      id = 48,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/fallen_tree.png",
+      width = 51,
+      height = 48
     }
   }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="87">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="88">
  <editorsettings>
   <export target="farm3.lua" format="lua"/>
  </editorsettings>
@@ -184,6 +184,16 @@ of corn.)</property>
    <properties>
     <property name="once" type="bool" value="true"/>
     <property name="script" value="music_logo"/>
+   </properties>
+  </object>
+  <object id="87" name="interactable" x="480" y="30" width="200" height="50">
+   <properties>
+    <property name="once" type="bool" value="true"/>
+    <property name="script" value="hayhaybale"/>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1_1" value="* (?!)"/>
+    <property name="text1_2" value="* (Oh,[wait:5] it's just hay.)"/>
+    <property name="text1_3" value="* (You took[sound:item] some hay.)"/>
    </properties>
   </object>
  </objectgroup>

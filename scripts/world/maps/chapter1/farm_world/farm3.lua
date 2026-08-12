@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 87,
+  nextobjectid = 88,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Start"
@@ -956,6 +956,27 @@ return {
           properties = {
             ["once"] = true,
             ["script"] = "music_logo"
+          }
+        },
+        {
+          id = 87,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 30,
+          width = 200,
+          height = 50,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["script"] = "hayhaybale",
+            ["solid"] = false,
+            ["text1_1"] = "* (?!)",
+            ["text1_2"] = "* (Oh,[wait:5] it's just hay.)",
+            ["text1_3"] = "* (You took[sound:item] some hay.)"
           }
         }
       }

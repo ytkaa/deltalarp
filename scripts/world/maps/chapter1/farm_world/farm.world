@@ -212,10 +212,10 @@
         },
         {
             "fileName": "garden_orchard2.tmx",
-            "height": 1920,
+            "height": 2040,
             "width": 920,
             "x": 29880,
-            "y": -8191
+            "y": -8311
         },
         {
             "fileName": "garden_treasurehunt.tmx",
@@ -286,6 +286,13 @@
             "width": 640,
             "x": 29280,
             "y": -4671
+        },
+        {
+            "fileName": "garden_orchard_maze.tmx",
+            "height": 2960,
+            "width": 760,
+            "x": 29960,
+            "y": -11351
         }
     ],
     "onlyShowAdjacentMaps": false,
