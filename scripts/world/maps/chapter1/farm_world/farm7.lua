@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -569,6 +569,7 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "chapter1/zobate.mystery_gate",
+            ["key"] = "mystery",
             ["solid"] = true
           }
         },
@@ -630,8 +631,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["map"] = "chapter1/farm_world/farm7",
-            ["marker"] = "to_gate2"
+            ["map"] = "chapter1/farm_world/farm7_gate2",
+            ["marker"] = "to_gate1"
           }
         }
       }

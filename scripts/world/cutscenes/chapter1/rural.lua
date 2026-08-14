@@ -12,11 +12,13 @@ return {
             local music = Music()
             music:play("start")
             music:setLooping(false)
+            Game.world.music:stop()
             cutscene:wait(cutscene:fadeIn(1))
             cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "up")) --41, top of mainstreet
             Game:setFlag("start_cutscene_active", false)
             --cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
             cutscene:wait(0.5)
+            Game.world.music:stop()
             Game:setFlag("start_cutscene_active", true)
             cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4, "up")) --school door
             Game:setFlag("start_cutscene_active", false)

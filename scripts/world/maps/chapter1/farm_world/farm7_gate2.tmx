@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="21" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="30">
+ <editorsettings>
+  <export target="farm7_gate2.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../tilesets/GONER.tsx"/>
+ <tileset firstgid="26" source="../../../tilesets/farm_world_extras.tsx"/>
+ <tileset firstgid="54" source="../../../tilesets/farm_world.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="21" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,60,60,60,60,60,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,60,1,1,1,60,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,60,1,1,1,60,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,60,1,1,1,60,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,71,70,70,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,58,58,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,58,58,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,59,58,58,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,58,59,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,58,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,59,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,58,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,59,59,58,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,59,58,59,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,58,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,59,58,58,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,58,58,59,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,58,58,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,59,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,59,58,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,75,58,59,58,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,58,59,58,74,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,59,58,59,75,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,74,59,59,59,74,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="objects_two">
+  <object id="1" gid="53" x="300" y="160" width="160" height="160"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="2" name="objects_party">
+  <object id="2" name="mysterygate" x="300" y="0">
+   <properties>
+    <property name="key" value="treasure"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="transition" x="280" y="960" width="200" height="40">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm7"/>
+    <property name="marker" value="to_gate2"/>
+   </properties>
+  </object>
+  <object id="26" name="transition" x="320" y="120" width="120" height="40">
+   <properties>
+    <property name="map" value="chapter1/farm_world/farm7_gate3"/>
+    <property name="marker" value="to_gate2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="5" name="markers">
+  <object id="20" name="to_gate1" x="380" y="920">
+   <point/>
+  </object>
+  <object id="28" name="camera" x="380" y="640">
+   <point/>
+  </object>
+  <object id="29" name="to_gate3" x="380" y="200">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="6" name="controllers">
+  <object id="21" name="toggle" x="380" y="-40">
+   <properties>
+    <property name="flag" value="zobate_gate2"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="23"/>
+    <property name="target2" type="object" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="toggle" x="480" y="-70">
+   <properties>
+    <property name="flag" value="zobate_gate2"/>
+    <property name="inverted" type="bool" value="false"/>
+    <property name="target1" type="object" value="26"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="objects_camera_shenanigans" locked="1">
+  <object id="27" name="cameratarget" x="0" y="0" width="840" height="960">
+   <properties>
+    <property name="lockx" type="bool" value="true"/>
+    <property name="locky" type="bool" value="false"/>
+    <property name="marker" value="camera"/>
+    <property name="returnspeed" type="int" value="12"/>
+    <property name="speed" type="int" value="8"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="4" name="collision">
+  <object id="3" x="240" y="160" width="40" height="800"/>
+  <object id="8" x="120" y="120" width="200" height="40"/>
+  <object id="9" x="440" y="120" width="200" height="40"/>
+  <object id="17" x="480" y="160" width="40" height="800"/>
+  <object id="23" x="320" y="120" width="120" height="40"/>
+ </objectgroup>
+</map>

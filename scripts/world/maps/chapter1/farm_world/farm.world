@@ -295,11 +295,25 @@
             "y": -11351
         },
         {
-            "fileName": "garden_treasurehunt3.tmx",
-            "height": 1600,
-            "width": 1200,
-            "x": 29080,
-            "y": -3832
+            "fileName": "farm7_gate2.tmx",
+            "height": 960,
+            "width": 840,
+            "x": 6560,
+            "y": -3191
+        },
+        {
+            "fileName": "farm7_gate3.tmx",
+            "height": 960,
+            "width": 840,
+            "x": 6560,
+            "y": -4191
+        },
+        {
+            "fileName": "farm7_stage.tmx",
+            "height": 2480,
+            "width": 920,
+            "x": 6480,
+            "y": -6711
         }
     ],
     "onlyShowAdjacentMaps": false,
