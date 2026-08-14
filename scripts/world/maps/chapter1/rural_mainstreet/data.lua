@@ -13,7 +13,6 @@ return {
   nextobjectid = 64,
   properties = {
     ["light"] = true,
-    ["music"] = "ruraltown_wip",
     ["name"] = "Ruraltown - Main Street"
   },
   tilesets = {

@@ -4,7 +4,6 @@
   <export target="rural_school_inside.lua" format="lua"/>
  </editorsettings>
  <properties>
-  <property name="keepmusic" type="bool" value="true"/>
   <property name="light" type="bool" value="true"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/rural.tsx"/>

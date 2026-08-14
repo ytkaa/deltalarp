@@ -12,8 +12,7 @@ return {
   nextlayerid = 6,
   nextobjectid = 24,
   properties = {
-    ["light"] = true,
-    ["music"] = "ruraltown_wip"
+    ["light"] = true
   },
   tilesets = {
     {

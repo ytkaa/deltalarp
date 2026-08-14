@@ -5,7 +5,6 @@
  </editorsettings>
  <properties>
   <property name="light" type="bool" value="true"/>
-  <property name="music" value="ruraltown_wip"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/rural.tsx"/>
  <tileset firstgid="101" source="../../tilesets/rural_buildings.tsx"/>
