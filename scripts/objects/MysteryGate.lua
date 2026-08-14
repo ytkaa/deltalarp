@@ -12,6 +12,10 @@ end
 function MysteryGate:onInteract(player, dir)
     if self.key == "mystery" then
         self.world:startCutscene("chapter1/zobate", "mystery_gate", self)
+    elseif self.key == "treasure" then
+        self.world:startCutscene("chapter1/zobate", "treasure_gate", self)
+    elseif self.key == "barn" then
+        self.world:startCutscene("chapter1/zobate", "barn_gate", self)
     end
 end
 

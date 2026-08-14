@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   name = "farm_world_extras",
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 27,
+  tilecount = 32,
   tiles = {
     {
       id = 0,
@@ -186,6 +186,36 @@ return {
       image = "../../../assets/sprites/world/events/gate2_open.png",
       width = 80,
       height = 80
+    },
+    {
+      id = 28,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_base.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 29,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_dark.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 30,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_base2.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 31,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_base3.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 32,
+      image = "../../../assets/sprites/tilesets/farm_world/seat.png",
+      width = 40,
+      height = 60
     }
   }
 }
