@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="141">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="143">
  <editorsettings>
   <export target="garden_treasurehunt.lua" format="lua"/>
  </editorsettings>
@@ -298,6 +298,25 @@
    </properties>
    <point/>
   </object>
+  <object id="142" name="toggle" x="1936" y="654.667">
+   <properties>
+    <property name="flag" value="treasureHuntClear"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="102"/>
+    <property name="target10" type="object" value="107"/>
+    <property name="target11" type="object" value="100"/>
+    <property name="target12" type="object" value="21"/>
+    <property name="target2" type="object" value="14"/>
+    <property name="target3" type="object" value="101"/>
+    <property name="target4" type="object" value="99"/>
+    <property name="target5" type="object" value="103"/>
+    <property name="target6" type="object" value="103"/>
+    <property name="target7" type="object" value="104"/>
+    <property name="target8" type="object" value="105"/>
+    <property name="target9" type="object" value="106"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">
   <object id="28" name="toferpos" x="1499.5" y="226.5">
@@ -319,6 +338,9 @@
    <point/>
   </object>
   <object id="137" name="to_weight2" x="1956.67" y="1720.67">
+   <point/>
+  </object>
+  <object id="141" name="toferpos2" x="1523" y="310.333">
    <point/>
   </object>
  </objectgroup>

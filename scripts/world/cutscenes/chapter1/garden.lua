@@ -924,10 +924,9 @@ return {
         local camera = Game.world.camera
         Game.world.music:pause()
         Assets.playSound("cardrive")
-        cutscene:slideTo(tofer, "toferpos", 1.25)
-        cutscene:slideTo(vess, "vesspos", 1.25)
+        cutscene:walkTo(tofer, "toferpos", 1.25)
+        cutscene:walkTo(vess, "vesspos", 1.25)
         cutscene:setAnimation(tofer, "cycle")
-        cutscene:setAnimation(vess, "right")
         cutscene:wait(cutscene:panTo(kipkip.x, kipkip.y, 1.25))
         cutscene:look("vess", "up")
         cutscene:text("* Yeho!![wait:5] Mi yen![wait:5] Hop hup ye!")

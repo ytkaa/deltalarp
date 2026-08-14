@@ -205,9 +205,12 @@ return {
             end
     end;
     pickupJoylessDevice = function(cutscene, event)
-        if (not Game:getFlag("treasureHuntBegan")) then
+        if (not Game:getFlag("treasureHuntBegan")) and (not Game:getFlag("treasureHuntClear")) then
             cutscene:text("* (A supposedly worthless object stands before you.)")
             cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        elseif Game:getFlag("treasureHuntClear") and (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (An undoubtedly valuable treasure stands before you.)")
+            cutscene:text("* (Unfortunately, you have no one to sell it to now...)")
         else
             cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
             local choice = cutscene:choicer({"Yes", "No"})
@@ -231,9 +234,12 @@ return {
             end
     end;
     pickupDyedScam = function(cutscene, event)
-        if (not Game:getFlag("treasureHuntBegan")) then
+        if (not Game:getFlag("treasureHuntBegan")) and (not Game:getFlag("treasureHuntClear")) then
             cutscene:text("* (A supposedly worthless object stands before you.)")
             cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        elseif Game:getFlag("treasureHuntClear") and (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (An undoubtedly valuable treasure stands before you.)")
+            cutscene:text("* (Unfortunately, you have no one to sell it to now...)")
         else
             cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
             local choice = cutscene:choicer({"Yes", "No"})
@@ -257,9 +263,12 @@ return {
             end
     end;
     pickupFrostedColonel = function(cutscene, event)
-        if (not Game:getFlag("treasureHuntBegan")) then
+        if (not Game:getFlag("treasureHuntBegan")) and (not Game:getFlag("treasureHuntClear")) then
             cutscene:text("* (A supposedly worthless object stands before you.)")
             cutscene:text("* (You lack the mindset to appreciate it as the treasure it is...)")
+        elseif Game:getFlag("treasureHuntClear") and (not Game:getFlag("treasureHuntBegan")) then
+            cutscene:text("* (An undoubtedly valuable treasure stands before you.)")
+            cutscene:text("* (Unfortunately, you have no one to sell it to now...)")
         else
             cutscene:text("[sound:treasure]* (You've found a treasure![wait:5] Pick it up?)")
             local choice = cutscene:choicer({"Yes", "No"})
@@ -284,6 +293,7 @@ return {
     end;
     evaluateOverworldTreasure = function(cutscene, event) --https://preview.redd.it/weird-yandere-simulator-fact-if-else-v0-99l916y0sgpd1.png?width=513&format=png&auto=webp&s=960f031402041549cc472cdce42820ee48c372e6
         local tofer = cutscene:getCharacter("tofer")
+        local vess = cutscene:getCharacter("vess")
         if Game:getFlag("JoylessDevice") then
             local debtPaid = Game:getFlag("debtPaid", 0)
             Game:setFlag("debtPaid", debtPaid + 335)
@@ -305,11 +315,30 @@ return {
             cutscene:text("* (This is the Frosted Colonel.[wait:5] It's worth [sound:treasureappraise]D$300.)")
             Game:setFlag("isCarryingTreasure", false)
             Game:setFlag("FrostedColonel", false)
+        else
+            cutscene:text("* (This field and it's connecting areas have a lot of [color:yellow]TREASURES.[color:reset])")
+            cutscene:text("* (We need D$1000 worth to pay off our debt to the Beebeldorf Conglomerate.)")
+            cutscene:text("* (Bring the treasures to me and we'll clear out the way for you.)")
+            cutscene:text("* (It's simple.[wait:5] Just interact with something interesting and bring it back to me.)")
+            cutscene:text("* (Oh,[wait:5] also...)")
+            cutscene:text("* (You can rob enemies with the ACT menu.)")
+            cutscene:text("* (Don't worry,[wait:5] it's for a good cause.)")
+        end
         if Game:getFlag("debtPaid", 0) >= 1000 then
+                Game:setFlag("treasureHuntBegan", false)
                 local auto = {
                     ["auto"] = true;
                 }
+                cutscene:detachFollowers()
+                cutscene:detachCamera()
+                local kipkip = Game.world:getEvent(14)
+                local camera = Game.world.camera
+                cutscene:panTo(kipkip.x, kipkip.y, 0.50)
+                cutscene:walkTo(tofer, "toferpos2", 0.50)
+                cutscene:walkTo(vess, "vesspos", 0.50)
                 cutscene:text("* (Wow![wait:5] You actually did it!)")
+                cutscene:wait(cutscene:walkTo(vess, "vesspos", 0.50))
+                cutscene:look(vess, "up")
                 cutscene:setSpeaker(tofer)
                 cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Of course,[wait:5] brolio![wait:5]\nCheck it![sound:tofer_checkit]")
                 cutscene:setSpeaker(nil)
@@ -327,11 +356,11 @@ return {
                 cutscene:text("* (Like it would really help against the GARDNER)")
                 cutscene:text("* (Surely the Ofer Estate wouldn't mind making a small donation?)")
                 cutscene:setSpeaker(tofer)
-                cutscene:text("[face:tofer, -19, -13]* No can do,[wait:5] brolio![wait:5]\nThat's all in the renovations![wait:5]\nCheck it![sound:tofer_checkit]")
-                cutscene:text("[face:tofer, -19, -13]* My gray brolio on the\nother hand,[wait:5] they can help![wait:5]")
+                cutscene:text("[face:tofer, -19, -13]* No can do,[wait:5] brolio![wait:5]\nThat's all in the\nrenovations![wait:5] Check it![sound:tofer_checkit]")
+                cutscene:text("[face:tofer, -19, -13]* My gray brolio on the\nother hand,[wait:5] they can \nhelp![wait:5]")
                 local vess = cutscene:getCharacter("vess")
                 cutscene:look(vess, "left")
-                cutscene:wait(1)
+                cutscene:wait(3)
                 cutscene:setSpeaker(nil)
                 cutscene:text("* (So)")
                 cutscene:look(vess, "up")
@@ -344,29 +373,26 @@ return {
                     local choice2 = cutscene:choicer({"Yes...", "No"})
                     if choice2 == 1 then
                         Game.money = 0
-                        cutscene:text("* (Thanks. We'll be out of your way now.)")
+                        cutscene:text("* (Thanks.[wait:5] We'll be out of your way now.)")
+                        cutscene:wait(cutscene:fadeOut(1))
+                        Game:setFlag("treasureHuntClear", true)
                         cutscene:wait(1)
-                        cutscene:text("* (Lmao i didnt implement that yet)")
+                        cutscene:wait(cutscene:fadeIn(1))
+                        cutscene:attachFollowers()
+                        cutscene:attachCamera()
+                        Game.world.music:resume()
                     else 
                         cutscene:text("* (...)")
                         cutscene:text("* (Guys lets jump em)")
-                        cutscene:wait(1)
-                        cutscene:text("* (Lmao i didnt implement the battle yet)")
+                        Game:encounter("kipkip_robbers")
+                        Game:setFlag("treasureHuntClear", true)
                     end
                 else 
                     cutscene:text("* (...)")
                     cutscene:text("* (Guys lets jump em)")
-                    cutscene:wait(1)
-                    cutscene:text("* (Lmao i didnt implement the battle yet)")
+                    Game:encounter("kipkip_robbers")
+                    Game:setFlag("treasureHuntClear", true)
                 end
-        else
-            cutscene:text("* (This field and it's connecting areas have a lot of [color:yellow]TREASURES.[color:reset])")
-            cutscene:text("* (We need D$1000 worth to pay off our debt to the Beebeldorf Conglomerate.)")
-            cutscene:text("* (Bring the treasures to me and we'll clear out the way for you.)")
-            cutscene:text("* (It's simple.[wait:5] Just interact with something interesting and bring it back to me.)")
-            cutscene:text("* (Oh,[wait:5] also...)")
-            cutscene:text("* (You can rob enemies with the ACT menu.)")
-            cutscene:text("* (Don't worry,[wait:5] it's for a good cause.)")
         end
     end;
     evaluateCaveTreasure = function(cutscene, event) --https://preview.redd.it/weird-yandere-simulator-fact-if-else-v0-99l916y0sgpd1.png?width=513&format=png&auto=webp&s=960f031402041549cc472cdce42820ee48c372e6

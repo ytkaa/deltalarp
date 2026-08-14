@@ -314,6 +314,13 @@
             "width": 920,
             "x": 6480,
             "y": -6711
+        },
+        {
+            "fileName": "garden_treasurehunt3.tmx",
+            "height": 1600,
+            "width": 1200,
+            "x": 29080,
+            "y": -3831
         }
     ],
     "onlyShowAdjacentMaps": false,
