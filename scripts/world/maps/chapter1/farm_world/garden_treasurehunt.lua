@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 143,
+  nextobjectid = 144,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Treasure Field"
@@ -920,6 +920,20 @@ return {
           shape = "point",
           x = 1523,
           y = 310.333,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 143,
+          name = "kipkipleave",
+          type = "",
+          shape = "point",
+          x = 1570,
+          y = -60,
           width = 0,
           height = 0,
           rotation = 0,

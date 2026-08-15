@@ -24,6 +24,7 @@ function KipkipChase:init(x, y, dir, speed)
     self.shakenOff = false
 
     self.timer = Timer()
+    self.timer2 = Timer()
     self.timer:everyInstant(math.random(0.55), function()
         if self.attachedToSoul == true then
             Game.battle:hurt(5, true)
@@ -35,10 +36,8 @@ function KipkipChase:onCollide(soul)
     self.destroy_on_hit = false
     if self.shakenOff == true then
         return
-        print("OH MY GOODNESS!!!")
     elseif self.shakenOff == false then
         self.attachedToSoul = true
-        print("Lmao kil lyourself")
     end
 end
 
@@ -66,16 +65,16 @@ function KipkipChase:update()
                 Assets.playSound("bump", 1.5, 1)
                 Game.battle.soul:shake()
                 confirm_count = confirm_count + 0.1
-                if confirm_count >= 3 then
+                if confirm_count >= 1 then
                     originalSelf.attachedToSoul = false
                     Mod.onKeyPressed = nil
                     if spamZ then
-                        Game.stage:removeChild(spamZ)
+                        spamZ:setScale(0)
                     end
                     confirm_count = 0
                     originalSelf.shakenOff = true
                     originalSelf:setColor({0.33, 0.33, 0.33})
-                    originalSelf.timer:every(3, function()
+                    originalSelf.timer2:every(3, function()
                         originalSelf.shakenOff = false
                         originalSelf:setColor(COLORS.white) 
                     end)
@@ -86,6 +85,9 @@ function KipkipChase:update()
     super.update(self)
     if self.timer then
         self.timer:update()
+    end
+    if self.timer2 and self.shakenOff == true then
+        self.timer2:update()
     end
 end
 

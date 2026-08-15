@@ -101,7 +101,9 @@ function Fleecebug:init()
                             confirm_count = 0
 
                             Mod.onKeyPressed = nil
-                            Game.battle:setActText("* Nice jobv")
+                            Game.battle:setActText("* Stole D$100![wait:5] Nice jobv")
+                            local debtPaid = Game:getFlag("debtPaid", 0)
+                            Game:setFlag("debtPaid", debtPaid + 100)
                         end
                     end
                 end

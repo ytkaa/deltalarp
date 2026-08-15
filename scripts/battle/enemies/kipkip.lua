@@ -110,7 +110,9 @@ function Kipkip:init()
                             confirm_count = 0
 
                             Mod.onKeyPressed = nil
-                            Game.battle:setActText("* Nice jobv")
+                            Game.battle:setActText("* Stole D$250![wait:5] Nice jobv")
+                            local debtPaid = Game:getFlag("debtPaid", 0)
+                            Game:setFlag("debtPaid", debtPaid + 250)
                         end
                     end
                 end
