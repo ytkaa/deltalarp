@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="62" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="38">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="23" height="62" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="49">
  <editorsettings>
   <export target="farm7_stage.lua" format="lua"/>
  </editorsettings>
@@ -75,6 +75,15 @@
 103,103,103,103,103,103,103,103,103,22,6,6,5,22,103,4,103,103,103,103,103,103,103
 </data>
  </layer>
+ <objectgroup id="4" name="objects_dark">
+  <object id="8" gid="230" x="200" y="880" width="520" height="360"/>
+  <object id="13" gid="233" x="280" y="1000" width="80" height="120"/>
+  <object id="14" gid="2147483881" x="560" y="1000" width="80" height="120"/>
+ </objectgroup>
+ <objectgroup id="8" name="objects_curtain" visible="0">
+  <object id="39" gid="235" x="200" y="880" width="520" height="360"/>
+  <object id="40" gid="236" x="200" y="880" width="520" height="360"/>
+ </objectgroup>
  <layer id="5" name="Tile Layer 2" width="23" height="62" locked="1">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -91,11 +100,11 @@
 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,
+7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,
+7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,
+7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,
+7,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,
 0,22,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,22,0,
 0,0,22,5,6,5,6,0,0,0,0,0,0,0,0,0,0,5,5,6,22,0,0,
 0,0,0,22,5,6,6,0,0,0,0,0,0,0,0,0,0,6,5,21,0,0,0,
@@ -141,16 +150,11 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="4" name="objects_dark">
-  <object id="8" gid="230" x="200" y="880" width="520" height="360"/>
-  <object id="13" gid="233" x="280" y="1000" width="80" height="120"/>
-  <object id="14" gid="2147483881" x="560" y="1000" width="80" height="120"/>
- </objectgroup>
  <objectgroup id="6" name="objects_stage" locked="1">
   <object id="9" gid="231" x="200" y="880" width="520" height="360"/>
   <object id="5" x="200" y="520" width="520" height="360"/>
  </objectgroup>
- <objectgroup id="2" name="objects_party">
+ <objectgroup color="#ff007f" id="2" name="objects_party">
   <object id="2" name="savepoint" x="320" y="1600" width="40" height="40">
    <properties>
     <property name="heals" type="bool" value="true"/>
@@ -166,11 +170,10 @@
     <property name="marker" value="to_stage"/>
    </properties>
   </object>
-  <object id="15" name="npc" x="440" y="640" width="40" height="40">
+  <object id="43" name="script" x="360" y="1240" width="200" height="40">
    <properties>
-    <property name="actor" value="zobate"/>
-    <property name="text1_1" value="* ...[wait:5]what?"/>
-    <property name="text2_1" value="* ..."/>
+    <property name="cutscene" value="chapter1/zobate.show"/>
+    <property name="once" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>
@@ -198,11 +201,26 @@
   <object id="36" x="40" y="720" width="160" height="40"/>
   <object id="37" x="720" y="720" width="160" height="40"/>
  </objectgroup>
- <objectgroup id="3" name="markers">
+ <objectgroup color="#aa00ff" id="3" name="markers">
   <object id="1" name="entry" x="460" y="2440">
    <point/>
   </object>
   <object id="4" name="spawn" x="400" y="1620">
+   <point/>
+  </object>
+  <object id="41" name="vesspos" x="430" y="1040">
+   <point/>
+  </object>
+  <object id="42" name="gracepos" x="490" y="1040">
+   <point/>
+  </object>
+  <object id="44" name="seat_left" x="320" y="980">
+   <point/>
+  </object>
+  <object id="45" name="seat_right" x="600" y="980">
+   <point/>
+  </object>
+  <object id="48" x="460" y="650">
    <point/>
   </object>
  </objectgroup>

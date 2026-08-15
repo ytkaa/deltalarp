@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 32,
+  tilecount = 35,
   tiles = {
     {
       id = 0,
@@ -216,6 +216,24 @@ return {
       image = "../../../assets/sprites/tilesets/farm_world/seat.png",
       width = 40,
       height = 60
+    },
+    {
+      id = 33,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_curtains.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 34,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_curtains_left.png",
+      width = 260,
+      height = 180
+    },
+    {
+      id = 35,
+      image = "../../../assets/sprites/tilesets/farm_world/stage_curtains_right.png",
+      width = 260,
+      height = 180
     }
   }
 }

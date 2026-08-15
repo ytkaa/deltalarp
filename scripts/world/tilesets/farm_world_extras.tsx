@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.12.2" name="farm_world_extras" tilewidth="320" tileheight="560" tilecount="32" columns="0">
+<tileset version="1.10" tiledversion="1.12.2" name="farm_world_extras" tilewidth="320" tileheight="560" tilecount="35" columns="0">
  <editorsettings>
   <export target="farm_world_extras.lua" format="lua"/>
  </editorsettings>
@@ -99,5 +99,14 @@
  </tile>
  <tile id="32">
   <image source="../../../assets/sprites/tilesets/farm_world/seat.png" width="40" height="60"/>
+ </tile>
+ <tile id="33">
+  <image source="../../../assets/sprites/tilesets/farm_world/stage_curtains.png" width="260" height="180"/>
+ </tile>
+ <tile id="34">
+  <image source="../../../assets/sprites/tilesets/farm_world/stage_curtains_left.png" width="260" height="180"/>
+ </tile>
+ <tile id="35">
+  <image source="../../../assets/sprites/tilesets/farm_world/stage_curtains_right.png" width="260" height="180"/>
  </tile>
 </tileset>
