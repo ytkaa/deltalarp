@@ -33,7 +33,7 @@
   </tile>
  </tileset>
  <tileset firstgid="108" source="../../../tilesets/treasures.tsx"/>
- <tileset firstgid="118" source="../../../tilesets/garden_extras.tsx"/>
+ <tileset firstgid="120" source="../../../tilesets/garden_extras.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="51" height="72">
   <data encoding="csv">
 82,82,82,82,82,82,82,82,82,82,82,82,88,88,88,88,89,88,99,89,89,99,99,89,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,82,
@@ -157,7 +157,7 @@
  <objectgroup id="4" name="objects">
   <object id="49" gid="107" x="800" y="2280" width="278.4" height="123.667"/>
   <object id="83" gid="115" x="918" y="557" width="117.161" height="108"/>
-  <object id="92" gid="155" x="1116.67" y="2769.79" width="204.667" height="160.427"/>
+  <object id="92" gid="157" x="1116.67" y="2769.79" width="204.667" height="160.427"/>
  </objectgroup>
  <objectgroup color="#ff007f" id="5" name="objects_party">
   <object id="50" name="interactable" x="800" y="2156.67" width="277.999" height="123.833">

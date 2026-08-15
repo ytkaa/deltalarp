@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 138,
+  nextobjectid = 143,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Treasure Field"
@@ -26,6 +26,12 @@ return {
       firstgid = 101,
       filename = "../../../tilesets/garden_extras.tsx",
       exportfilename = "../../../tilesets/garden_extras.lua"
+    },
+    {
+      name = "treasures",
+      firstgid = 150,
+      filename = "../../../tilesets/treasures.tsx",
+      exportfilename = "../../../tilesets/treasures.lua"
     }
   },
   layers = {
@@ -658,6 +664,38 @@ return {
             ["map"] = "chapter1/farm_world/garden_treasurehunt3",
             ["marker"] = "to_treasure"
           }
+        },
+        {
+          id = 138,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 1052,
+          width = 151.333,
+          height = 226.167,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/treasures.pickupFrostedColonel",
+            ["solid"] = true
+          }
+        },
+        {
+          id = 139,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 1280,
+          width = 150.807,
+          height = 228,
+          rotation = 0,
+          opacity = 1,
+          gid = 162,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -711,6 +749,54 @@ return {
             ["inverted"] = false,
             ["target1"] = { id = 122 },
             ["target2"] = { id = 124 }
+          }
+        },
+        {
+          id = 140,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 56,
+          y = 820,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "pickedUpFrostedColonel",
+            ["inverted"] = true,
+            ["target1"] = { id = 139 },
+            ["target2"] = { id = 138 }
+          }
+        },
+        {
+          id = 142,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 1936,
+          y = 654.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["flag"] = "treasureHuntClear",
+            ["inverted"] = true,
+            ["target1"] = { id = 102 },
+            ["target10"] = { id = 107 },
+            ["target11"] = { id = 100 },
+            ["target12"] = { id = 21 },
+            ["target2"] = { id = 14 },
+            ["target3"] = { id = 101 },
+            ["target4"] = { id = 99 },
+            ["target5"] = { id = 103 },
+            ["target6"] = { id = 103 },
+            ["target7"] = { id = 104 },
+            ["target8"] = { id = 105 },
+            ["target9"] = { id = 106 }
           }
         }
       }
@@ -820,6 +906,20 @@ return {
           shape = "point",
           x = 1956.67,
           y = 1720.67,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 141,
+          name = "toferpos2",
+          type = "",
+          shape = "point",
+          x = 1523,
+          y = 310.333,
           width = 0,
           height = 0,
           rotation = 0,

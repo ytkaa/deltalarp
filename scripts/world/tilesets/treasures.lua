@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 12,
+  tilecount = 13,
   tiles = {
     {
       id = 0,
@@ -96,6 +96,12 @@ return {
       image = "../../../assets/sprites/treasures/printerink.png",
       width = 446,
       height = 725
+    },
+    {
+      id = 12,
+      image = "../../../assets/sprites/treasures/frostedcolonel.png",
+      width = 295,
+      height = 446
     }
   }
 }

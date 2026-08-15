@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="138">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="143">
  <editorsettings>
   <export target="garden_treasurehunt.lua" format="lua"/>
  </editorsettings>
@@ -9,6 +9,7 @@
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/garden_extras.tsx"/>
+ <tileset firstgid="150" source="../../../tilesets/treasures.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="50" height="50">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -261,6 +262,13 @@
     <property name="marker" value="to_treasure"/>
    </properties>
   </object>
+  <object id="138" name="interactable" x="360" y="1052" width="151.333" height="226.167">
+   <properties>
+    <property name="cutscene" value="chapter1/treasures.pickupFrostedColonel"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="139" gid="162" x="360" y="1280" width="150.807" height="228"/>
  </objectgroup>
  <objectgroup color="#ffff00" id="6" name="controllers">
   <object id="119" name="toggle" x="1913.33" y="812">
@@ -278,6 +286,34 @@
     <property name="inverted" type="bool" value="false"/>
     <property name="target1" type="object" value="122"/>
     <property name="target2" type="object" value="124"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="toggle" x="56" y="820">
+   <properties>
+    <property name="flag" value="pickedUpFrostedColonel"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="139"/>
+    <property name="target2" type="object" value="138"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="toggle" x="1936" y="654.667">
+   <properties>
+    <property name="flag" value="treasureHuntClear"/>
+    <property name="inverted" type="bool" value="true"/>
+    <property name="target1" type="object" value="102"/>
+    <property name="target10" type="object" value="107"/>
+    <property name="target11" type="object" value="100"/>
+    <property name="target12" type="object" value="21"/>
+    <property name="target2" type="object" value="14"/>
+    <property name="target3" type="object" value="101"/>
+    <property name="target4" type="object" value="99"/>
+    <property name="target5" type="object" value="103"/>
+    <property name="target6" type="object" value="103"/>
+    <property name="target7" type="object" value="104"/>
+    <property name="target8" type="object" value="105"/>
+    <property name="target9" type="object" value="106"/>
    </properties>
    <point/>
   </object>
@@ -302,6 +338,9 @@
    <point/>
   </object>
   <object id="137" name="to_weight2" x="1956.67" y="1720.67">
+   <point/>
+  </object>
+  <object id="141" name="toferpos2" x="1523" y="310.333">
    <point/>
   </object>
  </objectgroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.12.2" name="treasures" tilewidth="1941" tileheight="3515" tilecount="12" columns="0">
+<tileset version="1.11" tiledversion="1.12.2" name="treasures" tilewidth="1941" tileheight="3515" tilecount="13" columns="0">
  <editorsettings>
   <export target="treasures.lua" format="lua"/>
  </editorsettings>
@@ -39,5 +39,8 @@
  </tile>
  <tile id="11">
   <image source="../../../assets/sprites/treasures/printerink.png" width="446" height="725"/>
+ </tile>
+ <tile id="12">
+  <image source="../../../assets/sprites/treasures/frostedcolonel.png" width="295" height="446"/>
  </tile>
 </tileset>
