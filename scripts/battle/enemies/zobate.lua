@@ -40,82 +40,28 @@ function Zobate:init()
 
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
-        "flowerylonglegsstompcrazy", --this is for the beginning attack, this gets changed later on
+        "zobate/stars3",
     }
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
     }
-    self.climbedHigh = false
-    self:registerAct("Climb", "Closer to\nweakness")
-    self:registerAct("Synthesize", "Healing\nflowers", {"tofer"}, 100)
-    self.disable_mercy = true
+    self:registerAct("Clap", "Praise \nthe show", {"grace"}, 50)
+    self.disable_mercy = false
     function Zobate:setTired(tired)
         self.tired = false 
     end
 
     function Zobate:onAct(battler, name)
-        if name == "Climb" then
-            if self.climbedHigh == false then
-                self.climbedHigh = true
-                self.defense = 2
-                self.climbedHighTimer = 3
-                return {
-                    "* You climbed up its leg to get closer to its round body.",
-                    "* Enemy defence dropped to 0 for two turns!"
-                }
-                --after two turns this goes away as it shakes you off
-            elseif self.climbedHigh == true then
-                return {
-                    "* Already high enough.",
-                }
-            end
-        elseif name == "Synthesize" then --X-Action
-                self.getNextWaves = function(self)
-                        return { "flowerylonglegsshootgreen" }
-                    end
-                return {
-                    "* Your SOUL shined its power on Tofer!",
-                    "* Tofer synthesized with the Flowery Long Legs.",
-                    "* Green bullets now appear for this turn."
-                }
-        elseif name == "Standard" then --X-Action
-                -- Text for any other character (like Noelle)
-                self.attack = 4
-                self.distractedCounter = 3
-                return {
-                    "* "..battler.chara:getName().." threw a carrot to distract it.",
-                    "* Enemy attack decreased to 4 for this turn!"
-                }
+        if name == "Clap" then
+            return {
+                "* This doesn't do anything!",
+            }
         end
         
         -- If the act is none of the above, run the base onAct function
         -- (this handles the Check act)
         return super.onAct(self, battler, name)
-    end
-    function Zobate:onTurnEnd()
-        self.getNextWaves = function(self)
-            return { "flowerylonglegsstomp", "flowerylonglegsshoot" }
-        end
-        if self.climbedHighTimer then
-            self.climbedHighTimer = self.climbedHighTimer - 1
-
-            if self.climbedHighTimer <= 0 then
-                self.defense = 7
-                self.climbedHighTimer = nil
-                self.climbedHigh = false
-                Game.battle:battleText("* The Flowery Long Legs shook you off!\nEnemy defence raised back up!") --doesmt work for some reason
-            end
-        end
-        if self.distractedCounter then
-            self.distractedCounter = self.distractedCounter - 1
-
-            if self.distractedCounter <= 0 then
-                self.attack = 5
-                self.distractedCounter = nil
-                Game.battle:battleText("* Tofer's distraction wore off...") --doesmt work for some reason
-            end
-        end
     end
 end
 
@@ -124,6 +70,35 @@ function Zobate:update()
     self.sine = self.sine + self.float_speed * DTMULT
     self.sprite.y = math.sin(self.sine) * self.float_height
     self.overlay_sprite.y = math.sin(self.sine) * self.float_height
+end
+
+function Zobate:selectWave()
+    local turn = Game.battle.turn_count -- The battle keeps track of the current turn automatically
+
+    -- Select specific waves based on the turn
+    if turn == 1 then
+        self.selected_wave = "zobate/stars1"
+        return self.selected_wave
+    elseif turn == 2 then
+        self.selected_wave = "zobate/mask1"
+        return self.selected_wave
+    elseif turn == 3 then
+        self.selected_wave = "zobate/stars2"
+        return self.selected_wave
+    elseif turn == 4 then
+        self.selected_wave = "zobate/mask2"
+        return self.selected_wave
+    elseif turn == 5 then
+        self.selected_wave = "zobate/stars3"
+        return self.selected_wave
+    elseif turn == 6 then
+        self.selected_wave = "zobate/mask3"
+        return self.selected_wave
+    end
+
+
+    -- Use random wave selection when the script runs out (assuming self.waves is set)
+    return super.selectWave(self)
 end
 
 return Zobate

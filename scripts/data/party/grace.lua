@@ -75,7 +75,11 @@ function character:init()
     self.menu_icon_offset = nil
 
     -- Message shown on gameover (optional)
-    self.gameover_message = { "Vess![wait:5] \nGet the $$$$ up!?" }
+    if Game.chapter == 1 then
+        self.gameover_message = { "Hey![wait:5] \nGet the $$$$ up!?" }
+    else
+        self.gameover_message = { "Vess![wait:5] \nGet the $$$$ up!?" }
+    end
 end
 
 function character:onLevelUp(level)
