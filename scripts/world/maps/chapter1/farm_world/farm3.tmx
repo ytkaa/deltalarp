@@ -95,7 +95,7 @@
   <object id="2" name="interactable" x="844.583" y="402.5" width="185" height="42">
    <properties>
     <property name="solid" type="bool" value="true"/>
-    <property name="text1_1" value="* (Humanity's greatest creation.)"/>
+    <property name="text1_1" value="* (The world's greatest creation.)"/>
     <property name="text1_2" value="* (The haybale.)"/>
     <property name="text2_1" value="* (The haybale.)"/>
    </properties>
@@ -123,7 +123,7 @@
     <property name="chasedist" type="int" value="200"/>
     <property name="encounter" value="colonel"/>
     <property name="enemy" value="colonel"/>
-    <property name="once" type="bool" value="true"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
   <object id="29" name="transition" x="-40.661" y="240" width="39.9886" height="359.138">
@@ -226,6 +226,7 @@ of corn.)</property>
     <property name="flag" value="gardner_chase_end"/>
     <property name="inverted" type="bool" value="true"/>
     <property name="target1" type="object" value="46"/>
+    <property name="target2" type="object" value="25"/>
    </properties>
    <point/>
   </object>

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -3825,7 +3825,7 @@ return {
             ["chasedist"] = 200,
             ["encounter"] = "kipkip",
             ["enemy"] = "kipkip",
-            ["once"] = true
+            ["once"] = false
           }
         },
         {
@@ -4359,7 +4359,7 @@ return {
             ["chasedist"] = 200,
             ["encounter"] = "kipkip",
             ["enemy"] = "kipkip",
-            ["once"] = true
+            ["once"] = false
           }
         },
         {

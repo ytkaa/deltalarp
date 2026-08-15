@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 78,
+  nextobjectid = 79,
   properties = {
     ["music"] = "field_jarona",
     ["name"] = "Wheat Field - Block Puzzle"

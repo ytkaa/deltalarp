@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -1457,7 +1457,7 @@ return {
             ["text1_2"] = "* (Damn it..!)",
             ["text2_1"] = "* (You think about acquiring a spike removal kit in the future.)",
             ["text2_2"] = "[sound:ominous][next]",
-            ["text3_1"] = "* (Dread it, run from it...)"
+            ["text3_1"] = "* (Dread it,[wait:5] run from it...)"
           }
         }
       }

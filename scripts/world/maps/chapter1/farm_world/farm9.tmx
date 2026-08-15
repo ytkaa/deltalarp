@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="371">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="372">
  <editorsettings>
   <export target="farm9.lua" format="lua"/>
  </editorsettings>
@@ -190,7 +190,7 @@
   </object>
  </objectgroup>
  <objectgroup color="#ff007f" id="2" name="objects_party">
-  <object id="1" name="enemy" x="880" y="880" width="40" height="40">
+  <object id="1" name="enemy" x="880" y="900" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="false"/>
@@ -201,7 +201,7 @@
     <property name="once" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="6" name="enemy" x="440" y="840" width="40" height="40">
+  <object id="6" name="enemy" x="440" y="860" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="false"/>
@@ -247,7 +247,7 @@
     <property name="lock" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="94" name="enemy" x="800" y="1080" width="40" height="40">
+  <object id="94" name="enemy" x="800" y="1100" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="false"/>
@@ -279,7 +279,7 @@
     <property name="text2_2" value="* I'm gonna sit here and keep looking at the spikes though."/>
    </properties>
   </object>
-  <object id="139" name="enemy" x="480" y="640" width="40" height="40">
+  <object id="139" name="enemy" x="480" y="660" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="false"/>
@@ -331,7 +331,7 @@
     <property name="once" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="198" name="enemy" x="520" y="720" width="40" height="40">
+  <object id="198" name="enemy" x="520" y="740" width="40" height="40">
    <properties>
     <property name="actor" value="spike"/>
     <property name="chase" type="bool" value="false"/>

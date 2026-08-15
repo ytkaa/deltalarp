@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="150" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="105">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="150" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="105">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -246,7 +246,7 @@
     <property name="text1_2" value="* (Damn it..!)"/>
     <property name="text2_1" value="* (You think about acquiring a spike removal kit in the future.)"/>
     <property name="text2_2" value="[sound:ominous][next]"/>
-    <property name="text3_1" value="* (Dread it, run from it...)"/>
+    <property name="text3_1" value="* (Dread it,[wait:5] run from it...)"/>
    </properties>
   </object>
  </objectgroup>

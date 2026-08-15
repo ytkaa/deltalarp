@@ -747,7 +747,7 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text1_1"] = "* (Humanity's greatest creation.)",
+            ["text1_1"] = "* (The world's greatest creation.)",
             ["text1_2"] = "* (The haybale.)",
             ["text2_1"] = "* (The haybale.)"
           }
@@ -808,7 +808,7 @@ return {
             ["chasedist"] = 200,
             ["encounter"] = "colonel",
             ["enemy"] = "colonel",
-            ["once"] = true
+            ["once"] = false
           }
         },
         {
@@ -1095,7 +1095,8 @@ return {
           properties = {
             ["flag"] = "gardner_chase_end",
             ["inverted"] = true,
-            ["target1"] = { id = 46 }
+            ["target1"] = { id = 46 },
+            ["target2"] = { id = 25 }
           }
         }
       }

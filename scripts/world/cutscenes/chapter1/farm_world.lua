@@ -38,6 +38,7 @@ return {
         cutscene:setSprite(grace, "down_angry")
         cutscene:wait(2)
         cutscene:text("[face:angry, -19, -13]* This is why nobody \nlikes you.")
+        cutscene:text("[face:angry, -19, -13]* Like,[wait:5] come the $$$$ on!")
         cutscene:text("[face:angry_mark, -19, -13]* Of COURSE it would be \nYOUR fault I've had \nto...[wait:5] to...", options)
         music:stop()
         --Assets.playSound("grace_surprise_wip")
@@ -50,7 +51,7 @@ return {
         cutscene:setSprite(grace, "down_angry")
         cutscene:text("[face:angry_mark, -19, -13]* Wait,[wait:5] no,[wait:5] I don't like \nyou,[wait:5] we're NOT talking.")
         cutscene:text("[face:pissed, -19, -13]* Just...[wait:5] go away.")
-        cutscene:text("[face:pissed, -19, -13]* I don't need you \nstealing more of my \nfood...")
+        cutscene:text("[face:pissed, -19, -13]* I don't need you \nstealing more of MY \nfood...")
         cutscene:text("[face:angry, -19, -13]* ...food that I found \nfair and $$$$ing square.")
         cutscene:text("[face:neutral, -19, -13]* $$!$ is hard enough to \ncome by already.")
         music:stop()
@@ -59,7 +60,7 @@ return {
         cutscene:wait(1)
         cutscene:wait(cutscene:attachCamera())
         grace:remove()
-        print("SHE'S GONE.")
+        --print("SHE'S GONE.")
     end;
 
     cornplate_puzzle = function(cutscene, event)
@@ -380,6 +381,7 @@ return {
 
     setMajorWheatPuzzleFlag = function(cutscene, event)
         Game:setFlag("completedMajorWheatPuzzle", true)
+        Assets.playSound("levelup")
     end;
 
     majorWheatPuzzle = function(cutscene, event)
@@ -596,7 +598,22 @@ return {
                 Assets.playSound("badexplosion")
                 Game:setFlag("brokeWheatWall", true)
                 cutscene:wait(0.75)
-                cutscene:fadeIn(0.5)
+
+                local tofer = cutscene:getCharacter("tofer")
+                local grace = cutscene:getCharacter("grace")
+
+                if tofer then
+                    cutscene:wait(cutscene:fadeIn(0.5))
+                    cutscene:wait(1)
+                    cutscene:setSpeaker(tofer)
+                    cutscene:text("[face:tofer, -19, -13]* Woah.")
+                elseif grace then
+                    cutscene:wait(cutscene:fadeIn(0.5))
+                    cutscene:setSpeaker(grace)
+                    cutscene:text("[face:wtf, -19, -13]* ??!?")
+                else
+                    cutscene:fadeIn(0.5)
+                end
             else
                 cutscene:setSprite(mainColonel, "talk", 1/6)
                 cutscene:text("* TREASON !!")
