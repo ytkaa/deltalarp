@@ -5,7 +5,6 @@ function kipkipchase:init()
 
     -- The duration of our wave, in seconds. (Defaults to `5`)
     self.time = 10
-    local bullet
 end
 
 function kipkipchase:onStart()
