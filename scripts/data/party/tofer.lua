@@ -16,6 +16,7 @@ function character:init()
     self.has_act = false
     self.has_spells = true
     self:addSpell("bed_carotene")
+    self:addSpell("carotene_buster")
 
     self.has_xact = true
     self.xact_name = "T-Action"
