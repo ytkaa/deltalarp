@@ -71,7 +71,7 @@ function item:onWorldUse(target)
 end
 
 function item:onBattleUse(user, target)
-    target:setHealth(math.max(1, target:getHealth() - self.poison_amount))
+    Game.battle:hurt(10, true, user)
     Assets.playSound("hurt")
     return true
 end
