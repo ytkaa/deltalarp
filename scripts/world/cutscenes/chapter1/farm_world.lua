@@ -184,14 +184,24 @@ return {
     end;
 
     disgustingspikes = function(cutscene, event)
-        if event.interact_count == 1 then
-            cutscene:text("* (More spikes.)")
-            Game:setFlag("disgusting_spikes", true)
-        elseif event.interact_count == 2 then
-            cutscene:text("* (More spikes in a farmer's field ??!?)")
-        elseif event.interact_count >= 3 then
-            cutscene:text("* (Disgusting.)")
-        end
+        if Game:getFlag("firstSpikes")
+            if event.interact_count == 1 then
+                cutscene:text("* (More spikes.)")
+                Game:setFlag("disgusting_spikes", true)
+            elseif event.interact_count == 2 then
+                cutscene:text("* (More spikes in a farmer's field ??!?)")
+            elseif event.interact_count >= 3 then
+                cutscene:text("* (Disgusting.)")
+            end
+        else
+            if event.interact_count == 1 then
+                cutscene:text("* (Spikes.)")
+                Game:setFlag("disgusting_spikes", true)
+            elseif event.interact_count == 2 then
+                cutscene:text("* (Spikes in a farmer's field ??!?)")
+            elseif event.interact_count >= 3 then
+                cutscene:text("* (Disgusting.)")
+            end
     end;
 
     disgustingSpikesAttack = function(cutscene, event)
