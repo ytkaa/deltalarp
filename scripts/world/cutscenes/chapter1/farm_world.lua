@@ -202,6 +202,7 @@ return {
             elseif event.interact_count >= 3 then
                 cutscene:text("* (Disgusting.)")
             end
+        end
     end;
 
     disgustingSpikesAttack = function(cutscene, event)
