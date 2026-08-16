@@ -15,6 +15,8 @@ function Zobate:init()
 
     self.default_float_speed = 0.1
 
+    self.jeer_timer = 0
+
     -- Enemy health
     self.max_health = 1000
     self.health = 1000
@@ -78,8 +80,14 @@ function Zobate:init()
                 "* Zobate is ever grateful..!"
             }
         elseif name == "Jeer" then
-            Game.battle:startActCutscene("zobate", "jeer")
-            return
+            if self.jeer_timer == 0 then
+                Game.battle:startActCutscene("zobate", "jeer")
+                return
+            else
+                return {
+                    "* Zobate is still offended by Grace's last jeer!"
+                }
+            end
         end
         
         -- If the act is none of the above, run the base onAct function
@@ -101,6 +109,19 @@ function Zobate:float_override()
     self.sine = self.sine + self.float_speed * DTMULT
     self.sprite.y = math.sin(self.sine) * self.float_height
     self.overlay_sprite.y = math.sin(self.sine) * self.float_height
+end
+
+function Zobate:onTurnEnd()
+    super.onTurnEnd(self)
+
+    self.jeer_timer = math.max(0, self.jeer_timer - 1)
+
+    if self.jeer_timer == 0 then
+        self.defense = 8
+        self.check = {
+            "AT 8 DF 8\n* Gitau,[wait:5] gitau.",
+        }
+    end
 end
 
 function Zobate:selectWave()
