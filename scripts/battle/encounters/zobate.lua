@@ -12,7 +12,9 @@ function Zobate:init()
     -- Enables the purple grid battle background
     self.background = false
 
-    local enemy = self:addEnemy("zobate", 320, 90)
+    self.zobate = self:addEnemy("zobate", 320, 90)
+
+    self.zobate:setSprite("aura_goku")
 
     for _,battler in ipairs(Game.battle.party) do
         if battler.chara.id == "vess" then
@@ -43,6 +45,16 @@ function Zobate:getPartyPosition(index) --it has to be like this for some reason
         return 490, 280  -- Position for the second party member
     else
         return Zobate:getPartyPosition(self, index) -- Default positions for others
+    end
+end
+
+function Zobate:onStateChange(old, new, reason)
+    super.onStateChange(old, new, reason)
+
+    if new == "DEFENDINGBEGIN" then
+        self.zobate.sprite:slideTo(0, 0, 0.2, "out-quad")
+        self.zobate.overlay_sprite:slideTo(0, 0, 0.2, "out-quad")
+        self.zobate.sine = 0
     end
 end
 

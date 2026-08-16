@@ -13,6 +13,8 @@ function Zobate:init()
     self.float_height = 4
     self.float_speed = 0.1
 
+    self.default_float_speed = 0.1
+
     -- Enemy health
     self.max_health = 1000
     self.health = 1000
@@ -46,17 +48,33 @@ function Zobate:init()
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
     }
-    self:registerAct("Clap", "Praise \nthe show", {"grace"}, 50)
+
+    self:registerAct("Clap", "Praise \nthe show", nil, 28)
+    self:registerActFor("vess", "Cheer", "Praise \nthe show", {"grace", "vess"}, 58)
+    self:registerActFor("grace", "Jeer", "Insult \nthe show", nil, 18)
+
+
     self.disable_mercy = false
     function Zobate:setTired(tired)
-        self.tired = false 
+        self.tired = false
     end
 
     function Zobate:onAct(battler, name)
         if name == "Clap" then
+            self:addMercy(4)
             return {
-                "* This doesn't do anything!",
+                "* " .. battler.chara.name .. " clapped!",
+                "* Zobate appreciated this!"
             }
+        elseif name == "Cheer" then
+            self:addMercy(8)
+            return {
+                "* Vess and Grace cheered!",
+                "* Zobate is ever grateful..!"
+            }
+        elseif name == "Jeer" then
+            Game.battle:startActCutscene("zobate", "jeer")
+            return
         end
         
         -- If the act is none of the above, run the base onAct function
@@ -67,6 +85,14 @@ end
 
 function Zobate:update()
     super.update(self)
+    if Game.battle.state ~= "DEFENDINGBEGIN" and Game.battle.state ~= "DEFENDING" then
+        self.sine = self.sine + self.float_speed * DTMULT
+        self.sprite.y = math.sin(self.sine) * self.float_height
+        self.overlay_sprite.y = math.sin(self.sine) * self.float_height
+    end
+end
+
+function Zobate:float_override()
     self.sine = self.sine + self.float_speed * DTMULT
     self.sprite.y = math.sin(self.sine) * self.float_height
     self.overlay_sprite.y = math.sin(self.sine) * self.float_height
@@ -83,15 +109,18 @@ function Zobate:selectWave()
         self.selected_wave = "zobate/mask1"
         return self.selected_wave
     elseif turn == 3 then
-        self.selected_wave = "zobate/stars2"
+        self.selected_wave = "zobate/spirit1"
         return self.selected_wave
     elseif turn == 4 then
-        self.selected_wave = "zobate/mask2"
+        self.selected_wave = "zobate/stars2"
         return self.selected_wave
     elseif turn == 5 then
-        self.selected_wave = "zobate/stars3"
+        self.selected_wave = "zobate/mask2"
         return self.selected_wave
     elseif turn == 6 then
+        self.selected_wave = "zobate/stars3"
+        return self.selected_wave
+    elseif turn == 7 then
         self.selected_wave = "zobate/mask3"
         return self.selected_wave
     end

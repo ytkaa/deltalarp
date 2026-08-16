@@ -1,6 +1,6 @@
-local stars1, super = Class(Wave)
+local orange_test, super = Class(Wave)
 
-function stars1:onStart()
+function orange_test:onStart()
     self.time = 12
 
     local zobate = self:getAttackers()[1]
@@ -9,20 +9,18 @@ function stars1:onStart()
 
     -- Lowest we can go here and still have it fair is 1 second.
     self.timer:everyInstant(1.5, function()
-        local offset = 25
         self:spawnBullet("ZobateStars", x, y, 0)
-        zobate:setSprite("star_right")
-        zobate:slideTo(zobate.x - offset, zobate.y, 0.15, "linear", function() 
-            zobate:slideTo(zobate.x + offset, zobate.y, 0.15, "linear", function() zobate:setSprite("aura_goku") end) 
-        end)
     end)
+
+    local soul = OrangeSoul()
+    Game.battle:swapSoul(soul)
 
 end
 
-function stars1:update()
+function orange_test:update()
     -- Code here gets called every frame
 
     super.update(self)
 end
 
-return stars1
+return orange_test

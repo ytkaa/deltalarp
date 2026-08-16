@@ -223,10 +223,12 @@ return {
         local chair_left = Game.world:getEvent(13)
         local chair_right = Game.world:getEvent(14)
 
-        cutscene:startEncounter("zobate", nil, {{"zobate", zobate}}, {["wait"] = false})
-
         chair_left:remove()
         chair_right:remove()
+
+        cutscene:startEncounter("zobate", nil, {{"zobate", zobate}})
+
+        speak(grace, "[face:consider, -19, -13]* Sick.")
 
         --cutscene:slideTo(chair_left, 150 - 40, 280 + 20, 1)
         --cutscene:slideTo(chair_right, 150 - 40, 280 + 20, 1)

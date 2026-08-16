@@ -9,7 +9,17 @@ function stars3:onStart()
 
     -- Lowest we can go here and still have it fair is 1 second.
     self.timer:everyInstant(0.95, function()
-        self:spawnBullet("ZobateStars", x, y, math.random(0, 1))
+        local side = math.random(0, 1)
+        local sprite = "star_right"
+        local offset = 25
+
+        if side == 1 then sprite = "star_left" offset = -1 * offset end
+        self:spawnBullet("ZobateStars", x, y, side)
+
+        zobate:setSprite(sprite)
+        zobate:slideTo(zobate.x - offset, zobate.y, 0.15, "linear", function() 
+            zobate:slideTo(zobate.x + offset, zobate.y, 0.15, "linear", function() zobate:setSprite("aura_goku") end) 
+        end)
     end)
 
 end

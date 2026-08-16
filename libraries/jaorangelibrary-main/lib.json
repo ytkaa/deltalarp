@@ -1,0 +1,15 @@
+{
+    // This shit isn't documented anywhere for some reason.
+    // (or if it is, the documentation isn't linked to)
+    
+    "id": "jaorange",
+    "authors": ["moriadan"],
+    
+    // The version of your mod.
+    "version": "v1.0.0",
+    // What version of the engine your mod was made with.
+    "engineVer": "v0.11.0-dev",
+    
+    "config": {
+    }
+}
