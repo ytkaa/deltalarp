@@ -80,19 +80,19 @@ function inflamedKipkip:init()
             self.attack = 4
             self:setAnimation("burned")
             return {
-                "* You spritzed Inflamed Kipkip\nwith water.",
+                "* " .. battler.chara.name .. " spritzed Inflamed Kipkip\nwith water.",
                 "* It's flame went out...[wait:5] Attack decreased![wait:5]\nInflamed Kipkip became [color:blue]TIRED[color:reset]!"
             }
         elseif name == "Negotiate" then
             if self.kipkipAgitated == false then
                 return {
-                    "* You tried to negotiate for\nInflamed Kipkip to surrender.",
+                    "* " .. battler.chara.name .. " tried to negotiate for\nInflamed Kipkip to surrender.",
                     "* But Inflamed Kipkip still\nthinks it has the advantage."
                 }
             elseif self.kipkipAgitated == true then
                 self:addMercy(100)
                 return {
-                    "* You tried to negotiate for \nInflamed Kipkip to surrender.",
+                    "* " .. battler.chara.name .. " tried to negotiate for \nInflamed Kipkip to surrender.",
                     "* Inflamed Kipkip views this \nas the best strategic outcome."
                 }
             end

@@ -6,7 +6,7 @@ function item:init()
     -- Display name
     self.name = "Some Hay"
     -- Name displayed when used in battle (optional)
-    self.use_name = nil
+    self.use_name = "SOME HAY! Are they stupid?"
 
     -- Item type (item, key, weapon, armor)
     self.type = "item"
@@ -71,9 +71,17 @@ function item:onWorldUse(target)
 end
 
 function item:onBattleUse(user, target)
-    Game.battle:hurt(10, true, user)
-    Assets.playSound("hurt")
-    return true
+    if user.chara.id == "grace" then
+        Game.battle:startCutscene("general", "grace_use_hay", target)
+        return true
+    elseif target.chara.id == "grace" then
+        Game.battle:startCutscene("general", "grace_hay", target)
+        return true
+    else
+        Game.battle:hurt(10, true, target)
+        Assets.playSound("hurt")
+        return true
+    end
 end
 
 return item

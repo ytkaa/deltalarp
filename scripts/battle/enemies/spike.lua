@@ -60,7 +60,7 @@ function Spike:init()
         if name == "Challenge" then
             Game:setFlag("spikeChallengeActive", true) --taking the lazy way out sorry
             return {
-                "* You challenge Spike.[wait:5]\n* Attack speed increased!",
+                "* " .. battler.chara.name .. " challenges Spike.[wait:5]\n* Attack speed increased!",
             }
         elseif name == "Standard" then --X-Action
                 -- Text for any other character (like Noelle)

@@ -31,7 +31,7 @@ function Kipkip:init()
         }
     else
         self.text = {
-            "* Kipkip analyzes your ability to plan and lead.",
+            "* Kipkip analyzes your ability to \nplan and lead.",
             "* Kipkip looks for nectar to make itself stronger.",
             "* Kipkip thinks you'd look authoritative with a whistle."
         }
@@ -128,7 +128,7 @@ function Kipkip:init()
         elseif name == "Spray Water" then
             self.kipkipAgitated = true
             return {
-                "* You spritzed\nKipkip with water.", --sprite change
+                "* " .. battler.chara.name .. " spritzed\nKipkip with water.", --sprite change
                 "* The enemies became agitated!\nAttack speed increased!"
             }
         --elseif name == "Wave" then

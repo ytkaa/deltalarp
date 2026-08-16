@@ -71,13 +71,13 @@ function Zobate:init()
             self:addMercy(6)
             return {
                 "* " .. battler.chara.name .. " clapped!",
-                "* Zobate appreciated this!"
+                "* Zobate is appreciative!"
             }
         elseif name == "Cheer" then
             self:addMercy(12)
             return {
                 "* Vess and Grace cheered!",
-                "* Zobate is ever grateful..!"
+                "* Zobate is ever so grateful..!"
             }
         elseif name == "Jeer" then
             if self.jeer_timer == 0 then
