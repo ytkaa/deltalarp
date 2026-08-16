@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -13,6 +13,7 @@ return {
   nextobjectid = 64,
   properties = {
     ["light"] = true,
+    ["music"] = "ruraltown_wip.ogg",
     ["name"] = "Ruraltown - Main Street"
   },
   tilesets = {

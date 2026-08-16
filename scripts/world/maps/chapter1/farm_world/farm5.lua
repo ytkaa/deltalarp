@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -190,6 +190,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
+            ["setflag"] = "firstSpikes",
             ["solid"] = true,
             ["text1_1"] = "* (Spikes.)",
             ["text2_1"] = "* (What kind of farmer puts spikes in their field ??!?)",

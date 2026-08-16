@@ -184,7 +184,7 @@ return {
     end;
 
     disgustingspikes = function(cutscene, event)
-        if Game:getFlag("firstSpikes")
+        if Game:getFlag("firstSpikes") then
             if event.interact_count == 1 then
                 cutscene:text("* (More spikes.)")
                 Game:setFlag("disgusting_spikes", true)
