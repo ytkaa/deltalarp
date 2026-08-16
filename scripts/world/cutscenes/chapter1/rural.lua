@@ -8,11 +8,12 @@ return {
             --cutscene:text("* (...[wait:5]we haven't implemented\nthat yet.)")
             Game:setFlag("start_cutscene_active", true) --prevents premature room transitions
             cutscene:wait(cutscene:fadeOut(3))
-            cutscene:wait(Game.world:mapTransition("chapter1/rural_mainstreet"))
-            local music = Music()
-            music:play("start")
-            music:setLooping(false)
-            Game.world.music:stop()
+            Game.world.music:setVolume(0)
+            cutscene:wait(Game.world:loadMap("chapter1/rural_mainstreet"))
+            Game.world.music:setVolume(0)
+            Game.music:play("start") --losing my god damn mind
+            cutscene:wait(cutscene:fadeIn(1))
+            Game.world.music:setLooping(false)
             cutscene:wait(cutscene:fadeIn(1))
             cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "up")) --41, top of mainstreet
             Game:setFlag("start_cutscene_active", false)
@@ -29,7 +30,7 @@ return {
             cutscene:walkTo("vess", "vess_target_start3", 4.25, "up")
             cutscene:wait(cutscene:fadeOut(4))
             
-            music:stop()
+            Game.music:stop()
             Game.world:loadMap("chapter1/rural_classroom")
             cutscene:wait(1)
             
@@ -288,7 +289,7 @@ return {
             if opened == true then
                 --print("We're trying...")
                 local smoke = DarkSmoke(340, 310, 5)
-                smoke.layer = 666
+                smoke.layer = 10
                 Game.world:addChild(smoke)
                 smoke:slideTo(math.random(0 - 300, 700 + 300), -5, 5, "out-sine")
             end
