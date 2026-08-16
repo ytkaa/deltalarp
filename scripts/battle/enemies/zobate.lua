@@ -42,15 +42,20 @@ function Zobate:init()
 
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
-        "zobate/stars3",
+        "zobate/stars1",
+        "zobate/mask1",
+        "zobate/spirit1",
     }
+
+    -- Wave stalling
+    self.cycle = 0
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
     }
 
     self:registerAct("Clap", "Praise \nthe show", nil, 28)
-    self:registerActFor("vess", "Cheer", "Praise \nthe show", {"grace", "vess"}, 58)
+    self:registerActFor("vess", "Cheer", "Embrace \nthe show", {"grace", "vess"}, 48)
     self:registerActFor("grace", "Jeer", "Insult \nthe show", nil, 18)
 
 
@@ -61,13 +66,13 @@ function Zobate:init()
 
     function Zobate:onAct(battler, name)
         if name == "Clap" then
-            self:addMercy(4)
+            self:addMercy(6)
             return {
                 "* " .. battler.chara.name .. " clapped!",
                 "* Zobate appreciated this!"
             }
         elseif name == "Cheer" then
-            self:addMercy(8)
+            self:addMercy(12)
             return {
                 "* Vess and Grace cheered!",
                 "* Zobate is ever grateful..!"
@@ -113,21 +118,29 @@ function Zobate:selectWave()
         return self.selected_wave
     elseif turn == 4 then
         self.selected_wave = "zobate/stars2"
+        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit1",}
         return self.selected_wave
     elseif turn == 5 then
         self.selected_wave = "zobate/mask2"
         return self.selected_wave
     elseif turn == 6 then
         self.selected_wave = "zobate/stars3"
+        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit1",}
         return self.selected_wave
     elseif turn == 7 then
         self.selected_wave = "zobate/mask3"
         return self.selected_wave
+    else
+        if self.cycle < #self.waves then
+            self.cycle = self.cycle + 1
+        else
+            self.cycle = 1
+        end
     end
 
-
-    -- Use random wave selection when the script runs out (assuming self.waves is set)
-    return super.selectWave(self)
+    -- Wave stall when script runs out
+    self.selected_wave = self.waves[self.cycle]
+    return self.selected_wave
 end
 
 return Zobate

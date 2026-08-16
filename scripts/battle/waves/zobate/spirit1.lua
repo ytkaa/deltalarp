@@ -1,12 +1,12 @@
 local spirit1, super = Class(Wave)
 
 function spirit1:onStart()
-    self.time = -1
+    self.time = 22
 
     self.charge_sound = Assets.newSound("chargeshot_charge")
     self.charge_sound:setLooping(true)
 
-    self.delay = 360 --Lowest we can do here is 100 without being unfair
+    self.delay = 250 --Lowest we can do here is 100 without being unfair, default is 360
 
     self.loose = false
 
@@ -15,12 +15,12 @@ function spirit1:onStart()
     zobate.sprite:slideTo(0, 3.5, 1, "out-quad")
     zobate.overlay_sprite:slideTo(0, 3.5, 1, "out-quad")
 
-    self.timer:after(2, function()
+    self.timer:after(1.5, function()
         Assets.playSound("wing")
         zobate:setSprite("spirit_charge", 1/4, false)
     end)
 
-    self.timer:after(2.5, function()
+    self.timer:after(2, function()
         zobate:setSprite("spirit_charge", 1/4, true)
         self.charge_sound:play()
         local spirit = Sprite("bullets/zobate/spiritbomb", 15, 3)

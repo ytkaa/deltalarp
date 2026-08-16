@@ -58,4 +58,31 @@ function Zobate:onStateChange(old, new, reason)
     end
 end
 
+function Zobate:onBattleInit()
+    super.onBattleInit(self)
+
+    local bg = Sprite("bosses/zobate/back", 0, 0)
+    bg.wrap_texture_x = true
+    bg.wrap_texture_y = true
+    bg.physics.speed_x = -7
+    bg.physics.speed_y = -7
+    bg.alpha = 0
+    --bg:play(1/2, true)
+
+    Game.world:addChild(bg)
+    bg.layer = 0.29 --Below stage
+
+    self.bg = bg
+end
+
+function Zobate:onTurnStart()
+    super.onTurnStart(self)
+
+    local turn = Game.battle.turn_count
+
+    if self.bg.alpha < 1 and turn > 5 then
+        self.bg.alpha = math.min(self.bg.alpha + 0.02, 1)
+    end
+end
+
 return Zobate
