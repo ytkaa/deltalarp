@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="36" height="24" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#8586ad" nextlayerid="5" nextobjectid="20">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="36" height="24" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#8586ad" nextlayerid="5" nextobjectid="20">
  <editorsettings>
   <export target="rural_lake.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="light" type="bool" value="true"/>
   <property name="music" value="irish_waters"/>
+  <property name="name" value="Ruraltown - Lake"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/rural.tsx"/>
  <tileset firstgid="101" source="../../tilesets/garden.tsx"/>

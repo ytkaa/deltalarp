@@ -4,7 +4,9 @@
   <export target="rural_school_inside.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="keepmusic" type="bool" value="true"/>
   <property name="light" type="bool" value="true"/>
+  <property name="name" value="Ruraltown - School"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/rural.tsx"/>
  <tileset firstgid="101" source="../../tilesets/rural_buildings.tsx"/>

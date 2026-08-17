@@ -7,19 +7,21 @@ return {
             --cutscene:text("* (...)")
             --cutscene:text("* (...[wait:5]we haven't implemented\nthat yet.)")
             Game:setFlag("start_cutscene_active", true) --prevents premature room transitions
+            Game:setFlag("start_cutscene_active_2", true) --music bullshit
             cutscene:wait(cutscene:fadeOut(3))
-            Game.world.music:setVolume(0)
-            cutscene:wait(Game.world:loadMap("chapter1/rural_mainstreet"))
-            Game.world.music:setVolume(0)
-            Game.music:play("start") --losing my god damn mind
+            --Game.world.music:setVolume(0)
+            cutscene:wait(Game.world:mapTransition("chapter1/rural_mainstreet"))
+            --Game.world.music:setVolume(0)
+            local music = Music()
+            music:play("start") --losing my god damn mind
+            music:setLooping(false)
             cutscene:wait(cutscene:fadeIn(1))
-            Game.world.music:setLooping(false)
             cutscene:wait(cutscene:fadeIn(1))
             cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 41, "up")) --41, top of mainstreet
             Game:setFlag("start_cutscene_active", false)
             --cutscene:wait(Game.world:mapTransition("chapter1/rural_school"))
             cutscene:wait(0.5)
-            Game.world.music:stop()
+            --Game.world.music:stop()
             Game:setFlag("start_cutscene_active", true)
             cutscene:wait(cutscene:walkTo("vess", "vess_target_start", 4, "up")) --school door
             Game:setFlag("start_cutscene_active", false)
@@ -30,7 +32,7 @@ return {
             cutscene:walkTo("vess", "vess_target_start3", 4.25, "up")
             cutscene:wait(cutscene:fadeOut(4))
             
-            Game.music:stop()
+            music:stop()
             Game.world:loadMap("chapter1/rural_classroom")
             cutscene:wait(1)
             
@@ -229,6 +231,7 @@ return {
         cutscene:fadeOut(0)
         Assets.playSound("bump", 2)
         Game:setFlag("start_cutscene_active", false)
+        Game:setFlag("start_cutscene_active_2", false)
         
         cutscene:wait(1)
         Game.world:loadMap("chapter1/rural_classroom")
