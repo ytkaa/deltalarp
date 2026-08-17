@@ -16,6 +16,8 @@ function Zobate:init()
     -- The default animation to use
     self.default = "talk"
 
+    self.voice = "zobate"
+
     self.talk_sprites = {
         ["talk"] = 8/30,
         ["oh"] = 8/30,
@@ -25,6 +27,16 @@ function Zobate:init()
         ["smile"] = 8/30,
         ["bitter"] = 8/30,
     }
+end
+
+function Zobate:onTextSound(current_node, state)
+    if math.random() > 0.7 then
+        Assets.playSound("voice/zobate", 1, 0.95)
+    else
+        Assets.playSound("voice/zobate", 1, 1)
+    end
+    
+    return true
 end
 
 return Zobate
