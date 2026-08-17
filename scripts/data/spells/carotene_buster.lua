@@ -78,6 +78,7 @@ function spell:onCast(user, target)
 
         local damage = self:getDamage(user, target)
         target:hurt(damage, user, function() end)
+        target.toferDoT = 2
 
         Game.battle:finishActionBy(user)
     end)

@@ -26,6 +26,7 @@ function Flowerylonglegs:init()
         "AT 5 DF 7\n* Poisonous.",
         "Consumption results in prolonged writhing and uncontrollable mirth."
     }
+    self.toferDoT = 0
 
     -- Text randomly displayed at the bottom of the screen each turn
     self.text = {
@@ -110,6 +111,12 @@ function Flowerylonglegs:init()
                 self.attack = 5
                 self.distractedCounter = nil
                 Game.battle:battleText("* Tofer's distraction wore off...") --doesmt work for some reason
+            end
+        end        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
             end
         end
     end

@@ -40,6 +40,8 @@ function Colonel:init()
         "colonelstand",
     }
 
+    self.toferDoT = 0
+
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
         "For Lord and country!",
@@ -288,6 +290,17 @@ function Colonel:init()
         -- If the act is none of the above, run the base onAct function
         -- (this handles the Check act)
         return super.onAct(self, battler, name)
+    end
+
+    function Colonel:onTurnEnd()
+        super.onTurnEnd(self)
+        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
+            end
+        end
     end
 end
 

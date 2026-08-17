@@ -17,6 +17,7 @@ function Kipkip:init()
     self.defense = 1
     -- Enemy reward
     self.money = 100
+    self.toferDoT = 0
 
     -- Mercy given when sparing this enemy before its spareable (maybe this should always be 0 cuz its kinda an odd feature and we wanna be Difficult)
     self.spare_points = 0
@@ -131,13 +132,6 @@ function Kipkip:init()
                 "* You spritzed\nKipkip with water.", --sprite change
                 "* The enemies became agitated!\nAttack speed increased!"
             }
-        --elseif name == "Wave" then
-        --    self.sprite:setAnimation({"wave", 0.05, true})
-            -- G-Action text
-        --    return {
-        --    "* Grace waves.\nKipkip waves back.", --sprite change
-        --    "* ...you don't feel like this\ncontributed to anything in particular."
-        --    }   
         elseif name == "Standard" then --X-Action
                 -- Text for any other character (like Noelle)
                 self:addMercy(50)
@@ -150,6 +144,16 @@ function Kipkip:init()
         -- If the act is none of the above, run the base onAct function
         -- (this handles the Check act)
         return super.onAct(self, battler, name)
+    end
+    function Kipkip:onTurnEnd()
+        super.onTurnEnd(self)
+        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
+            end
+        end
     end
 end
 

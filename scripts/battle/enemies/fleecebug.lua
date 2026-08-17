@@ -39,6 +39,7 @@ function Fleecebug:init()
     end
     -- Text displayed at the bottom of the screen when the enemy has low health
     --self.low_health_text = "* Kipkip's leaf is torn."
+    self.toferDoT = 0
 
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
@@ -125,6 +126,17 @@ function Fleecebug:init()
         -- If the act is none of the above, run the base onAct function
         -- (this handles the Check act)
         return super.onAct(self, battler, name)
+    end
+
+    function Fleecebug:onTurnEnd()
+        super.onTurnEnd(self)
+        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
+            end
+        end
     end
 end
 

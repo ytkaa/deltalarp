@@ -20,6 +20,7 @@ function Spike:init()
 
     -- Mercy given when sparing this enemy before its spareable (maybe this should always be 0 cuz its kinda an odd feature and we wanna be Difficult)
     self.spare_points = 0
+    self.toferDoT = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
     self.check = "AT 3 DF 1\n* Its name is Spike."
@@ -77,6 +78,14 @@ function Spike:init()
         if Game:getFlag("spikeChallengeActive") then
             Game:setFlag("spikeChallengeActive", false)
             self:addMercy(100)
+        end
+        super.onTurnEnd(self)
+        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
+            end
         end
     end
 end

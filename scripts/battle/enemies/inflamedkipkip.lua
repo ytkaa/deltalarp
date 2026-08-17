@@ -20,6 +20,7 @@ function inflamedKipkip:init()
 
     -- Mercy given when sparing this enemy before its spareable (maybe this should always be 0 cuz its kinda an odd feature and we wanna be Difficult)
     self.spare_points = 0
+    self.toferDoT = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
     self.check = {
@@ -105,6 +106,16 @@ function inflamedKipkip:init()
         -- If the act is none of the above, run the base onAct function
         -- (this handles the Check act)
         return super.onAct(self, battler, name)
+    end
+    function inflamedKipkip:onTurnEnd()
+        super.onTurnEnd(self)
+        
+        if self.active then
+            if self.toferDoT > 0 then
+                self.toferDoT = self.toferDoT - 1
+                self:hurt(math.ceil(MathUtils.random(10, 13)))
+            end
+        end
     end
 end
 
