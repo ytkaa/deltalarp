@@ -6,7 +6,7 @@ function item:init()
     -- Display name
     self.name = "Some Hay"
     -- Name displayed when used in battle (optional)
-    self.use_name = "SOME HAY! Are they stupid?"
+    self.use_name = "SOME HAY! [wait:5]Are they stupid?"
 
     -- Item type (item, key, weapon, armor)
     self.type = "item"
@@ -78,7 +78,7 @@ function item:onBattleUse(user, target)
         Game.battle:startCutscene("general", "grace_hay", target)
         return true
     else
-        Game.battle:hurt(10, true, target)
+        Game.battle:hurt(self.poison_amount, true, target)
         Assets.playSound("hurt")
         return true
     end

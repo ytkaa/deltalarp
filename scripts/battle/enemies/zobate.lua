@@ -32,7 +32,7 @@ function Zobate:init()
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
     self.check = {
-        "AT 8 DF 8\n* Gitau,[wait:5] gitau.",
+        "AT 8 DF 8\n[wait:5]* Gitau,[wait:5] gitau.",
     }
 
     -- Text randomly displayed at the bottom of the screen each turn
@@ -47,6 +47,7 @@ function Zobate:init()
         "zobate/stars1",
         "zobate/mask1",
         "zobate/spirit1",
+        "zobate/kame1",
     }
 
     -- Wave stalling
@@ -119,7 +120,7 @@ function Zobate:onTurnEnd()
     if self.jeer_timer == 0 then
         self.defense = 8
         self.check = {
-            "AT 8 DF 8\n* Gitau,[wait:5] gitau.",
+            "AT 8 DF 8\n[wait:5]* Gitau,[wait:5] gitau.",
         }
     end
 end
@@ -138,17 +139,20 @@ function Zobate:selectWave()
         self.selected_wave = "zobate/spirit1"
         return self.selected_wave
     elseif turn == 4 then
-        self.selected_wave = "zobate/stars2"
-        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit1",}
+        self.selected_wave = "zobate/kame1"
         return self.selected_wave
     elseif turn == 5 then
-        self.selected_wave = "zobate/mask2"
+        self.selected_wave = "zobate/stars2"
+        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit1","zobate/kame1",}
         return self.selected_wave
     elseif turn == 6 then
-        self.selected_wave = "zobate/stars3"
-        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit1",}
+        self.selected_wave = "zobate/mask2"
         return self.selected_wave
     elseif turn == 7 then
+        self.selected_wave = "zobate/stars3"
+        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit1","zobate/kame1",}
+        return self.selected_wave
+    elseif turn == 8 then
         self.selected_wave = "zobate/mask3"
         return self.selected_wave
     else

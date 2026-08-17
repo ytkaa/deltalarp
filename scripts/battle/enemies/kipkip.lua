@@ -22,7 +22,7 @@ function Kipkip:init()
     self.spare_points = 0
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
-    self.check = "AT 4 DF 1\n* Somewhat greedy little guy. \nHe desperately wants to bloom."
+    self.check = "AT 4 DF 1\n[wait:5]* Somewhat greedy little guy.[wait:5] \nHe desperately wants to bloom."
 
     -- Text randomly displayed at the bottom of the screen each turn
     if self.gotRobbed == true then
@@ -74,7 +74,7 @@ function Kipkip:init()
                 -- Act text (since it's a list, multiple textboxes)
                 return {
                     "* Kipkip enjoyed the snack![wait:5]\n* But he needs a little more...",
-                    "* Kipkip also became stronger! \nAttack increased!"
+                    "* Kipkip also became stronger![wait:5] \nAttack increased!"
                 }
             elseif self.nectarCount == 2 then --sprite change
                 Assets.playSound("nectarslurp") 
@@ -85,11 +85,11 @@ function Kipkip:init()
                 -- Act text (since it's a list, multiple textboxes)
                 return {
                     "* Kipkip is overjoyed.[wait:5]\n* He has finally bloomed.",
-                    "* Kipkip also became stronger! \nAttack increased!"
+                    "* Kipkip also became stronger![wait:5] \nAttack increased!"
                 }
             elseif self.nectarCount >= 3 then
                 return {
-                    "* Kipkip rejected. It's a work day tomorrow.",
+                    "* Kipkip rejected.[wait:5] It's a work day tomorrow.",
                 }
             end
         elseif name == "Rob" then
@@ -128,8 +128,8 @@ function Kipkip:init()
         elseif name == "Spray Water" then
             self.kipkipAgitated = true
             return {
-                "* " .. battler.chara.name .. " spritzed\nKipkip with water.", --sprite change
-                "* The enemies became agitated!\nAttack speed increased!"
+                "* " .. battler.chara.name .. " spritzed Kipkip with water.", --sprite change
+                "* The enemies became agitated!\n[wait:5]Attack speed increased!"
             }
         --elseif name == "Wave" then
         --    self.sprite:setAnimation({"wave", 0.05, true})
@@ -142,7 +142,7 @@ function Kipkip:init()
                 -- Text for any other character (like Noelle)
                 self:addMercy(50)
                 return {
-                "* "..battler.chara:getName().." waves.\nKipkip waves back.",
+                "* "..battler.chara:getName().." waves.[wait:5]\nKipkip waves back.",
                 "* ...some sort of bonding\noccured from this."
                 }
         end
