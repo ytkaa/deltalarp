@@ -11,6 +11,8 @@ function ZobateBolt:init(x, y, speed, dir)
     self.sprite.rotation = dir
 
     self.physics.speed = speed
+
+    self.tp = 3.2 --Double the default
 end
 
 function ZobateBolt:update()

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -14,7 +14,8 @@ return {
   backgroundcolor = { 133, 134, 173 },
   properties = {
     ["light"] = true,
-    ["music"] = "irish_waters"
+    ["music"] = "irish_waters",
+    ["name"] = "Ruraltown - Lake"
   },
   tilesets = {
     {

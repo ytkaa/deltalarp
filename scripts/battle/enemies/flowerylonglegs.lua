@@ -58,7 +58,7 @@ function Flowerylonglegs:init()
                 self.defense = 2
                 self.climbedHighTimer = 3
                 return {
-                    "* You climbed up its leg to get closer to its round body.",
+                    "* " .. battler.chara.name .. " climbed up its leg to get closer to its round body.",
                     "* Enemy defence dropped to 0 for two turns!"
                 }
                 --after two turns this goes away as it shakes you off

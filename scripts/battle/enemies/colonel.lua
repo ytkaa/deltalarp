@@ -255,7 +255,7 @@ function Colonel:init()
                 battler.chara:addStatBuff("attack", -99)
                 Assets.playSound("bell_bounce_short")
                 return {
-                    "* You dropped your weapon.\nAttack nullified! The enemies \nlower their guard.",
+                    "* " .. battler.chara.name .. " dropped " .. battler.chara.pronoun .. " weapon.\n[wait:5]Attack nullified![wait:5] The enemies \nlower their guard.",
                 }
             elseif self.guardLowered == true then
                 return {
@@ -267,7 +267,7 @@ function Colonel:init()
                 Game.battle:hurt(10, true, user)
                 self.dialogue_override = "You're not getting\nthe drop on me!"
                 return {
-                "* Colonel smacked you with their \ngear!",
+                "* Colonel smacked " .. battler.chara.name .. " with their \ngear!",
                 "* Seems like you need to \nlower their guard first...",
                 } 
             elseif self.guardLowered == true then

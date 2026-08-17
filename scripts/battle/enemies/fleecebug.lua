@@ -76,7 +76,7 @@ function Fleecebug:init()
         elseif name == "Comb" then
             if self.fleeceShaved == false then --sprite change
                 return {
-                    "* You combed Fleecebug well.[wait:5]\n* It feels appreciated.",
+                    "* " .. battler.chara.name .. " combed Fleecebug well.[wait:5]\n* It feels appreciated.",
                     self:addMercy(50)
                 }
             elseif self.fleeceShaved == true then

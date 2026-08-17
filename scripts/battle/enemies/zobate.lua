@@ -15,6 +15,8 @@ function Zobate:init()
 
     self.default_float_speed = 0.1
 
+    self.jeer_timer = 0
+
     -- Enemy health
     self.max_health = 1000
     self.health = 1000
@@ -30,7 +32,7 @@ function Zobate:init()
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
     self.check = {
-        "AT 8 DF 8\n* Gitau,[wait:5] gitau.",
+        "AT 8 DF 8\n[wait:5]* Gitau,[wait:5] gitau.",
     }
 
     -- Text randomly displayed at the bottom of the screen each turn
@@ -42,15 +44,21 @@ function Zobate:init()
 
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
-        "zobate/stars3",
+        "zobate/stars1",
+        "zobate/mask1",
+        "zobate/spirit1",
+        "zobate/kame1",
     }
+
+    -- Wave stalling
+    self.cycle = 0
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
     }
 
     self:registerAct("Clap", "Praise \nthe show", nil, 28)
-    self:registerActFor("vess", "Cheer", "Praise \nthe show", {"grace", "vess"}, 58)
+    self:registerActFor("vess", "Cheer", "Embrace \nthe show", {"grace", "vess"}, 48)
     self:registerActFor("grace", "Jeer", "Insult \nthe show", nil, 18)
 
 
@@ -61,20 +69,26 @@ function Zobate:init()
 
     function Zobate:onAct(battler, name)
         if name == "Clap" then
-            self:addMercy(4)
+            self:addMercy(6)
             return {
                 "* " .. battler.chara.name .. " clapped!",
-                "* Zobate appreciated this!"
+                "* Zobate is appreciative!"
             }
         elseif name == "Cheer" then
-            self:addMercy(8)
+            self:addMercy(12)
             return {
                 "* Vess and Grace cheered!",
-                "* Zobate is ever grateful..!"
+                "* Zobate is ever so grateful..!"
             }
         elseif name == "Jeer" then
-            Game.battle:startActCutscene("zobate", "jeer")
-            return
+            if self.jeer_timer == 0 then
+                Game.battle:startActCutscene("zobate", "jeer")
+                return
+            else
+                return {
+                    "* Zobate is still offended by Grace's last jeer!"
+                }
+            end
         end
         
         -- If the act is none of the above, run the base onAct function
@@ -98,6 +112,19 @@ function Zobate:float_override()
     self.overlay_sprite.y = math.sin(self.sine) * self.float_height
 end
 
+function Zobate:onTurnEnd()
+    super.onTurnEnd(self)
+
+    self.jeer_timer = math.max(0, self.jeer_timer - 1)
+
+    if self.jeer_timer == 0 then
+        self.defense = 8
+        self.check = {
+            "AT 8 DF 8\n[wait:5]* Gitau,[wait:5] gitau.",
+        }
+    end
+end
+
 function Zobate:selectWave()
     local turn = Game.battle.turn_count -- The battle keeps track of the current turn automatically
 
@@ -112,22 +139,33 @@ function Zobate:selectWave()
         self.selected_wave = "zobate/spirit1"
         return self.selected_wave
     elseif turn == 4 then
-        self.selected_wave = "zobate/stars2"
+        self.selected_wave = "zobate/kame1"
         return self.selected_wave
     elseif turn == 5 then
-        self.selected_wave = "zobate/mask2"
+        self.selected_wave = "zobate/stars2"
+        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit1","zobate/kame1",}
         return self.selected_wave
     elseif turn == 6 then
-        self.selected_wave = "zobate/stars3"
+        self.selected_wave = "zobate/mask2"
         return self.selected_wave
     elseif turn == 7 then
+        self.selected_wave = "zobate/stars3"
+        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit1","zobate/kame1",}
+        return self.selected_wave
+    elseif turn == 8 then
         self.selected_wave = "zobate/mask3"
         return self.selected_wave
+    else
+        if self.cycle < #self.waves then
+            self.cycle = self.cycle + 1
+        else
+            self.cycle = 1
+        end
     end
 
-
-    -- Use random wave selection when the script runs out (assuming self.waves is set)
-    return super.selectWave(self)
+    -- Wave stall when script runs out
+    self.selected_wave = self.waves[self.cycle]
+    return self.selected_wave
 end
 
 return Zobate

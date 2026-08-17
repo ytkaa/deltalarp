@@ -4,6 +4,7 @@ function character:init()
     super.init(self)
 
     self.name = "Vess"
+    self.pronoun = "their"
 
     self:setActor("vess")
     self:setLightActor("vess")

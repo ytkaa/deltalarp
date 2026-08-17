@@ -25,7 +25,7 @@ function actor:init()
     self.default = "aura"
 
     -- Sound to play when this actor speaks (optional)
-    self.voice = nil
+    self.voice = "zobate"
     -- Path to this actor's portrait for dialogue (optional)
     self.portrait_path = nil
     -- Offset position for this actor's portrait (optional)
@@ -49,5 +49,16 @@ function actor:init()
 
     }
 end
+
+function actor:onTextSound(current_node, state)
+    if math.random() > 0.7 then
+        Assets.playSound("voice/zobate", 1, 0.95)
+    else
+        Assets.playSound("voice/zobate", 1, 1)
+    end
+    
+    return true
+end
+
 
 return actor
