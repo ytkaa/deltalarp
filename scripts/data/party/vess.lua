@@ -95,4 +95,8 @@ function character:onLevelUp(level)
     end
 end
 
+function character:getPronoun()
+    return self.pronoun
+end
+
 return character

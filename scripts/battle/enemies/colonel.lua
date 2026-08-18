@@ -255,7 +255,7 @@ function Colonel:init()
                 battler.chara:addStatBuff("attack", -99)
                 Assets.playSound("bell_bounce_short")
                 return {
-                    "* " .. battler.chara.name .. " dropped " .. battler.chara.pronoun .. " weapon.\n[wait:5]Attack nullified![wait:5] The enemies \nlower their guard.",
+                    "* " .. battler.chara.name .. " dropped " .. battler.chara:getPronoun() .. " weapon.\n[wait:5]Attack nullified![wait:5] The enemies \nlower their guard.",
                 }
             elseif self.guardLowered == true then
                 return {

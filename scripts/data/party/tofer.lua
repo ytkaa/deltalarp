@@ -87,6 +87,10 @@ function character:onLevelUp(level)
     end
 end
 
+function character:getPronoun()
+    return self.pronoun
+end
+
 --The following two functions are stolen from Susie and they prevent taking equipment from the party member.
 -- Never mind, actually. I replaced all of the Susan code
 function character:canEquip(item, slot_type, slot_index)
