@@ -1,6 +1,6 @@
-local ZobateSpirit3, super = Class(Bullet)
+local ZobateSpirit2, super = Class(Bullet)
 
-function ZobateSpirit3:init(x, y, side)
+function ZobateSpirit2:init(x, y, side)
     super.init(self, x, y, "bullets/zobate/spiritbomb")
     
     self.element = "entertainment"
@@ -22,6 +22,7 @@ function ZobateSpirit3:init(x, y, side)
     --self.charge_sound:play()
     self.initial_y = 175 --Christ
     self.random_y = 0
+    self.timer = Timer()
 
     Assets.playSound("stardrop")
 
@@ -34,7 +35,7 @@ function ZobateSpirit3:init(x, y, side)
     end
 end
 
-function ZobateSpirit3:update()
+function ZobateSpirit2:update()
     local arena = Game.battle.arena
     local collided,thing = Game.battle:checkSolidCollision(self)
 
@@ -56,7 +57,7 @@ function ZobateSpirit3:update()
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.pi)
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.rad(150))
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.rad(210))
-        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, math.pi)
+        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, math.pi) --make this randomly orange or blue
 
         self.delay = self.wave.delay
 
@@ -78,7 +79,7 @@ function ZobateSpirit3:update()
         self.wave:spawnBullet("ZobateBolt", self.x, y, 12, 0)
         self.wave:spawnBullet("ZobateBolt", self.x, y, 12, math.rad(330))
         self.wave:spawnBullet("ZobateBolt", self.x, y, 12, math.rad(30))
-        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, 0)
+        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, 0) --make this randomly orange or blue
 
         self.delay = self.wave.delay
     end
@@ -93,13 +94,13 @@ function ZobateSpirit3:update()
 
     if self.delay then
         if self.side == "right" and self.x > SCREEN_WIDTH + self.delay then
-            self.wave:spawnBullet("ZobateSpirit3", -50, self.random_y, "left")
+            self.wave:spawnBullet("ZobateSpirit2", -50, self.random_y, "left")
             self:remove()
         elseif self.side == "left" and self.x < 0 - self.delay then
-            self.wave:spawnBullet("ZobateSpirit3", 710, self.random_y, "right")
+            self.wave:spawnBullet("ZobateSpirit2", 710, self.random_y, "right")
             self:remove()
         end
     end
 end
 
-return ZobateSpirit3
+return ZobateSpirit2
