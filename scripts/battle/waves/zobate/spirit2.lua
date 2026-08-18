@@ -6,7 +6,7 @@ function spirit3:onStart()
     self.charge_sound = Assets.newSound("chargeshot_charge")
     self.charge_sound:setLooping(true)
 
-    self.delay = 1000 --Lowest we can do here is 100 without being unfair
+    self.delay = 750 --Lowest we can do here is 100 without being unfair
 
     self.loose = false
 
