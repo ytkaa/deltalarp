@@ -15,7 +15,9 @@ function ZobateKame:init(x, y)
 
     self.multiplier = 2.05
 
-    self.damage = 60
+    self.damage = 75
+
+    self.tp = 6 --High risk high reward
 
     Game.battle.timer:after(0.01, function()
         local initial_y = Game.battle.arena.y
@@ -25,16 +27,31 @@ function ZobateKame:init(x, y)
         local left_list = {30, 75, 120}
         local right_list = {30, 75, 120}
 
+        --Anti-cheese lists:
+        local left_list_2 = {15, 75, 130}
+        local right_list_2 = {15, 75, 130}
+
         Game.battle.timer:after(0.50, function()
+            local left_random = math.random()
+            local right_random = math.random()
             Game.battle.timer:every(0.1, function()
                 if Game.battle.state == "DEFENDING" then
-                    local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(left_list, nil, true), 0)
+                    if left_random > 0.5 then
+                        local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(left_list, nil, true), 0)
+                    else
+                        local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(left_list_2, nil, true), 0)
+                    end
                 end
             end, 3)
             Game.battle.timer:every(0.1, function()
                 if Game.battle.state == "DEFENDING" then
-                    local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(right_list, nil, true), math.pi)
-                    flame.flip_x = true
+                    if right_random > 0.5 then
+                        local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(right_list, nil, true), math.pi)
+                        flame.flip_x = true
+                    else
+                        local flame = self.wave:spawnBullet("ZobateKameFlame", help_x, Utils.pick(right_list_2, nil, true), math.pi)
+                        flame.flip_x = true
+                    end
                 end
             end, 3)
         end)
@@ -66,6 +83,10 @@ function ZobateKame:onDamage(soul)
     else
         --Yeah.
     end
+end
+
+function ZobateKame:getTarget()
+    return self.attacker and "ALL"
 end
 
 

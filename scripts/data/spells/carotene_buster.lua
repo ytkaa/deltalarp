@@ -9,7 +9,7 @@ function spell:init()
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Damage over time"
+    self.effect = "Damage \nover time"
     -- Menu description
     self.description = "Deal minor damage each turn. With Carrot!"
 

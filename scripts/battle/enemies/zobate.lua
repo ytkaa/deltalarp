@@ -18,8 +18,8 @@ function Zobate:init()
     self.jeer_timer = 0
 
     -- Enemy health
-    self.max_health = 1000
-    self.health = 1000
+    self.max_health = 1400
+    self.health = 1400
     -- Enemy attack (determines bullet damage)
     self.attack = 8
     -- Enemy defense (usually 0)
@@ -143,16 +143,19 @@ function Zobate:selectWave()
         return self.selected_wave
     elseif turn == 5 then
         self.selected_wave = "zobate/stars2"
-        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit1","zobate/kame1",}
+        self.waves = {"zobate/stars2","zobate/mask2","zobate/spirit2","zobate/kame1",}
         return self.selected_wave
     elseif turn == 6 then
         self.selected_wave = "zobate/mask2"
         return self.selected_wave
     elseif turn == 7 then
-        self.selected_wave = "zobate/stars3"
-        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit1","zobate/kame1",}
+        self.selected_wave = "zobate/spirit2"
         return self.selected_wave
     elseif turn == 8 then
+        self.selected_wave = "zobate/stars3"
+        self.waves = {"zobate/stars3","zobate/mask3","zobate/spirit2","zobate/kame1",}
+        return self.selected_wave
+    elseif turn == 9 then
         self.selected_wave = "zobate/mask3"
         return self.selected_wave
     else

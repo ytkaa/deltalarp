@@ -44,7 +44,7 @@ function ZobateSpirit2:update()
         self.physics.direction = 0
         self.bouncing = true
         --self:fadeOutAndRemove(0.5)
-        arena:slideTo(320 - 80, arena.y, 1, "out-quad")
+        arena:slideTo(320 - 80, arena.y, 1.5, "out-quad") --Slower slide to account for Ring
 
         self.charge_sound:stop()
         Assets.playSound("bomb")
@@ -57,7 +57,7 @@ function ZobateSpirit2:update()
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.pi)
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.rad(150))
         self.wave:spawnBullet("ZobateBolt", self.x + offset, y, 12, math.rad(210))
-        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, math.pi) --make this randomly orange or blue
+        self.wave:spawnBullet("ZobateRing", self.x + offset, y, 12, math.pi) --made this randomly orange or blue
 
         self.delay = self.wave.delay
 
@@ -65,7 +65,7 @@ function ZobateSpirit2:update()
         self.physics.direction = math.pi
         self.bouncing = true
         --self:fadeOutAndRemove(0.5)
-        arena:slideTo(320 + 80, arena.y, 1, "out-quad")
+        arena:slideTo(320 + 80, arena.y, 1.5, "out-quad") --Slower slide to account for Ring
 
         self.charge_sound:stop()
         Assets.playSound("bomb")
