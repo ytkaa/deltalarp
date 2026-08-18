@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="64">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="128" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="65">
  <editorsettings>
   <export target="rural_mainstreet/data.lua" format="lua"/>
  </editorsettings>
@@ -175,7 +175,6 @@
   <object id="10" gid="109" x="800" y="3280" width="166" height="154"/>
   <object id="11" gid="108" x="320" y="2370" width="178" height="168"/>
   <object id="12" gid="110" x="810" y="2300" width="148" height="259"/>
-  <object id="13" gid="113" x="270" y="1750" width="225" height="233"/>
   <object id="14" gid="111" x="880" y="1040" width="162" height="214"/>
   <object id="15" gid="110" x="290" y="980" width="148" height="259"/>
   <object id="16" gid="112" x="830" y="670" width="161" height="190"/>
@@ -257,6 +256,20 @@ I'm sure you know yourself very well by now.</property>
    <properties>
     <property name="map" value="chapter1/rural_lake"/>
     <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="64" name="npc" x="440" y="1630" width="40" height="40">
+   <properties>
+    <property name="actor" value="ratsuki"/>
+    <property name="text1_1" value="* ..."/>
+    <property name="text1_2" value="* ...[wait:5]what,[wait:5] dummy?"/>
+    <property name="text1_3">* ...[wait:5]hm?[wait:5] The Yoori joke works 
+best if I'm not visible during the opening cutscene?</property>
+    <property name="text1_4" value="* Well,[wait:5] it's not like I WANTED to be in your stupid opening cutscene anyway,[wait:5] dummy!"/>
+    <property name="text1_5" value="* Hmph!"/>
+    <property name="text2_1" value="* No,[wait:5] Vess,[wait:5] I'm not a fucking tsundere."/>
+    <property name="text3_1" value="* Get the fuck away from me."/>
+    <property name="text4_1" value="* ..."/>
    </properties>
   </object>
  </objectgroup>

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 64,
+  nextobjectid = 65,
   properties = {
     ["light"] = true,
     ["music"] = "ruraltown_wip",
@@ -492,21 +492,6 @@ return {
           properties = {}
         },
         {
-          id = 13,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 270,
-          y = 1750,
-          width = 225,
-          height = 233,
-          rotation = 0,
-          opacity = 1,
-          gid = 113,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 14,
           name = "",
           type = "",
@@ -971,6 +956,30 @@ return {
           properties = {
             ["map"] = "chapter1/rural_lake",
             ["marker"] = "spawn"
+          }
+        },
+        {
+          id = 64,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 440,
+          y = 1630,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "ratsuki",
+            ["text1_1"] = "* ...",
+            ["text1_2"] = "* ...[wait:5]what,[wait:5] dummy?",
+            ["text1_3"] = "* ...[wait:5]hm?[wait:5] The Yoori joke works \nbest if I'm not visible during the opening cutscene?",
+            ["text1_4"] = "* Well,[wait:5] it's not like I WANTED to be in your stupid opening cutscene anyway,[wait:5] dummy!",
+            ["text1_5"] = "* Hmph!",
+            ["text2_1"] = "* No,[wait:5] Vess,[wait:5] I'm not a fucking tsundere.",
+            ["text3_1"] = "* Get the fuck away from me.",
+            ["text4_1"] = "* ..."
           }
         }
       }
