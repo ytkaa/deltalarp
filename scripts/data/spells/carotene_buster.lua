@@ -9,7 +9,7 @@ function spell:init()
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Damage \nover time"
+    self.effect = "Damage \nover \ntime"
     -- Menu description
     self.description = "Deal minor damage each turn. With Carrot!"
 
@@ -38,7 +38,7 @@ end
 
 function spell:onCast(user, target)
     local function createParticle(x, y)
-        local sprite = Sprite("effects/icespell/snowflake", x, y)
+        local sprite = Sprite("effects/attack/slap_t_2", x, y)
         sprite:setOrigin(0.5, 0.5)
         sprite:setScale(1.5)
         sprite.layer = BATTLE_LAYERS["above_battlers"]
