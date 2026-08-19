@@ -323,13 +323,6 @@
             "y": -3831
         },
         {
-            "fileName": "garden_orchard_maze_topleft.tmx",
-            "height": 1400,
-            "width": 1400,
-            "x": 27840,
-            "y": -12391
-        },
-        {
             "fileName": "garden_orchard_tree_encounter.tmx",
             "height": 600,
             "width": 800,
