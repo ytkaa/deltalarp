@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="144">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="145">
  <editorsettings>
   <export target="garden_treasurehunt.lua" format="lua"/>
  </editorsettings>
@@ -141,18 +141,6 @@
     <property name="text1_2" value="* (I mean treasures)"/>
    </properties>
   </object>
-  <object id="26" name="script" x="1400" y="160" width="40" height="360">
-   <properties>
-    <property name="cutscene" value="chapter1/garden.treasureHuntBegin"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="27" name="script" x="1400" y="520" width="360.129" height="39.8859">
-   <properties>
-    <property name="cutscene" value="chapter1/garden.treasureHuntBegin"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="31" name="transition" x="-40.4167" y="159" width="40" height="120">
    <properties>
     <property name="map" value="chapter1/farm_world/garden_shop"/>
@@ -269,14 +257,20 @@
    </properties>
   </object>
   <object id="139" gid="162" x="360" y="1280" width="150.807" height="228"/>
+  <object id="144" name="script" x="1760" y="520">
+   <properties>
+    <property name="cutscene" value="chapter1/garden.treasureHuntBegin"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+   <polygon points="0,0 0,40 -360,40 -360,-360 -320,-360 -320,0"/>
+  </object>
  </objectgroup>
  <objectgroup color="#ffff00" id="6" name="controllers">
   <object id="119" name="toggle" x="1913.33" y="812">
    <properties>
     <property name="flag" value="treasureHuntBegan"/>
     <property name="inverted" type="bool" value="true"/>
-    <property name="target1" type="object" value="27"/>
-    <property name="target2" type="object" value="26"/>
+    <property name="target1" type="object" value="144"/>
    </properties>
    <point/>
   </object>

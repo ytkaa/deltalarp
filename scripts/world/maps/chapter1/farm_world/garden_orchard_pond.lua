@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -117,7 +117,9 @@ return {
       offsety = 0,
       parallaxx = 1,
       parallaxy = 1,
-      properties = {},
+      properties = {
+        ["music"] = "orchard_wip"
+      },
       encoding = "lua",
       data = {
         0, 0, 0, 0, 0, 0, 224, 300, 300, 287, 0, 0, 0, 0, 0, 0, 0, 281, 298, 287,

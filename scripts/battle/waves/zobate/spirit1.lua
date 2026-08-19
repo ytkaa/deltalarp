@@ -1,7 +1,7 @@
 local spirit1, super = Class(Wave)
 
 function spirit1:onStart()
-    self.time = 22
+    self.time = 22 - 4.5
 
     self.charge_sound = Assets.newSound("chargeshot_charge")
     self.charge_sound:setLooping(true)

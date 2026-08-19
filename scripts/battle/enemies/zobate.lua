@@ -18,8 +18,8 @@ function Zobate:init()
     self.jeer_timer = 0
 
     -- Enemy health
-    self.max_health = 1400
-    self.health = 1400
+    self.max_health = 1350
+    self.health = 1350
     -- Enemy attack (determines bullet damage)
     self.attack = 8
     -- Enemy defense (usually 0)

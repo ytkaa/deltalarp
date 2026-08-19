@@ -323,31 +323,38 @@
             "y": -3831
         },
         {
+            "fileName": "garden_orchard_maze_topleft.tmx",
+            "height": 1400,
+            "width": 1400,
+            "x": 27840,
+            "y": -12391
+        },
+        {
             "fileName": "garden_orchard_tree_encounter.tmx",
             "height": 600,
             "width": 800,
-            "x": 30720,
+            "x": 30800,
             "y": -8991
-        },
-        {
-            "fileName": "garden_orchard_pond.tmx",
-            "height": 600,
-            "width": 800,
-            "x": 30720,
-            "y": -9671
         },
         {
             "fileName": "garden_orchard_rabbit.tmx",
             "height": 600,
             "width": 800,
-            "x": 30720,
+            "x": 30800,
             "y": -10351
+        },
+        {
+            "fileName": "garden_orchard_pond.tmx",
+            "height": 600,
+            "width": 800,
+            "x": 30800,
+            "y": -9671
         },
         {
             "fileName": "garden_orchard_individual.tmx",
             "height": 600,
             "width": 800,
-            "x": 29160,
+            "x": 29080,
             "y": -10351
         }
     ],

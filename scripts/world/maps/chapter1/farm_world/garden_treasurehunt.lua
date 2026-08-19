@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 144,
+  nextobjectid = 145,
   properties = {
     ["music"] = "garden",
     ["name"] = "Garden - Treasure Field"
@@ -360,40 +360,6 @@ return {
           }
         },
         {
-          id = 26,
-          name = "script",
-          type = "",
-          shape = "rectangle",
-          x = 1400,
-          y = 160,
-          width = 40,
-          height = 360,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {
-            ["cutscene"] = "chapter1/garden.treasureHuntBegin",
-            ["once"] = true
-          }
-        },
-        {
-          id = 27,
-          name = "script",
-          type = "",
-          shape = "rectangle",
-          x = 1400,
-          y = 520,
-          width = 360.129,
-          height = 39.8859,
-          rotation = 0,
-          opacity = 1,
-          visible = true,
-          properties = {
-            ["cutscene"] = "chapter1/garden.treasureHuntBegin",
-            ["once"] = true
-          }
-        },
-        {
           id = 31,
           name = "transition",
           type = "",
@@ -696,6 +662,31 @@ return {
           gid = 162,
           visible = true,
           properties = {}
+        },
+        {
+          id = 144,
+          name = "script",
+          type = "",
+          shape = "polygon",
+          x = 1760,
+          y = 520,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 0, y = 40 },
+            { x = -360, y = 40 },
+            { x = -360, y = -360 },
+            { x = -320, y = -360 },
+            { x = -320, y = 0 }
+          },
+          properties = {
+            ["cutscene"] = "chapter1/garden.treasureHuntBegin",
+            ["once"] = true
+          }
         }
       }
     },
@@ -728,8 +719,7 @@ return {
           properties = {
             ["flag"] = "treasureHuntBegan",
             ["inverted"] = true,
-            ["target1"] = { id = 27 },
-            ["target2"] = { id = 26 }
+            ["target1"] = { id = 144 }
           }
         },
         {

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -12,6 +12,7 @@ return {
   nextlayerid = 11,
   nextobjectid = 41,
   properties = {
+    ["keepmusic"] = true,
     ["name"] = "Garden - Ofer Manor"
   },
   tilesets = {

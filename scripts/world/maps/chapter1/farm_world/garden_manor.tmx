@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="41">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="41">
  <editorsettings>
   <export target="garden_manor.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="keepmusic" type="bool" value="true"/>
   <property name="name" value="Garden - Ofer Manor"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
