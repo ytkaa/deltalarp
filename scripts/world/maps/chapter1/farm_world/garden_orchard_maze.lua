@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 28,
+  nextobjectid = 35,
   properties = {
     ["music"] = "orchard_wip",
     ["name"] = "Garden - Orchard (Maze)"
@@ -513,6 +513,57 @@ return {
             ["map"] = "chapter1/farm_world/garden_orchard_individual",
             ["marker"] = "spawn"
           }
+        },
+        {
+          id = 29,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 1240,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_orchard_rabbit",
+            ["marker"] = "spawn"
+          }
+        },
+        {
+          id = 30,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 1920,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_orchard_pond",
+            ["marker"] = "spawn"
+          }
+        },
+        {
+          id = 33,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 2600,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_orchard_tree_encounter",
+            ["marker"] = "spawn"
+          }
         }
       }
     },
@@ -551,6 +602,48 @@ return {
           shape = "point",
           x = 40,
           y = 1300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 28,
+          name = "to_rabbit",
+          type = "",
+          shape = "point",
+          x = 714,
+          y = 1301,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 31,
+          name = "to_pond",
+          type = "",
+          shape = "point",
+          x = 698.667,
+          y = 1986.67,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 34,
+          name = "to_tree",
+          type = "",
+          shape = "point",
+          x = 694.667,
+          y = 2660,
           width = 0,
           height = 0,
           rotation = 0,

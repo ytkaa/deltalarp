@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 16,
+  nextobjectid = 17,
   properties = {
     ["music"] = "orchard_wip"
   },
@@ -412,8 +412,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 480,
-          y = 440,
+          x = 472,
+          y = 442,
           width = 240,
           height = 40,
           rotation = 0,

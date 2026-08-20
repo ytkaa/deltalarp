@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="19" height="74" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="28">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="19" height="74" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="35">
  <editorsettings>
   <export target="garden_orchard_maze.lua" format="lua"/>
  </editorsettings>
@@ -346,12 +346,39 @@
     <property name="marker" value="spawn"/>
    </properties>
   </object>
+  <object id="29" name="transition" x="760" y="1240" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_orchard_rabbit"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="30" name="transition" x="760" y="1920" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_orchard_pond"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="33" name="transition" x="760" y="2600" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_orchard_tree_encounter"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="7" name="markers">
   <object id="14" name="spawn" x="380" y="2920">
    <point/>
   </object>
   <object id="27" name="to_individual" x="40" y="1300">
+   <point/>
+  </object>
+  <object id="28" name="to_rabbit" x="714" y="1301">
+   <point/>
+  </object>
+  <object id="31" name="to_pond" x="698.667" y="1986.67">
+   <point/>
+  </object>
+  <object id="34" name="to_tree" x="694.667" y="2660">
    <point/>
   </object>
  </objectgroup>

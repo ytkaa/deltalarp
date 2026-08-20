@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="8">
  <editorsettings>
   <export target="garden_orchard_pond.lua" format="lua"/>
  </editorsettings>
@@ -85,4 +85,22 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup color="#0000ff" id="8" name="collision">
+  <object id="1" x="0" y="160" width="240" height="40"/>
+  <object id="4" x="0" y="360" width="240" height="40"/>
+  <object id="5" x="240" y="160" width="42" height="242"/>
+ </objectgroup>
+ <objectgroup color="#ff007f" id="9" name="objects_party">
+  <object id="6" name="transition" x="-40" y="240" width="40" height="120">
+   <properties>
+    <property name="map" value="chapter1/farm_world/garden_orchard_maze"/>
+    <property name="marker" value="to_pond"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="10" name="markers">
+  <object id="7" name="spawn" x="60" y="293.333">
+   <point/>
+  </object>
+ </objectgroup>
 </map>
