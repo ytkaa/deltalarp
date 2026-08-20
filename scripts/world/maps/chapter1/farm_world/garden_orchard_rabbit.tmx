@@ -8,6 +8,7 @@
  </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/orchard.tsx"/>
+ <tileset firstgid="201" source="../../../tilesets/orchard_extras.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="20" height="15">
   <data encoding="csv">
 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,

@@ -25,6 +25,12 @@ return {
       firstgid = 101,
       filename = "../../../tilesets/orchard.tsx",
       exportfilename = "../../../tilesets/orchard.lua"
+    },
+    {
+      name = "orchard_extras",
+      firstgid = 201,
+      filename = "../../../tilesets/orchard_extras.tsx",
+      exportfilename = "../../../tilesets/orchard_extras.lua"
     }
   },
   layers = {

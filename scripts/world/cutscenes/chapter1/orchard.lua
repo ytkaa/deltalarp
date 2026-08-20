@@ -316,4 +316,42 @@ return {
         cutscene:alignFollowers()
         cutscene:attachFollowers()
     end;
+    rabbit = function(cutscene, event)
+        local tofer = cutscene:getCharacter("tofer")
+        local vess = cutscene:getCharacter("vess")
+        --local rabbit = Game.world:getEvent(23452345234)
+        local jenga = Game.world:getEvent(12)
+        local music = Music()
+        cutscene:setSpeaker(tofer)
+        local auto = {
+            ["auto"] = true
+        }
+        cutscene:text("[face:tofer, -19, -13]* ", auto)
+        cutscene:setSpeaker(nil)
+        Game.world.music:pause()
+        cutscene:text("* Hold on hold on hold on dude this is important")
+        cutscene:text("* I'm doing something really important right now gimme a sec")
+        cutscene:wait(1)
+        cutscene:text("* I need like complete silence right now this is important")
+        cutscene:wait(2)
+        cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "right", true))
+        cutscene:text("* DO NOT make a sound")
+        cutscene:text("* I heard your footstep its really distracting")
+        cutscene:text("* Just one more second dude")
+        cutscene:wait(2)
+        jenga:shake()
+        cutscene:wait(2)
+        --jenga tower collapses
+        cutscene:text("(jenga tower collapses)")
+        cutscene:text("* $$$$!!!!!!")
+        cutscene:text("* OH MY GOD DUDE")
+        cutscene:text("* $$$$")
+        cutscene:text("* I'VE BEEN WORKING ON THIS FOR DAYS")
+        cutscene:text("* $$$$ DUDE")
+        cutscene:wait(1)
+        --rabbit turns left
+        cutscene:text("* Dude")
+        cutscene:text("* Man I don't even care anymore")
+        cutscene:text("* Just whatever.")
+    end;
 }
