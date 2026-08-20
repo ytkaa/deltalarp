@@ -187,7 +187,7 @@ return {
           name = "npc",
           type = "",
           shape = "rectangle",
-          x = 80,
+          x = 0,
           y = 280,
           width = 40,
           height = 40,

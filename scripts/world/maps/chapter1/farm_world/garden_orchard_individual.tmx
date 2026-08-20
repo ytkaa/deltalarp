@@ -85,7 +85,7 @@
 </data>
  </layer>
  <objectgroup color="#ff007f" id="6" name="objects_party">
-  <object id="1" name="npc" x="80" y="280" width="40" height="40">
+  <object id="1" name="npc" x="0" y="280" width="40" height="40">
    <properties>
     <property name="actor" value="cherries"/>
     <property name="text1_1" value="* Ey.[wait:5] Ey,[wait:5] kid.[wait:5] I'm just testing my talk sprite,[wait:5] kid."/>
