@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="27">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="27">
  <editorsettings>
   <export target="garden_orchard_pond.lua" format="lua"/>
  </editorsettings>
@@ -118,6 +118,7 @@
     <property name="once" type="bool" value="false"/>
     <property name="solid" type="bool" value="true"/>
     <property name="text1_1" value="* (A collision-minded rock.)"/>
+    <property name="text2_1" value="* (Which is new and by the water)"/>
    </properties>
   </object>
  </objectgroup>

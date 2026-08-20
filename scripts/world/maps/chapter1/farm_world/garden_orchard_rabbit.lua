@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -9,8 +9,8 @@ return {
   height = 15,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 11,
-  nextobjectid = 12,
+  nextlayerid = 12,
+  nextobjectid = 16,
   properties = {
     ["music"] = "orchard_wip"
   },
@@ -203,6 +203,23 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/garden_orchard_maze",
             ["marker"] = "to_rabbit"
+          }
+        },
+        {
+          id = 15,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 200,
+          y = 200.125,
+          width = 40,
+          height = 239.693,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/orchard.rabbit",
+            ["once"] = true
           }
         }
       }
@@ -430,6 +447,37 @@ return {
           height = 0,
           rotation = 0,
           opacity = 1,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 11,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 13,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 360,
+          width = 150.949,
+          height = 391.577,
+          rotation = 0,
+          opacity = 1,
+          gid = 203,
           visible = true,
           properties = {}
         }

@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -276,7 +276,8 @@ return {
           properties = {
             ["once"] = false,
             ["solid"] = true,
-            ["text1_1"] = "* (A collision-minded rock.)"
+            ["text1_1"] = "* (A collision-minded rock.)",
+            ["text2_1"] = "* (Which is new and by the water)"
           }
         }
       }
