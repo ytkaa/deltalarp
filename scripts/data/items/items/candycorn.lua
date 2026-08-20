@@ -48,7 +48,9 @@ function item:init()
 
     -- Character reactions (key = party member id)
     self.reactions = {
-        grace = "Candy. Idk bro make some new dialogue for me",
+        grace = "When did candy corn get EVEN worse?!",
+        tofer = "Check it!",
+        orbit = "A delicacy...",
     }
 end
 
