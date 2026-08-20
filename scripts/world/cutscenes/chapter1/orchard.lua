@@ -133,5 +133,187 @@ return {
         cutscene:wait(cutscene:walkTo(vess, vess.x - 50, 380, 0.2, "left", true))
         speak(individual, "* Ey.")
         music:play("individual_wip")
+        cutscene:wait(2)
+
+        speak(individual, "* Ey,[wait:5] kid.")
+        speak(individual, "* ...[wait:5]I got sumnth for ya.[wait:5] Kid.")
+        speak(individual, "* ...[wait:5]wanna buy?")
+        cutscene:showShop()
+        local choice_1 = cutscene:choicer({"Sure", "No ??!?"})
+        cutscene:hideShop()
+
+        if choice_1 == 1 then
+            speak(individual, "* Kid...")
+            speak(individual, "* Heh...[wait:5] you're real eager,[wait:5] huh?")
+            speak(individual, "* Heheh...[wait:5] heh.")
+            speak(individual, "* Heh...[wait:5] heh...")
+            speak(individual, "* ...")
+            speak(individual, "* That's bad.[wait:5] I din't even give a price yet.")
+            speak(individual, "* Ya gotta let us EARN this deal,[wait:5] kid.")
+            music:stop()
+            speak(individual, "* I mean me.[wait:5] Let ME earn this deal,[wait:5] kid.")
+        else
+            cutscene:slideTo(individual, individual.x, 300, 1)
+            cutscene:wait(cutscene:walkTo(vess, vess.x, 300, 1, "left", true))
+            speak(individual, "* Kid...[wait:5] heheh.")
+            speak(individual, "* You don't even knoe what I'm selling,[wait:5] kid...")
+            speak(individual, "* Give us a chance,[wait:5] kid.")
+            music:stop()
+            speak(individual, "* Er...")
+            speak(individual, "* Give ME a chance,[wait:5] kid.")
+        end
+
+        speak(individual, "* There's...[wait:5] er...[wait:5] there's only one a me.")
+        speak(individual, "* One cherry.[wait:5] In 'ere.")
+        speak(individual, "* ...yeah.")
+        cutscene:wait(2)
+        speak(tofer, "[face:tofer, -19, -13][next]* Che[sound:tofer_checkit]ck it!")
+        Assets.stopSound("tofer_checkit", true)
+        speak(individual, "* Let's restart.")
+        music:play("individual_wip")
+        speak(individual, "* Ey,[wait:5] kid.")
+        speak(individual, "* ...[wait:5]I got sumnth for ya.[wait:5] Kid.")
+        speak(individual, "* ...[wait:5]wanna buy?")
+
+        cutscene:showShop()
+        -- Interruption choicer...
+        local wait = cutscene:choicer({"Sure", "No ??!?"}, {["wait"] = false})
+        local timer = 0
+        while timer < 0.5 do
+            local chosen, chosen_n = wait(cutscene)
+            if chosen then
+                break
+            end
+            timer = timer + DT
+            cutscene:wait()
+        end
+        cutscene:hideShop()
+
+        speak(individual, "* 'CAUSE.")
+        speak(individual, "* 'Cause it's sumnth real good,[wait:5] kid...")
+        speak(individual, "* Heh,[wait:5] I know yor gonna want it,[wait:5] kid...")
+        local choice_2 = cutscene:choicer({"Buy", "How much"})
+
+        if choice_2 == 1 then
+            music:stop()
+            speak(individual, "* LOOK,[wait:5] KID.[wait:5] IT'S A [color:red]THOUSAND BUSKS[color:reset].")
+            speak(individual, "* KID.[wait:5] DO YOU REALLY WANT TO SPEND A [color:red]THOUSAND BUSKS[color:reset] ON THIS.[wait:5] KID.")
+            cutscene:showShop()
+            cutscene:setSpeaker(nil)
+            local choice_spend = cutscene:textChoicer("* (Spend a thousand busks on it?)", {"Spend", "Nah"})
+            cutscene:hideShop()
+
+            if choice_spend == 1 then
+                if Game.money >= 1000 then
+                    -- If they have the money, try to give them the rhapsotea item
+                    if Game.inventory:tryGiveItem("cherrybomb") then
+                        -- Play the equip SFX
+                        Assets.playSound("equip")
+                        -- Subtract the money if the player got the item
+                        Game.money = Game.money - 1000
+                        speak(nil, "* (You got a CherryBomb...)")
+                        cutscene:shakeCharacter(individual, 4)
+                        speak(individual, "* Heheheh.")
+                        cutscene:shakeCharacter(individual, 5)
+                        speak(individual, "* Heheheh!")
+                        cutscene:shakeCharacter(individual, 6, 7)
+                        speak(individual, "* HEHEHEH!")
+                        music:play("individual_wip")
+                        speak(individual, "* Welff![wait:5] A deal's a deal,[wait:5] kid!")
+                        speak(individual, "* Heheh...[wait:5] looks like the cherries ARE back in brow after all...")
+                        speak(individual, "* Ey,[wait:5] you go kid around and enjoy that thing,[wait:5] huh?")
+                    else
+                        -- If the player inventory and storage is full, don't subtract any money
+                        speak(nil, "[sound:error][wait:5]* (You're carrying too much.)")
+
+                        speak(individual, "* Kid.")
+                        speak(individual, "* Kid.[wait:5] I-I think it's better for the all of us that you couldn't buy it.")
+                        speak(individual, "* I mean the both of us.")
+                        
+                    end
+                else
+                    -- If the player doesn't have enough money
+                    speak(nil, "[sound:error][wait:5]* (You don't have enough money...)")
+
+                    speak(individual, "* Kid.")
+                        speak(individual, "* Kid.[wait:5] I-I think it's better for the all of us that you couldn't buy it.")
+                        speak(individual, "* I mean the both of us.")
+                end
+            else
+                speak(individual, "* Kid.")
+                speak(individual, "* Kid.[wait:5] I-I think it's better for the all of us that you din't buy it.")
+                speak(individual, "* I mean the both of us.")
+            end
+        else
+            speak(individual, "* Heh...[wait:5] kid...")
+            speak(individual, "* It's only...")
+            speak(individual, "* It's only...")
+            speak(individual, "* Heh.[wait:5] It's only a [color:red]thousand busks[color:reset],[wait:5] kid!")
+            cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "left", true))
+            speak(individual, "* That's a STEAL,[wait:5] kid!")
+            cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "left", true))
+            speak(individual, "* It'll change your LIFE,[wait:5] kid!")
+            cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "left", true))
+            speak(individual, "[next]* We need this,[wait:5] kid!")
+            cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "left", true))
+            speak(individual, "* I need this,[wait:5] kid!")
+            cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "left", true))
+            music:stop()
+            speak(individual, "* JUST TAKE THE DEAL,[wait:5] KID!")
+
+            cutscene:showShop()
+            cutscene:setSpeaker(nil)
+            local choice_spend = cutscene:textChoicer("* (Take the deal for a [color:red]thousand busks[color:reset]?)", {"Deal", "No deal"})
+            cutscene:hideShop()
+
+            if choice_spend == 1 then
+                if Game.money >= 1000 then
+                    -- If they have the money, try to give them the rhapsotea item
+                    if Game.inventory:tryGiveItem("cherrybomb") then
+                        -- Play the equip SFX
+                        Assets.playSound("equip")
+                        -- Subtract the money if the player got the item
+                        Game.money = Game.money - 1000
+                        speak(nil, "* (You got a CherryBomb...)")
+                        cutscene:shakeCharacter(individual, 4)
+                        speak(individual, "* Heheheh.")
+                        cutscene:shakeCharacter(individual, 5)
+                        speak(individual, "* Heheheh!")
+                        cutscene:shakeCharacter(individual, 6, 7)
+                        speak(individual, "* HEHEHEH!")
+                        music:play("individual_wip")
+                        speak(individual, "* Welff![wait:5] A deal's a deal,[wait:5] kid!")
+                        speak(individual, "* Heheh...[wait:5] looks like the cherries ARE back in brow after all...")
+                        speak(individual, "* Ey,[wait:5] you go kid around and enjoy that thing,[wait:5] huh?")
+                    else
+                        -- If the player inventory and storage is full, don't subtract any money
+                        speak(nil, "[sound:error][wait:5]* (You're carrying too much.)")
+
+                        speak(individual, "* You're worthless,[wait:5] kid!")
+                    end
+                else
+                    -- If the player doesn't have enough money
+                    speak(nil, "[sound:error][wait:5]* (You don't have enough money...)")
+
+                    speak(individual, "* You're worthless,[wait:5] kid!")
+                end
+            else
+                speak(individual, "* You're hopeless,[wait:5] kid!")
+            end
+        end
+
+        music:stop()
+        cutscene:wait(2)
+        speak(individual, "* Doose!")
+        cutscene:playSound("dtrans_square")
+        cutscene:wait(cutscene:slideTo(individual, -100, individual.y, 0.50, "linear"))
+
+        cutscene:wait(4)
+        speak(tofer, "[face:tofer, -19, -13]* Heh.[wait:5] What the hell?")
+
+        Game.world.music:resume()
+        cutscene:attachCamera()
+        cutscene:alignFollowers()
+        cutscene:attachFollowers()
     end;
 }

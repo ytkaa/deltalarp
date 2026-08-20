@@ -4,12 +4,12 @@ function spell:init()
     super.init(self)
 
     -- Display name
-    self.name = "CaroteneBuster"
+    self.name = "CarrotBuster"
     -- Name displayed when cast (optional)
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Damage \nover \ntime"
+    self.effect = "Damage \nover time"
     -- Menu description
     self.description = "Deal minor damage each turn. With Carrot!"
 

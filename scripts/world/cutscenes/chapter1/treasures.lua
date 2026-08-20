@@ -606,6 +606,8 @@ return {
         end
     end;
     cave_entrance = function(cutscene, event)
+        local den_save = Kristal.loadData("den_" .. Game.save_id)
+
         local outer = Component(FixedSizing(665, 420)) -- The root should be a fixed size.
         outer:setLayout(VerticalLayout({ gap = 0, align = "center" })) -- Center it vertically!
         outer.parallax_x = 0
@@ -618,6 +620,11 @@ return {
                 local menu = EasingSoulMenuComponent(FitSizing())
                     local caveText = Text("Flower Den")
                     local caveDesc = Text("Enter this hole with your current equipment?")
+                    if den_save then
+                        if den_save["room_id"] ~= nil then
+                            caveDesc = Text("Hop in hole and continue where you left off?") --Had to make this the exact same amount of characters
+                        end
+                    end
                     caveText:setOrigin(-0.31, 0) -- you cannot natively center text
                     caveDesc:setOrigin(0.02, 0)
                     menu:addChild(caveText)
@@ -651,8 +658,22 @@ return {
                             cutscene:wait(3)
                             cutscene:wait(cutscene:fadeOut(0.1))
                             Assets.playSound("closet_impact")
-                            Game.world:loadMap("chapter1/farm_world/flowerden", "spawn")
-                            Kristal.saveGame()
+
+                            if den_save then
+                                if den_save["room_id"] ~= nil then
+                                    Game:setFlag("inSublevel1", false)
+                                    Game:setFlag("inSublevel" .. den_save["sublevel"], true)
+                                    Game.world:loadMap(den_save["room_id"], "spawn")
+                                else
+                                    Game.world:loadMap("chapter1/farm_world/flowerden", "spawn")
+                                end
+                            else
+                                Game.world:loadMap("chapter1/farm_world/flowerden", "spawn")
+                            end
+                            
+                            Game:saveQuick()
+                            print("QUICKSAVED AND DEN-SAVED.")
+
                             cutscene:wait(cutscene:fadeIn(0.5))
                         end)
                     end))
@@ -716,22 +737,30 @@ return {
                                 for _, party_member in ipairs(Game.party) do
                                     party_member:heal(200)
                                 end
-                                Kristal.saveGame()
+                                Game:saveQuick()
+                                Kristal.saveData("den_" .. Game.save_id, {["room_id"] = Game.world.map.id, ["sublevel"] = 5})
+                                print("QUICKSAVED AND DEN-SAVED.")
                             elseif Game:getFlag("inSublevel3") then
                                 Game.world:loadMap("chapter1/farm_world/flowerden4", "spawn")
                                 Game:setFlag("inSublevel4", true)
                                 Game:setFlag("inSublevel3", false)
-                                Kristal.saveGame()
+                                Game:saveQuick()
+                                Kristal.saveData("den_" .. Game.save_id, {["room_id"] = Game.world.map.id, ["sublevel"] = 4})
+                                print("QUICKSAVED AND DEN-SAVED.")
                             elseif Game:getFlag("inSublevel2") then
                                 Game.world:loadMap("chapter1/farm_world/flowerden3", "spawn")
                                 Game:setFlag("inSublevel3", true)
                                 Game:setFlag("inSublevel2", false)
-                                Kristal.saveGame()
+                                Game:saveQuick()
+                                Kristal.saveData("den_" .. Game.save_id, {["room_id"] = Game.world.map.id, ["sublevel"] = 3})
+                                print("QUICKSAVED AND DEN-SAVED.")
                             elseif Game:getFlag("inSublevel1") then
                                 Game.world:loadMap("chapter1/farm_world/flowerden2", "spawn")
                                 Game:setFlag("inSublevel2", true)
                                 Game:setFlag("inSublevel1", false)
-                                Kristal.saveGame()
+                                Game:saveQuick()
+                                Kristal.saveData("den_" .. Game.save_id, {["room_id"] = Game.world.map.id, ["sublevel"] = 2})
+                                print("QUICKSAVED AND DEN-SAVED.")
                             end
                             cutscene:wait(cutscene:fadeIn(0.5))
                             if Game:getFlag("inSublevel5") then

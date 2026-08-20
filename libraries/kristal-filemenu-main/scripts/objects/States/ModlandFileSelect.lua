@@ -118,6 +118,7 @@ function ModlandFileSelect:onKeyPressed(key, is_repeat)
                         local path = "saves/" .. Mod.info.id .. "/file_" .. id .. ".json"
                         local new_file = not love.filesystem.getInfo(path)
                         if new_file then
+                            Kristal.saveData("den_" .. id, {["room_id"] = nil, ["sublevel"] = nil}) --Chapter 1 Quirks
                             Game.world:closeMenu()
                             Game.world:loadMap(Kristal.getLibConfig("afilemenu", "map"))
                             Game.save_name = Kristal.Config["defaultName"] or Game.save_name
@@ -163,6 +164,7 @@ function ModlandFileSelect:onKeyPressed(key, is_repeat)
                     if button.selected_choice == 1 and self.erase_stage == 2 then
                         Assets.stopAndPlaySound("ui_spooky_action")
                         Kristal.eraseData("file_" .. button.id, Mod.info.id)
+                        Kristal.eraseData("den_" .. button.id, Mod.info.id) --Chapter 1 quirk
                         button:setData(nil)
                         result = "Erase complete."
                     else
@@ -182,7 +184,9 @@ function ModlandFileSelect:onKeyPressed(key, is_repeat)
                 if button.selected_choice == 1 then
                     Assets.stopAndPlaySound("ui_spooky_action")
                     local data = Kristal.loadData("file_" .. self.copied_button.id, Mod.info.id)
+                    local den_data = Kristal.loadData("den_" .. self.copied_button.id, Mod.info.id)--Chapter 1 quirk
                     Kristal.saveData("file_" .. button.id, data, Mod.info.id)
+                    Kristal.saveData("den_" .. button.id, den_data, Mod.info.id)--Chapter 1 quirk
                     button:setData(data)
                     button:setChoices()
                     self:setState("SELECT", "Copy complete.")
@@ -315,6 +319,8 @@ function ModlandFileSelect:onKeyPressed(key, is_repeat)
                         Assets.stopAndPlaySound("ui_spooky_action")
                         local data = Kristal.loadData("file_" .. self.copied_button.id, Mod.info.id)
                         Kristal.saveData("file_" .. selected.id, data, Mod.info.id)
+                        local den_data = Kristal.loadData("den_" .. self.copied_button.id, Mod.info.id) -- Chapter 1 quirk
+                        Kristal.saveData("den_" .. selected.id, den_data, Mod.info.id) -- Chapter 1 quirk
                         selected:setData(data)
                         self:setState("SELECT", "Copy complete.")
                         self.copied_button:setColor(1, 1, 1)
