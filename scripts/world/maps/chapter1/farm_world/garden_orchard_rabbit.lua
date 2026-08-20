@@ -9,8 +9,8 @@ return {
   height = 15,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 8,
-  nextobjectid = 12,
+  nextlayerid = 9,
+  nextobjectid = 14,
   properties = {
     ["music"] = "orchard_wip"
   },
@@ -25,6 +25,12 @@ return {
       firstgid = 101,
       filename = "../../../tilesets/orchard.tsx",
       exportfilename = "../../../tilesets/orchard.lua"
+    },
+    {
+      name = "orchard_extras",
+      firstgid = 201,
+      filename = "../../../tilesets/orchard_extras.tsx",
+      exportfilename = "../../../tilesets/orchard_extras.lua"
     }
   },
   layers = {
@@ -355,6 +361,38 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/garden_orchard_maze",
             ["marker"] = "to_rabbit"
+          }
+        },
+        {
+          id = 12,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 360,
+          width = 98.2461,
+          height = 254.861,
+          rotation = 0,
+          opacity = 1,
+          gid = 203,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 13,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 200,
+          y = 203.333,
+          width = 40,
+          height = 236,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["cutscene"] = "chapter1/orchard.rabbit",
+            ["once"] = true
           }
         }
       }
