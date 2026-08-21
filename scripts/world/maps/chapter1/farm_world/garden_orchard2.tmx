@@ -260,6 +260,8 @@
    <properties>
     <property name="cutscene" value="chapter1/orchard.orchard"/>
     <property name="once" type="bool" value="true"/>
+    <property name="setflag" value="orchard_warp"/>
+    <property name="setvalue" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>

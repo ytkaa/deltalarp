@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 13,
-  nextobjectid = 24,
+  nextobjectid = 26,
   properties = {
     ["music"] = "orchard_wip"
   },
@@ -308,6 +308,23 @@ return {
             ["text1_1"] = "* (Arisen tower...)",
             ["text2_1"] = "* (..!)"
           }
+        },
+        {
+          id = 24,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 220,
+          y = 200,
+          width = 40,
+          height = 239.693,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["once"] = true,
+            ["script"] = "rabbit_chest_slide"
+          }
         }
       }
     },
@@ -558,6 +575,7 @@ return {
             ["flag"] = "jenga_tower_fell",
             ["inverted"] = false,
             ["target1"] = { id = 22 },
+            ["target2"] = { id = 24 },
             ["value"] = 2
           }
         }
@@ -584,6 +602,20 @@ return {
           shape = "point",
           x = 40,
           y = 300,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 25,
+          name = "chest",
+          type = "",
+          shape = "point",
+          x = 360,
+          y = 240,
           width = 0,
           height = 0,
           rotation = 0,
