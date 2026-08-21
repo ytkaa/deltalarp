@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 13,
-  nextobjectid = 27,
+  nextobjectid = 32,
   properties = {
     ["music"] = "irish_waters"
   },
@@ -178,8 +178,8 @@ return {
         222, 223, 222, 223, 222, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         212, 213, 212, 213, 212, 213, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         222, 223, 222, 223, 222, 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213,
-        222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223
+        212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 212, 213, 0, 0, 0, 0,
+        222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 222, 223, 0, 0, 0, 0
       }
     },
     {
@@ -281,6 +281,50 @@ return {
             ["text1_1"] = "* (A collision-minded rock.)",
             ["text2_1"] = "* (Which is new and by the water)"
           }
+        },
+        {
+          id = 27,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "fisher_turtle",
+            ["text1_1"] = "[speed:0.7]* I heard there's some sort of chest somewhere in the trees to our left.",
+            ["text2_1"] = "[speed:0.7]* You can relax and sit with me a while,[wait:5] you two.",
+            ["text2_2"] = "[speed:0.7]* The waters are nice.",
+            ["text2_3"] = "[speed:0.7]* The choice is up to you, though.",
+            ["text3_1"] = "[speed:0.7]* Most the time in this life,[wait:5] you don't get such a choice.",
+            ["text3_2"] = "[speed:0.7]* I know that from experience.",
+            ["text3_3"] = "[speed:0.7]* Even so,[wait:5] whichever road life takes you down...",
+            ["text3_4"] = "[speed:0.7]* ...I believe it all works out in the end.",
+            ["text4_1"] = "[speed:0.7]* I had been searching for truth for the longest time...",
+            ["text4_2"] = "[speed:0.7]* ...[wait:5]this pond holds that truth.",
+            ["text4_3"] = "[speed:0.7]* The waters,[wait:5] in general,[wait:5] hold the truth.",
+            ["text5_1"] = "[speed:0.7]* The waters,[wait:5] in general,[wait:5] hold the truth."
+          }
+        },
+        {
+          id = 30,
+          name = "chest",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 560,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["item"] = "axe_piece"
+          }
         }
       }
     },
@@ -312,11 +356,11 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         202, 203, 202, 203, 202, 203, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 242, 203, 202, 203, 202, 203, 202, 203, 202, 203, 202, 203, 202, 203,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        0, 0, 0, 0, 0, 0, 214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 201,
+        0, 0, 0, 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211,
+        0, 0, 0, 0, 0, 0, 242, 203, 202, 203, 202, 203, 202, 203, 202, 203, 202, 203, 204, 221,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 212, 213, 242, 243,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 222, 223, 222, 223
       }
     },
     {
@@ -538,7 +582,7 @@ return {
           shape = "rectangle",
           x = 240,
           y = 520,
-          width = 560,
+          width = 480,
           height = 40,
           rotation = 0,
           opacity = 1,
@@ -553,7 +597,7 @@ return {
           x = 800,
           y = 0,
           width = 40,
-          height = 520,
+          height = 560,
           rotation = 0,
           opacity = 1,
           visible = true,
@@ -610,6 +654,48 @@ return {
           y = 20,
           width = 80,
           height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 28,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 760,
+          y = 560,
+          width = 40,
+          height = 80,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 29,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 600,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 31,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 680,
+          y = 560,
+          width = 40,
+          height = 80,
           rotation = 0,
           opacity = 1,
           visible = true,
