@@ -99,7 +99,7 @@
   </object>
   <object id="12" name="chest" x="300" y="300" width="40" height="40">
    <properties>
-    <property name="money" type="int" value="46"/>
+    <property name="item" value="axe_piece"/>
    </properties>
   </object>
   <object id="13" name="script" x="480" y="140" width="40" height="300">

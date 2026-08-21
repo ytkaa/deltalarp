@@ -229,7 +229,7 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["money"] = 46
+            ["item"] = "axe_piece"
           }
         },
         {

@@ -27,29 +27,32 @@ return {
         cutscene:text("[face:emotionerer, -19, -13]* I.[wait:5] Don't even know if\nwe could beat him,\n[wait:5]graystuff.[wait:5] Honest.")
         vess:faceTowards(tofer)
         cutscene:wait(1)
-        local choice = cutscene:choicer({"We got\nthis", "We need Sofer \nand Grace"})
+        local choice = cutscene:choicer({"We need Sofer \nand Grace", "Dude we need \nSofer and Grace"})
 
+        -- * If you haven't gotten it by now... your choices don't matter.
         if choice == 1 then
-            cutscene:wait(1)
-            cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Well.")
-            cutscene:text("[face:emotionerer, -19, -13]* Hope you're right,[wait:5]\ngray brolio...")
-            cutscene:wait(1)
-            cutscene:text("[face:tofer, -19, -13]* Heh!")
+            --cutscene:wait(1)
+            --cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Well.")
+            --cutscene:text("[face:emotionerer, -19, -13]* Hope you're right,[wait:5]\ngray brolio...")
+            --cutscene:wait(1)
+            --cutscene:text("[face:tofer, -19, -13]* Heh!")
         else
-            cutscene:wait(1)
-            cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Well!")
-            cutscene:text("[face:tofer, -19, -13]* You're right!")
-            cutscene:text("[face:emotion, -19, -13]* It's just...")
-            cutscene:text("[face:emotionerer, -19, -13]* I...")
-            cutscene:text("[face:emotionerer, -19, -13]* I think SOFER might...")
-            cutscene:wait(1)
-            cutscene:setAnimation(tofer, "cycle")
-            music:play("tofer", 1)
-            music:seek(2)
-            cutscene:text("[face:tofer, -19, -13]* Heh![wait:5] Whatever am I\nthinking and saying ??!?")
-            cutscene:text("[face:tofer, -19, -13]* How could my sweet \n[color:pink]LIL SIS[color:reset] hate ME?")
-            cutscene:text("[face:tofer, -19, -13]* Let's bob some apps,[wait:5] \nbrolio![wait:5] Check it![sound:tofer_checkit]")
+            
         end
+
+        cutscene:wait(1)
+        cutscene:text("[face:tofer, -19, -13]* Heh.[wait:5] Well!")
+        cutscene:text("[face:tofer, -19, -13]* You're right!")
+        cutscene:text("[face:emotion, -19, -13]* It's just...")
+        cutscene:text("[face:emotionerer, -19, -13]* I...")
+        cutscene:text("[face:emotionerer, -19, -13]* I think SOFER might...")
+        cutscene:wait(1)
+        cutscene:setAnimation(tofer, "cycle")
+        music:play("tofer", 1)
+        music:seek(2)
+        cutscene:text("[face:tofer, -19, -13]* Heh![wait:5] Whatever am I\nthinking and saying ??!?")
+        cutscene:text("[face:tofer, -19, -13]* How could my sweet \n[color:pink]LIL SIS[color:reset] hate ME?")
+        cutscene:text("[face:tofer, -19, -13]* Let's bob some apps,[wait:5] \nbrolio![wait:5] Check it![sound:tofer_checkit]")
 
         cutscene:setAnimation(tofer, "cycle")
         music:stop()
@@ -132,7 +135,7 @@ return {
         cutscene:slideTo(individual, individual.x, 380, 0.2)
         cutscene:wait(cutscene:walkTo(vess, vess.x - 50, 380, 0.2, "left", true))
         speak(individual, "* Ey.")
-        music:play("individual_wip")
+        music:play("individual")
         cutscene:wait(2)
 
         speak(individual, "* Ey,[wait:5] kid.")
@@ -170,7 +173,7 @@ return {
         speak(tofer, "[face:tofer, -19, -13][next]* Che[sound:tofer_checkit]ck it!")
         Assets.stopSound("tofer_checkit", true)
         speak(individual, "* Let's restart.")
-        music:play("individual_wip")
+        music:play("individual")
         speak(individual, "* Ey,[wait:5] kid.")
         speak(individual, "* ...[wait:5]I got sumnth for ya.[wait:5] Kid.")
         speak(individual, "* ...[wait:5]wanna buy?")
@@ -218,7 +221,7 @@ return {
                         speak(individual, "* Heheheh!")
                         cutscene:shakeCharacter(individual, 6, 7)
                         speak(individual, "* HEHEHEH!")
-                        music:play("individual_wip")
+                        music:play("individual")
                         speak(individual, "* Welff![wait:5] A deal's a deal,[wait:5] kid!")
                         speak(individual, "* Heheh...[wait:5] looks like the cherries ARE back in brow after all...")
                         speak(individual, "* Ey,[wait:5] you go kid around and enjoy that thing,[wait:5] huh?")
@@ -281,7 +284,7 @@ return {
                         speak(individual, "* Heheheh!")
                         cutscene:shakeCharacter(individual, 6, 7)
                         speak(individual, "* HEHEHEH!")
-                        music:play("individual_wip")
+                        music:play("individual")
                         speak(individual, "* Welff![wait:5] A deal's a deal,[wait:5] kid!")
                         speak(individual, "* Heheh...[wait:5] looks like the cherries ARE back in brow after all...")
                         speak(individual, "* Ey,[wait:5] you go kid around and enjoy that thing,[wait:5] huh?")
@@ -316,42 +319,156 @@ return {
         cutscene:alignFollowers()
         cutscene:attachFollowers()
     end;
+
     rabbit = function(cutscene, event)
         local tofer = cutscene:getCharacter("tofer")
         local vess = cutscene:getCharacter("vess")
-        --local rabbit = Game.world:getEvent(23452345234)
-        local jenga = Game.world:getEvent(12)
+        local bunny = cutscene:getCharacter("bluebunny")
+        local jenga = Game.world:getEvent(13)
         local music = Music()
-        cutscene:setSpeaker(tofer)
-        local auto = {
-            ["auto"] = true
-        }
-        cutscene:text("[face:tofer, -19, -13]* ", auto)
-        cutscene:setSpeaker(nil)
+
+        local speak = function(speaker, text, shake)
+            if shake then
+                cutscene:playSound("wing")
+                cutscene:shakeCharacter(speaker)
+            end
+
+            cutscene:setSpeaker(speaker)
+            cutscene:text(text)
+        end
+
+        local timer = Game.world.timer
+        --timer:everyInstant(3, function()
+        --    cutscene:playSound("wing")
+        --    cutscene:shakeCharacter(bunny)
+        --end)
+
+        cutscene:detachFollowers()
+
+        speak(tofer, "[next][speed:1.5][face:tofer, -19, -13]* [sound:tofer_checkit]Check it![wait:2] \nThat's BLUEBUNNY!")
+        Assets.stopSound("tofer_checkit", true)
         Game.world.music:pause()
-        cutscene:text("* Hold on hold on hold on dude this is important")
-        cutscene:text("* I'm doing something really important right now gimme a sec")
+        speak(bunny, "* Wait,[wait:5] wait,[wait:5] WAIT..!", true)
+        speak(bunny, "* This is really important..!", true)
+        speak(bunny, "* I'm doing something really important right now..![wait:5] Just gimme a sec..!", true)
         cutscene:wait(1)
-        cutscene:text("* I need like complete silence right now this is important")
+        speak(bunny, "* I need it quiet right now..![wait:5] This is important..!", true)
         cutscene:wait(2)
+        cutscene:playSound("step2")
         cutscene:wait(cutscene:walkTo(vess, vess.x + 25, vess.y, 0.2, "right", true))
-        cutscene:text("* DO NOT make a sound")
-        cutscene:text("* I heard your footstep its really distracting")
-        cutscene:text("* Just one more second dude")
+        Assets.stopSound("step2", true)
+        bunny.sprite.anim_speed = 1.5
+        speak(bunny, "* DO NOT make a sound..!", true)
+        speak(bunny, "* I heard your footstep..![wait:5] It's really distracting..!", true)
+        speak(bunny, "* Please..! Just one more second..!", true)
         cutscene:wait(2)
+        cutscene:playSound("drive")
+        cutscene:wait(cutscene:slideTo(tofer, tofer.x + 25, tofer.y, 0.2))
+        Assets.stopSound("drive", true)
+        bunny.sprite.anim_speed = 2
+        speak(bunny, "* Oh,[wait:5] come on,[wait:5] man..![wait:5] Not the UNICYCLE..!", true)
+
+        bunny.sprite.anim_speed = 4
+        cutscene:playSound("wing")
+        cutscene:shakeCharacter(bunny)
+        cutscene:wait(0.3)
+        cutscene:playSound("wing")
+        cutscene:shakeCharacter(bunny)
+        cutscene:wait(0.3)
+        cutscene:playSound("wing")
+        cutscene:shakeCharacter(bunny)
+        cutscene:wait(1)
+        cutscene:playSound("noise")
+        bunny.sprite:stop(true)
+        tofer.sprite:pause()
+
+
+        --Not done yet
+        cutscene:wait(2)
+        cutscene:playSound("bell_bounce_short")
         jenga:shake()
-        cutscene:wait(2)
-        --jenga tower collapses
-        cutscene:text("(jenga tower collapses)")
-        cutscene:text("* $$$$!!!!!!")
-        cutscene:text("* OH MY GOD DUDE")
-        cutscene:text("* $$$$")
-        cutscene:text("* I'VE BEEN WORKING ON THIS FOR DAYS")
-        cutscene:text("* $$$$ DUDE")
+        cutscene:wait(0.5)
+        jenga:setRotationOrigin(0.5, 1)
+        jenga.rotation = (3*math.pi)/2 --Trig
+        cutscene:playSound("explosion")
+        Game:setFlag("jenga_tower_fell", 1)
+        
+        if vess.x >= 180 and vess.y >= 320 then --If vess is inside the jenga tower
+            vess.noclip = true
+            cutscene:walkTo(vess, 125, vess.y, 0.3, "right", true, "linear", function() vess.noclip = false end)
+        end
+
+        cutscene:wait(1)
+        cutscene:setSprite(bunny, "stool_agast")
+        speak(bunny, "* NOOOOOOO..![wait:5] MY PLAYTHINGS..!", true)
+        speak(bunny, "* OH MY LORD..![wait:5] $$$$.", true)
+        speak(bunny, "* $$$$..!", true)
+        speak(bunny, "* I'VE BEEN WORKING ON THIS FOR DAYS..!", true)
+        speak(bunny, "* $$$$$$$$$$$$$..!", true)
         cutscene:wait(1)
         --rabbit turns left
-        cutscene:text("* Dude")
-        cutscene:text("* Man I don't even care anymore")
-        cutscene:text("* Just whatever.")
+        speak(bunny, "* $$$$..!", true)
+        speak(bunny, "* I don't even CARE anymore..!", true)
+        speak(bunny, "* Just whatever.", true)
+        speak(bunny, "* WHATEVER..!", true)
+        
+        tofer.sprite:resume()
+        cutscene:attachFollowers()
+        cutscene:interpolateFollowers()
+        cutscene:alignFollowers()
     end;
+
+    rabbit_talk = function(cutscene, event)
+        local tofer = cutscene:getCharacter("tofer")
+        local vess = cutscene:getCharacter("vess")
+        local bunny = cutscene:getCharacter("bluebunny")
+
+        local speak = function(speaker, text, shake)
+            if shake then
+                cutscene:playSound("wing")
+                cutscene:shakeCharacter(speaker)
+            end
+
+            cutscene:setSpeaker(speaker)
+            cutscene:text(text)
+        end
+
+        local noise = function(sound)
+            cutscene:playSound(sound)
+            cutscene:wait(0.3)
+        end
+
+        if Game:getFlag("jenga_tower_fell", 0) == 1 then
+            speak(bunny, "* Don't talk to me.", true)
+
+            cutscene:playSound("wing")
+            cutscene:shakeCharacter(vess)
+            cutscene:wait(0.2)
+            cutscene:playSound("wing")
+            cutscene:shakeCharacter(tofer)
+        elseif Game:getFlag("jenga_tower_fell", 0) == 2 then
+            local noises = {"drive", "step2", "badexplosion", "alert", "bageldefeat", "bell", "bigcut", "bloomer", "bluh", "tofer_checkit", "tofer_heh", "camera_flash"
+        , "cd_bagel/susie", "egg", "icespell", "ominous", "ominous_cancel"}
+            
+            if event.interact_count < 2 then
+                speak(bunny, "* Yeah,[wait:5] I was being a little dramatic earlier.", true)
+                speak(bunny, "* Make as much noise as you want..!", true)
+            else
+                cutscene:playSound("wing")
+                cutscene:wait(cutscene:shakeCharacter(bunny))
+            end
+
+            cutscene:enableMovement()
+            Game.world.music:pause()
+
+            local count = 0
+
+            while count < 8 do
+                noise(Utils.pick(noises, nil, true))
+                count = count + 1
+            end
+
+            Game.world.music:resume()
+        end
+    end
 }
