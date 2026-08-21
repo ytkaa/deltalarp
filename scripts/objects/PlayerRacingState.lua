@@ -115,6 +115,13 @@ function PlayerRacingState:onEnter()
 end
 
 function PlayerRacingState:onUpdate()
+    if Game:getFlag("speedBoost") then
+        self.acceleration = 4
+        self.max_speed = 32
+    elseif Game:getFlag("speedBoost") == false then
+        self.acceleration = 0.6
+        self.max_speed = 16
+    end
     self:handleMovement()
     self:handleSprites()
 end

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 5,
-  nextobjectid = 113,
+  nextobjectid = 117,
   properties = {},
   tilesets = {
     {
@@ -151,6 +151,20 @@ return {
           y = 1120,
           width = 40,
           height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 116,
+          name = "itembox",
+          type = "",
+          shape = "point",
+          x = 1416.67,
+          y = 353.333,
+          width = 0,
+          height = 0,
           rotation = 0,
           opacity = 1,
           visible = true,

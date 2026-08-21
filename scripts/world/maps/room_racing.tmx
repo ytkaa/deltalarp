@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="113">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="117">
  <editorsettings>
   <export target="room_racing.lua" format="lua"/>
  </editorsettings>
@@ -68,6 +68,9 @@
   </object>
   <object id="3" name="racingactivate" x="1840" y="1120" width="40" height="40"/>
   <object id="112" name="racingactivatenew" x="1640" y="1120" width="40" height="40"/>
+  <object id="116" name="itembox" x="1416.67" y="353.333">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup color="#0000ff" id="4" name="collision">
   <object id="4" x="1560" y="1200" width="440" height="40"/>
