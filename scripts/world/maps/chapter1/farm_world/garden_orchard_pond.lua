@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -11,7 +11,9 @@ return {
   tileheight = 40,
   nextlayerid = 13,
   nextobjectid = 27,
-  properties = {},
+  properties = {
+    ["music"] = "irish_waters"
+  },
   tilesets = {
     {
       name = "garden",

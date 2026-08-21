@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="27">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="27">
  <editorsettings>
   <export target="garden_orchard_pond.lua" format="lua"/>
  </editorsettings>
+ <properties>
+  <property name="music" value="irish_waters"/>
+ </properties>
  <tileset firstgid="1" source="../../../tilesets/garden.tsx"/>
  <tileset firstgid="101" source="../../../tilesets/rural.tsx"/>
  <tileset firstgid="201" source="../../../tilesets/orchard.tsx"/>

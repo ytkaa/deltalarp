@@ -433,7 +433,9 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "chapter1/orchard.orchard",
-            ["once"] = true
+            ["once"] = true,
+            ["setflag"] = "orchard_warp",
+            ["setvalue"] = true
           }
         }
       }
