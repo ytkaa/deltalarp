@@ -470,5 +470,114 @@ return {
 
             Game.world.music:resume()
         end
-    end
+    end;
+
+    painting = function(cutscene, event)
+        local grace = cutscene:spawnNPC("grace", 240, 260)
+        local sofer = cutscene:spawnNPC("sofer", 320, 260)
+        local vess = cutscene:getCharacter("vess")
+        local tofer = cutscene:getCharacter("tofer")
+        local music = Music()
+        local motorcycle = Game.world:getEvent(25)
+
+        local speak = function(speaker, text)
+            cutscene:setSpeaker(speaker)
+            cutscene:text(text)
+        end
+
+        cutscene:detachFollowers()
+        cutscene:detachCamera()
+        Game.world.music:fade(0, 1, function() Game.world.music:stop() end)
+
+        Game.world.timer:after(0.5, function()
+            music:play("whoot3", 0)
+            music:fade(1, 1)
+        end)
+
+        cutscene:wait(cutscene:panTo(360, Game.world.camera.y, 2, "out-sine"))
+
+        speak(sofer, "* Aw.[wait:5] Motorcycles are actually lame.")
+        speak(sofer, "* You can't even drive them!")
+        grace:faceTowards(sofer)
+        speak(grace, "[face:consider, -19, -13]* Uhh,[wait:5] you mean,[wait:5] like...")
+        speak(grace, "[face:brow, -19, -13]* ...[wait:5]specifically YOU?")
+        speak(grace, "[face:snark, -19, -13]* Because YOU told me \nfive minutes ago you \ncan't drive at all.")
+        cutscene:look(grace, "down")
+        speak(sofer, "* Yeah !!![wait:5] But,[wait:5] YOU,[wait:5] Grace...??!?")
+        speak(sofer, "* Someone as cool as YOU should always be seen and pictured on a motorcycle !!!")
+        grace:faceTowards(sofer)
+        speak(grace, "[face:consider, -19, -13]* ...[wait:5]huh.")
+        speak(grace, "[face:nervous, -19, -13]* Uhh.[wait:5] Well,[wait:5] $$!$,[wait:5] uhh,[wait:5]\nthing is...")
+        speak(grace, "[face:sad_brow_but_not_really_sad, -19, -13]* ...[wait:5]I've never drove a \nMOTORCYCLE before.")
+        speak(grace, "[face:snark, -19, -13]* Even though I definitely \ncould !!!")
+        speak(grace, "[face:consider, -19, -13]* But,[wait:5] like,[wait:5] I don't \nknow...")
+        speak(grace, "[face:neutral, -19, -13]* ...[wait:5]if I'd even want to.")
+        cutscene:look(grace, "down")
+        cutscene:wait(1)
+        grace:faceTowards(sofer)
+        speak(grace, "[face:brow, -19, -13]* I've probably worked...\n[wait:5]way too hard in my \nlife...")
+        cutscene:look(grace, "down")
+        speak(grace, "[face:pissed, -19, -13]* ...[wait:5]to maybe throw it all \naway riding a $$$$ing \nmotorcycle.")
+        cutscene:wait(1)
+        grace:faceTowards(sofer)
+        speak(grace, "[face:brow, -19, -13]* Y'know?")
+        music:stop()
+        cutscene:setSprite(sofer, "neutral")
+        cutscene:wait(2)
+        speak(sofer, "* Damn.")
+        cutscene:wait(2)
+        music:play("whoot3", 1, 1.2)
+        cutscene:setSprite(sofer, "talk", 1/4)
+        speak(sofer, "* That's sick.")
+        sofer.sprite.anim_speed = 1.5
+        music:setPitch(1.25)
+        speak(sofer, "* That's so COOL!")
+        sofer.sprite.anim_speed = 2
+        music:setPitch(1.3)
+        speak(sofer, "* $$$$ motorcycles!")
+        motorcycle:explode(0, 0, true)
+        motorcycle:shake()
+        speak(sofer, "* I want to work hard in my life too!")
+        speak(sofer, "* You really are the COOLEST!")
+        speak(grace, "[face:wtf, -19, -13]* Uhhhh,[wait:5] well...")
+        music:stop()
+
+        tofer:setPosition(720, 300)
+        vess:setPosition(820, 320)
+        cutscene:look(vess, "left")
+
+        speak(tofer, "* Heh![wait:5] Check it![sound:tofer_checkit]")
+        sofer.sprite.anim_speed = 1
+        sofer:setSprite("cannot")
+        cutscene:wait(cutscene:panTo(360 + 150, Game.world.camera.y, 1))
+        music:play("tofer", 1)
+        music:seek(2)
+        speak(tofer, "[face:tofer, -19, -13]* That's impossible, \n'cause![wait:5] I'm the COOLEST!")
+        speak(tofer, "[face:tofer, -19, -13]* The COOLEST carrot in \nthe garden!")
+        
+        local soferPath = {{400, 240}, {480, 300}}
+        local gracePath = {{400, 240}, {420, 320}}
+
+        cutscene:setSprite(sofer, "cannot_move", 1/4)
+
+        cutscene:walkPath(grace, gracePath, {["time"] = 1.5, ["loop"] = false, ["snap"] = false, ["relative"] = false, ["facing"] = "right", ["keep_facing"] = true})
+        cutscene:panTo(360 + 250, Game.world.camera.y, 1)
+        cutscene:wait(cutscene:slidePath(sofer, soferPath, {["time"] = 1, ["loop"] = false, ["snap"] = false, ["relative"] = false, ["after"] = function()
+            cutscene:setSprite(sofer, "cannot")
+        end}))
+        
+        speak(tofer, "[face:tofer, -19, -13]* Woah,[wait:5] brolio![wait:5] Is that my \nsweet [color:pink]LIL SIS[color:reset] I see?")
+        music:stop()
+        speak(sofer, "* Tofer.")
+        music:play("tofer", 1)
+        music:seek(2)
+        speak(tofer, "[face:tofer, -19, -13]* It's been a long time![wait:5]\nNo see![wait:5] Let's talk!")
+        speak(tofer, "[face:tofer, -19, -13]* How's the [color:pink]princess[color:reset]?[wait:5] The \n[color:#75FBED]piano[color:reset]?[wait:5] The [color:pink]princess \n[color:#75FBED]piano[color:reset]?") --Long ass dialogue
+        music:stop()
+        speak(sofer, "* I'm going to beat the $$!$ out of you.")
+        cutscene:playSound("noise")
+        tofer.sprite:pause()
+        cutscene:wait(1)
+        speak(tofer, "[face:emotioner, -19, -13]* What?")
+    end;
 }

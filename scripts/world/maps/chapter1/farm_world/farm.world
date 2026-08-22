@@ -349,6 +349,20 @@
             "width": 800,
             "x": 29080,
             "y": -10351
+        },
+        {
+            "fileName": "garden_orchard_warp.tmx",
+            "height": 600,
+            "width": 800,
+            "x": 29080,
+            "y": -8991
+        },
+        {
+            "fileName": "garden_orchard_paint.tmx",
+            "height": 600,
+            "width": 1400,
+            "x": 28480,
+            "y": -9671
         }
     ],
     "onlyShowAdjacentMaps": false,

@@ -54,19 +54,21 @@ function Mod:init()
         ["grace"] = 1,
         ["Her"] = 1,
         ["itahu_1"] = 1,
+        ["individual"] = 1,
         ["last_show_wip_2"] = 1,
         ["me"] = 1,
         ["mus_sc_forget"] = 1,
         ["mus_sc_her_2"] = 1,
         ["mus_st_troubledingle"] = 1,
+        ["orchard_wip"] = 1,
         ["petal_limiter"] = 1,
         ["pursuit1"] = 1,
         ["quasar"] = 3,
         ["start"] = 1,
         ["the entrance"] = 1,
         ["tofer"] = 1,
-        ["versus_grace3"] = 1,
-        ["whoot"] = 1,
+        ["versus_two"] = 1,
+        ["whoot3"] = 1,
     })
 
     print("LOADED " .. self.info.name .. " - THE START..!")

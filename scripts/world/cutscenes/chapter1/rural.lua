@@ -402,6 +402,6 @@ return {
     end;
 
     one_choicer = function(cutscene, event)
-        choice = cutscene:choicer({"Vess"})
+        local choice = cutscene:choicer({"Vess"})
     end
 }

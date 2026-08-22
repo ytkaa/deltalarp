@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 37,
+  nextobjectid = 42,
   properties = {
     ["music"] = "orchard_wip",
     ["name"] = "Garden - Orchard (Maze)"
@@ -581,6 +581,23 @@ return {
             ["map"] = "chapter1/farm_world/garden_orchard_warp",
             ["marker"] = "spawn"
           }
+        },
+        {
+          id = 40,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 1900,
+          width = 40,
+          height = 140,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["map"] = "chapter1/farm_world/garden_orchard_paint",
+            ["marker"] = "spawn"
+          }
         }
       }
     },
@@ -675,6 +692,20 @@ return {
           shape = "point",
           x = 58.6667,
           y = 2657.33,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "to_paint",
+          type = "",
+          shape = "point",
+          x = 40,
+          y = 1980,
           width = 0,
           height = 0,
           rotation = 0,

@@ -11,11 +11,12 @@ function ItemBox:onEnter(player)
     print("Its For You dawg. Its lit")
     if self.collectable == true then
         Game:setFlag("speedBoost", true)
-        self:setSprite("") --lmao idk how else to make it blank
-        Assets.playSound("item")
+        self.sprite.alpha = 0
+        Assets.playSound("break1")
+        Assets.playSound("boost")
         self.timer = Timer()
         self.timer:after(2, function()
-            self:setSprite("world/events/item_box")
+            self.sprite.alpha = 1
             self.collectable = true
             Game:setFlag("speedBoost", false)
         end)

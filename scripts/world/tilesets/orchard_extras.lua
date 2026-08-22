@@ -1,10 +1,10 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   name = "orchard_extras",
   class = "",
-  tilewidth = 611,
+  tilewidth = 800,
   tileheight = 1585,
   spacing = 0,
   margin = 0,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 3,
+  tilecount = 5,
   tiles = {
     {
       id = 0,
@@ -42,6 +42,18 @@ return {
       image = "../../../assets/sprites/treasures/jenga.png",
       width = 611,
       height = 1585
+    },
+    {
+      id = 3,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/easel.png",
+      width = 28,
+      height = 47
+    },
+    {
+      id = 4,
+      image = "../../../assets/sprites/tilesets/farm_world/garden/orchard/motorcycle.jpg",
+      width = 800,
+      height = 600
     }
   }
 }
