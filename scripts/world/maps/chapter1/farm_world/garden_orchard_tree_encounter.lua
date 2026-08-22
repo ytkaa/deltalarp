@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 8,
+  nextobjectid = 9,
   properties = {
     ["music"] = "orchard_wip"
   },
@@ -197,6 +197,29 @@ return {
           properties = {
             ["map"] = "chapter1/farm_world/garden_orchard_maze",
             ["marker"] = "to_tree"
+          }
+        },
+        {
+          id = 8,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 382.333,
+          y = 119.167,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["actor"] = "tree",
+            ["chase"] = false,
+            ["chasedist"] = 500,
+            ["chasespeed"] = 20,
+            ["chasing"] = false,
+            ["encounter"] = "tree",
+            ["enemy"] = "tree",
+            ["once"] = true
           }
         }
       }

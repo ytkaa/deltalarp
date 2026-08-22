@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="8">
+<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="9">
  <editorsettings>
   <export target="garden_orchard_tree_encounter.lua" format="lua"/>
  </editorsettings>
@@ -89,6 +89,18 @@
    <properties>
     <property name="map" value="chapter1/farm_world/garden_orchard_maze"/>
     <property name="marker" value="to_tree"/>
+   </properties>
+  </object>
+  <object id="8" name="enemy" x="382.333" y="119.167" width="40" height="40">
+   <properties>
+    <property name="actor" value="tree"/>
+    <property name="chase" type="bool" value="false"/>
+    <property name="chasedist" type="int" value="500"/>
+    <property name="chasespeed" type="int" value="20"/>
+    <property name="chasing" type="bool" value="false"/>
+    <property name="encounter" value="tree"/>
+    <property name="enemy" value="tree"/>
+    <property name="once" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>
